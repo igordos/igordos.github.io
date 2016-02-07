@@ -10,6 +10,7 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+
 </head>
 <body class="body-wrapper">
 <header class="header-container">
@@ -78,8 +79,13 @@
         <span class="detail-profit">5 458</span>
         <span class="detail-profit-sig">руб.</span>
       </div>
+      <div class="detail-btn-group">
+        <a class="detail-add" href="#"><i class="fa fa-shopping-cart"></i>В корзину</a>
+        <a class="detail-like" href="#"><i class="fa fa-plus"></i>Добавить к любимым</a>
+      </div>
       <div class="detail-seller-block">
         <h3 class="detail-seller__title">Карусель</h3>
+
         <div class="star-rating star-rating_seller">
           <div class="star-rating__wrap">
             <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
@@ -97,70 +103,468 @@
         <span class="detail-seller__reviews">458521 отзыв</span>
         <br>
         <span class="detail-seller__addr">Санкт-Петербург, ул. Карбышева, 9, литера А</span>
-        <span class="detail-seller__map"><i class="fa fa-map-marker"></i> 35 км</span>
+        <span class="detail-seller__distance"><i class="fa fa-map-marker"></i> 35 км</span>
       </div>
-      <div class="detail-seller-block">
-        <h3 class="detail-seller__title">Окей</h3>
-        <div class="star-rating star-rating_seller">
-          <div class="star-rating__wrap">
-            <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
-            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
-            <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
-            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
-            <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
-            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
-            <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
-            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
-            <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
-            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+      <!--<div class="detail-seller-block">-->
+      <!--<h3 class="detail-seller__title">Окей</h3>-->
+
+      <!--<div class="star-rating star-rating_seller">-->
+      <!--<div class="star-rating__wrap">-->
+      <!--<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">-->
+      <!--<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>-->
+      <!--<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">-->
+      <!--<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>-->
+      <!--<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">-->
+      <!--<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>-->
+      <!--<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">-->
+      <!--<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>-->
+      <!--<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">-->
+      <!--<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<span class="detail-seller__reviews">458521 отзыв</span>-->
+      <!--<br>-->
+      <!--<span class="detail-seller__addr">Санкт-Петербург, ул. Карбышева, 9, литера А</span>-->
+      <!--<span class="detail-seller__distance"><i class="fa fa-map-marker"></i> 35 км</span>-->
+      <!--</div>-->
+      <!--<div class="detail-seller-block">-->
+      <!--<h3 class="detail-seller__title">Лента</h3>-->
+
+      <!--<div class="star-rating star-rating_seller">-->
+      <!--<div class="star-rating__wrap">-->
+      <!--<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">-->
+      <!--<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>-->
+      <!--<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">-->
+      <!--<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>-->
+      <!--<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">-->
+      <!--<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>-->
+      <!--<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">-->
+      <!--<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>-->
+      <!--<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">-->
+      <!--<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<span class="detail-seller__reviews">458521 отзыв</span>-->
+      <!--<br>-->
+      <!--<span class="detail-seller__addr">Санкт-Петербург, ул. Карбышева, 9, литера А</span>-->
+      <!--<span class="detail-seller__distance"><i class="fa fa-map-marker"></i> 35 км</span>-->
+      <!--</div>-->
+      <hr class="detail-hr">
+      <div class="detail-table">
+        <div class="detail-table__row">
+          <div class="detail-table__cell">Состав:</div>
+          <div class="detail-table__cell">говядина жилованная высшего сорта — 25; свинина жилованная полужирная — 70;
+            яйца куриные или меланж — 3; молоко коровье сухое цельное или обезжиренное — 2; пряности и другие материалы,
+            г (на 100 кг несолёного сырья): соль поваренная пищевая — 2090; нитрит натрия — 7,1; сахар-песок или глюкоза
+            — 200; орех мускатный или кардамон молотые — 50.
           </div>
         </div>
-        <span class="detail-seller__reviews">458521 отзыв</span>
-        <br>
-        <span class="detail-seller__addr">Санкт-Петербург, ул. Карбышева, 9, литера А</span>
-        <span class="detail-seller__map"><i class="fa fa-map-marker"></i> 35 км</span>
+        <div class="detail-table__row">
+          <div class="detail-table__cell">Жирнота:</div>
+          <div class="detail-table__cell">100%</div>
+        </div>
+        <div class="detail-table__row">
+          <div class="detail-table__cell">Срок годности</div>
+          <div class="detail-table__cell">3 мес.</div>
+        </div>
       </div>
-      <div class="detail-seller-block">
-        <h3 class="detail-seller__title">Лента</h3>
-        <div class="star-rating star-rating_seller">
-          <div class="star-rating__wrap">
-            <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
-            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
-            <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
-            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
-            <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
-            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
-            <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
-            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
-            <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
-            <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+      <hr class="detail-hr">
+    </div>
+    <div class="detail-tab">
+      <div class="detail-tab__title-wrapper">
+        <a class="detail-tab__title detail-tab__title_active" href="#">Магазины</a>
+        <a class="detail-tab__title" href="#">Характеристики</a>
+        <a class="detail-tab__title" href="#">Цены<span class="detail-tab__title-count">2</span></a>
+        <a class="detail-tab__title" href="#">Карта</a>
+        <a class="detail-tab__title" href="#">Отзывы<span class="detail-tab__title-count">8547</span></a>
+        <a class="detail-tab__title" href="#">Обзоры<span class="detail-tab__title-count">689</span></a>
+        <a class="detail-tab__title" href="#">Обсуждения<span class="detail-tab__title-count">454587887</span></a>
+      </div>
+      <div class="detail-tab__content">
+        <div class="detail-tab__seller-container">
+          <div class="detail-tab__seller-block">
+            <div class="detail-tab__seller-item">
+              <div class="detail-tab__seller-count">
+                1.
+              </div>
+              <div class="detail-tab__seller-img">
+                <img class="image" src="http://toplogos.ru/images/logo-okey.jpg">
+              </div>
+              <div class="detail-tab__seller-info">
+                <h3 class="detail-seller__title">Окей</h3>
+
+                <div class="star-rating star-rating_seller">
+                  <div class="star-rating__wrap">
+                    <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                           title="5 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                           title="4 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                           title="3 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                           title="2 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                           title="1 out of 5 stars"></label>
+                  </div>
+                </div>
+                <span class="detail-seller__reviews">458521 отзыв</span>
+                <br>
+                <span class="detail-seller__addr">ул. Карбышева, 9, литера А</span>
+
+                <div class="detail-seller__price">33р. выгода 28р.</div>
+              </div>
+              <div class="detail-tab__seller-distance">
+                <i class="fa fa-map-marker icon"></i> 35 км</span>
+              </div>
+            </div>
+            <div class="detail-tab__seller-item">
+              <div class="detail-tab__seller-count">
+                1.
+              </div>
+              <div class="detail-tab__seller-img">
+                <img class="image" src="http://toplogos.ru/images/logo-okey.jpg">
+              </div>
+              <div class="detail-tab__seller-info">
+                <h3 class="detail-seller__title">Окей</h3>
+
+                <div class="star-rating star-rating_seller">
+                  <div class="star-rating__wrap">
+                    <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                           title="5 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                           title="4 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                           title="3 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                           title="2 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                           title="1 out of 5 stars"></label>
+                  </div>
+                </div>
+                <span class="detail-seller__reviews">458521 отзыв</span>
+                <br>
+                <span class="detail-seller__addr">ул. Карбышева, 9, литера А</span>
+
+                <div class="detail-seller__price">33р. выгода 28р.</div>
+              </div>
+              <div class="detail-tab__seller-distance">
+                <i class="fa fa-map-marker icon"></i> 35 км</span>
+              </div>
+            </div>
+            <div class="detail-tab__seller-item">
+              <div class="detail-tab__seller-count">
+                1.
+              </div>
+              <div class="detail-tab__seller-img">
+                <img class="image" src="http://toplogos.ru/images/logo-okey.jpg">
+              </div>
+              <div class="detail-tab__seller-info">
+                <h3 class="detail-seller__title">Окей</h3>
+
+                <div class="star-rating star-rating_seller">
+                  <div class="star-rating__wrap">
+                    <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                           title="5 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                           title="4 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                           title="3 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                           title="2 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                           title="1 out of 5 stars"></label>
+                  </div>
+                </div>
+                <span class="detail-seller__reviews">458521 отзыв</span>
+                <br>
+                <span class="detail-seller__addr">ул. Карбышева, 9, литера А</span>
+
+                <div class="detail-seller__price">33р. выгода 28р.</div>
+              </div>
+              <div class="detail-tab__seller-distance">
+                <i class="fa fa-map-marker icon"></i> 35 км</span>
+              </div>
+            </div>
+            <div class="detail-tab__seller-item">
+              <div class="detail-tab__seller-count">
+                1.
+              </div>
+              <div class="detail-tab__seller-img">
+                <img class="image" src="http://toplogos.ru/images/logo-okey.jpg">
+              </div>
+              <div class="detail-tab__seller-info">
+                <h3 class="detail-seller__title">Окей</h3>
+
+                <div class="star-rating star-rating_seller">
+                  <div class="star-rating__wrap">
+                    <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                           title="5 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                           title="4 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                           title="3 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                           title="2 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                           title="1 out of 5 stars"></label>
+                  </div>
+                </div>
+                <span class="detail-seller__reviews">458521 отзыв</span>
+                <br>
+                <span class="detail-seller__addr">ул. Карбышева, 9, литера А</span>
+
+                <div class="detail-seller__price">33р. выгода 28р.</div>
+              </div>
+              <div class="detail-tab__seller-distance">
+                <i class="fa fa-map-marker icon"></i> 35 км</span>
+              </div>
+            </div>
+            <div class="detail-tab__seller-item">
+              <div class="detail-tab__seller-count">
+                1.
+              </div>
+              <div class="detail-tab__seller-img">
+                <img class="image" src="http://toplogos.ru/images/logo-okey.jpg">
+              </div>
+              <div class="detail-tab__seller-info">
+                <h3 class="detail-seller__title">Окей</h3>
+
+                <div class="star-rating star-rating_seller">
+                  <div class="star-rating__wrap">
+                    <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                           title="5 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                           title="4 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                           title="3 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                           title="2 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                           title="1 out of 5 stars"></label>
+                  </div>
+                </div>
+                <span class="detail-seller__reviews">458521 отзыв</span>
+                <br>
+                <span class="detail-seller__addr">ул. Карбышева, 9, литера А</span>
+
+                <div class="detail-seller__price">33р. выгода 28р.</div>
+              </div>
+              <div class="detail-tab__seller-distance">
+                <i class="fa fa-map-marker icon"></i> 35 км</span>
+              </div>
+            </div>
+            <div class="detail-tab__seller-item">
+              <div class="detail-tab__seller-count">
+                1.
+              </div>
+              <div class="detail-tab__seller-img">
+                <img class="image" src="http://toplogos.ru/images/logo-okey.jpg">
+              </div>
+              <div class="detail-tab__seller-info">
+                <h3 class="detail-seller__title">Окей</h3>
+
+                <div class="star-rating star-rating_seller">
+                  <div class="star-rating__wrap">
+                    <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                           title="5 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                           title="4 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                           title="3 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                           title="2 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                           title="1 out of 5 stars"></label>
+                  </div>
+                </div>
+                <span class="detail-seller__reviews">458521 отзыв</span>
+                <br>
+                <span class="detail-seller__addr">ул. Карбышева, 9, литера А</span>
+
+                <div class="detail-seller__price">33р. выгода 28р.</div>
+              </div>
+              <div class="detail-tab__seller-distance">
+                <i class="fa fa-map-marker icon"></i> 35 км</span>
+              </div>
+            </div>
+            <div class="detail-tab__seller-item">
+              <div class="detail-tab__seller-count">
+                1.
+              </div>
+              <div class="detail-tab__seller-img">
+                <img class="image" src="http://toplogos.ru/images/logo-okey.jpg">
+              </div>
+              <div class="detail-tab__seller-info">
+                <h3 class="detail-seller__title">Окей</h3>
+
+                <div class="star-rating star-rating_seller">
+                  <div class="star-rating__wrap">
+                    <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                           title="5 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                           title="4 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                           title="3 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                           title="2 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                           title="1 out of 5 stars"></label>
+                  </div>
+                </div>
+                <span class="detail-seller__reviews">458521 отзыв</span>
+                <br>
+                <span class="detail-seller__addr">ул. Карбышева, 9, литера А</span>
+
+                <div class="detail-seller__price">33р. выгода 28р.</div>
+              </div>
+              <div class="detail-tab__seller-distance">
+                <i class="fa fa-map-marker icon"></i> 35 км</span>
+              </div>
+            </div>
+            <div class="detail-tab__seller-item">
+              <div class="detail-tab__seller-count">
+                1.
+              </div>
+              <div class="detail-tab__seller-img">
+                <img class="image" src="http://toplogos.ru/images/logo-okey.jpg">
+              </div>
+              <div class="detail-tab__seller-info">
+                <h3 class="detail-seller__title">Окей</h3>
+
+                <div class="star-rating star-rating_seller">
+                  <div class="star-rating__wrap">
+                    <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                           title="5 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                           title="4 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                           title="3 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                           title="2 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                           title="1 out of 5 stars"></label>
+                  </div>
+                </div>
+                <span class="detail-seller__reviews">458521 отзыв</span>
+                <br>
+                <span class="detail-seller__addr">ул. Карбышева, 9, литера А</span>
+
+                <div class="detail-seller__price">33р. выгода 28р.</div>
+              </div>
+              <div class="detail-tab__seller-distance">
+                <i class="fa fa-map-marker icon"></i> 35 км</span>
+              </div>
+            </div>
+            <div class="detail-tab__seller-item">
+              <div class="detail-tab__seller-count">
+                1.
+              </div>
+              <div class="detail-tab__seller-img">
+                <img class="image" src="http://toplogos.ru/images/logo-okey.jpg">
+              </div>
+              <div class="detail-tab__seller-info">
+                <h3 class="detail-seller__title">Окей</h3>
+
+                <div class="star-rating star-rating_seller">
+                  <div class="star-rating__wrap">
+                    <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                           title="5 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                           title="4 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                           title="3 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                           title="2 out of 5 stars"></label>
+                    <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+                    <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                           title="1 out of 5 stars"></label>
+                  </div>
+                </div>
+                <span class="detail-seller__reviews">458521 отзыв</span>
+                <br>
+                <span class="detail-seller__addr">ул. Карбышева, 9, литера А</span>
+
+                <div class="detail-seller__price">33р. выгода 28р.</div>
+              </div>
+              <div class="detail-tab__seller-distance">
+                <i class="fa fa-map-marker icon"></i> 35 км</span>
+              </div>
+            </div>
+
           </div>
+
         </div>
-        <span class="detail-seller__reviews">458521 отзыв</span>
-        <br>
-        <span class="detail-seller__addr">Санкт-Петербург, ул. Карбышева, 9, литера А</span>
-        <span class="detail-seller__map"><i class="fa fa-map-marker"></i> 35 км</span>
-      </div>
-      <hr class="detail__hr">
-      <div class="detail__table">
-        <div class="detail__table-row">
-          <div class="detail__table-cell">Состав:</div>
-          <div class="detail__table-cell">говядина жилованная высшего сорта — 25; свинина жилованная полужирная — 70; яйца куриные или меланж — 3; молоко коровье сухое цельное или обезжиренное — 2; пряности и другие материалы, г (на 100 кг несолёного сырья): соль поваренная пищевая — 2090; нитрит натрия — 7,1; сахар-песок или глюкоза — 200; орех мускатный или кардамон молотые — 50.</div>
-        </div>
-        <div class="detail__table-row">
-          <div class="detail__table-cell">Жирнота:</div>
-          <div class="detail__table-cell">100%</div>
-        </div>
-        <div class="detail__table-row">
-          <div class="detail__table-cell">Срок годности</div>
-          <div class="detail__table-cell">3 мес.</div>
-        </div>
+        <div id="map" class="detail-tab__seller-map"></div>
       </div>
 
     </div>
-    <div class="detail-tab">3</div>
-
-  </div>
 </main>
+
 </body>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+  ymaps.ready(init);
+  var myMap,
+    myPlacemark;
+
+  function init() {
+    myMap = new ymaps.Map("map", {
+      center: [55.76, 37.64],
+      zoom: 7
+    });
+
+    myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      hintContent: 'Москва!',
+      balloonContent: 'Столица России'
+    });
+
+    myMap.geoObjects.add(myPlacemark);
+  }
+</script>
+
 </html>
