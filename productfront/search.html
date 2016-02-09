@@ -14,6 +14,7 @@
 <body class="body-wrapper">
 <header class="header-container">
   <a href="#" class="logo" title="ПРОДУКТУТ"></a>
+
   <div class="search-wrapper">
     <i class="fa fa-search search-icon"></i>
     <input class="search-field" placeholder="Поиск продуктов">
@@ -55,11 +56,11 @@
             <h4 class="facet__title">Цена</h4>
           </div>
           <div class="facet__body">
-            <div class="facet__input">
-                <div class="facet__input_group">
-                  <input type="text" placeholder="От">
-                  <input type="text" placeholder="До">
-                </div>
+            <div class="facet-range">
+              <div class="facet-range_group">
+                <input type="text" placeholder="От">
+                <input type="text" placeholder="До">
+              </div>
             </div>
           </div>
         </div>
@@ -68,7 +69,7 @@
             <h4 class="facet__title">Жирность</h4>
           </div>
           <div class="facet__body facet__body_closed">
-            <div class="facet__checkbox">
+            <div class="facet-checkbox">
               <label>
                 <input type="checkbox">10%
               </label>
@@ -90,19 +91,41 @@
             <h4 class="facet__title">Страна</h4>
           </div>
           <div class="facet__body">
-            <div class="facet__checkbox">
+            <div class="facet-checkbox">
               <label>
                 <input type="checkbox">Россия
               </label>
             </div>
-            <div class="facet__checkbox">
+            <div class="facet-checkbox">
               <label>
                 <input type="checkbox">Казахстан
               </label>
             </div>
-            <div class="facet__checkbox">
+            <div class="facet-checkbox">
               <label>
                 <input type="checkbox">Китай
+              </label>
+            </div>
+            <div class="facet-radio">
+              <label>
+                <input type="radio">Казахстан
+              </label>
+            </div>
+            <div class="facet-radio">
+              <label>
+                <input type="radio">Китай
+              </label>
+            </div>
+            <div class="facet-radio">
+              <label>
+                <input type="radio">Казахстан
+              </label>
+            </div>
+            <div class="facet-range">
+              <label>Text
+                <div class="facet-range_line">
+                  <input type="text" placeholder="text">
+                </div>
               </label>
             </div>
           </div>
@@ -111,75 +134,76 @@
           <a class="facet__btn-show" href="#">Применить</a>
         </div>
         <!--<div class="facet">-->
-          <!--<div class="facet__header">-->
-            <!--<h4 class="facet__title">Facet</h4>-->
-          <!--</div>-->
-          <!--<div class="facet__body">-->
-            <!--<div class="facet__input">-->
-              <!--<label>Text-->
-                <!--<div class="facet__input_group">-->
-                  <!--<input type="text" placeholder="text">-->
-                  <!--<input type="text" placeholder="text">-->
-                <!--</div>-->
-              <!--</label>-->
-            <!--</div>-->
-            <!--<a class="facet__link" href="#">link</a>-->
-            <!--<a class="facet__link" href="#">link</a>-->
+        <!--<div class="facet__header">-->
+        <!--<h4 class="facet__title">Facet</h4>-->
+        <!--</div>-->
+        <!--<div class="facet__body">-->
+        <!--<div class="facet__input">-->
+        <!--<label>Text-->
+        <!--<div class="facet__input_group">-->
+        <!--<input type="text" placeholder="text">-->
+        <!--<input type="text" placeholder="text">-->
+        <!--</div>-->
+        <!--</label>-->
+        <!--</div>-->
+        <!--<a class="facet__link" href="#">link</a>-->
+        <!--<a class="facet__link" href="#">link</a>-->
 
-            <!--<div class="facet__checkbox">-->
-              <!--<label>-->
-                <!--<input type="checkbox">checkbox-->
-              <!--</label>-->
-            <!--</div>-->
-            <!--<div class="facet__checkbox">-->
-              <!--<label>-->
-                <!--<input type="checkbox">checkbox-->
-              <!--</label>-->
-            <!--</div>-->
-            <!--<div class="facet__radio">-->
-              <!--<label>-->
-                <!--<input type="radio">radio-->
-              <!--</label>-->
-            <!--</div>-->
-            <!--<div class="facet__radio">-->
-              <!--<label>-->
-                <!--<input type="radio">radio-->
-              <!--</label>-->
-            <!--</div>-->
-            <!--<div class="facet__input">-->
-              <!--<label>Text-->
-                <!--<div class="facet__input_line">-->
-                  <!--<input type="text" placeholder="text">-->
-                <!--</div>-->
-              <!--</label>-->
-            <!--</div>-->
-            <!--<div class="facet__input">-->
-              <!--<label>Text-->
-                <!--<div class="facet__input_line">-->
-                  <!--<input type="text" placeholder="text">-->
-                <!--</div>-->
-              <!--</label>-->
-            <!--</div>-->
-            <!--<div class="facet__input">-->
-              <!--<label>Text-->
-                <!--<div class="facet__input_group">-->
-                  <!--<input type="text" placeholder="text">-->
-                  <!--<input type="text" placeholder="text">-->
-                <!--</div>-->
-                <!--<div class="facet__input_group">-->
-                  <!--<input type="text" placeholder="text">-->
-                  <!--<input type="text" placeholder="text">-->
-                <!--</div>-->
-              <!--</label>-->
-            <!--</div>-->
-          <!--</div>-->
+        <!--<div class="facet__checkbox">-->
+        <!--<label>-->
+        <!--<input type="checkbox">checkbox-->
+        <!--</label>-->
+        <!--</div>-->
+        <!--<div class="facet__checkbox">-->
+        <!--<label>-->
+        <!--<input type="checkbox">checkbox-->
+        <!--</label>-->
+        <!--</div>-->
+        <!--<div class="facet__radio">-->
+        <!--<label>-->
+        <!--<input type="radio">radio-->
+        <!--</label>-->
+        <!--</div>-->
+        <!--<div class="facet__radio">-->
+        <!--<label>-->
+        <!--<input type="radio">radio-->
+        <!--</label>-->
+        <!--</div>-->
+        <!--<div class="facet__input">-->
+        <!--<label>Text-->
+        <!--<div class="facet__input_line">-->
+        <!--<input type="text" placeholder="text">-->
+        <!--</div>-->
+        <!--</label>-->
+        <!--</div>-->
+        <!--<div class="facet__input">-->
+        <!--<label>Text-->
+        <!--<div class="facet__input_line">-->
+        <!--<input type="text" placeholder="text">-->
+        <!--</div>-->
+        <!--</label>-->
+        <!--</div>-->
+        <!--<div class="facet__input">-->
+        <!--<label>Text-->
+        <!--<div class="facet__input_group">-->
+        <!--<input type="text" placeholder="text">-->
+        <!--<input type="text" placeholder="text">-->
+        <!--</div>-->
+        <!--<div class="facet__input_group">-->
+        <!--<input type="text" placeholder="text">-->
+        <!--<input type="text" placeholder="text">-->
+        <!--</div>-->
+        <!--</label>-->
+        <!--</div>-->
+        <!--</div>-->
         <!--</div>-->
       </div>
     </div>
     <div class="product-search__result">
 
       <div class="product-item product-item_result">
-        <img class="product-item__img" src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
+        <img class="product-item__img"
+             src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
 
         <div class="product-item__price-header">
           <div class="arrow-left"></div>
@@ -212,7 +236,8 @@
         <h3 class="product-item__title">«Докторская» — популярный в странах бывшего СССР </h3>
       </div>
       <div class="product-item product-item_result">
-        <img class="product-item__img" src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
+        <img class="product-item__img"
+             src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
 
         <div class="product-item__price-header">
           <div class="arrow-left"></div>
@@ -245,7 +270,8 @@
         <h3 class="product-item__title">«Докторская» — популярный в странах бывшего СССР </h3>
       </div>
       <div class="product-item product-item_result">
-        <img class="product-item__img" src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
+        <img class="product-item__img"
+             src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
 
         <div class="product-item__price-header">
           <div class="arrow-left"></div>
@@ -278,7 +304,8 @@
         <h3 class="product-item__title">«Докторская» — популярный в странах бывшего СССР </h3>
       </div>
       <div class="product-item product-item_result">
-        <img class="product-item__img" src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
+        <img class="product-item__img"
+             src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
 
         <div class="product-item__price-header">
           <div class="arrow-left"></div>
@@ -311,7 +338,8 @@
         <h3 class="product-item__title">«Докторская» — популярный в странах бывшего СССР </h3>
       </div>
       <div class="product-item product-item_result">
-        <img class="product-item__img" src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
+        <img class="product-item__img"
+             src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
 
         <div class="product-item__price-header">
           <div class="arrow-left"></div>
@@ -344,7 +372,8 @@
         <h3 class="product-item__title">«Докторская» — популярный в странах бывшего СССР </h3>
       </div>
       <div class="product-item product-item_result">
-        <img class="product-item__img" src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
+        <img class="product-item__img"
+             src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
 
         <div class="product-item__price-header">
           <div class="arrow-left"></div>
@@ -377,7 +406,8 @@
         <h3 class="product-item__title">«Докторская» — популярный в странах бывшего СССР </h3>
       </div>
       <div class="product-item product-item_result">
-        <img class="product-item__img" src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
+        <img class="product-item__img"
+             src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
 
         <div class="product-item__price-header">
           <div class="arrow-left"></div>
@@ -410,7 +440,8 @@
         <h3 class="product-item__title">«Докторская» </h3>
       </div>
       <div class="product-item product-item_result">
-        <img class="product-item__img" src="https://offerist2.s3.amazonaws.com/02518827-78e0-4d53-aabe-3616996c1666.png">
+        <img class="product-item__img"
+             src="https://offerist2.s3.amazonaws.com/02518827-78e0-4d53-aabe-3616996c1666.png">
 
         <div class="product-item__price-header">
           <div class="arrow-left"></div>
@@ -443,73 +474,8 @@
         <h3 class="product-item__title">«Докторская» — популярный в странах бывшего СССР </h3>
       </div>
       <div class="product-item product-item_result">
-        <img class="product-item__img" src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
-
-        <div class="product-item__price-header">
-          <div class="arrow-left"></div>
-          <div class="circle"></div>
-          <span class="product-item__price-header_through">
-            <span>999</span>
-            <span>р.</span>
-          </span>
-          <span>999</span>
-          <span>р.</span>
-        </div>
-        <div class="product-item__like">
-          <i class="fa fa-thumbs-up"></i><span>66666</span>
-        </div>
-        <div class="product-item__dist">
-          <i class="fa fa-map-marker"></i>
-          <span>343434</span>
-          <span>км.</span>
-        </div>
-        <div class="product-item__price-footer">
-          <div class="arrow-left"></div>
-          <div class="circle"></div>
-          <span>343434</span>
-          <span>р.</span>
-          <span>-</span>
-          <span>2323</span>
-          <span>р.</span>
-        </div>
-        <div class="product-item__add"><i class="fa fa-plus"></i></div>
-        <h3 class="product-item__title">«Докторская» — популярный в странах бывшего СССР </h3>
-      </div>
-      <div class="product-item product-item_result">
-        <img class="product-item__img" src="images/product3.png">
-
-        <div class="product-item__price-header">
-          <div class="arrow-left"></div>
-          <div class="circle"></div>
-          <span class="product-item__price-header_through">
-            <span>999</span>
-            <span>р.</span>
-          </span>
-          <span>999</span>
-          <span>р.</span>
-        </div>
-        <div class="product-item__like">
-          <i class="fa fa-thumbs-up"></i><span>66666</span>
-        </div>
-        <div class="product-item__dist">
-          <i class="fa fa-map-marker"></i>
-          <span>343434</span>
-          <span>км.</span>
-        </div>
-        <div class="product-item__price-footer">
-          <div class="arrow-left"></div>
-          <div class="circle"></div>
-          <span>343434</span>
-          <span>р.</span>
-          <span>-</span>
-          <span>2323</span>
-          <span>р.</span>
-        </div>
-        <div class="product-item__add"><i class="fa fa-plus"></i></div>
-        <h3 class="product-item__title">«Докторская» — популярный в странах бывшего СССР </h3>
-      </div>
-      <div class="product-item product-item_result">
-        <img class="product-item__img" src="images/product3.png">
+        <img class="product-item__img"
+             src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
 
         <div class="product-item__price-header">
           <div class="arrow-left"></div>
@@ -608,7 +574,7 @@
         <h3 class="product-item__title">«Докторская» — популярный в странах бывшего СССР </h3>
       </div>
       <div class="product-item product-item_result">
-        <img class="product-item__img" src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
+        <img class="product-item__img" src="images/product3.png">
 
         <div class="product-item__price-header">
           <div class="arrow-left"></div>
@@ -641,7 +607,75 @@
         <h3 class="product-item__title">«Докторская» — популярный в странах бывшего СССР </h3>
       </div>
       <div class="product-item product-item_result">
-        <img class="product-item__img" src="https://offerist2.s3.amazonaws.com/02518827-78e0-4d53-aabe-3616996c1666.png">
+        <img class="product-item__img" src="images/product3.png">
+
+        <div class="product-item__price-header">
+          <div class="arrow-left"></div>
+          <div class="circle"></div>
+          <span class="product-item__price-header_through">
+            <span>999</span>
+            <span>р.</span>
+          </span>
+          <span>999</span>
+          <span>р.</span>
+        </div>
+        <div class="product-item__like">
+          <i class="fa fa-thumbs-up"></i><span>66666</span>
+        </div>
+        <div class="product-item__dist">
+          <i class="fa fa-map-marker"></i>
+          <span>343434</span>
+          <span>км.</span>
+        </div>
+        <div class="product-item__price-footer">
+          <div class="arrow-left"></div>
+          <div class="circle"></div>
+          <span>343434</span>
+          <span>р.</span>
+          <span>-</span>
+          <span>2323</span>
+          <span>р.</span>
+        </div>
+        <div class="product-item__add"><i class="fa fa-plus"></i></div>
+        <h3 class="product-item__title">«Докторская» — популярный в странах бывшего СССР </h3>
+      </div>
+      <div class="product-item product-item_result">
+        <img class="product-item__img"
+             src="http://blogs.fasos.maastrichtuniversity.nl/logoimago/mpiersotte/wp-content/uploads/sites/139/2015/04/mixed-logo.jpg">
+
+        <div class="product-item__price-header">
+          <div class="arrow-left"></div>
+          <div class="circle"></div>
+          <span class="product-item__price-header_through">
+            <span>999</span>
+            <span>р.</span>
+          </span>
+          <span>999</span>
+          <span>р.</span>
+        </div>
+        <div class="product-item__like">
+          <i class="fa fa-thumbs-up"></i><span>66666</span>
+        </div>
+        <div class="product-item__dist">
+          <i class="fa fa-map-marker"></i>
+          <span>343434</span>
+          <span>км.</span>
+        </div>
+        <div class="product-item__price-footer">
+          <div class="arrow-left"></div>
+          <div class="circle"></div>
+          <span>343434</span>
+          <span>р.</span>
+          <span>-</span>
+          <span>2323</span>
+          <span>р.</span>
+        </div>
+        <div class="product-item__add"><i class="fa fa-plus"></i></div>
+        <h3 class="product-item__title">«Докторская» — популярный в странах бывшего СССР </h3>
+      </div>
+      <div class="product-item product-item_result">
+        <img class="product-item__img"
+             src="https://offerist2.s3.amazonaws.com/02518827-78e0-4d53-aabe-3616996c1666.png">
 
         <div class="product-item__price-header">
           <div class="arrow-left"></div>
