@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="body-wrapper">
+<header class="header-container">
+  <a href="#" class="logo" title="ПРОДУКТУТ"></a>
+
+  <div class="search-wrapper">
+    <i class="fa fa-search search-icon"></i>
+    <input class="search-field" placeholder="Поиск продуктов">
+  </div>
+  <div class="user-wrapper">
+    <a href="#" class="user-login-btn">Войти</a>
+  </div>
+</header>
+<nav class="nav-header">
+  <div class="location">
+    <a href="#" class="location__item">Санкт-Петербург <i class="fa fa-angle-down location__item-down"></i></a>
+  </div>
+  <div class="menu">
+    <a href="#" class="menu__item">Магазины</a>
+    <a href="#" class="menu__item">Категории <i class="fa fa-angle-down location__item-down"></i></a>
+    <a href="#" class="menu__item">Помощь</a>
+  </div>
+  <div class="cart">
+    <a href="#" class="cart__item">Моя полка <span class="cart__item-circ">646464</span></a>
+  </div>
+</nav>
+<main class="container">
+  <div class="product-retailers__container">
+  <div class="product-retailers">
+    <div class="product-retailers__list">
+      <div class="product-retailer">
+        <div class="product-retailer__count">
+          1.
+        </div>
+        <div class="product-retailer__img">
+          <img class="image" src="http://toplogos.ru/images/logo-okey.jpg">
+        </div>
+        <div class="product-retailer__info">
+          <h3 class="product-retailer__title">Окей</h3>
+
+          <div class="star-rating star-rating_retailer">
+            <div class="star-rating__wrap">
+              <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+              <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5"
+                     title="5 out of 5 stars"></label>
+              <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+              <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4"
+                     title="4 out of 5 stars"></label>
+              <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+              <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3"
+                     title="3 out of 5 stars"></label>
+              <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+              <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2"
+                     title="2 out of 5 stars"></label>
+              <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+              <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1"
+                     title="1 out of 5 stars"></label>
+            </div>
+          </div>
+          <span class="product-retailer__reviews">458521 отзыв</span>
+          <br>
+          <span class="product-retailer__addr">ул. Карбышева, 9, литера А</span>
+
+          <div class="product-retailer__price">33р. выгода 28р.</div>
+        </div>
+        <div class="product-retailer__distance">
+          <i class="fa fa-map-marker icon"></i> 35 км</span>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div id="map" class="product-retailers__map"></div>
+  </div>
+
+</main>
+</body>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+  ymaps.ready(init);
+  var myMap,
+    myPlacemark;
+
+  function init() {
+    myMap = new ymaps.Map("map", {
+      center: [55.76, 37.64],
+      zoom: 7
+    });
+
+    myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+      hintContent: 'Москва!',
+      balloonContent: 'Столица России'
+    });
+
+    myMap.geoObjects.add(myPlacemark);
+  }
+</script>
+</html>
