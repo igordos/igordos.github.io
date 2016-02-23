@@ -15,22 +15,29 @@
   <div class="login-wrapper">
     <div class="login">
       <a class="login__logo" href=""><img src="images/carrotlogo.png"></a>
-      <div class="login__form">
+      <form class="login__form">
         <span class="login__form-title">Войти</span>
         <div class="login__social-wrapper">
           <a class="login__social"><img class="login__social-icon" src="images/vk.svg"></a>
           <a class="login__social"><img class="login__social-icon" src="images/facebook.svg"></a>
         </div>
         <div class="login__form-or-wrapper">
-        <hr class="login__form-or-hr">
-        <span class="login__form-or-title">Или</span>
+          <hr class="login__form-or-hr">
+          <span class="login__form-or-title">Или</span>
         </div>
-        <label class="login__form-label">Имя</label>
-        <input class="login__form-input">
-        <label class="login__form-label">Пароль</label>
-        <input class="login__form-input">
-        <button class="login__form-btn">Войти</button>
-      </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Логин</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Логин">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Пароль</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+          </div>
+        <button type="submit" class="login__form-btn">Войти</button>
+        <div class="login__form-pass-wrap">
+          <a class="login__form-pass-link" href="#">Забыли пароль?</a>
+        </div>
+      </form>
       <div class="login__new">
         <a class="login__new-btn" href="#">Создать аккаунт</a>
       </div>
