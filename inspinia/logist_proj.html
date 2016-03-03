@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>INSPINIA | Dashboard</title>
+  <link href="styles/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+
+<body class="pace-done fixed-sidebar fixed-nav fixed-nav-basic">
+<div id="wrapper">
+  <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+      <ul class="nav metismenu" id="side-menu">
+        <li class="nav-header">
+          <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="images/profile_small.jpg"/>
+                             </span>
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Александра
+                              Васильева</strong>
+                             </span> <span class="text-muted text-xs block">Логист<b
+                              class="caret"></b></span> </span> </a>
+            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="mailbox.html">Mailbox</a></li>
+              <li class="divider"></li>
+              <li><a href="login.html">Выйти</a></li>
+            </ul>
+          </div>
+          <div class="logo-element">
+            IN+
+          </div>
+        </li>
+        <li>
+          <a href="alexdash.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+        </li>
+        <li class="active">
+          <a href="logist_proj.html"><i class="fa fa-briefcase"></i> <span class="nav-label">Проекты</span></a>
+        </li>
+        <li>
+          <a href="logist_operator.html"><i class="fa fa-group"></i> <span class="nav-label">Операторы</span></a>
+        </li>
+        <li>
+          <a href="logist_prognoz.html"><i class="fa fa-area-chart"></i> <span class="nav-label">Прогноз</span></a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <div id="page-wrapper" class="gray-bg dashbard-1">
+    <div class="row border-bottom">
+      <nav class="navbar navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+          <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+
+          <li>
+            <a href="login.html">
+              <i class="fa fa-sign-out"></i> Выйти
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="wrapper wrapper-content animated fadeIn">
+      <div class="function-btn__module-open-btn">Настройка вывода</div>
+      <div class="function-btn__module">
+        <div class="ibox-content m-b-sm border-bottom">
+          <div class="row">
+            <div class="col-lg-12">
+
+              <div id="interval-btn-block" class="btn-group" data-toggle="buttons">
+                <label class="btn btn-sm btn-warning active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked>Сегодня
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option2" autocomplete="off">Вчера
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option3" autocomplete="off">Неделя
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked>Месяц
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option2" autocomplete="off">Квартал
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option3" autocomplete="off">Год
+                </label>
+              </div><!--
+            --><input id="daterange" class="function-btn__daterange" type="text" value="01/01/2015 - 01/31/2015">
+              <select class="function-btn__detail">
+                <option disabled selected>Детализация</option>
+                <option value="">по минутам</option>
+                <option value="">по часам</option>
+                <option value="">по неделям</option>
+                <option value="">по месяцам</option>
+              </select>
+
+            </div>
+          </div>
+          <div class="row function-btn__margin">
+            <div class="col-lg-12">
+              <div class="function-btn__wrap">
+                <h3>Площадка</h3>
+
+                <div id="area-btn-block" class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-sm btn-success active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked>Все
+                  </label>
+                  <label class="btn btn-sm btn-success">
+                    <input type="radio" name="options" id="option2" autocomplete="off">Волгоград
+                  </label>
+                  <label class="btn btn-sm btn-success">
+                    <input type="radio" name="options" id="option3" autocomplete="off">Шахты
+                  </label>
+                  <label class="btn btn-sm btn-success">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked>Смоленск
+                  </label>
+                  <label class="btn btn-sm btn-success">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked>Белоруссия
+                  </label>
+                  <label class="btn btn-sm btn-success">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked>Казахстан
+                  </label>
+                </div>
+              </div>
+              <div class="function-btn__wrap">
+                <h3>Показатель</h3>
+
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-sm btn-info active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked>Количество звонков
+                  </label>
+                  <label class="btn btn-sm btn-info">
+                    <input type="radio" name="options" id="option2" autocomplete="off">SLA
+                  </label>
+                  <label class="btn btn-sm btn-info">
+                    <input type="radio" name="options" id="option3" autocomplete="off">TT
+                  </label>
+                  <label class="btn btn-sm btn-info">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked>OSU
+                  </label>
+                </div>
+              </div>
+              <div class="function-btn__wrap">
+                <h3>Проект</h3>
+                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalProject">
+                  Выбрать проект
+                </button>
+              </div>
+              <div class="function-btn__wrap">
+                <h3>Подсветить</h3>
+                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">
+                  Выбрать диапазон
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="tabs-container">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#table" aria-controls="home" role="tab" data-toggle="tab"><i
+                class="fa fa-table nav-tabs-icon"></i></a>
+              </li>
+              <li role="presentation"><a id="tab-chart" href="#chart" aria-controls="profile" role="tab"
+                                         data-toggle="tab"><i class="fa fa-area-chart nav-tabs-icon"></i></a></li>
+              <li role="presentation"><a id="tab-all" href="#all" aria-controls="messages" role="tab" data-toggle="tab"><i
+                class="fa fa-clone nav-tabs-icon"></i></a>
+              </li>
+              <!--<li role="presentation"><a><i class="fa fa-download nav-tabs-icon"></i></a>-->
+              <!--</li>-->
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="table">
+                <div class="panel-body">
+                  <div class="data-table">
+                    <div class="data-table__head">
+                      <div class="data-table__head-title">
+                        <b>Имя вызова</b>
+                      </div>
+                      <div class="data-table__head-title" title="Thousand Thousand Thousand Thousand Thousand">
+                        Thousand Thousand Thousand Thousand Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                    </div>
+                    <div class="data-table__values">
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="chart">
+                <div class="panel-body">
+                  <div class="charttab-wrap_sla">
+                    <canvas id="charttab"></canvas>
+                  </div>
+                  <h1>SLA %</h1>
+                  <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Проект</th>
+                      <th>Проект</th>
+                      <th>Проект</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>Оператор</td>
+                      <td>77</td>
+                      <td>77</td>
+                      <td>77</td>
+                    </tr>
+                    <tr>
+                      <td>Оператор</td>
+                      <td>77</td>
+                      <td>77</td>
+                      <td>77</td>
+                    </tr>
+                    <tr>
+                      <td>Оператор</td>
+                      <td>77</td>
+                      <td>77</td>
+                      <td>77</td>
+                    </tr>
+                    <tr>
+                      <td>Оператор</td>
+                      <td>77</td>
+                      <td>77</td>
+                      <td>77</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="all">
+                <div class="panel-body">
+                  <div class="charttab-all-wrap">
+                    <canvas id="charttab-all"></canvas>
+                  </div>
+                  <br>
+
+                  <div class="data-table">
+                    <div class="data-table__head">
+                      <div class="data-table__head-title">
+                        <b>Имя вызова</b>
+                      </div>
+                      <div class="data-table__head-title" title="Thousand Thousand Thousand Thousand Thousand">
+                        Thousand Thousand Thousand Thousand Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                    </div>
+                    <div class="data-table__values">
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <button type="button" class="btn btn-default"><i class="fa fa-download"></i></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+          aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Подсветить позиции</h4>
+      </div>
+      <div class="modal-body">
+        <h2>Крупные проекты</h2>
+        <input type="text" id="example_id" name="example_id" value=""/>
+
+        <h2>Малые проекты</h2>
+        <input id="example_id2" type="text" id="example_id2" value="" name="example_id2">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary">Подсветить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modalTableShow" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+          aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">SLA %</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-bordered">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Проект</th>
+            <th>Проект</th>
+            <th>Проект</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Оператор</td>
+            <td>77</td>
+            <td>77</td>
+            <td>77</td>
+          </tr>
+          <tr>
+            <td>Оператор</td>
+            <td>77</td>
+            <td>77</td>
+            <td>77</td>
+          </tr>
+          <tr>
+            <td>Оператор</td>
+            <td>77</td>
+            <td>77</td>
+            <td>77</td>
+          </tr>
+          <tr>
+            <td>Оператор</td>
+            <td>77</td>
+            <td>77</td>
+            <td>77</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="modalProject" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+          aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Выбрать проект</h4>
+      </div>
+      <div class="modal-body">
+        <button class="btn btn-default" type="submit">Выбрать все</button>
+        <div class="chosen__wrap">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Москва
+            </label>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Применить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Mainly scripts -->
+<script src="vendors/js/jquery-2.1.1.js"></script>
+<script src="vendors/js/bootstrap.min.js"></script>
+<script src="vendors/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="vendors/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Flot -->
+<script src="vendors/js/plugins/flot/jquery.flot.js"></script>
+<script src="vendors/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+<script src="vendors/js/plugins/flot/jquery.flot.spline.js"></script>
+<script src="vendors/js/plugins/flot/jquery.flot.resize.js"></script>
+<script src="vendors/js/plugins/flot/jquery.flot.pie.js"></script>
+
+<!-- Peity -->
+<script src="vendors/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="vendors/js/demo/peity-demo.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="vendors/js/inspinia.js"></script>
+<!--<script src="vendors/js/plugins/pace/pace.min.js"></script>-->
+
+<!-- jQuery UI -->
+<script src="vendors/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+<!-- GITTER -->
+<!--<script src="../vendors/js/plugins/gritter/jquery.gritter.min.js"></script>-->
+
+<!-- Sparkline -->
+<!--<script src="../vendors/js/plugins/sparkline/jquery.sparkline.min.js"></script>-->
+
+<!-- Sparkline demo data  -->
+<!--<script src="../vendors/js/demo/sparkline-demo.js"></script>-->
+
+<!-- ChartJS-->
+<script src="vendors/js/plugins/chartJs/Chart.min.js"></script>
+
+<!-- Toastr -->
+<!--<script src="../vendors/js/plugins/toastr/toastr.min.js"></script>-->
+
+<!-- Chosen -->
+<script src="vendors/js/plugins/chosen/chosen.jquery.js"></script>
+
+<!-- ionRangeSlider -->
+<script src="vendors/js/plugins/ionRangeSlider/modify/ion.rangeSlider.min.js"></script>
+
+<!-- daterangepicker -->
+<script src="vendors/js/plugins/fullcalendar/moment.min.js"></script>
+<script src="vendors/js/plugins/daterangepicker/daterangepicker.js"></script>
+
+<!-- morris -->
+<!--<script src="vendors/js/plugins/morris/raphael-2.1.0.min.js"></script>-->
+<!--<script src="vendors/js/plugins/morris/morris.js"></script>-->
+
+<script>
+  $(document).ready(function () {
+
+
+    $('#daterange').daterangepicker();
+
+
+    $('#myModal').on('shown.bs.modal', function (e) {
+      $("#example_id").ionRangeSlider({
+        type: "double",
+        grid: true,
+        min: -100,
+        max: 100,
+        from: -50,
+        to: 50,
+        postfix: " %"
+      });
+      $("#example_id2").ionRangeSlider({
+        type: "double",
+        grid: true,
+        min: -100,
+        max: 100,
+        from: -50,
+        to: 50,
+        postfix: " %"
+      });
+
+    });
+
+    var dataOne = {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+        {
+          label: "My Second dataset",
+          fillColor: "rgba(26,179,148,0.2)",
+          strokeColor: "rgba(26,179,148,1)",
+          pointColor: "rgba(26,179,148,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data: [28, 48, 40, 19, 86, 27, 90]
+        }
+      ],
+    };
+
+
+    var lineOptions = {
+      scaleShowGridLines: true,
+      scaleGridLineColor: "rgba(0,0,0,.05)",
+      scaleGridLineWidth: 1,
+      bezierCurve: true,
+      bezierCurveTension: 0.4,
+      pointDot: true,
+      pointDotRadius: 4,
+      pointDotStrokeWidth: 1,
+      pointHitDetectionRadius: 20,
+      datasetStroke: true,
+      datasetStrokeWidth: 2,
+      datasetFill: true,
+//      responsive: true,
+    };
+
+
+    $('#tab-chart').on('shown.bs.tab', function (e) {
+
+      var ctx = document.getElementById("charttab").getContext("2d");
+      ctx.canvas.width = $('.charttab-wrap_sla').width();
+      ctx.canvas.height = $('.charttab-wrap_sla').height();
+      var charttab = new Chart(ctx).Line(dataOne, lineOptions);
+
+    });
+
+    $('#tab-all').on('shown.bs.tab', function (e) {
+      var ctx = document.getElementById("charttab-all").getContext("2d");
+      ctx.canvas.width = $('.charttab-all-wrap').width();
+      ctx.canvas.height = $('.charttab-all-wrap').height();
+      var charttab = new Chart(ctx).Line(dataOne, lineOptions);
+    });
+
+    $('.function-btn__module-open-btn').click(function() {
+      if ( $('.function-btn__module').is( ".function-btn__module_open" ) ) {
+        $('.function-btn__module').removeClass('function-btn__module_open');
+      } else {
+        $('.function-btn__module').addClass('function-btn__module_open');
+      }
+    });
+
+
+    if (window.matchMedia("(max-width: 992px)").matches) {
+      $('#interval-btn-block').addClass('btn-block btn-group-vertical');
+      $('#area-btn-block').addClass('btn-block btn-group-vertical');
+    }
+
+
+
+  });
+</script>
+
+
+</body>
+</html>

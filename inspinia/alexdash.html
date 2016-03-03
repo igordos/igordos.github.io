@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>INSPINIA | Dashboard</title>
+  <link href="styles/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+
+<body class="pace-done fixed-sidebar fixed-nav fixed-nav-basic">
+<div id="wrapper">
+  <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+      <ul class="nav metismenu" id="side-menu">
+        <li class="nav-header">
+          <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="images/profile_small.jpg"/>
+                             </span>
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Александра Васильева</strong>
+                             </span> <span class="text-muted text-xs block">Логист<b
+                              class="caret"></b></span> </span> </a>
+            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="mailbox.html">Mailbox</a></li>
+              <li class="divider"></li>
+              <li><a href="login.html">Выйти</a></li>
+            </ul>
+          </div>
+          <div class="logo-element">
+            IN+
+          </div>
+        </li>
+        <li class="active">
+          <a href="alexdash.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+        </li>
+        <li>
+          <a href="logist_proj.html"><i class="fa fa-briefcase"></i> <span class="nav-label">Проекты</span></a>
+        </li>
+        <li>
+          <a href="logist_operator.html"><i class="fa fa-group"></i> <span class="nav-label">Операторы</span></a>
+        </li>
+        <li>
+          <a href="logist_prognoz.html"><i class="fa fa-area-chart"></i> <span class="nav-label">Прогноз</span></a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <div id="page-wrapper" class="gray-bg dashbard-1">
+    <div class="row border-bottom">
+      <nav class="navbar navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+          <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+          <li>
+            <a href="login.html">
+              <i class="fa fa-sign-out"></i> Выйти
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="wrapper wrapper-content animated fadeIn">
+
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="ibox float-e-margins">
+            <div class="ibox-title">
+              <h5>SLA</h5>
+              <span class="label label-primary pull-right">Обновлено 22.03.16</span>
+            </div>
+            <div class="ibox-content">
+              <h1 class="no-margins">100 %</h1>
+
+              <div class="stat-percent font-bold text-navy">98%</div>
+              <small>Смена</small>
+              <br>
+
+              <div class="stat-percent font-bold text-navy">98%</div>
+              <small>День</small>
+
+            </div>
+          </div>
+          <div class="ibox float-e-margins">
+            <div class="ibox-title">
+              <h5>TT</h5>
+              <span class="label label-blue pull-right">Обновлено 22.03.16</span>
+            </div>
+            <div class="ibox-content">
+              <h1 class="no-margins">100 %</h1>
+
+              <div class="stat-percent font-bold text-success">98%</div>
+              <small>Смена</small>
+              <br>
+
+              <div class="stat-percent font-bold text-success">98%</div>
+              <small>День</small>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+          <div class="ibox float-e-margins">
+            <div class="ibox-title">
+              <h5>SLA & TT</h5>
+            </div>
+            <div class="ibox-content">
+              <div class="chartslatt-wrap">
+                <canvas id="chartslatt"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="ibox float-e-margins">
+            <div class="ibox-title">
+              <h5>Крупные проекты</h5>
+            </div>
+            <div class="ibox-content">
+              <h2>SLA</h2>
+              <!--<div id="morris-area-chart-sia-big-traff" style="height: 125px;"></div>-->
+              <div class="chartsla-big-wrap">
+                <canvas id="chartsla-big"></canvas>
+              </div>
+              <div class="project-table__wrap">
+                <table class="table table-hover">
+                  <thead>
+                  <tr>
+                    <th>Проект</th>
+                    <th>SLA</th>
+                    <th>Трафик</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Москва Москва Москва Москва Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="ibox float-e-margins">
+            <div class="ibox-title">
+              <h5>Малые проекты</h5>
+            </div>
+            <div class="ibox-content">
+              <h2>SLA</h2>
+              <!--<div id="morris-area-chart-sia-small-traff" style="height: 125px;"></div>-->
+              <div class="chartsla-small-wrap">
+                <canvas id="chartsla-small"></canvas>
+              </div>
+              <div class="project-table__wrap">
+                <table class="table table-hover">
+                  <thead>
+                  <tr>
+                    <th>Проект</th>
+                    <th>SLA</th>
+                    <th>Трафик</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Москва Москва Москва Москва Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+                  <tr>
+                    <td>Москва</td>
+                    <td class="text-navy">40%</td>
+                    <td>45895</td>
+                  </tr>
+
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="right-sidebar">
+      <div class="sidebar-container">
+
+        <ul class="nav nav-tabs navs-3">
+
+          <li class="active"><a data-toggle="tab" href="#tab-1">
+            Notes
+          </a></li>
+          <li><a data-toggle="tab" href="#tab-2">
+            Projects
+          </a></li>
+          <li class=""><a data-toggle="tab" href="#tab-3">
+            <i class="fa fa-gear"></i>
+          </a></li>
+        </ul>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="vendors/js/jquery-2.1.1.js"></script>
+<script src="vendors/js/bootstrap.min.js"></script>
+<script src="vendors/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="vendors/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Flot -->
+<script src="vendors/js/plugins/flot/jquery.flot.js"></script>
+<script src="vendors/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+<script src="vendors/js/plugins/flot/jquery.flot.spline.js"></script>
+<script src="vendors/js/plugins/flot/jquery.flot.resize.js"></script>
+<script src="vendors/js/plugins/flot/jquery.flot.pie.js"></script>
+
+<!-- Peity -->
+<script src="vendors/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="vendors/js/demo/peity-demo.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="vendors/js/inspinia.js"></script>
+<script src="vendors/js/plugins/pace/pace.min.js"></script>
+
+<!-- jQuery UI -->
+<script src="vendors/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+<!-- GITTER -->
+<script src="vendors/js/plugins/gritter/jquery.gritter.min.js"></script>
+
+<!-- Sparkline -->
+<script src="vendors/js/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+<!-- Sparkline demo data  -->
+<script src="vendors/js/demo/sparkline-demo.js"></script>
+
+<!-- ChartJS-->
+<script src="vendors/js/plugins/chartJs/Chart.min.js"></script>
+
+<!-- Toastr -->
+<script src="vendors/js/plugins/toastr/toastr.min.js"></script>
+
+<!-- Chosen -->
+<script src="vendors/js/plugins/chosen/chosen.jquery.js"></script>
+
+<!-- ionRangeSlider -->
+<script src="vendors/js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
+
+<!-- morris -->
+<!--<script src="vendors/js/plugins/morris/raphael-2.1.0.min.js"></script>-->
+<!--<script src="vendors/js/plugins/morris/morris.js"></script>-->
+
+
+<script>
+  $(document).ready(function () {
+
+    var data = {
+      labels: ["hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm"],
+      datasets: [
+        {
+          label: "My First dataset",
+          fillColor: "rgba(32, 153, 229,0.2)",
+          strokeColor: "rgba(32, 153, 229,1)",
+          pointColor: "rgba(32, 153, 229,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(220,220,220,1)",
+          data: [28, 48, 10, 19, 86, 27, 50, 48, 10, 19, 86, 27, 90, 48, 40, 19, 20, 10]
+        },
+        {
+          label: "My Second dataset",
+          fillColor: "rgba(26,179,148,0.2)",
+          strokeColor: "rgba(26,179,148,1)",
+          pointColor: "rgba(26,179,148,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data: [28, 10, 40, 19, 86, 27, 50, 48, 40, 19, 86, 27, 10, 48, 40, 19, 20, 27]
+        }
+      ],
+    };
+
+    var dataOne = {
+      labels: ["hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm", "hh:mm"],
+      datasets: [
+        {
+          label: "My Second dataset",
+          fillColor: "rgba(26,179,148,0.2)",
+          strokeColor: "rgba(26,179,148,1)",
+          pointColor: "rgba(26,179,148,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data: [28, 48, 40, 19, 86, 27]
+        }
+      ],
+    };
+
+    var lineOptions = {
+      scaleShowGridLines: true,
+      scaleGridLineColor: "rgba(0,0,0,.05)",
+      scaleGridLineWidth: 1,
+      bezierCurve: true,
+      bezierCurveTension: 0.4,
+      pointDot: true,
+      pointDotRadius: 4,
+      pointDotStrokeWidth: 1,
+      pointHitDetectionRadius: 20,
+      datasetStroke: true,
+      datasetStrokeWidth: 2,
+      datasetFill: true,
+//      responsive: true,
+    };
+
+    var ctx = document.getElementById("chartslatt").getContext("2d");
+    ctx.canvas.width = $('.chartslatt-wrap').width();
+    ctx.canvas.height = $('.chartslatt-wrap').height();
+    var chartslatt = new Chart(ctx).Line(data, lineOptions);
+
+
+    var ctxChartslaBig = document.getElementById("chartsla-big").getContext("2d");
+    ctxChartslaBig.canvas.width = $('.chartsla-big-wrap').width();
+    ctxChartslaBig.canvas.height = $('.chartsla-big-wrap').height();
+    var chartslabig = new Chart(ctxChartslaBig).Line(dataOne, lineOptions);
+
+
+    var ctxChartslaSmall = document.getElementById("chartsla-small").getContext("2d");
+    ctxChartslaSmall.canvas.width = $('.chartsla-small-wrap').width();
+    ctxChartslaSmall.canvas.height = $('.chartsla-small-wrap').height();
+    var chartslasmall = new Chart(ctxChartslaSmall).Line(dataOne, lineOptions);
+
+
+  });
+</script>
+</body>
+</html>
