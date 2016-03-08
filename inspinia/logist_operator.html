@@ -60,7 +60,45 @@
           <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
         </div>
         <ul class="nav navbar-top-links navbar-right">
-
+          <li class="dropdown">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#" aria-expanded="false">
+              <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+            </a>
+            <ul class="dropdown-menu dropdown-alerts dropdown-alerts-custom">
+              <li>
+                <a href="mailbox.html">
+                  <div>
+                    <i class="fa fa-users fa-fw"></i> Центр финансового консалтинга - избыток операторов
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="profile.html">
+                  <div>
+                    <i class="fa fa-briefcase fa-fw"></i> Перекресток федеральный - снижение SLA
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="grid_options.html">
+                  <div>
+                    <i class="fa fa-users fa-fw"></i> IMMO - незватка операторов
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <div class="text-center link-block">
+                  <a href="notifications.html">
+                    <strong>Все уведомления</strong>
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
           <li>
             <a href="login.html">
               <i class="fa fa-sign-out"></i> Выйти
@@ -95,15 +133,19 @@
                 <label class="btn btn-sm btn-warning">
                   <input type="radio" name="options" id="option3" autocomplete="off">Год
                 </label>
-              </div><!--
-            --><input id="daterange" class="function-btn__daterange" type="text" value="01/01/2015 - 01/31/2015"><!--
-            --><select class="function-btn__detail">
-              <option disabled selected>Детализация</option>
-              <option value="">по минутам</option>
-              <option value="">по часам</option>
-              <option value="">по неделям</option>
-              <option value="">по месяцам</option>
-            </select>
+              </div>
+              <div class="function-btn__daterange" id="datepicker">
+                <input type="text" name="start" value="05.01.2016">
+                <input type="text" name="end" value="05.12.2016">
+              </div>
+              <select class="function-btn__detail">
+                <option disabled selected>Детализация</option>
+                <option value="">по часам</option>
+                <option value="">по сменам</option>
+                <option value="">по дням</option>
+                <option value="">по неделям</option>
+                <option value="">по месяцам</option>
+              </select>
             </div>
           </div>
           <div class="row function-btn__margin">
@@ -141,701 +183,1072 @@
             </div>
           </div>
         </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="tabs-container">
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#table" aria-controls="home" role="tab" data-toggle="tab"><i
-              class="fa fa-table nav-tabs-icon"></i></a>
-            </li>
-            <li role="presentation"><a id="tab-chart" href="#chart" aria-controls="profile" role="tab"
-                                       data-toggle="tab"><i class="fa fa-area-chart nav-tabs-icon"></i></a></li>
-          </ul>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="tabs-container">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#table" aria-controls="home" role="tab" data-toggle="tab"><i
+                class="fa fa-table nav-tabs-icon"></i></a>
+              </li>
+              <li role="presentation"><a id="tab-chart" href="#chart" aria-controls="profile" role="tab"
+                                         data-toggle="tab"><i class="fa fa-area-chart nav-tabs-icon"></i></a></li>
+              <li role="presentation"><a id="tab-transfer" href="#transfer" aria-controls="profile" role="tab"
+                                         data-toggle="tab"><i class="fa fa-exchange nav-tabs-icon"></i></a></li>
+            </ul>
 
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="table">
-              <div class="panel-body">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalFilter">
-                  <i class="fa fa-filter"></i>
-                </button>
-                <br>
-                <br>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="table">
+                <div class="panel-body">
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalFilter">
+                    <i class="fa fa-filter"></i>
+                  </button>
+                  <br>
+                  <br>
 
-                <div class="data-table">
-                  <div class="data-table__head">
-                    <div class="data-table__head-title">
-                      <b>Имя<br>вызова</b>
+                  <div class="data-table">
+                    <div class="data-table__head">
+                      <div class="data-table__head-title">
+                        <b>Имя вызова</b>
+                      </div>
+                      <div class="data-table__head-title" title="Thousand Thousand Thousand Thousand Thousand">
+                        Thousand Thousand Thousand Thousand Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
                     </div>
-                    <div class="data-table__head-title" title="Thousand Thousand Thousand Thousand Thousand">
-                      Thousand Thousand Thousand Thousand Thousand
-                    </div>
-                    <div class="data-table__head-title">
-                      Thousand
-                    </div>
-                    <div class="data-table__head-title">
-                      Thousand
-                    </div>
-                    <div class="data-table__head-title">
-                      Thousand
-                    </div>
-                    <div class="data-table__head-title">
-                      Thousand
-                    </div>
-                    <div class="data-table__head-title">
-                      Thousand
-                    </div>
-                    <div class="data-table__head-title">
-                      Thousand
-                    </div>
-                    <div class="data-table__head-title">
-                      Thousand
-                    </div>
-                    <div class="data-table__head-title">
-                      Thousand
-                    </div>
-                    <div class="data-table__head-title">
-                      Thousand
-                    </div>
-                    <div class="data-table__head-title">
-                      Thousand
-                    </div>
-                    <div class="data-table__head-title">
-                      Thousand
-                    </div>
-                    <div class="data-table__head-title">
-                      Thousand
+                    <div class="data-table__values">
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+
                     </div>
                   </div>
-                  <div class="data-table__values">
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4trrrrr857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value data-table__value_max">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4trrrrr857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
-                    <div class="data-table__values-col">
-                      <duv class="data-table__value"><b>22.11.2015<br>пн</b></duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                      <duv class="data-table__value">4857</duv>
-                    </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="chart">
+                <div class="panel-body">
+                  <div class="charttab-wrap">
+                    <canvas id="charttab"></canvas>
+                  </div>
+                  <br>
 
+                  <div class="data-table">
+                    <div class="data-table__head">
+                      <div class="data-table__head-title">
+                        <b>Имя вызова</b>
+                      </div>
+                      <div class="data-table__head-title" title="Thousand Thousand Thousand Thousand Thousand">
+                        Thousand Thousand Thousand Thousand Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                      <div class="data-table__head-title">
+                        Thousand
+                      </div>
+                    </div>
+                    <div class="data-table__values">
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+                      <div class="data-table__values-col">
+                        <duv class="data-table__value"><b>22.11.2015 пн</b></duv>
+                        <duv class="data-table__value">4trrrrr857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                        <duv class="data-table__value">4857</duv>
+                      </div>
+
+                    </div>
                   </div>
                 </div>
-                <!--<div class="table-fixed__wrap">-->
-                <!--<div class="table-fixed">-->
-                <!--<table id="table-data">-->
-                <!--<thead>-->
-                <!--<tr>-->
-                <!--<th>Sample</th>-->
-                <!--<th>1</th>-->
-                <!--<th>2</th>-->
-                <!--<th>3</th>-->
-                <!--<th>4</th>-->
-                <!--<th>5</th>-->
-                <!--<th>6</th>-->
-                <!--<th>7</th>-->
-                <!--<th>8</th>-->
-                <!--<th>9</th>-->
-                <!--</tr>-->
-                <!--</thead>-->
-                <!--<tbody>-->
-                <!--<tr>-->
-                <!--<td>1</td>-->
-                <!--<td>1-1</td>-->
-                <!--<td>1-2</td>-->
-                <!--<td>1-3</td>-->
-                <!--<td>1-4</td>-->
-                <!--<td>1-5</td>-->
-                <!--<td>1-6</td>-->
-                <!--<td>1-7</td>-->
-                <!--<td>1-8</td>-->
-                <!--<td>1-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>2</td>-->
-                <!--<td>2-1</td>-->
-                <!--<td>2-2</td>-->
-                <!--<td>2-3</td>-->
-                <!--<td>2-4</td>-->
-                <!--<td>2-5</td>-->
-                <!--<td>2-6</td>-->
-                <!--<td>2-7</td>-->
-                <!--<td>2-8</td>-->
-                <!--<td>2-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>3</td>-->
-                <!--<td>3-1</td>-->
-                <!--<td>3-2</td>-->
-                <!--<td>3-3</td>-->
-                <!--<td>3-4</td>-->
-                <!--<td>3-5</td>-->
-                <!--<td>3-6</td>-->
-                <!--<td>3-7</td>-->
-                <!--<td>3-8</td>-->
-                <!--<td>3-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>4</td>-->
-                <!--<td>4-1</td>-->
-                <!--<td>4-2</td>-->
-                <!--<td>4-3</td>-->
-                <!--<td>4-4</td>-->
-                <!--<td>4-5</td>-->
-                <!--<td>4-6</td>-->
-                <!--<td>4-7</td>-->
-                <!--<td>4-8</td>-->
-                <!--<td>4-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>5</td>-->
-                <!--<td>5-1</td>-->
-                <!--<td>5-2</td>-->
-                <!--<td>5-3</td>-->
-                <!--<td>5-4</td>-->
-                <!--<td>5-5</td>-->
-                <!--<td>5-6</td>-->
-                <!--<td>5-7</td>-->
-                <!--<td>5-8</td>-->
-                <!--<td>5-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>6</td>-->
-                <!--<td>6-1</td>-->
-                <!--<td>6-2</td>-->
-                <!--<td>6-3</td>-->
-                <!--<td>6-4</td>-->
-                <!--<td>6-5</td>-->
-                <!--<td>6-6</td>-->
-                <!--<td>6-7</td>-->
-                <!--<td>6-8</td>-->
-                <!--<td>6-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>7</td>-->
-                <!--<td>7-1</td>-->
-                <!--<td>7-2</td>-->
-                <!--<td>7-3</td>-->
-                <!--<td>7-4</td>-->
-                <!--<td>7-5</td>-->
-                <!--<td>7-6</td>-->
-                <!--<td>7-7</td>-->
-                <!--<td>7-8</td>-->
-                <!--<td>7-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>8</td>-->
-                <!--<td>8-1</td>-->
-                <!--<td>8-2</td>-->
-                <!--<td>8-3</td>-->
-                <!--<td>8-4</td>-->
-                <!--<td>8-5</td>-->
-                <!--<td>8-6</td>-->
-                <!--<td>8-7</td>-->
-                <!--<td>8-8</td>-->
-                <!--<td>8-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>9</td>-->
-                <!--<td>9-1</td>-->
-                <!--<td>9-2</td>-->
-                <!--<td>9-3</td>-->
-                <!--<td>9-4</td>-->
-                <!--<td>9-5</td>-->
-                <!--<td>9-6</td>-->
-                <!--<td>9-7</td>-->
-                <!--<td>9-8</td>-->
-                <!--<td>9-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>10</td>-->
-                <!--<td>10-1</td>-->
-                <!--<td>10-2</td>-->
-                <!--<td>10-3</td>-->
-                <!--<td>10-4</td>-->
-                <!--<td>10-5</td>-->
-                <!--<td>10-6</td>-->
-                <!--<td>10-7</td>-->
-                <!--<td>10-8</td>-->
-                <!--<td>10-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>11</td>-->
-                <!--<td>11-1</td>-->
-                <!--<td>11-2</td>-->
-                <!--<td>11-3</td>-->
-                <!--<td>11-4</td>-->
-                <!--<td>11-5</td>-->
-                <!--<td>11-6</td>-->
-                <!--<td>11-7</td>-->
-                <!--<td>11-8</td>-->
-                <!--<td>11-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>12</td>-->
-                <!--<td>12-1</td>-->
-                <!--<td>12-2</td>-->
-                <!--<td>12-3</td>-->
-                <!--<td>12-4</td>-->
-                <!--<td>12-5</td>-->
-                <!--<td>12-6</td>-->
-                <!--<td>12-7</td>-->
-                <!--<td>12-8</td>-->
-                <!--<td>12-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>13</td>-->
-                <!--<td>13-1</td>-->
-                <!--<td>13-2</td>-->
-                <!--<td>13-3</td>-->
-                <!--<td>13-4</td>-->
-                <!--<td>13-5</td>-->
-                <!--<td>13-6</td>-->
-                <!--<td>13-7</td>-->
-                <!--<td>13-8</td>-->
-                <!--<td>13-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>14</td>-->
-                <!--<td>14-1</td>-->
-                <!--<td>14-2</td>-->
-                <!--<td>14-3</td>-->
-                <!--<td>14-4</td>-->
-                <!--<td>14-5</td>-->
-                <!--<td>14-6</td>-->
-                <!--<td>14-7</td>-->
-                <!--<td>14-8</td>-->
-                <!--<td>14-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>15</td>-->
-                <!--<td>15-1</td>-->
-                <!--<td>15-2</td>-->
-                <!--<td>15-3</td>-->
-                <!--<td>15-4</td>-->
-                <!--<td>15-5</td>-->
-                <!--<td>15-6</td>-->
-                <!--<td>15-7</td>-->
-                <!--<td>15-8</td>-->
-                <!--<td>15-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>16</td>-->
-                <!--<td>16-1</td>-->
-                <!--<td>16-2</td>-->
-                <!--<td>16-3</td>-->
-                <!--<td>16-4</td>-->
-                <!--<td>16-5</td>-->
-                <!--<td>16-6</td>-->
-                <!--<td>16-7</td>-->
-                <!--<td>16-8</td>-->
-                <!--<td>16-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>17</td>-->
-                <!--<td>17-1</td>-->
-                <!--<td>17-2</td>-->
-                <!--<td>17-3</td>-->
-                <!--<td>17-4</td>-->
-                <!--<td>17-5</td>-->
-                <!--<td>17-6</td>-->
-                <!--<td>17-7</td>-->
-                <!--<td>17-8</td>-->
-                <!--<td>17-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>18</td>-->
-                <!--<td>18-1</td>-->
-                <!--<td>18-2</td>-->
-                <!--<td>18-3</td>-->
-                <!--<td>18-4</td>-->
-                <!--<td>18-5</td>-->
-                <!--<td>18-6</td>-->
-                <!--<td>18-7</td>-->
-                <!--<td>18-8</td>-->
-                <!--<td>18-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>19</td>-->
-                <!--<td>19-1</td>-->
-                <!--<td>19-2</td>-->
-                <!--<td>19-3</td>-->
-                <!--<td>19-4</td>-->
-                <!--<td>19-5</td>-->
-                <!--<td>19-6</td>-->
-                <!--<td>19-7</td>-->
-                <!--<td>19-8</td>-->
-                <!--<td>19-9</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                <!--<td>20</td>-->
-                <!--<td>20-1</td>-->
-                <!--<td>20-2</td>-->
-                <!--<td>20-3</td>-->
-                <!--<td>20-4</td>-->
-                <!--<td>20-5</td>-->
-                <!--<td>20-6</td>-->
-                <!--<td>20-7</td>-->
-                <!--<td>20-8</td>-->
-                <!--<td>20-9</td>-->
-                <!--</tr>-->
-                <!--</tbody>-->
-                <!--</table>-->
-                <!--</div>-->
-                <!--</div>-->
               </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="chart">
-              <div class="panel-body">
-                <div class="charttab-wrap">
-                  <canvas id="charttab"></canvas>
-                </div>
-                <br>
-                <table class="table table-bordered">
-                  <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Проект</th>
-                    <th>Проект</th>
-                    <th>Проект</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>Оператор</td>
-                    <td>77</td>
-                    <td>77</td>
-                    <td>77</td>
-                  </tr>
-                  <tr>
-                    <td>Оператор</td>
-                    <td>77</td>
-                    <td>77</td>
-                    <td>77</td>
-                  </tr>
-                  <tr>
-                    <td>Оператор</td>
-                    <td>77</td>
-                    <td>77</td>
-                    <td>77</td>
-                  </tr>
-                  <tr>
-                    <td>Оператор</td>
-                    <td>77</td>
-                    <td>77</td>
-                    <td>77</td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+              <div role="tabpanel" class="tab-pane" id="transfer">
+                <div class="panel-body">
+                  <div class="table-responsive">
+                    <table id="footable" class="table table-stripped toggle-arrow-tiny" data-page-size="8">
+                      <thead>
+                      <tr>
+                        <th data-toggle="true">Оператор</th>
+                        <th>SLA за смену</th>
+                        <th>SLA за месяц</th>
+                        <th>TT за смену</th>
+                        <th>TT за месяц</th>
+                        <th>Перевод</th>
+                        <th data-hide="all"></th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>Маша Иванова</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>
+                          <button type="button" class="btn btn-xs btn-primary" data-toggle="modal"
+                                  data-target="#modalProjectSelect">
+                            Выбор проекта
+                          </button>
+                        </td>
+                        <td>
+                          <table class="table transfer-table-toggle">
+                            <thead>
+                            <tr>
+                              <th>Проект</th>
+                              <th>SLA за смену</th>
+                              <th>SLA за месяц</th>
+                              <th>TT за смену</th>
+                              <th>TT за месяц</th>
+                              <th>Рейтинг в проекте</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Маша Иванова</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>
+                          <button type="button" class="btn btn-xs btn-primary" data-toggle="modal"
+                                  data-target="#modalProjectSelect">
+                            Выбор проекта
+                          </button>
+                        </td>
+                        <td>
+                          <table class="table transfer-table-toggle">
+                            <thead>
+                            <tr>
+                              <th>Проект</th>
+                              <th>SLA за смену</th>
+                              <th>SLA за месяц</th>
+                              <th>TT за смену</th>
+                              <th>TT за месяц</th>
+                              <th>Рейтинг в проекте</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Маша Иванова</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>
+                          <button type="button" class="btn btn-xs btn-primary" data-toggle="modal"
+                                  data-target="#modalProjectSelect">
+                            Выбор проекта
+                          </button>
+                        </td>
+                        <td>
+                          <table class="table transfer-table-toggle">
+                            <thead>
+                            <tr>
+                              <th>Проект</th>
+                              <th>SLA за смену</th>
+                              <th>SLA за месяц</th>
+                              <th>TT за смену</th>
+                              <th>TT за месяц</th>
+                              <th>Рейтинг в проекте</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Маша Иванова</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>
+                          <button type="button" class="btn btn-xs btn-primary" data-toggle="modal"
+                                  data-target="#modalProjectSelect">
+                            Выбор проекта
+                          </button>
+                        </td>
+                        <td>
+                          <table class="table transfer-table-toggle">
+                            <thead>
+                            <tr>
+                              <th>Проект</th>
+                              <th>SLA за смену</th>
+                              <th>SLA за месяц</th>
+                              <th>TT за смену</th>
+                              <th>TT за месяц</th>
+                              <th>Рейтинг в проекте</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Маша Иванова</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>
+                          <button type="button" class="btn btn-xs btn-primary" data-toggle="modal"
+                                  data-target="#modalProjectSelect">
+                            Выбор проекта
+                          </button>
+                        </td>
+                        <td>
+                          <table class="table transfer-table-toggle">
+                            <thead>
+                            <tr>
+                              <th>Проект</th>
+                              <th>SLA за смену</th>
+                              <th>SLA за месяц</th>
+                              <th>TT за смену</th>
+                              <th>TT за месяц</th>
+                              <th>Рейтинг в проекте</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Маша Иванова</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>
+                          <button type="button" class="btn btn-xs btn-primary" data-toggle="modal"
+                                  data-target="#modalProjectSelect">
+                            Выбор проекта
+                          </button>
+                        </td>
+                        <td>
+                          <table class="table transfer-table-toggle">
+                            <thead>
+                            <tr>
+                              <th>Проект</th>
+                              <th>SLA за смену</th>
+                              <th>SLA за месяц</th>
+                              <th>TT за смену</th>
+                              <th>TT за месяц</th>
+                              <th>Рейтинг в проекте</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Маша Иванова</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>
+                          <button type="button" class="btn btn-xs btn-primary" data-toggle="modal"
+                                  data-target="#modalProjectSelect">
+                            Выбор проекта
+                          </button>
+                        </td>
+                        <td>
+                          <table class="table transfer-table-toggle">
+                            <thead>
+                            <tr>
+                              <th>Проект</th>
+                              <th>SLA за смену</th>
+                              <th>SLA за месяц</th>
+                              <th>TT за смену</th>
+                              <th>TT за месяц</th>
+                              <th>Рейтинг в проекте</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            <tr>
+                              <td>Проект 1</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>34</td>
+                              <td>100</td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
 
+                </div>
+              </div>
+
+            </div>
           </div>
-        </div>
-        <br>
-        <button type="button" class="btn btn-default"><i class="fa fa-download"></i></button>
+          <br>
+          <button type="button" class="btn btn-default"><i class="fa fa-download"></i></button>
 
+        </div>
       </div>
     </div>
-  </div>
 
-</div>
+  </div>
 
 </div>
 </div>
@@ -920,6 +1333,101 @@
   </div>
 </div>
 
+<div id="modalProjectSelect" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+          aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Выбор проекта(ов)</h4>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Поиск проекта"> <span class="input-group-btn"> <button
+          type="button" class="btn btn-primary">Найти
+        </button> </span>
+        </div>
+        <br>
+        <br>
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Проект</th>
+            <th>SLA, %</th>
+            <th>TT, %</th>
+            <th>Статус</th>
+            <th>Перевод</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Проект 1</td>
+            <td>55</td>
+            <td>99</td>
+            <td>
+              <small class="label label-primary">Задействован</small>
+            </td>
+            <td>
+              <div class="switch">
+                <div class="onoffswitch">
+                  <input type="checkbox" checked="" class="onoffswitch-checkbox" id="example1">
+                  <label class="onoffswitch-label" for="example1">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                  </label>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Проект 1</td>
+            <td>55</td>
+            <td>99</td>
+            <td>
+              <small class="label label-primary">Задействован</small>
+            </td>
+            <td>
+              <div class="switch">
+                <div class="onoffswitch">
+                  <input type="checkbox" checked="" class="onoffswitch-checkbox" id="example1">
+                  <label class="onoffswitch-label" for="example1">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                  </label>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Проект 1</td>
+            <td>55</td>
+            <td>99</td>
+            <td>
+              <small class="label label-primary">Задействован</small>
+            </td>
+            <td>
+              <div class="switch">
+                <div class="onoffswitch">
+                  <input type="checkbox" checked="" class="onoffswitch-checkbox" id="example1">
+                  <label class="onoffswitch-label" for="example1">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                  </label>
+                </div>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Применить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Mainly scripts -->
 <script src="vendors/js/jquery-2.1.1.js"></script>
@@ -966,22 +1474,26 @@
 <!-- ionRangeSlider -->
 <script src="vendors/js/plugins/ionRangeSlider/modify/ion.rangeSlider.min.js"></script>
 
-<!-- daterangepicker -->
-<script src="vendors/js/plugins/fullcalendar/moment.min.js"></script>
-<script src="vendors/js/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- datepicker -->
+<script src="vendors/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+<script src="vendors/js/plugins/datapicker/bootstrap-datepicker.ru.js"></script>
 
-<!-- morris -->
-<!--<script src="vendors/js/plugins/morris/raphael-2.1.0.min.js"></script>-->
-<!--<script src="vendors/js/plugins/morris/morris.js"></script>-->
+<!-- fooTable -->
+<script src="vendors/js/plugins/footable/footable.all.min.js"></script>
 
 <!-- fixed table -->
-<script src="vendors/js/jquery.fixedTable.js"></script>
+<!--<script src="vendors/js/plugins/footable/footable.all.min.js"></script>-->
 
 <script>
   $(document).ready(function () {
 
 
-    $('#daterange').daterangepicker();
+    $('#datepicker input[name=start]').datepicker({
+      language: 'ru'
+    });
+    $('#datepicker input[name=end]').datepicker({
+      language: 'ru'
+    });
 
 
     $('#myModal').on('shown.bs.modal', function (e) {
@@ -1049,13 +1561,13 @@
 
     });
 
-    $('#tab-all').on('shown.bs.tab', function (e) {
-
+    $('#tab-transfer').on('shown.bs.tab', function (e) {
+      $('#footable').footable({});
     });
 
 
-    $('.function-btn__module-open-btn').click(function() {
-      if ( $('.function-btn__module').is( ".function-btn__module_open" ) ) {
+    $('.function-btn__module-open-btn').click(function () {
+      if ($('.function-btn__module').is(".function-btn__module_open")) {
         $('.function-btn__module').removeClass('function-btn__module_open');
       } else {
         $('.function-btn__module').addClass('function-btn__module_open');
