@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>INSPINIA | Dashboard</title>
+  <link href="styles/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+
+<body class="pace-done fixed-sidebar fixed-nav fixed-nav-basic">
+<div class="login-bg">
+  <div class="container">
+
+    <div class="middle-box text-center loginscreen animated fadeInDown login-box">
+      <div>
+        <h2>EXON CONTACT</h2>
+        <p>Вход</p>
+
+        <form class="m-t" role="form" action="">
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="E-mail" required="">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Пароль" required="">
+          </div>
+          <button type="submit" class="btn btn-primary block full-width m-b">Войти</button>
+
+        </form>
+        <a type="button" data-toggle="modal" data-target="#modalForgotPass">Восстановить пароль</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalForgotPass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Восстановить пароль</h4>
+      </div>
+      <div class="modal-body">
+        <form class="m-t" role="form" action="">
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="E-mail" required="">
+          </div>
+          <button type="submit" class="btn btn-primary block full-width m-b">Восстановить</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Mainly scripts -->
+<script src="vendors/js/jquery-2.1.1.js"></script>
+<script src="vendors/js/bootstrap.min.js"></script>
+
+<script>
+
+</script>
+
+</body>
+</html>
