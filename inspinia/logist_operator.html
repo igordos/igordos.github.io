@@ -76,7 +76,7 @@
               <li>
                 <a href="profile.html">
                   <div>
-                    <i class="fa fa-briefcase fa-fw"></i> Перекресток федеральный - снижение SLA
+                    <i class="fa fa-briefcase fa-fw"></i> Перекресток федеральный - снижение MC
                   </div>
                 </a>
               </li>
@@ -126,6 +126,15 @@
                   <label class="btn btn-sm btn-success">
                     <input type="radio" name="options" id="option3" autocomplete="off">Шахты
                   </label>
+                  <label class="btn btn-sm btn-success">
+                    <input type="radio" name="options" id="option3" autocomplete="off">Смоленск
+                  </label>
+                  <label class="btn btn-sm btn-success">
+                    <input type="radio" name="options" id="option3" autocomplete="off">Белоруссия
+                  </label>
+                  <label class="btn btn-sm btn-success">
+                    <input type="radio" name="options" id="option3" autocomplete="off">Казахстан
+                  </label>
                 </div>
               </div>
             </div>
@@ -155,8 +164,8 @@
                       <thead>
                       <tr>
                         <th data-toggle="true">Оператор</th>
-                        <th>SLA за смену</th>
-                        <th>SLA за месяц</th>
+                        <th>MC за смену</th>
+                        <th>MC за месяц</th>
                         <th>TT за смену</th>
                         <th>TT за месяц</th>
                         <th>Перевод</th>
@@ -181,8 +190,8 @@
                             <thead>
                             <tr>
                               <th>Проект</th>
-                              <th>SLA за смену</th>
-                              <th>SLA за месяц</th>
+                              <th>MC за смену</th>
+                              <th>MC за месяц</th>
                               <th>TT за смену</th>
                               <th>TT за месяц</th>
                               <th>Рейтинг в проекте</th>
@@ -250,8 +259,8 @@
                             <thead>
                             <tr>
                               <th>Проект</th>
-                              <th>SLA за смену</th>
-                              <th>SLA за месяц</th>
+                              <th>MC за смену</th>
+                              <th>MC за месяц</th>
                               <th>TT за смену</th>
                               <th>TT за месяц</th>
                               <th>Рейтинг в проекте</th>
@@ -319,8 +328,8 @@
                             <thead>
                             <tr>
                               <th>Проект</th>
-                              <th>SLA за смену</th>
-                              <th>SLA за месяц</th>
+                              <th>MC за смену</th>
+                              <th>MC за месяц</th>
                               <th>TT за смену</th>
                               <th>TT за месяц</th>
                               <th>Рейтинг в проекте</th>
@@ -388,8 +397,8 @@
                             <thead>
                             <tr>
                               <th>Проект</th>
-                              <th>SLA за смену</th>
-                              <th>SLA за месяц</th>
+                              <th>MC за смену</th>
+                              <th>MC за месяц</th>
                               <th>TT за смену</th>
                               <th>TT за месяц</th>
                               <th>Рейтинг в проекте</th>
@@ -457,8 +466,8 @@
                             <thead>
                             <tr>
                               <th>Проект</th>
-                              <th>SLA за смену</th>
-                              <th>SLA за месяц</th>
+                              <th>MC за смену</th>
+                              <th>MC за месяц</th>
                               <th>TT за смену</th>
                               <th>TT за месяц</th>
                               <th>Рейтинг в проекте</th>
@@ -526,8 +535,8 @@
                             <thead>
                             <tr>
                               <th>Проект</th>
-                              <th>SLA за смену</th>
-                              <th>SLA за месяц</th>
+                              <th>MC за смену</th>
+                              <th>MC за месяц</th>
                               <th>TT за смену</th>
                               <th>TT за месяц</th>
                               <th>Рейтинг в проекте</th>
@@ -595,8 +604,8 @@
                             <thead>
                             <tr>
                               <th>Проект</th>
-                              <th>SLA за смену</th>
-                              <th>SLA за месяц</th>
+                              <th>MC за смену</th>
+                              <th>MC за месяц</th>
                               <th>TT за смену</th>
                               <th>TT за месяц</th>
                               <th>Рейтинг в проекте</th>
@@ -655,11 +664,14 @@
               </div>
               <div role="tabpanel" class="tab-pane" id="chart">
                 <div class="panel-body">
+                  <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalSelectIndicator">
+                    Выбрать показатель</button>
+                  <br>
+                  <br>
                   <div class="charttab-wrap">
                     <canvas id="charttab"></canvas>
                   </div>
                   <br>
-
                   <div class="data-table">
                     <div class="data-table__head">
                       <div class="data-table__head-title">
@@ -1281,6 +1293,39 @@
   </div>
 </div>
 
+<div id="modalSelectIndicator" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+          aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Выбрать показатель</h4>
+      </div>
+      <div class="modal-body">
+        <div class="chosen__wrap">
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+              Показатель 1
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Показатель 2
+            </label>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Выбрать</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="modalProjectSelect" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -1302,7 +1347,7 @@
           <thead>
           <tr>
             <th>Проект</th>
-            <th>SLA, %</th>
+            <th>MC, %</th>
             <th>TT, %</th>
             <th>Статус</th>
             <th>Перевод</th>
@@ -1318,14 +1363,14 @@
                 <label class="btn btn-xs btn-primary active">
                   <input type="radio" name="options" id="option1" autocomplete="off" checked="">Задействован
                 </label>
-                <label class="btn btn-xs btn-danger disabled">
+                <label class="btn btn-xs btn-danger">
                   <input type="radio" name="options" id="option2" autocomplete="off">Не задействован
                 </label>
               </div>
             </td>
             <td>
               <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-xs btn-default disabled">
+                <label class="btn btn-xs btn-default">
                   <input type="radio" name="options" id="option1" autocomplete="off" checked="">Снять
                 </label>
                 <label class="btn btn-xs btn-default active">
@@ -1340,20 +1385,20 @@
             <td>99</td>
             <td>
               <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-xs btn-primary disabled">
+                <label class="btn btn-xs btn-primary">
                   <input type="radio" name="options" id="option1" autocomplete="off" checked="">Задействован
                 </label>
-                <label class="btn btn-xs btn-danger active">
+                <label class="btn btn-xs btn-danger">
                   <input type="radio" name="options" id="option2" autocomplete="off">Не задействован
                 </label>
               </div>
             </td>
             <td>
               <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-xs btn-default disabled">
+                <label class="btn btn-xs btn-default">
                   <input type="radio" name="options" id="option1" autocomplete="off" checked="">Снять
                 </label>
-                <label class="btn btn-xs btn-default active">
+                <label class="btn btn-xs btn-default">
                   <input type="radio" name="options" id="option2" autocomplete="off">Задействовать
                 </label>
               </div>
@@ -1365,20 +1410,20 @@
             <td>99</td>
             <td>
               <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-xs btn-primary active">
+                <label class="btn btn-xs btn-primary">
                   <input type="radio" name="options" id="option1" autocomplete="off" checked="">Задействован
                 </label>
-                <label class="btn btn-xs btn-danger disabled">
+                <label class="btn btn-xs btn-danger">
                   <input type="radio" name="options" id="option2" autocomplete="off">Не задействован
                 </label>
               </div>
             </td>
             <td>
               <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-xs btn-default disabled">
+                <label class="btn btn-xs btn-default">
                   <input type="radio" name="options" id="option1" autocomplete="off" checked="">Снять
                 </label>
-                <label class="btn btn-xs btn-default active">
+                <label class="btn btn-xs btn-default">
                   <input type="radio" name="options" id="option2" autocomplete="off">Задействовать
                 </label>
               </div>
