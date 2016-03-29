@@ -114,7 +114,45 @@
         <div class="ibox-content m-b-sm border-bottom">
           <div class="row">
             <div class="col-lg-12">
-              <div class="function-btn__wrap">
+              <div id="interval-btn-block" class="btn-group" data-toggle="buttons">
+                <label class="btn btn-sm btn-warning active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked>Сегодня
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option2" autocomplete="off">Вчера
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option3" autocomplete="off">Неделя
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked>Месяц
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option2" autocomplete="off">Квартал
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option3" autocomplete="off">Год
+                </label>
+              </div>
+              <div class="function-btn__daterange" id="datepicker">
+                <input type="text" name="start" value="05.01.2016">
+                <input type="text" name="end" value="05.12.2016">
+              </div>
+              <select class="function-btn__detail">
+                <option disabled selected>Детализация</option>
+                <option value="">по часам</option>
+                <option value="">по сменам</option>
+                <option value="">по дням</option>
+                <option value="">по неделям</option>
+                <option value="">по месяцам</option>
+              </select>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="function-btn__wrap function-btn__margin">
                 <h3>Площадка</h3>
                 <div id="area-btn-block" class="btn-group" data-toggle="buttons">
                   <label class="btn btn-sm btn-success active">
