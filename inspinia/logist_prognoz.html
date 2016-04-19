@@ -51,6 +51,7 @@
       </ul>
       <div class="footer-logo-box">
         <img src="images/exon_logo_footer.png">
+
         <p>LATVIAN OFFICE:<br>
           Muiznieku 9,<br>
           Jelgava, Latvia, LV-3043<br>
@@ -74,7 +75,7 @@
         <ul class="nav navbar-top-links navbar-right">
           <li class="dropdown">
             <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#" aria-expanded="false">
-              <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+              <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
             </a>
             <ul class="dropdown-menu dropdown-alerts dropdown-alerts-custom">
               <li>
@@ -180,7 +181,7 @@
                 </label>
               </div>
               <div class="function-btn__daterange" id="datepicker">
-                <input type="text"name="start" value="05.01.2016">
+                <input type="text" name="start" value="05.01.2016">
                 <input type="text" name="end" value="05.12.2016">
               </div>
               <select class="function-btn__detail">
@@ -212,6 +213,7 @@
                 <div class="panel-body">
                   <h3>Трафик по проекту</h3>
                   <br>
+
                   <div class="row">
                     <div class="col-lg-12">
                       <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
@@ -220,6 +222,7 @@
                       </button>
                       <br>
                       <br>
+
                       <div class="btn-group" data-toggle="buttons">
                         <label class="btn btn-sm btn-default active">
                           <input type="radio" name="options" id="option1" autocomplete="off" checked>5 дней
@@ -239,16 +242,10 @@
                     <canvas id="chart-3"></canvas>
                   </div>
                   <br>
-                  <br>
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-sm btn-default active">
-                      <input type="radio" name="options" id="option1" autocomplete="off" checked>радио1
-                    </label>
-                    <label class="btn btn-sm btn-default">
-                      <input type="radio" name="options" id="option2" autocomplete="off">радио2
-                    </label>
-                  </div>
-                  <br>
+                  <!--<div class="i-checks">-->
+                  <!--<input type="radio" name="iCheck">-->
+                  <!--<input type="radio" name="iCheck" checked>-->
+                  <!--</div>-->
                   <div class="table-responsive">
                     <table id="example1" class="table table-editable">
                       <thead>
@@ -263,7 +260,7 @@
                         <th></th>
                       </tr>
                       </thead>
-                      <tbody>
+                      <tbody class="i-checks">
                       <tr>
                         <td>Дата</td>
                         <td>22.07.2015</td>
@@ -275,7 +272,10 @@
                         <td>22.07.2015</td>
                       </tr>
                       <tr>
-                        <td>Трафик</td>
+                        <td>
+                            <input type="radio" name="iCheck">
+                            <label>Трафик</label>
+                        </td>
                         <td>60</td>
                         <td>20</td>
                         <td>61</td>
@@ -285,7 +285,10 @@
                         <td>50</td>
                       </tr>
                       <tr>
-                        <td>Оператор</td>
+                        <td>
+                          <input type="radio" name="iCheck">
+                          <label>Оператор</label>
+                        </td>
                         <td>60</td>
                         <td>20</td>
                         <td>61</td>
@@ -295,7 +298,10 @@
                         <td>50</td>
                       </tr>
                       <tr>
-                        <td>SLA, %</td>
+                        <td>
+                          <input type="radio" name="iCheck">
+                          <label>SLA, %</label>
+                        </td>
                         <td>60</td>
                         <td>20</td>
                         <td>61</td>
@@ -305,7 +311,10 @@
                         <td>50</td>
                       </tr>
                       <tr>
-                        <td>TT, %</td>
+                        <td>
+                          <input type="radio" name="iCheck">
+                          <label>TT, %</label>
+                        </td>
                         <td>60</td>
                         <td>20</td>
                         <td>61</td>
@@ -348,12 +357,12 @@
                         </div>
                       </div>
                       <!--<div class="function-btn__wrap">-->
-                        <!--<h5>Корректировка</h5>-->
+                      <!--<h5>Корректировка</h5>-->
 
-                        <!--<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"-->
-                                <!--data-target="#modalProject">-->
-                          <!--Назначить-->
-                        <!--</button>-->
+                      <!--<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"-->
+                      <!--data-target="#modalProject">-->
+                      <!--Назначить-->
+                      <!--</button>-->
                       <!--</div>-->
                       <br>
                       <br>
@@ -363,16 +372,7 @@
                     <canvas id="chart-1"></canvas>
                   </div>
                   <br>
-                  <br>
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-sm btn-default active">
-                      <input type="radio" name="options" id="option1" autocomplete="off" checked>радио1
-                    </label>
-                    <label class="btn btn-sm btn-default">
-                      <input type="radio" name="options" id="option2" autocomplete="off">радио2
-                    </label>
-                  </div>
-                  <br>
+
                   <div class="table-responsive">
                     <table id="example" class="table table-editable">
                       <thead>
@@ -447,6 +447,7 @@
                   <hr>
                   <h3>Общий трафик на основе предыдущего периода</h3>
                   <br>
+
                   <div class="btn-group" data-toggle="buttons">
                     <label class="btn btn-sm btn-default active">
                       <input type="radio" name="options" id="option1" autocomplete="off" checked>5 дней
@@ -460,6 +461,7 @@
                   </div>
                   <br>
                   <br>
+
                   <div class="charttab-wrap">
                     <canvas id="chart-2"></canvas>
                   </div>
@@ -739,8 +741,9 @@
           <div class="form-group">
             <label for="datepicker2">Дата</label>
             <br>
+
             <div class="function-btn__daterange function-btn__daterange_modal" id="datepicker2">
-              <input type="text"name="start" value="05.01.2016">
+              <input type="text" name="start" value="05.01.2016">
               <input type="text" name="end" value="05.12.2016">
             </div>
           </div>
@@ -827,12 +830,21 @@
 <!-- dataTable -->
 <script src="vendors/js/plugins/dataTables/datatables.min.js"></script>
 
+<!-- dataTable -->
+<script src="vendors/js/plugins/iCheck/icheck.min.js"></script>
+
 <script>
   $(document).ready(function () {
 
 
+    $('.i-checks').iCheck({
+      checkboxClass: 'icheckbox_square-green',
+      radioClass: 'iradio_square-green',
+    });
+
+
     $('#datepicker input[name=start]').datepicker({
-        language: 'ru'
+      language: 'ru'
     });
     $('#datepicker input[name=end]').datepicker({
       language: 'ru'
@@ -983,7 +995,6 @@
     });
 
 
-
     /* Apply the jEditable handlers to the table */
     $('#example1 tbody td').editable(function (sValue) {
       /* Get the position of the current data from the node */
@@ -1007,7 +1018,6 @@
       "bInfo": false,
 //      "bAutoWidth": false,
     });
-
 
 
   });
