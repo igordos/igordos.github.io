@@ -15,6 +15,11 @@
 <header class="header">
   <a href="#" class="header__logo" title="ПРОДУКТУТ"></a>
 
+  <div class="header-location">
+    <a href="#" class="header-location__item">Санкт-Петербург <i
+      class="fa fa-angle-down header-location__item-down"></i></a>
+  </div>
+
   <div class="header__search">
     <i class="fa fa-search search-icon"></i>
     <input class="search-field" placeholder="Поиск продуктов">
@@ -36,19 +41,48 @@
     </div>
   </div>
 </header>
-<nav class="nav-header">
-  <div class="location">
-    <a href="#" class="location__item">Санкт-Петербург <i class="fa fa-angle-down location__item-down"></i></a>
-  </div>
-  <div class="menu">
-    <a href="#" class="menu__item">Магазины</a>
-    <a href="#" class="menu__item">Категории <i class="fa fa-angle-down location__item-down"></i></a>
-    <a href="#" class="menu__item">Помощь</a>
-  </div>
-  <div class="cart">
-    <a href="#" class="cart__item">Моя полка <span class="cart__item-circ">646464</span></a>
-  </div>
-</nav>
+<div class="col-category category">
+  <span class="category__header">Бакалея</span>
+  <ul class="category__menu">
+    <li><a href="#">Здоровое питание</a>
+      <ul class="sub-menu">
+        <li><a href="#">батончики амарантовые</a></li>
+        <li><a href="#">батончики амарантовые амарантовые амарантовые</a></li>
+        <li><a href="#">батончики амарантовые</a></li>
+        <li><a href="#">батончики амарантовые</a></li>
+        <li><a href="#">батончики амарантовые</a></li>
+        <li><a href="#">батончики амарантовые</a></li>
+        <li><a href="#">батончики амарантовые</a></li>
+      </ul>
+    </li>
+    <li><a href="#">батончики амарантовые амарантовые амарантовые</a></li>
+    <li><a href="#">qweqweqwe</a></li>
+    <li><a href="#">qweqweqwe</a>
+      <ul class="sub-menu sub-menu_open">
+        <li><a href="#">батончики амарантовые</a></li>
+        <li><a href="#">qweqweqwe</a></li>
+        <li><a href="#">батончики амарантовые</a></li>
+        <li><a href="#">qweqweqwe</a></li>
+        <li><a href="#">qweqweqwe</a></li>
+        <li><a href="#">qweqweqwe</a></li>
+        <li><a href="#">qweqweqwe</a></li>
+      </ul>
+    </li>
+    <li><a href="#">qweqweqwe</a></li>
+    <li><a href="#">qweqweqwe</a></li>
+    <li><a href="#">qweqweqwe</a></li>
+  </ul>
+
+
+</div>
+<div class="col-margin-left">
+  <nav class="nav-header">
+    <div class="menu">
+      <a href="#" class="menu__item">Магазины</a>
+      <a href="#" class="menu__item">Категории <i class="fa fa-angle-down location__item-down"></i></a>
+      <a href="#" class="menu__item">Помощь</a>
+    </div>
+  </nav>
 <main class="container">
   <div class="toolbar">
     <label class="toolbar__title">Поблизости</label>
@@ -355,5 +389,6 @@
     <div class="product-table_bd2"></div>
   </div>
 </main>
+</div>
 </body>
 </html>
