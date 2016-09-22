@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tipsy</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-style.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/sticky-footer-navbar.css">
+    <link rel="stylesheet" href="./style/calendar.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Tipsy admin</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Мероприятия<span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Клубы</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Иван Петров <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Выйти</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Мероприятия</h2>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <select class="form-control">
+                                        <option>Сентябрь</option>
+                                        <option>Октябрь</option>
+                                        <option>Ахуенно!</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="calendar-wrap">
+                                <!--<header>-->
+                                <!--<h1>August 2014</h1>-->
+                                <!--</header>-->
+                                <div id="calendar">
+                                    <ul class="weekdays">
+                                        <li>Пн</li>
+                                        <li>Вт</li>
+                                        <li>Ср</li>
+                                        <li>Чт</li>
+                                        <li>Пт</li>
+                                        <li>Сб</li>
+                                        <li>Вс</li>
+                                    </ul>
+
+                                    <!-- Days from previous month -->
+
+                                    <ul class="days">
+                                        <li class="day other-month">
+                                            <div class="date">27</div>
+                                        </li>
+                                        <li class="day other-month">
+                                            <div class="date">28</div>
+                                            <div class="event">
+                                                <div class="event-desc">
+                                                    ТУса
+                                                </div>
+                                                <div class="event-time">
+                                                    1:00pm to 3:00pm
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="day other-month">
+                                            <div class="date">29</div>
+                                        </li>
+                                        <li class="day other-month">
+                                            <div class="date">30</div>
+                                        </li>
+                                        <li class="day other-month">
+                                            <div class="date">31</div>
+                                        </li>
+
+                                        <!-- Days in current month -->
+
+                                        <li class="day">
+                                            <div class="date">1</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">2</div>
+                                            <div class="event">
+                                                <div class="event-desc">
+                                                    Ахуенно!
+                                                </div>
+                                                <div class="event-time">
+                                                    2:00pm to 5:00pm
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Row #2 -->
+
+                                    <ul class="days">
+                                        <li class="day">
+                                            <div class="date">3</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">4</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">5</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">6</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">7</div>
+                                            <div class="event">
+                                                <div class="event-desc">
+                                                    Group Project meetup
+                                                </div>
+                                                <div class="event-time">
+                                                    6:00pm to 8:30pm
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">8</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">9</div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Row #3 -->
+
+                                    <ul class="days">
+                                        <li class="day">
+                                            <div class="date">10</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">11</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">12</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">13</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">14</div>
+                                            <div class="event">
+                                                <div class="event-desc">
+                                                    Board Meeting
+                                                </div>
+                                                <div class="event-time">
+                                                    1:00pm to 3:00pm
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">15</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">16</div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Row #4 -->
+
+                                    <ul class="days">
+                                        <li class="day">
+                                            <div class="date">17</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">18</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">19</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">20</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">21</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">22</div>
+                                            <div class="event">
+                                                <div class="event-desc">
+                                                    Conference call
+                                                </div>
+                                                <div class="event-time">
+                                                    9:00am to 12:00pm
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">23</div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Row #5 -->
+
+                                    <ul class="days">
+                                        <li class="day">
+                                            <div class="date">24</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">25</div>
+                                            <div class="event">
+                                                <div class="event-desc">
+                                                    Conference Call
+                                                </div>
+                                                <div class="event-time">
+                                                    1:00pm to 3:00pm
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">26</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">27</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">28</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">29</div>
+                                        </li>
+                                        <li class="day">
+                                            <div class="date">30</div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Row #6 -->
+
+                                    <ul class="days">
+                                        <li class="day">
+                                            <div class="date">31</div>
+                                        </li>
+                                        <li class="day other-month">
+                                            <div class="date">1</div> <!-- Next Month -->
+                                        </li>
+                                        <li class="day other-month">
+                                            <div class="date">2</div>
+                                        </li>
+                                        <li class="day other-month">
+                                            <div class="date">3</div>
+                                        </li>
+                                        <li class="day other-month">
+                                            <div class="date">4</div>
+                                        </li>
+                                        <li class="day other-month">
+                                            <div class="date">5</div>
+                                        </li>
+                                        <li class="day other-month">
+                                            <div class="date">6</div>
+                                        </li>
+                                    </ul>
+
+                                </div><!-- /. calendar -->
+                            </div><!-- /. wrap -->
+                        </div>
+                        <div class="col-md-6">
+                            <h3>8 октября, четверг</h3>
+                            <a href="#" class="btn btn-success" role="button"><span class="glyphicon glyphicon-pencil"
+                                                                                    aria-hidden="true"></span></a>
+                            <a href="#" class="btn btn-success" role="button"><span class="glyphicon glyphicon-apple"
+                                                                                    aria-hidden="true"></span></a>
+                            <a href="#" class="btn btn-danger" role="button"><span class="glyphicon glyphicon-remove"
+                                                                                   aria-hidden="true"></span></a>
+                            <hr>
+                            <h4>Название</h4>
+
+                            <p>Жаркий привет Северной столице от Сергея Жукова, лидера группы «Руки Вверх»</p>
+                            <hr>
+                            <h4>Описание</h4>
+
+                            <p>Трехэтажный бар и ночной клуб, открытый Алексеем Ромео — самым высокооплачиваемым диджеем
+                                России.</p>
+
+                            <div class="well">
+                                <h4>Акции</h4>
+
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img alt="64x64" class="media-object"
+                                                 data-src="holder.js/64x64"
+                                                 style="width: 64px; height: 64px;"
+                                                 src="http://www.kalyanbazar.ru/production/kalyans/allkalyans/196/11b9974f5fe07b7c6c12309c4941911c.png"
+                                                 data-holder-rendered="true">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Кальян
+                                        <a href="#" class="btn btn-danger btn-xs">
+                                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                        </a>
+                                        </h4>Бесплатный кальянчик
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img alt="64x64" class="media-object"
+                                                 data-src="holder.js/64x64"
+                                                 style="width: 64px; height: 64px;"
+                                                 src="http://www.calorizator.ru/sites/default/files/imagecache/product_512/product/cola-1.jpg"
+                                                 data-holder-rendered="true">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Кола
+                                            <a href="#" class="btn btn-danger btn-xs">
+                                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                            </a>
+                                        </h4>Всем колы
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Афиша</h4>
+
+                            <div class="thumbnail">
+                                <img style="height: auto; width: 100%; display: block;"
+                                     src="http://stas-pjeha.ru/wp-content/uploads/2015/04/4.jpg">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">Tipsy 2016</p>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
