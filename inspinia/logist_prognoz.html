@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>INSPINIA | Dashboard</title>
+  <link href="styles/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+
+<body class="pace-done fixed-sidebar fixed-nav fixed-nav-basic">
+<div id="wrapper">
+  <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+      <ul class="nav metismenu" id="side-menu">
+        <li class="nav-header">
+          <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="../images/profile_small.jpg"/>
+                             </span>
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Александра
+                              Васильева</strong>
+                             </span> <span class="text-muted text-xs block">Логист<b
+                              class="caret"></b></span> </span> </a>
+            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="mailbox.html">Mailbox</a></li>
+              <li class="divider"></li>
+              <li><a href="login.html">Выйти</a></li>
+            </ul>
+          </div>
+          <div class="logo-element">
+            IN+
+          </div>
+        </li>
+        <li>
+          <a href="alexdash.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+        </li>
+        <li>
+          <a href="logist_proj.html"><i class="fa fa-briefcase"></i> <span class="nav-label">Проекты</span></a>
+        </li>
+        <li>
+          <a href="logist_operator.html"><i class="fa fa-group"></i> <span class="nav-label">Операторы</span></a>
+        </li>
+        <li class="active">
+          <a href="logist_prognoz.html"><i class="fa fa-area-chart"></i> <span class="nav-label">Прогноз</span></a>
+        </li>
+      </ul>
+      <div class="footer-logo-box">
+        <img src="images/exon_logo_footer.png">
+
+        <p>LATVIAN OFFICE:<br>
+          Muiznieku 9,<br>
+          Jelgava, Latvia, LV-3043<br>
+          + 371 2999-45-40<br>
+          info@exon.lv<br><br>
+          RUSSIAN OFFICE:<br>
+          Smolenskaya square 3,<br>
+          Moscow, Russia, 121099<br>
+          Support: +7 (968) 878-77-65<br><br>
+          Copyright © EXON 2016</p>
+      </div>
+    </div>
+  </nav>
+
+  <div id="page-wrapper" class="gray-bg dashbard-1">
+    <div class="row border-bottom">
+      <nav class="navbar navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+          <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#" aria-expanded="false">
+              <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+            </a>
+            <ul class="dropdown-menu dropdown-alerts dropdown-alerts-custom">
+              <li>
+                <a href="mailbox.html">
+                  <div>
+                    <i class="fa fa-users fa-fw"></i> Центр финансового консалтинга - избыток операторов
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="profile.html">
+                  <div>
+                    <i class="fa fa-briefcase fa-fw"></i> Перекресток федеральный - снижение SLA
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="grid_options.html">
+                  <div>
+                    <i class="fa fa-users fa-fw"></i> IMMO - незватка операторов
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="grid_options.html">
+                  <div>
+                    <i class="fa fa-users fa-fw"></i> IMMO - незватка операторов
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="grid_options.html">
+                  <div>
+                    <i class="fa fa-users fa-fw"></i> IMMO - незватка операторов
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="grid_options.html">
+                  <div>
+                    <i class="fa fa-users fa-fw"></i> IMMO - незватка операторов
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="grid_options.html">
+                  <div>
+                    <i class="fa fa-users fa-fw"></i> IMMO - незватка операторов
+                  </div>
+                </a>
+              </li>
+
+              <li class="divider"></li>
+              <li>
+                <div class="text-center link-block">
+                  <a href="notifications.html">
+                    <strong>Все уведомления</strong>
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="login.html">
+              <i class="fa fa-sign-out"></i> Выйти
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="wrapper wrapper-content animated fadeIn">
+      <div class="function-btn__module-open-btn">Настройка вывода</div>
+      <div class="function-btn__module">
+        <div class="ibox-content m-b-sm border-bottom">
+          <div class="row">
+            <div class="col-lg-12">
+              <div id="interval-btn-block" class="btn-group" data-toggle="buttons">
+                <label class="btn btn-sm btn-warning active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked>Сегодня
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option2" autocomplete="off">Завтра
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option3" autocomplete="off">Неделя
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked>Месяц
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option2" autocomplete="off">Квартал
+                </label>
+                <label class="btn btn-sm btn-warning">
+                  <input type="radio" name="options" id="option3" autocomplete="off">Год
+                </label>
+              </div>
+              <div class="function-btn__daterange" id="datepicker">
+                <input type="text" name="start" value="05.01.2016">
+                <input type="text" name="end" value="05.12.2016">
+              </div>
+              <select class="function-btn__detail">
+                <option disabled selected>Детализация</option>
+                <option value="">по сменам</option>
+                <option value="">по дням</option>
+                <option value="">по неделям</option>
+                <option value="">по месяцам</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="tabs-container">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a id="tab-forecast" href="#forecast" aria-controls="home"
+                                                        role="tab" data-toggle="tab">Прогноз</a>
+              </li>
+              <li role="presentation"><a id="tab-action" href="#action" aria-controls="profile" role="tab"
+                                         data-toggle="tab">Акции</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="forecast">
+                <div class="panel-body">
+                  <h3>Трафик по проекту</h3>
+                  <br>
+
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+                              data-target="#modalProject">
+                        Проект
+                      </button>
+                      <br>
+                      <br>
+
+                      <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-sm btn-default active">
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked>5 дней
+                        </label>
+                        <label class="btn btn-sm btn-default">
+                          <input type="radio" name="options" id="option2" autocomplete="off">7 дней
+                        </label>
+                        <label class="btn btn-sm btn-default">
+                          <input type="radio" name="options" id="option2" autocomplete="off">30 дней
+                        </label>
+                      </div>
+                      <br>
+                      <br>
+                    </div>
+                  </div>
+                  <div class="charttab-wrap">
+                    <canvas id="chart-3"></canvas>
+                  </div>
+                  <br>
+                  <!--<div class="i-checks">-->
+                  <!--<input type="radio" name="iCheck">-->
+                  <!--<input type="radio" name="iCheck" checked>-->
+                  <!--</div>-->
+                  <div class="table-responsive">
+                    <table id="example1" class="table table-editable">
+                      <thead>
+                      <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                      </thead>
+                      <tbody class="i-checks">
+                      <tr>
+                        <td>Дата</td>
+                        <td>22.07.2015</td>
+                        <td>22.07.2015</td>
+                        <td>22.07.2015</td>
+                        <td>22.07.2015</td>
+                        <td>22.07.2015</td>
+                        <td>22.07.2015</td>
+                        <td>22.07.2015</td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <input type="radio" name="iCheck">
+                            <label>Трафик</label>
+                        </td>
+                        <td>60</td>
+                        <td>20</td>
+                        <td>61</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" name="iCheck">
+                          <label>Оператор</label>
+                        </td>
+                        <td>60</td>
+                        <td>20</td>
+                        <td>61</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" name="iCheck">
+                          <label>SLA, %</label>
+                        </td>
+                        <td>60</td>
+                        <td>20</td>
+                        <td>61</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="radio" name="iCheck">
+                          <label>TT, %</label>
+                        </td>
+                        <td>60</td>
+                        <td>20</td>
+                        <td>61</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <button class="btn btn-sm btn-primary">Применить изменения</button>
+                  <button class="btn btn-sm btn-danger">Отменить корректировку</button>
+                  <hr>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="function-btn__wrap">
+                        <h5>Предыдущий период</h5>
+
+                        <div class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-sm btn-success active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked>Показать
+                          </label>
+                          <label class="btn btn-sm btn-success">
+                            <input type="radio" name="options" id="option2" autocomplete="off">Скрыть
+                          </label>
+                        </div>
+                      </div>
+                      <div class="function-btn__wrap">
+                        <h5>Выходные / праздники</h5>
+
+                        <div class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-sm btn-success active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked>Показать
+                          </label>
+                          <label class="btn btn-sm btn-success">
+                            <input type="radio" name="options" id="option2" autocomplete="off">Скрыть
+                          </label>
+                        </div>
+                      </div>
+                      <!--<div class="function-btn__wrap">-->
+                      <!--<h5>Корректировка</h5>-->
+
+                      <!--<button type="button" class="btn btn-sm btn-primary" data-toggle="modal"-->
+                      <!--data-target="#modalProject">-->
+                      <!--Назначить-->
+                      <!--</button>-->
+                      <!--</div>-->
+                      <br>
+                      <br>
+                    </div>
+                  </div>
+                  <div class="charttab-wrap">
+                    <canvas id="chart-1"></canvas>
+                  </div>
+                  <br>
+
+                  <div class="table-responsive">
+                    <table id="example" class="table table-editable">
+                      <thead>
+                      <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>Дата</td>
+                        <td>22.07.2015</td>
+                        <td>22.07.2015</td>
+                        <td>22.07.2015</td>
+                        <td>22.07.2015</td>
+                        <td>22.07.2015</td>
+                        <td>22.07.2015</td>
+                        <td>22.07.2015</td>
+                      </tr>
+                      <tr>
+                        <td>Трафик</td>
+                        <td>60</td>
+                        <td>20</td>
+                        <td>61</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>Оператор</td>
+                        <td>60</td>
+                        <td>20</td>
+                        <td>61</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>SLA, %</td>
+                        <td>60</td>
+                        <td>20</td>
+                        <td>61</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>TT, %</td>
+                        <td>60</td>
+                        <td>20</td>
+                        <td>61</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <button class="btn btn-sm btn-primary">Применить изменения</button>
+                  <button class="btn btn-sm btn-danger">Отменить корректировку</button>
+                  <hr>
+                  <h3>Общий трафик на основе предыдущего периода</h3>
+                  <br>
+
+                  <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-sm btn-default active">
+                      <input type="radio" name="options" id="option1" autocomplete="off" checked>5 дней
+                    </label>
+                    <label class="btn btn-sm btn-default">
+                      <input type="radio" name="options" id="option2" autocomplete="off">7 дней
+                    </label>
+                    <label class="btn btn-sm btn-default">
+                      <input type="radio" name="options" id="option2" autocomplete="off">30 дней
+                    </label>
+                  </div>
+                  <br>
+                  <br>
+
+                  <div class="charttab-wrap">
+                    <canvas id="chart-2"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="action">
+                <div class="panel-body">
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
+                          data-target="#modalAddProject">
+                    Добавить акцию
+                  </button>
+                  <br>
+                  <br>
+
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                      <tr>
+                        <th>Дата</th>
+                        <th>Проект</th>
+                        <th>Тип</th>
+                        <th>Прогноз</th>
+                        <th></th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>22.03.2016</td>
+                        <td>БестПроект</td>
+                        <td>Телереклама</td>
+                        <td>88 %</td>
+                        <td>
+                          <button class="btn btn-xs btn-default"><i class="fa fa-times"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>22.03.2016</td>
+                        <td>БестПроект</td>
+                        <td>Телереклама</td>
+                        <td>88 %</td>
+                        <td>
+                          <button class="btn btn-xs btn-default"><i class="fa fa-times"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>22.03.2016</td>
+                        <td>БестПроект</td>
+                        <td>Телереклама</td>
+                        <td>88 %</td>
+                        <td>
+                          <button class="btn btn-xs btn-default"><i class="fa fa-times"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>22.03.2016</td>
+                        <td>БестПроект</td>
+                        <td>Телереклама</td>
+                        <td>88 %</td>
+                        <td>
+                          <button class="btn btn-xs btn-default"><i class="fa fa-times"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>22.03.2016</td>
+                        <td>БестПроект</td>
+                        <td>Телереклама</td>
+                        <td>88 %</td>
+                        <td>
+                          <button class="btn btn-xs btn-default"><i class="fa fa-times"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>22.03.2016</td>
+                        <td>БестПроект</td>
+                        <td>Телереклама</td>
+                        <td>88 %</td>
+                        <td>
+                          <button class="btn btn-xs btn-default"><i class="fa fa-times"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>22.03.2016</td>
+                        <td>БестПроект</td>
+                        <td>Телереклама</td>
+                        <td>88 %</td>
+                        <td>
+                          <button class="btn btn-xs btn-default"><i class="fa fa-times"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>22.03.2016</td>
+                        <td>БестПроект</td>
+                        <td>Телереклама</td>
+                        <td>88 %</td>
+                        <td>
+                          <button class="btn btn-xs btn-default"><i class="fa fa-times"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>22.03.2016</td>
+                        <td>БестПроект</td>
+                        <td>Телереклама</td>
+                        <td>88 %</td>
+                        <td>
+                          <button class="btn btn-xs btn-default"><i class="fa fa-times"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>22.03.2016</td>
+                        <td>БестПроект</td>
+                        <td>Телереклама</td>
+                        <td>88 %</td>
+                        <td>
+                          <button class="btn btn-xs btn-default"><i class="fa fa-times"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>22.03.2016</td>
+                        <td>БестПроект</td>
+                        <td>Телереклама</td>
+                        <td>88 %</td>
+                        <td>
+                          <button class="btn btn-xs btn-default"><i class="fa fa-times"></i></button>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+
+<div id="modalProject" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+          aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Выбрать проект</h4>
+      </div>
+      <div class="modal-body">
+        <div class="chosen__wrap">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Проект
+            </label>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Применить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="modalAddProject" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+          aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Добавление новой акции</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="1">Проект</label>
+            <input type="text" class="form-control" id="1" placeholder="Проект">
+          </div>
+          <div class="form-group">
+            <label for="datepicker2">Дата</label>
+            <br>
+
+            <div class="function-btn__daterange function-btn__daterange_modal" id="datepicker2">
+              <input type="text" name="start" value="05.01.2016">
+              <input type="text" name="end" value="05.12.2016">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="3">Тип</label>
+            <input type="text" class="form-control" id="3" placeholder="Например телереклама">
+          </div>
+          <div class="form-group">
+            <label for="4">Процент изменения</label>
+            <input type="text" class="form-control" id="4" placeholder="50%">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Добавить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Mainly scripts -->
+<script src="vendors/js/jquery-2.1.1.js"></script>
+<script src="vendors/js/bootstrap.min.js"></script>
+<script src="vendors/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="vendors/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Flot -->
+<script src="vendors/js/plugins/flot/jquery.flot.js"></script>
+<script src="vendors/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+<script src="vendors/js/plugins/flot/jquery.flot.spline.js"></script>
+<script src="vendors/js/plugins/flot/jquery.flot.resize.js"></script>
+<script src="vendors/js/plugins/flot/jquery.flot.pie.js"></script>
+
+<!-- Peity -->
+<script src="vendors/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="vendors/js/demo/peity-demo.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="vendors/js/inspinia.js"></script>
+<!--<script src="vendors/js/plugins/pace/pace.min.js"></script>-->
+
+<!-- jQuery UI -->
+<script src="vendors/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+<!-- GITTER -->
+<!--<script src="../vendors/js/plugins/gritter/jquery.gritter.min.js"></script>-->
+
+<!-- Sparkline -->
+<!--<script src="../vendors/js/plugins/sparkline/jquery.sparkline.min.js"></script>-->
+
+<!-- Sparkline demo data  -->
+<!--<script src="../vendors/js/demo/sparkline-demo.js"></script>-->
+
+<!-- ChartJS-->
+<script src="vendors/js/plugins/chartJs/Chart.min.js"></script>
+
+<!-- Toastr -->
+<!--<script src="../vendors/js/plugins/toastr/toastr.min.js"></script>-->
+
+<!-- Chosen -->
+<script src="vendors/js/plugins/chosen/chosen.jquery.js"></script>
+
+<!-- ionRangeSlider -->
+<script src="vendors/js/plugins/ionRangeSlider/modify/ion.rangeSlider.min.js"></script>
+
+<!-- daterangepicker -->
+<!--<script src="vendors/js/plugins/fullcalendar/moment.min.js"></script>-->
+<!--<script src="vendors/js/plugins/daterangepicker/daterangepicker.js"></script>-->
+
+
+<!-- datepicker -->
+<script src="vendors/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+<script src="vendors/js/plugins/datapicker/bootstrap-datepicker.ru.js"></script>
+
+
+<!-- fixed table -->
+<script src="vendors/js/jquery.fixedTable.js"></script>
+
+<!-- jEditable -->
+<script src="vendors/js/plugins/jeditable/jquery.jeditable.js"></script>
+
+<!-- dataTable -->
+<script src="vendors/js/plugins/dataTables/datatables.min.js"></script>
+
+<!-- dataTable -->
+<script src="vendors/js/plugins/iCheck/icheck.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+
+
+    $('.i-checks').iCheck({
+      checkboxClass: 'icheckbox_square-green',
+      radioClass: 'iradio_square-green',
+    });
+
+
+    $('#datepicker input[name=start]').datepicker({
+      language: 'ru'
+    });
+    $('#datepicker input[name=end]').datepicker({
+      language: 'ru'
+    });
+
+
+    $('#datepicker2 input[name=start]').datepicker({
+      language: 'ru'
+    });
+    $('#datepicker2 input[name=end]').datepicker({
+      language: 'ru'
+    });
+
+
+    $('#myModal').on('shown.bs.modal', function (e) {
+      $("#example_id").ionRangeSlider({
+        type: "double",
+        grid: true,
+        min: -100,
+        max: 100,
+        from: -50,
+        to: 50,
+        postfix: " %"
+      });
+      $("#example_id2").ionRangeSlider({
+        type: "double",
+        grid: true,
+        min: -100,
+        max: 100,
+        from: -50,
+        to: 50,
+        postfix: " %"
+      });
+
+    });
+
+    var dataOne = {
+      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      datasets: [
+        {
+          label: "My Second dataset",
+          fillColor: "rgba(26,179,148,0.2)",
+          strokeColor: "rgba(26,179,148,1)",
+          pointColor: "rgba(26,179,148,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data: [28, 48, 40, 19, 86, 27, 90]
+        }
+      ],
+    };
+
+
+    var lineOptions = {
+      scaleShowGridLines: true,
+      scaleGridLineColor: "rgba(0,0,0,.05)",
+      scaleGridLineWidth: 1,
+      bezierCurve: true,
+      bezierCurveTension: 0.4,
+      pointDot: true,
+      pointDotRadius: 4,
+      pointDotStrokeWidth: 1,
+      pointHitDetectionRadius: 20,
+      datasetStroke: true,
+      datasetStrokeWidth: 2,
+      datasetFill: true,
+//      responsive: true,
+    };
+
+
+    var ctx = document.getElementById("chart-1").getContext("2d");
+    ctx.canvas.width = $('.charttab-wrap').width();
+    ctx.canvas.height = $('.charttab-wrap').height();
+    var charttab1 = new Chart(ctx).Line(dataOne, lineOptions);
+
+    var ctx2 = document.getElementById("chart-2").getContext("2d");
+    ctx2.canvas.width = $('.charttab-wrap').width();
+    ctx2.canvas.height = $('.charttab-wrap').height();
+    var charttab2 = new Chart(ctx2).Line(dataOne, lineOptions);
+
+    var ctx3 = document.getElementById("chart-3").getContext("2d");
+    ctx3.canvas.width = $('.charttab-wrap').width();
+    ctx3.canvas.height = $('.charttab-wrap').height();
+    var charttab3 = new Chart(ctx3).Line(dataOne, lineOptions);
+
+    $('#tab-forecast').on('shown.bs.tab', function (e) {
+//      ctx.canvas.width = $('.charttab-wrap').width();
+//      ctx.canvas.height = $('.charttab-wrap').height();
+//      var charttab1= new Chart(ctx).Line(dataOne, lineOptions);
+
+    });
+
+    $('#tab-all').on('shown.bs.tab', function (e) {
+
+    });
+
+
+    $('.function-btn__module-open-btn').click(function () {
+      if ($('.function-btn__module').is(".function-btn__module_open")) {
+        $('.function-btn__module').removeClass('function-btn__module_open');
+      } else {
+        $('.function-btn__module').addClass('function-btn__module_open');
+      }
+    });
+
+
+    if (window.matchMedia("(max-width: 992px)").matches) {
+      $('#interval-btn-block').addClass('btn-block btn-group-vertical');
+    }
+
+//    $('#example').dataTable({
+//      "bPaginate": false,
+//      "bLengthChange": false,
+//      "bFilter": true,
+//      "bSort": false,
+//      "bInfo": false,
+//      "bAutoWidth": false,
+//    }).makeEditable({
+//      sUpdateURL: "UpdateData.php"
+//    });
+
+//    $('#example').dataTable().makeEditable({
+//      sUpdateURL: "UpdateData.php"
+//    });
+
+    /* Apply the jEditable handlers to the table */
+    $('#example tbody td').editable(function (sValue) {
+      /* Get the position of the current data from the node */
+      var aPos = oTable.fnGetPosition(this);
+
+      /* Get the data array for this row */
+      var aData = oTable.fnGetData(aPos[0]);
+
+      /* Update the data array and return the value */
+      aData[aPos[1]] = sValue;
+      return sValue;
+    }, {"onblur": 'submit'});
+    /* Submit the form when bluring a field */
+
+    /* Init DataTables */
+    oTable = $('#example').dataTable({
+      "bPaginate": false,
+      "bLengthChange": false,
+      "bFilter": true,
+      "bSort": false,
+      "bInfo": false,
+//      "bAutoWidth": false,
+    });
+
+
+    /* Apply the jEditable handlers to the table */
+    $('#example1 tbody td').editable(function (sValue) {
+      /* Get the position of the current data from the node */
+      var aPos = oTable.fnGetPosition(this);
+
+      /* Get the data array for this row */
+      var aData = oTable.fnGetData(aPos[0]);
+
+      /* Update the data array and return the value */
+      aData[aPos[1]] = sValue;
+      return sValue;
+    }, {"onblur": 'submit'});
+    /* Submit the form when bluring a field */
+
+    /* Init DataTables */
+    oTable1 = $('#example1').dataTable({
+      "bPaginate": false,
+      "bLengthChange": false,
+      "bFilter": true,
+      "bSort": false,
+      "bInfo": false,
+//      "bAutoWidth": false,
+    });
+
+
+  });
+</script>
+
+
+</body>
+</html>

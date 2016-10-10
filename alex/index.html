@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Недвижимость</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <link rel="stylesheet" href="styles/index.css">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header class="header">
+  <a href="#" class="header__logo">Лого</a>
+
+  <div class="header-menu">
+    <a href="#" class="header-menu__item">Снять</a>
+    <a href="#" class="header-menu__item header-menu__item_active">Снять</a>
+    <a href="#" class="header-menu__item">Снять</a>
+  </div>
+  <div class="header-city-select">
+    <a class="header-city-select__name" href="">Санкт-Петербург</a>
+
+    <p class="header-city-select__phone">8(965)4584585</p>
+  </div>
+  <div class="header-search">
+    <input class="header-search__input" placeholder="Найти по номеру">
+    <button class="header-search__btn" type="submit"><img src="images/search.png" alt=""></button>
+  </div>
+</header>
+<div class="map-box">
+  <div id="map"></div>
+</div>
+<div class="results-container">
+  <span class="results-add-btn"></span>
+  <div class="results-container-wrap">
+    <div id="result-scroll" class="tse-scrollable">
+    <div class="tse-content">
+      <a class="result-item__link" href="">
+        <div class="result-item">
+          <div class="result-item__img">
+            <img src="images/123.jpg" alt="">
+          </div>
+          <div class="result-item__info">
+            <span class="result-item__price">25 000<span class="result-item__price-val">руб/мес</span></span>
+
+            <div class="result-item__fr-box">
+              <span class="result-item__commission">комиссия 100%</span>
+              <span class="result-item__vacancy">объект свободен</span>
+            </div>
+            <span class="result-item__additionally">— 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">— Метро Лесная</span>
+            <span class="result-item__additionally">— 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">— Метро Лесная</span>
+            <img class="result-item__star" src="images/star.png" alt="">
+          </div>
+        </div>
+      </a>
+      <a class="result-item__link" href="">
+        <div class="result-item">
+          <div class="result-item__img">
+            <img src="images/123.jpg" alt="">
+          </div>
+          <div class="result-item__info">
+            <span class="result-item__price">25 000<span class="result-item__price-val">руб/мес</span></span>
+
+            <div class="result-item__fr-box">
+              <span class="result-item__commission">комиссия 100%</span>
+              <span class="result-item__vacancy">объект свободен</span>
+            </div>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <img class="result-item__star" src="images/star.png" alt="">
+          </div>
+        </div>
+      </a>
+      <a class="result-item__link" href="">
+        <div class="result-item">
+          <div class="result-item__img">
+            <img src="images/123.jpg" alt="">
+          </div>
+          <div class="result-item__info">
+            <span class="result-item__price">25 000<span class="result-item__price-val">руб/мес</span></span>
+
+            <div class="result-item__fr-box">
+              <span class="result-item__commission">комиссия 100%</span>
+              <span class="result-item__vacancy">объект свободен</span>
+            </div>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <img class="result-item__star" src="images/star.png" alt="">
+          </div>
+        </div>
+      </a>
+      <a class="result-item__link" href="">
+        <div class="result-item">
+          <div class="result-item__img">
+            <img src="images/123.jpg" alt="">
+          </div>
+          <div class="result-item__info">
+            <span class="result-item__price">25 000<span class="result-item__price-val">руб/мес</span></span>
+
+            <div class="result-item__fr-box">
+              <span class="result-item__commission">комиссия 100%</span>
+              <span class="result-item__vacancy">объект свободен</span>
+            </div>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <img class="result-item__star" src="images/star.png" alt="">
+          </div>
+        </div>
+      </a>
+      <a class="result-item__link" href="">
+        <div class="result-item">
+          <div class="result-item__img">
+            <img src="images/123.jpg" alt="">
+          </div>
+          <div class="result-item__info">
+            <span class="result-item__price">25 000<span class="result-item__price-val">руб/мес</span></span>
+
+            <div class="result-item__fr-box">
+              <span class="result-item__commission">комиссия 100%</span>
+              <span class="result-item__vacancy">объект свободен</span>
+            </div>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <img class="result-item__star" src="images/star.png" alt="">
+          </div>
+        </div>
+      </a>
+      <a class="result-item__link" href="">
+        <div class="result-item">
+          <div class="result-item__img">
+            <img src="images/123.jpg" alt="">
+          </div>
+          <div class="result-item__info">
+            <span class="result-item__price">25 000<span class="result-item__price-val">руб/мес</span></span>
+
+            <div class="result-item__fr-box">
+              <span class="result-item__commission">комиссия 100%</span>
+              <span class="result-item__vacancy">объект свободен</span>
+            </div>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <img class="result-item__star" src="images/star.png" alt="">
+          </div>
+        </div>
+      </a>
+      <a class="result-item__link" href="">
+        <div class="result-item">
+          <div class="result-item__img">
+            <img src="images/123.jpg" alt="">
+          </div>
+          <div class="result-item__info">
+            <span class="result-item__price">25 000<span class="result-item__price-val">руб/мес</span></span>
+
+            <div class="result-item__fr-box">
+              <span class="result-item__commission">комиссия 100%</span>
+              <span class="result-item__vacancy">объект свободен</span>
+            </div>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <img class="result-item__star" src="images/star.png" alt="">
+          </div>
+        </div>
+      </a>
+      <a class="result-item__link" href="">
+        <div class="result-item">
+          <div class="result-item__img">
+            <img src="images/123.jpg" alt="">
+          </div>
+          <div class="result-item__info">
+            <span class="result-item__price">25 000<span class="result-item__price-val">руб/мес</span></span>
+
+            <div class="result-item__fr-box">
+              <span class="result-item__commission">комиссия 100%</span>
+              <span class="result-item__vacancy">объект свободен</span>
+            </div>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <img class="result-item__star" src="images/star.png" alt="">
+          </div>
+        </div>
+      </a>
+      <a class="result-item__link" href="">
+        <div class="result-item">
+          <div class="result-item__img">
+            <img src="images/123.jpg" alt="">
+          </div>
+          <div class="result-item__info">
+            <span class="result-item__price">25 000<span class="result-item__price-val">руб/мес</span></span>
+
+            <div class="result-item__fr-box">
+              <span class="result-item__commission">комиссия 100%</span>
+              <span class="result-item__vacancy">объект свободен</span>
+            </div>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <img class="result-item__star" src="images/star.png" alt="">
+          </div>
+        </div>
+      </a>
+      <a class="result-item__link" href="">
+        <div class="result-item">
+          <div class="result-item__img">
+            <img src="images/123.jpg" alt="">
+          </div>
+          <div class="result-item__info">
+            <span class="result-item__price">25 000<span class="result-item__price-val">руб/мес</span></span>
+
+            <div class="result-item__fr-box">
+              <span class="result-item__commission">комиссия 100%</span>
+              <span class="result-item__vacancy">объект свободен</span>
+            </div>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <img class="result-item__star" src="images/star.png" alt="">
+          </div>
+        </div>
+      </a>
+      <a class="result-item__link" href="">
+        <div class="result-item">
+          <div class="result-item__img">
+            <img src="images/123.jpg" alt="">
+          </div>
+          <div class="result-item__info">
+            <span class="result-item__price">25 000<span class="result-item__price-val">руб/мес</span></span>
+
+            <div class="result-item__fr-box">
+              <span class="result-item__commission">комиссия 100%</span>
+              <span class="result-item__vacancy">объект свободен</span>
+            </div>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <img class="result-item__star" src="images/star.png" alt="">
+          </div>
+        </div>
+      </a>
+      <a class="result-item__link" href="">
+        <div class="result-item">
+          <div class="result-item__img">
+            <img src="images/123.jpg" alt="">
+          </div>
+          <div class="result-item__info">
+            <span class="result-item__price">25 000<span class="result-item__price-val">руб/мес</span></span>
+
+            <div class="result-item__fr-box">
+              <span class="result-item__commission">комиссия 100%</span>
+              <span class="result-item__vacancy">объект свободен</span>
+            </div>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <img class="result-item__star" src="images/star.png" alt="">
+          </div>
+        </div>
+      </a>
+      <a class="result-item__link" href="">
+        <div class="result-item">
+          <div class="result-item__img">
+            <img src="images/123.jpg" alt="">
+          </div>
+          <div class="result-item__info">
+            <span class="result-item__price">25 000<span class="result-item__price-val">руб/мес</span></span>
+
+            <div class="result-item__fr-box">
+              <span class="result-item__commission">комиссия 100%</span>
+              <span class="result-item__vacancy">объект свободен</span>
+            </div>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <span class="result-item__additionally">- 1 к. 40 кв м.</span>
+            <span class="result-item__additionally">- Метро Лесная</span>
+            <img class="result-item__star" src="images/star.png" alt="">
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="rudi-filter-wrap">
+  <div class="rudi-filter-scroll-wrap">
+    <div id="rudi-filter-scroll" class="tse-scrollable">
+      <div class="tse-content">
+        <div class="rudi-filter">
+          <div class="rudi-filter__header">
+            <h4 class="rudi-filter__title">Характеристика</h4>
+          </div>
+          <div class="rudi-filter__body">
+            <div class="rudi-filter-range">
+              <label class="rudi-filter-range__label">Text
+                <div class="rudi-filter-range__group">
+                  <input
+                    class="rudi-filter-range__group-input"
+                    type="text"
+                    placeholder="От"
+                  />
+                  <input
+                    class="rudi-filter-range__group-input"
+                    type="text" placeholder="До"
+                  />
+                </div>
+              </label>
+            </div>
+            <a class="rudi-filter-link" href="#">link</a>
+            <a class="rudi-filter-link" href="#">link</a>
+
+            <div class="rudi-filter-checkbox">
+              <label class="rudi-filter-checkbox__label">
+                <input class="rudi-filter-checkbox__input" type="checkbox"/>
+                Квалификационные работы бакалавров и специалистов <span>1235</span>
+              </label>
+            </div>
+            <!--<a class="rudi-filter-btn-all">-->
+            <!--Показать еще-->
+            <!--</a>-->
+          </div>
+        </div>
+        <div class="rudi-filter">
+          <div class="rudi-filter__header">
+            <h4 class="rudi-filter__title">Характеристика</h4>
+          </div>
+          <div class="rudi-filter__body">
+            <div class="rudi-filter-range">
+              <label class="rudi-filter-range__label">Text
+                <div class="rudi-filter-range__group">
+                  <input
+                    class="rudi-filter-range__group-input"
+                    type="text"
+                    placeholder="От"
+                  />
+                  <input
+                    class="rudi-filter-range__group-input"
+                    type="text" placeholder="До"
+                  />
+                </div>
+              </label>
+            </div>
+            <a class="rudi-filter-link" href="#">link</a>
+            <a class="rudi-filter-link" href="#">link</a>
+
+            <div class="rudi-filter-checkbox">
+              <label class="rudi-filter-checkbox__label">
+                <input class="rudi-filter-checkbox__input" type="checkbox"/>
+                Квалификационные работы бакалавров и специалистов <span>1235</span>
+              </label>
+            </div>
+            <!--<a class="rudi-filter-btn-all">-->
+            <!--Показать еще-->
+            <!--</a>-->
+          </div>
+        </div>
+        <div class="rudi-filter">
+          <div class="rudi-filter__header">
+            <h4 class="rudi-filter__title">Характеристика</h4>
+          </div>
+          <div class="rudi-filter__body">
+            <div class="rudi-filter-range">
+              <label class="rudi-filter-range__label">Text
+                <div class="rudi-filter-range__group">
+                  <input
+                    class="rudi-filter-range__group-input"
+                    type="text"
+                    placeholder="От"
+                  />
+                  <input
+                    class="rudi-filter-range__group-input"
+                    type="text" placeholder="До"
+                  />
+                </div>
+              </label>
+            </div>
+            <a class="rudi-filter-link" href="#">link</a>
+            <a class="rudi-filter-link" href="#">link</a>
+
+            <div class="rudi-filter-checkbox">
+              <label class="rudi-filter-checkbox__label">
+                <input class="rudi-filter-checkbox__input" type="checkbox"/>
+                Квалификационные работы бакалавров и специалистов <span>1235</span>
+              </label>
+            </div>
+            <!--<a class="rudi-filter-btn-all">-->
+            <!--Показать еще-->
+            <!--</a>-->
+          </div>
+        </div>
+        <div class="rudi-filter">
+          <div class="rudi-filter__header">
+            <h4 class="rudi-filter__title">Характеристика</h4>
+          </div>
+          <div class="rudi-filter__body">
+            <div class="rudi-filter-range">
+              <label class="rudi-filter-range__label">Text
+                <div class="rudi-filter-range__group">
+                  <input
+                    class="rudi-filter-range__group-input"
+                    type="text"
+                    placeholder="От"
+                  />
+                  <input
+                    class="rudi-filter-range__group-input"
+                    type="text" placeholder="До"
+                  />
+                </div>
+              </label>
+            </div>
+            <a class="rudi-filter-link" href="#">link</a>
+            <a class="rudi-filter-link" href="#">link</a>
+
+            <div class="rudi-filter-checkbox">
+              <label class="rudi-filter-checkbox__label">
+                <input class="rudi-filter-checkbox__input" type="checkbox"/>
+                Квалификационные работы бакалавров и специалистов <span>1235</span>
+              </label>
+            </div>
+            <!--<a class="rudi-filter-btn-all">-->
+            <!--Показать еще-->
+            <!--</a>-->
+          </div>
+        </div>
+        <div class="rudi-filter">
+          <div class="rudi-filter__header">
+            <h4 class="rudi-filter__title">Характеристика</h4>
+          </div>
+          <div class="rudi-filter__body">
+            <div class="rudi-filter-range">
+              <label class="rudi-filter-range__label">Text
+                <div class="rudi-filter-range__group">
+                  <input
+                    class="rudi-filter-range__group-input"
+                    type="text"
+                    placeholder="От"
+                  />
+                  <input
+                    class="rudi-filter-range__group-input"
+                    type="text" placeholder="До"
+                  />
+                </div>
+              </label>
+            </div>
+            <a class="rudi-filter-link" href="#">link</a>
+            <a class="rudi-filter-link" href="#">link</a>
+
+            <div class="rudi-filter-checkbox">
+              <label class="rudi-filter-checkbox__label">
+                <input class="rudi-filter-checkbox__input" type="checkbox"/>
+                Квалификационные работы бакалавров и специалистов <span>1235</span>
+              </label>
+            </div>
+            <!--<a class="rudi-filter-btn-all">-->
+            <!--Показать еще-->
+            <!--</a>-->
+          </div>
+        </div>
+        <div class="rudi-filter">
+          <div class="rudi-filter__header">
+            <h4 class="rudi-filter__title">Характеристика</h4>
+          </div>
+          <div class="rudi-filter__body">
+            <div class="rudi-filter-range">
+              <label class="rudi-filter-range__label">Text
+                <div class="rudi-filter-range__group">
+                  <input
+                    class="rudi-filter-range__group-input"
+                    type="text"
+                    placeholder="От"
+                  />
+                  <input
+                    class="rudi-filter-range__group-input"
+                    type="text" placeholder="До"
+                  />
+                </div>
+              </label>
+            </div>
+            <a class="rudi-filter-link" href="#">link</a>
+            <a class="rudi-filter-link" href="#">link</a>
+
+            <div class="rudi-filter-checkbox">
+              <label class="rudi-filter-checkbox__label">
+                <input class="rudi-filter-checkbox__input" type="checkbox"/>
+                Квалификационные работы бакалавров и специалистов <span>1235</span>
+              </label>
+            </div>
+            <!--<a class="rudi-filter-btn-all">-->
+            <!--Показать еще-->
+            <!--</a>-->
+          </div>
+        </div>
+        <div class="rudi-filter">
+          <div class="rudi-filter__header">
+            <h4 class="rudi-filter__title">Характеристика</h4>
+          </div>
+          <div class="rudi-filter__body">
+            <div class="rudi-filter-range">
+              <label class="rudi-filter-range__label">Text
+                <div class="rudi-filter-range__group">
+                  <input
+                    class="rudi-filter-range__group-input"
+                    type="text"
+                    placeholder="От"
+                  />
+                  <input
+                    class="rudi-filter-range__group-input"
+                    type="text" placeholder="До"
+                  />
+                </div>
+              </label>
+            </div>
+            <a class="rudi-filter-link" href="#">link</a>
+            <a class="rudi-filter-link" href="#">link</a>
+
+            <div class="rudi-filter-checkbox">
+              <label class="rudi-filter-checkbox__label">
+                <input class="rudi-filter-checkbox__input" type="checkbox"/>
+                Квалификационные работы бакалавров и специалистов <span>1235</span>
+              </label>
+            </div>
+            <!--<a class="rudi-filter-btn-all">-->
+            <!--Показать еще-->
+            <!--</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rudi-filter-scroll-wrap">
+    <div id="rudi-filter-scroll-two" class="tse-scrollable">
+    <div class="tse-content">
+      <div class="rudi-filter">
+        <div class="rudi-filter__header">
+          <h4 class="rudi-filter__title">Характеристика</h4>
+        </div>
+        <div class="rudi-filter__body">
+          <div class="rudi-filter-range">
+            <label class="rudi-filter-range__label">Text
+              <div class="rudi-filter-range__group">
+                <input
+                  class="rudi-filter-range__group-input"
+                  type="text"
+                  placeholder="От"
+                />
+                <input
+                  class="rudi-filter-range__group-input"
+                  type="text" placeholder="До"
+                />
+              </div>
+            </label>
+          </div>
+          <a class="rudi-filter-link" href="#">link</a>
+          <a class="rudi-filter-link" href="#">link</a>
+
+          <div class="rudi-filter-checkbox">
+            <label class="rudi-filter-checkbox__label">
+              <input class="rudi-filter-checkbox__input" type="checkbox"/>
+              Квалификационные работы бакалавров и специалистов <span>1235</span>
+            </label>
+          </div>
+          <!--<a class="rudi-filter-btn-all">-->
+          <!--Показать еще-->
+          <!--</a>-->
+        </div>
+      </div>
+      <div class="rudi-filter">
+        <div class="rudi-filter__header">
+          <h4 class="rudi-filter__title">Характеристика</h4>
+        </div>
+        <div class="rudi-filter__body">
+          <div class="rudi-filter-range">
+            <label class="rudi-filter-range__label">Text
+              <div class="rudi-filter-range__group">
+                <input
+                  class="rudi-filter-range__group-input"
+                  type="text"
+                  placeholder="От"
+                />
+                <input
+                  class="rudi-filter-range__group-input"
+                  type="text" placeholder="До"
+                />
+              </div>
+            </label>
+          </div>
+          <a class="rudi-filter-link" href="#">link</a>
+          <a class="rudi-filter-link" href="#">link</a>
+
+          <div class="rudi-filter-checkbox">
+            <label class="rudi-filter-checkbox__label">
+              <input class="rudi-filter-checkbox__input" type="checkbox"/>
+              Квалификационные работы бакалавров и специалистов <span>1235</span>
+            </label>
+          </div>
+          <!--<a class="rudi-filter-btn-all">-->
+          <!--Показать еще-->
+          <!--</a>-->
+        </div>
+      </div>
+      <div class="rudi-filter">
+        <div class="rudi-filter__header">
+          <h4 class="rudi-filter__title">Характеристика</h4>
+        </div>
+        <div class="rudi-filter__body">
+          <div class="rudi-filter-range">
+            <label class="rudi-filter-range__label">Text
+              <div class="rudi-filter-range__group">
+                <input
+                  class="rudi-filter-range__group-input"
+                  type="text"
+                  placeholder="От"
+                />
+                <input
+                  class="rudi-filter-range__group-input"
+                  type="text" placeholder="До"
+                />
+              </div>
+            </label>
+          </div>
+          <a class="rudi-filter-link" href="#">link</a>
+          <a class="rudi-filter-link" href="#">link</a>
+
+          <div class="rudi-filter-checkbox">
+            <label class="rudi-filter-checkbox__label">
+              <input class="rudi-filter-checkbox__input" type="checkbox"/>
+              Квалификационные работы бакалавров и специалистов <span>1235</span>
+            </label>
+          </div>
+          <!--<a class="rudi-filter-btn-all">-->
+          <!--Показать еще-->
+          <!--</a>-->
+        </div>
+      </div>
+      <div class="rudi-filter">
+        <div class="rudi-filter__header">
+          <h4 class="rudi-filter__title">Характеристика</h4>
+        </div>
+        <div class="rudi-filter__body">
+          <div class="rudi-filter-range">
+            <label class="rudi-filter-range__label">Text
+              <div class="rudi-filter-range__group">
+                <input
+                  class="rudi-filter-range__group-input"
+                  type="text"
+                  placeholder="От"
+                />
+                <input
+                  class="rudi-filter-range__group-input"
+                  type="text" placeholder="До"
+                />
+              </div>
+            </label>
+          </div>
+          <a class="rudi-filter-link" href="#">link</a>
+          <a class="rudi-filter-link" href="#">link</a>
+
+          <div class="rudi-filter-checkbox">
+            <label class="rudi-filter-checkbox__label">
+              <input class="rudi-filter-checkbox__input" type="checkbox"/>
+              Квалификационные работы бакалавров и специалистов <span>1235</span>
+            </label>
+          </div>
+          <!--<a class="rudi-filter-btn-all">-->
+          <!--Показать еще-->
+          <!--</a>-->
+        </div>
+      </div>
+      <div class="rudi-filter">
+        <div class="rudi-filter__header">
+          <h4 class="rudi-filter__title">Характеристика</h4>
+        </div>
+        <div class="rudi-filter__body">
+          <div class="rudi-filter-range">
+            <label class="rudi-filter-range__label">Text
+              <div class="rudi-filter-range__group">
+                <input
+                  class="rudi-filter-range__group-input"
+                  type="text"
+                  placeholder="От"
+                />
+                <input
+                  class="rudi-filter-range__group-input"
+                  type="text" placeholder="До"
+                />
+              </div>
+            </label>
+          </div>
+          <a class="rudi-filter-link" href="#">link</a>
+          <a class="rudi-filter-link" href="#">link</a>
+
+          <div class="rudi-filter-checkbox">
+            <label class="rudi-filter-checkbox__label">
+              <input class="rudi-filter-checkbox__input" type="checkbox"/>
+              Квалификационные работы бакалавров и специалистов <span>1235</span>
+            </label>
+          </div>
+          <!--<a class="rudi-filter-btn-all">-->
+          <!--Показать еще-->
+          <!--</a>-->
+        </div>
+      </div>
+      <div class="rudi-filter">
+        <div class="rudi-filter__header">
+          <h4 class="rudi-filter__title">Характеристика</h4>
+        </div>
+        <div class="rudi-filter__body">
+          <div class="rudi-filter-range">
+            <label class="rudi-filter-range__label">Text
+              <div class="rudi-filter-range__group">
+                <input
+                  class="rudi-filter-range__group-input"
+                  type="text"
+                  placeholder="От"
+                />
+                <input
+                  class="rudi-filter-range__group-input"
+                  type="text" placeholder="До"
+                />
+              </div>
+            </label>
+          </div>
+          <a class="rudi-filter-link" href="#">link</a>
+          <a class="rudi-filter-link" href="#">link</a>
+
+          <div class="rudi-filter-checkbox">
+            <label class="rudi-filter-checkbox__label">
+              <input class="rudi-filter-checkbox__input" type="checkbox"/>
+              Квалификационные работы бакалавров и специалистов <span>1235</span>
+            </label>
+          </div>
+          <!--<a class="rudi-filter-btn-all">-->
+          <!--Показать еще-->
+          <!--</a>-->
+        </div>
+      </div>
+      <div class="rudi-filter">
+        <div class="rudi-filter__header">
+          <h4 class="rudi-filter__title">Характеристика</h4>
+        </div>
+        <div class="rudi-filter__body">
+          <div class="rudi-filter-range">
+            <label class="rudi-filter-range__label">Text
+              <div class="rudi-filter-range__group">
+                <input
+                  class="rudi-filter-range__group-input"
+                  type="text"
+                  placeholder="От"
+                />
+                <input
+                  class="rudi-filter-range__group-input"
+                  type="text" placeholder="До"
+                />
+              </div>
+            </label>
+          </div>
+          <a class="rudi-filter-link" href="#">link</a>
+          <a class="rudi-filter-link" href="#">link</a>
+
+          <div class="rudi-filter-checkbox">
+            <label class="rudi-filter-checkbox__label">
+              <input class="rudi-filter-checkbox__input" type="checkbox"/>
+              Квалификационные работы бакалавров и специалистов <span>1235</span>
+            </label>
+          </div>
+          <!--<a class="rudi-filter-btn-all">-->
+          <!--Показать еще-->
+          <!--</a>-->
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+    <div class="rudi-filter-controls">
+    <a class="rudi-filter-controls__btn-show">
+      Применить
+    </a>
+      <a class="rudi-filter-controls__btn-additionally">
+        Еще
+      </a>
+  </div>
+</div>
+<script src="vendors/jquery-1.7.1.min.js"></script>
+<script src="vendors/scroll.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#result-scroll').TrackpadScrollEmulator();
+    $('#rudi-filter-scroll').TrackpadScrollEmulator();
+    $('#rudi-filter-scroll-two').TrackpadScrollEmulator();
+  });
+</script>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+  ymaps.ready(init);
+  var myMap,
+    myPlacemark;
+
+  function init() {
+    myMap = new ymaps.Map("map", {
+      center: [55.76, 37.64],
+      zoom: 7
+    });
+
+    myPlacemark = new ymaps.Placemark([55.76, 37.64], {hintContent: 'Москва!', balloonContent: 'Столица России'});
+  }
+</script>
+</body>
+</html>

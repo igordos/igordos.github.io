@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Недвижимость</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <link rel="stylesheet" href="styles/index.css">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!-- 1. Link to jQuery (1.8 or later), -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+
+  <!-- fotorama.css & fotorama.js. -->
+  <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
+</head>
+<body>
+<header class="header">
+  <a href="#" class="header__logo">Лого</a>
+
+  <div class="header-menu">
+    <a href="#" class="header-menu__item">Снять</a>
+    <a href="#" class="header-menu__item header-menu__item_active">Снять</a>
+    <a href="#" class="header-menu__item">Снять</a>
+  </div>
+  <div class="header-city-select">
+    <a class="header-city-select__name" href="">Санкт-Петербург</a>
+
+    <p class="header-city-select__phone">8(965)4584585</p>
+  </div>
+  <div class="header-search">
+    <input class="header-search__input" placeholder="Найти по номеру">
+    <button class="header-search__btn" type="submit"><img src="images/search.png" alt=""></button>
+  </div>
+</header>
+<div class="detail-container">
+  <div class="detail">
+    <div class="detail__head">
+      <span class="detail__delivery-option">Аренда длительный срок</span>
+      <span class="detail__number">№ 5214552</span>
+    </div>
+
+    <div class="detail-item">
+      <div class="detail-item__img">
+        <img src="images/123.jpg" alt="">
+      </div>
+      <div class="detail-item__box">
+        <span class="detail-item__additionally">- 1 к. 40 кв м.</span>
+        <span class="detail-item__additionally">- Метро Лесная</span>
+        <span class="detail-item__additionally">- 1 к. 40 кв м.</span>
+        <span class="detail-item__additionally">- Метро Лесная</span>
+        <img class="detail-item__star" src="images/star.png" alt="">
+        <span class="detail-item__price">25 000<span class="result-item__price-val">руб/мес</span></span>
+
+        <div class="detail-item__fr-box">
+          <span class="detail-item__commission">комиссия 100%</span>
+          <span class="detail-item__vacancy">объект свободен</span>
+        </div>
+      </div>
+      <div class="detail-item__btn-box">
+        <span class="detail-item__btn-get">Снять</span>
+      </div>
+    </div>
+    <div class="detail-map-box">
+      <div id="detail-map"></div>
+    </div>
+  </div>
+</div>
+<div class="detail-rent-row">
+  <div class="detail-rent-container">
+    <div class="detail-rent-form">
+      <div class="detail-rent-form_col">
+        <div class="detail-rent-form__inp-box detail-rent-form__inp-box_pdr">
+          <input type="text" class="detail-rent-form__inp" placeholder="text">
+        </div>
+        <div class="detail-rent-form__inp-box detail-rent-form__inp-box_pdl">
+          <input type="text" class="detail-rent-form__inp" placeholder="text">
+        </div>
+        <div class="detail-rent-form__text-box">
+          <textarea placeholder="Комментарии"></textarea>
+        </div>
+      </div>
+      <div class="detail-rent-form_col">
+        <div class="detail-rent-form_col-1-2">
+          <span class="detail-rent-form__btn-get-code">Получить код</span>
+          <input type="text" class="detail-rent-form__inp-code" placeholder="text">
+          <span class="detail-rent-form__btn-submit">Готово</span>
+        </div>
+        <div class="detail-rent-form_col-1-2">
+          <div class="detail-rent-form__msg-text">Ваша хаявка принята</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="detail-container">
+  <div class="detail-info">
+    <div class="detail-info__col">
+222
+    </div>
+    <div class="detail-info__col detail-info__col_pdnr">
+      <div class="fotorama" data-nav="thumbs">
+        <img src="http://s.fotorama.io/1.jpg">
+        <img src="http://s.fotorama.io/2.jpg">
+      </div>
+      <iframe class="detail-info__player" src="https://www.youtube.com/embed/Jqj0eLwGVU4" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+  ymaps.ready(init);
+  var myMap,
+    myPlacemark;
+
+  function init() {
+    myMap = new ymaps.Map("detail-map", {
+      center: [55.76, 37.64],
+      zoom: 7
+    });
+
+    myPlacemark = new ymaps.Placemark([55.76, 37.64], {hintContent: 'Москва!', balloonContent: 'Столица России'});
+  }
+</script>
+</body>
+</html>

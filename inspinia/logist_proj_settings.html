@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>INSPINIA | Dashboard</title>
+  <link href="styles/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+
+<body class="pace-done fixed-sidebar fixed-nav fixed-nav-basic">
+<div id="wrapper">
+  <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+      <ul class="nav metismenu" id="side-menu">
+        <li class="nav-header">
+          <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="images/profile_small.jpg"/>
+                             </span>
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Александра
+                              Васильева</strong>
+                             </span> <span class="text-muted text-xs block">Логист<b
+                              class="caret"></b></span> </span> </a>
+            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+              <li><a href="mailbox.html">Mailbox</a></li>
+              <li class="divider"></li>
+              <li><a href="login.html">Выйти</a></li>
+            </ul>
+          </div>
+          <div class="logo-element">
+            IN+
+          </div>
+        </li>
+        <li>
+          <a href="alexdash.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
+        </li>
+        <li>
+          <a href="logist_proj.html"><i class="fa fa-briefcase"></i> <span class="nav-label">Проекты</span></a>
+        </li>
+        <li>
+          <a href="logist_operator.html"><i class="fa fa-group"></i> <span class="nav-label">Операторы</span></a>
+        </li>
+        <li>
+          <a href="logist_prognoz.html"><i class="fa fa-area-chart"></i> <span class="nav-label">Прогноз</span></a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <div id="page-wrapper" class="gray-bg dashbard-1">
+    <div class="row border-bottom">
+      <nav class="navbar navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+          <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#" aria-expanded="false">
+              <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+            </a>
+            <ul class="dropdown-menu dropdown-alerts dropdown-alerts-custom">
+              <li>
+                <a href="mailbox.html">
+                  <div>
+                    <i class="fa fa-users fa-fw"></i> Центр финансового консалтинга - избыток операторов
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="profile.html">
+                  <div>
+                    <i class="fa fa-briefcase fa-fw"></i> Перекресток федеральный - снижение SLA
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="grid_options.html">
+                  <div>
+                    <i class="fa fa-users fa-fw"></i> IMMO - незватка операторов
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <div class="text-center link-block">
+                  <a href="notifications.html">
+                    <strong>Все уведомления</strong>
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="login.html">
+              <i class="fa fa-sign-out"></i> Выйти
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="wrapper wrapper-content animated fadeIn">
+      <div class="ibox-content m-b-sm border-bottom">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Настройки проектов</h2>
+            <br>
+            <p>
+            <button class="btn btn-sm btn-primary">Применить изменения</button>
+            </p>
+            <div class="table-responsive">
+              <table id="example" class="table">
+                <thead>
+                <tr>
+                  <th>Проект</th>
+                  <th>SLA, min.</th>
+                  <th>SLA, max.</th>
+                  <th>MC, min.</th>
+                  <th>MC, max.</th>
+                  <th>Трафик, расч.</th>
+                  <th>Трафик, макс.</th>
+                  <th>Группа</th>
+                  <th>Скрыть</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>IMMO</td>
+                  <td>70</td>
+                  <td>85</td>
+                  <td>0</td>
+                  <td>6</td>
+                  <td>500</td>
+                  <td>600</td>
+                  <td>
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-xs btn-default active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked="">Крупный
+                      </label>
+                      <label class="btn btn-xs btn-default">
+                        <input type="radio" name="options" id="option2" autocomplete="off">Малый
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-xs btn-default ">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked="">Показать
+                      </label>
+                      <label class="btn btn-xs btn-default active">
+                        <input type="radio" name="options" id="option2" autocomplete="off">Скрыть
+                      </label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>IMMO</td>
+                  <td>70</td>
+                  <td>85</td>
+                  <td>0</td>
+                  <td>6</td>
+                  <td>500</td>
+                  <td>600</td>
+                  <td>
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-xs btn-default active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked="">Крупный
+                      </label>
+                      <label class="btn btn-xs btn-default">
+                        <input type="radio" name="options" id="option2" autocomplete="off">Малый
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-xs btn-default ">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked="">Показать
+                      </label>
+                      <label class="btn btn-xs btn-default active">
+                        <input type="radio" name="options" id="option2" autocomplete="off">Скрыть
+                      </label>
+                    </div>
+                  </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-default"><i class="fa fa-download"></i></button>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Mainly scripts -->
+<script src="vendors/js/jquery-2.1.1.js"></script>
+<script src="vendors/js/bootstrap.min.js"></script>
+<script src="vendors/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="vendors/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="vendors/js/inspinia.js"></script>
+
+<!-- jQuery UI -->
+<script src="vendors/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+<!-- jEditable -->
+<script src="vendors/js/plugins/jeditable/jquery.jeditable.js"></script>
+
+<!-- dataTable -->
+<script src="vendors/js/plugins/dataTables/datatables.min.js"></script>
+
+
+<script>
+  $(document).ready(function () {
+
+
+    /* Apply the jEditable handlers to the table */
+    $('#example tbody td').editable(function (sValue) {
+      /* Get the position of the current data from the node */
+      var aPos = oTable.fnGetPosition(this);
+
+      /* Get the data array for this row */
+      var aData = oTable.fnGetData(aPos[0]);
+
+      /* Update the data array and return the value */
+      aData[aPos[1]] = sValue;
+      return sValue;
+    }, {"onblur": 'submit'});
+    /* Submit the form when bluring a field */
+
+    /* Init DataTables */
+    oTable = $('#example').dataTable({
+      "bPaginate": false,
+      "bLengthChange": false,
+      "bFilter": true,
+      "bSort": false,
+      "bInfo": false,
+//      "bAutoWidth": false,
+    });
+
+
+  });
+</script>
+
+
+</body>
+</html>
