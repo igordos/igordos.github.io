@@ -21,7 +21,7 @@
           <span>Ландшафтный дизайн и благоустройство</span>
         </a>
         <span id="menuButton" class="header__main-nav-btn" href="#"><img src="images/menu.png" alt=""></span>
-        <nav id="headerNav" class="header__main-nav header__main-nav_page" role="navigation">
+        <nav id="headerNav" class="header__main-nav header__main-nav_page" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
           <ul>
             <li><a href="#">О компании</a>
             <li><a href="#">Портфолио</a>
@@ -40,9 +40,29 @@
   </div>
 </header>
 <main role="main">
-  <div class="portfolio__container">
-    <h1 class="portfolio__title">Портфолио</h1>
-    <section class="portfolio__content-list">
+  <div class="breadcrumb-container">
+    <ol class="breadcrumb breadcrumb-arrow" vocab="http://schema.org/" typeof="BreadcrumbList">
+      <li property="itemListElement" typeof="ListItem">
+        <a href="#1" property="item" typeof="WebPage">
+          <span property="name">Главная</span>
+        </a>
+        <meta property="position" content="1">
+      </li>
+      <li property="itemListElement" typeof="ListItem">
+        <a href="#2" property="item" typeof="WebPage">
+          <span property="name">Услуги</span>
+        </a>
+        <meta property="position" content="2">
+      </li>
+      <li class="active" property="itemListElement" typeof="ListItem">
+        <span property="name">Мощение</span>
+        <meta property="position" content="3">
+      </li>
+    </ol>
+  </div>
+  <div class="page__container">
+    <h1 class="page__title">Портфолио</h1>
+    <section class="page__content">
       <div class="portfolio__info">
         <div class="portfolio__cl">
           <a href="#"><img src="http://lukles.ru/assets/templates/images/landsh.jpg" alt=""></a>
