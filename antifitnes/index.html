@@ -44,8 +44,33 @@
     </div>
     <img class="header__lft-img" src="images/roma.png" alt="">
     <img class="header__rgt-img" src="images/girl.png" alt="">
-
   </div>
+  <nav class="header__nav">
+    <div class="container">
+      <a class="header__nav-logo" href="#"><img src="images/logo.png" alt=""></a>
+      <ul class="header__nav-menu">
+        <li>
+          <a href="#plus">Тренировки</a>
+        </li>
+        <li>
+          <a href="#friends">Результат</a>
+        </li>
+        <li>
+          <a href="#trainers">Тренеры</a>
+        </li>
+        <li>
+          <a href="#subscriptions">Цены</a>
+        </li>
+        <li>
+          <a href="#contact">Контакты</a>
+        </li>
+      </ul>
+      <div class="header__nav-call">
+        <span class="header__nav-call-phone">8(889)888-88-88</span><br>
+        <button class="header__nav-call-btn">Заказать звонок</button>
+      </div>
+    </div>
+  </nav>
 </header>
 <main role="main">
   <section class="plus">
@@ -523,7 +548,7 @@
 
 <!--<div id="mask" class="mask-content"></div>-->
 
-<script src="scripts/jquery-3.1.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="scripts/owl/owl.carousel.min.js"></script>
 <script>
   $(document).ready(function () {
@@ -592,6 +617,49 @@
   //  });
 
 
+</script>
+
+
+<script>
+  jQuery(window).scroll(function () {
+    var $sections = $('section');
+    $sections.each(function (i, el) {
+      var top = $(el).offset().top - 100;
+      var bottom = top + $(el).height();
+      var scroll = $(window).scrollTop();
+      var id = $(el).attr('class');
+      if (scroll > top && scroll < bottom) {
+        $('.header__nav-menu a.active').removeClass('active');
+        $('.header__nav-menu a[href="#' + id + '"]').addClass('active');
+
+      }
+    });
+
+    console.log($(window).scrollTop());
+
+    var $headerNavLogo = $('.header__nav-logo');
+    var $headerNavCall = $('.header__nav-call');
+
+    if ($(window).scrollTop() > 200) {
+      $headerNavLogo.addClass('header__nav-logo_show');
+      $headerNavCall.addClass('header__nav-call_show');
+    } else {
+      $headerNavLogo.removeClass('header__nav-logo_show');
+      $headerNavCall.removeClass('header__nav-call_show');
+    }
+
+  });
+
+  $(".header__nav-menu").on("click", "a", function (event) {
+    // исключаем стандартную реакцию браузера
+    event.preventDefault();
+    // получем идентификатор блока из атрибута href
+    var sectionClass = $(this).attr('href').replace('#', '.');
+    // находим высоту, на которой расположен блок
+    var top = ($(sectionClass).offset().top - 55);
+    // анимируем переход к блоку, время: 800 мс
+    $('body,html').animate({scrollTop: top}, 800);
+  });
 </script>
 
 
