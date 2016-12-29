@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Антифитнес</title>
   <meta name="title" content="Антифитнес">
   <meta name="keywords" content="Антифитнес, Кроссфит, Функциональный Тренинг, Растяжка, Тяжелая Атлетика">
@@ -26,7 +27,8 @@
 <nav class="header__nav">
   <div class="container">
     <a class="header__nav-logo" href="#"><img src="images/logo.png" alt=""></a>
-    <ul class="header__nav-menu">
+    <span id="menuButton" class="header__nav-menu-btn"></span>
+    <ul id="headerNav" class="header__nav-menu">
       <li>
         <a href="#plus">Тренировки</a>
       </li>
@@ -251,11 +253,11 @@
                 10Ж (1-й этаж)</p>
             </div>
             <div class="trainers__item">
-              <div class="row">
-                <div class="col-4-12">
+              <div class="trainers__row">
+                <div class="trainers__col-4-12">
                   <img class="trainers__icon" src="images/trainers-roma.jpg" alt="">
                 </div>
-                <div class="col-8-12">
+                <div class="trainers__col-8-12">
                   <div class="trainers__text">
                     <h4>Роман Гречин</h4>
                     <p class="quote">«Я пришел заниматься кроссфитом потому, что хочу помочь людям расти над собой и
@@ -270,11 +272,11 @@
               </div>
             </div>
             <div class="trainers__item">
-              <div class="row">
-                <div class="col-4-12">
+              <div class="trainers__row">
+                <div class="trainers__col-4-12">
                   <img class="trainers__icon" src="images/trainers-roma.jpg" alt="">
                 </div>
-                <div class="col-8-12">
+                <div class="trainers__col-8-12">
                   <div class="trainers__text">
                     <h4>Роман Гречин</h4>
                     <p class="quote">«Я пришел заниматься кроссфитом потому, что хочу помочь людям расти над собой и
@@ -289,11 +291,11 @@
               </div>
             </div>
             <div class="trainers__item">
-              <div class="row">
-                <div class="col-4-12">
+              <div class="trainers__row">
+                <div class="trainers__col-4-12">
                   <img class="trainers__icon" src="images/trainers-roma.jpg" alt="">
                 </div>
-                <div class="col-8-12">
+                <div class="trainers__col-8-12">
                   <div class="trainers__text">
                     <h4>Роман Гречин</h4>
                     <p class="quote">«Я пришел заниматься кроссфитом потому, что хочу помочь людям расти над собой и
@@ -317,11 +319,11 @@
                 10Ж (1-й этаж)</p>
             </div>
             <div class="trainers__item">
-              <div class="row">
-                <div class="col-4-12">
+              <div class="trainers__row">
+                <div class="trainers__col-4-12">
                   <img class="trainers__icon" src="images/trainers-roma.jpg" alt="">
                 </div>
-                <div class="col-8-12">
+                <div class="trainers__col-8-12">
                   <div class="trainers__text">
                     <h4>Роман Гречин</h4>
                     <p class="quote">«Я пришел заниматься кроссфитом потому, что хочу помочь людям расти над собой и
@@ -336,11 +338,11 @@
               </div>
             </div>
             <div class="trainers__item">
-              <div class="row">
-                <div class="col-4-12">
+              <div class="trainers__row">
+                <div class="trainers__col-4-12">
                   <img class="trainers__icon" src="images/trainers-roma.jpg" alt="">
                 </div>
-                <div class="col-8-12">
+                <div class="trainers__col-8-12">
                   <div class="trainers__text">
                     <h4>Роман Гречин</h4>
                     <p class="quote">«Я пришел заниматься кроссфитом потому, что хочу помочь людям расти над собой и
@@ -355,11 +357,11 @@
               </div>
             </div>
             <div class="trainers__item">
-              <div class="row">
-                <div class="col-4-12">
+              <div class="trainers__row">
+                <div class="trainers__col-4-12">
                   <img class="trainers__icon" src="images/trainers-roma.jpg" alt="">
                 </div>
-                <div class="col-8-12">
+                <div class="trainers__col-8-12">
                   <div class="trainers__text">
                     <h4>Роман Гречин</h4>
                     <p class="quote">«Я пришел заниматься кроссфитом потому, что хочу помочь людям расти над собой и
@@ -508,7 +510,7 @@
       <h2 class="title">Наши контакты</h2>
       <div class="row">
         <div class="col-6-12">
-          <div id="map" class="contact__map" style="width:100%; height:520px"></div>
+          <div id="map" class="contact__map" style="width:100%;"></div>
         </div>
         <div class="col-6-12">
           <div class="contact__text">
@@ -560,8 +562,15 @@
       navClass: ['friends-carousel__nav-prev', 'friends-carousel__nav-next'],
       navContainerClass: 'friends-carousel__nav-container',
     });
+
+    var itemsCarousel = 2;
+
+    if ($(window).width() < 992) {
+      itemsCarousel = 1;
+    }
+
     $(".owl-carousel.clubs-carousel").owlCarousel({
-      items: 2,
+      items: itemsCarousel,
       autoplay: true,
       loop: true,
       nav: true,
@@ -569,6 +578,8 @@
       navClass: ['clubs-carousel__nav-prev', 'clubs-carousel__nav-next'],
       navContainerClass: 'clubs-carousel__nav-container',
     });
+
+
   });
 </script>
 
@@ -585,41 +596,33 @@
 </script>
 
 <script>
-  //  var menuButton = $('#menuButton');
-  //  var headerNav = $('#headerNav');
-  //  var mask = $('#mask');
-  //
-  //  menuButton.click(function () {
-  //    mask.addClass('mask-content_open');
-  //    headerNav.addClass('header__main-nav_open');
-  //    $('body').css('overflow', 'hidden');
-  //  });
-  //
-  //  mask.click(function () {
-  //    headerNav.removeClass('header__main-nav_open');
-  //    mask.removeClass('mask-content_open');
-  //    $('body').css('overflow', 'auto');
-  //  });
-  //
-  //
-  //  var hHght = 141;
-  //  var hMrg = 0;
-  //  $(function () {
-  //    $(window).scroll(function () {
-  //      var top = $(this).scrollTop();
-  //      if (top + hMrg < hHght) {
-  //        menuButton.css('top', (hHght - top));
-  //      } else {
-  //        menuButton.css('top', hMrg);
-  //      }
-  //    });
-  //  });
-
+//    var menuButton = $('#menuButton');
+//    var headerNav = $('#headerNav');
+//
+//    menuButton.click(function () {
+//      if (headerNav.hasClass('header__nav-menu_show')) {
+//        headerNav.removeClass('header__nav-menu_show');
+//      } else {
+//        headerNav.addClass('header__nav-menu_show');
+//      }
+//    });
 
 </script>
 
 
 <script>
+
+  var menuButton = $('#menuButton');
+  var headerNav = $('#headerNav');
+
+  menuButton.click(function () {
+    if (headerNav.hasClass('header__nav-menu_show')) {
+      headerNav.removeClass('header__nav-menu_show');
+    } else {
+      headerNav.addClass('header__nav-menu_show');
+    }
+  });
+
   jQuery(window).scroll(function () {
     var $sections = $('section');
     $sections.each(function (i, el) {
@@ -633,8 +636,6 @@
 
       }
     });
-
-    console.log($(window).scrollTop());
 
     var $headerNavLogo = $('.header__nav-logo');
     var $headerNavCall = $('.header__nav-call');
@@ -658,6 +659,7 @@
     var top = ($(sectionClass).offset().top - 55);
     // анимируем переход к блоку, время: 800 мс
     $('body,html').animate({scrollTop: top}, 800);
+    headerNav.removeClass('header__nav-menu_show');
   });
 </script>
 
