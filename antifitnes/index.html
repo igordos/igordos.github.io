@@ -570,13 +570,14 @@
   <form class="contact__form" action="/contact/" method="post">
     <h3>Оставьте Ваши контакты</h3>
     <input placeholder="Имя" type="text" tabindex="1" name="name">
-    <input placeholder="Телефон" type="tel" tabindex="3" name="phone" required>
+    <div class="contact__form_req">
+      <input placeholder="Телефон" type="tel" tabindex="3" name="phone" required>
+    </div>
     <button type="submit" class="button button_sm">Отправить</button>
   </form>
 </div>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-
 <script src="scripts/owl/owl.carousel.min.js"></script>
 <script>
   $(document).ready(function () {
@@ -666,11 +667,7 @@
     DG.marker([59.872472, 30.4402948]).addTo(map).bindPopup('<div class="contact__club contact__club"> <h3 class="or">Клуб <span>Заря</span></h3> <p class="wt">Санкт-Петербург, <span class="or">м. Петроградская/Чкаловская,</span><br> Газовая ул., д. 10Ж (1-й этаж)</p> </div>');
   });
 </script>
-
 <script src="scripts/remodal.min.js"></script>
-<script>
-
-</script>
 </body>
 </html>
 
