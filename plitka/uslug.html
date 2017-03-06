@@ -14,7 +14,8 @@
   <meta property="og:url" content="">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
-  <meta property="og:description" content="AG garden design - высококвалифицированные специалисты в области строительных работ, ландшафтного дизайна и благоустройства городских объектов.">
+  <meta property="og:description"
+        content="AG garden design - высококвалифицированные специалисты в области строительных работ, ландшафтного дизайна и благоустройства городских объектов.">
   <link rel="image_src" href="images/share-ag.jpg?v=1">
   <meta property="og:image" content="images/share-ag.jpg?v=1">
   <meta property="og:image:width" content="1200">
@@ -26,30 +27,94 @@
 </head>
 <body>
 <header class="header">
-  <div class="header__bg header__bg_2">
-    <div class="header__container">
-      <div class="header__c-6-12">
-        <a href="#" class="header__logo" role="banner" title="text">
-          <img src="images/logo-w.png" alt="">
-          <span>Ландшафтный дизайн и благоустройство</span>
-        </a>
-        <span id="menuButton" class="header__main-nav-btn" href="#"><img src="images/menu.png" alt=""></span>
-        <nav id="headerNav" class="header__main-nav header__main-nav_page" role="navigation">
-          <ul>
-            <li><a href="#">О компании</a>
-            <li><a href="#">Портфолио</a>
-            <li><a href="#">Цены</a>
-            <li><a href="#">Контакты</a>
-          </ul>
-        </nav>
-      </div>
-      <div class="header__c-3-12">
-        <div class="header__contact-info">
-          Тел. 8 (812) 920 87 11<br>
-          E-mail: <a href="mailto:ag-gardendesign@mail.ru">ag-gardendesign@mail.ru</a>
+  <div class="header__bg">
+    <div class="header__container container">
+      <div class="header__row">
+        <div class="header__c-3-12">
+          <a href="#" class="header__logo" role="banner" title="text">
+            <img src="images/logo-w-text.png" alt="AG garden design - ландшафтный дизайн и благоустройство">
+          </a>
+          <span id="menuButton" class="header__main-nav-btn" href="#"><img src="images/menu.png" alt=""></span>
+        </div>
+        <div class="header__c-6-12">
+          <div class="header__contact-info">
+            <span class="header__contact-tel">8 (812) 920 87 11</span><br>
+            <span class="header__contact-email"><a
+              href="mailto:ag-gardendesign@mail.ru">ag-gardendesign@mail.ru</a></span>
+          </div>
+          <nav id="headerNav" class="header__main-nav" role="navigation" itemscope
+               itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="header__menu">
+
+              <li class="menu__node">
+                <a href="/about" title="О компании">
+                  О компании</a>
+              </li>
+
+              <li class="menu__node">
+                <a href="/reviews" title="Отзывы">
+                  Отзывы</a>
+              </li>
+
+              <li class="menu__node">
+                <a href="/portfolio" title="Портфолио">
+                  Портфолио</a>
+              </li>
+
+              <li class="menu__node">
+                <a href="/services/" title="Услуги">
+                  Услуги</a>
+                <ul class="header__menu-sub">
+                  <li class="menu__node">
+                    <a href="/services/planting-and-care/" title="Озеленение и уход">
+                      Озеленение и уход</a>
+                  </li>
+                  <li class="menu__node">
+                    <a href="/services/paving/" title="Мощение">
+                      Мощение</a>
+                  </li>
+
+                  <li class="menu__node">
+                    <a href="/services/facing/" title="Облицовка">
+                      Облицовка</a>
+                  </li>
+
+                  <li class="menu__node">
+                    <a href="/services/planning-and-design/" title="Ландшафтное проектирование">
+                      Ландшафтное проектирование</a>
+
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="menu__node">
+                <a href="/price" title="Цены">
+                  Цены</a>
+
+              </li>
+
+              <li class="menu__node">
+                <a href="/contact" title="Контакты">
+                  Контакты</a>
+
+              </li>
+
+              <li class="header__menu"><a href="#" class="header__menu__search-link"><img src="images/search.png"
+                                                                                          alt="Поиск"></a>
+                <ul class="header__menu-sub header__menu-search">
+                  <form id="headerSearchForm">
+                    <input type="text" placeholder="Поиск" name="text">
+                  </form>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </header>
 <main role="main">
@@ -74,88 +139,123 @@
     </ol>
   </div>
   <div class="page__container">
-    <section class="page__content">
-      <h1 class="page__title">Мощение</h1>
-      <div class="page__row">
-        <div class="page__c-4-12">
+    <h1 class="page__title">Мощение</h1>
+    <div class="page__row">
+      <div class="page__c-10-12">
+        <div class="page__content">
+          <div class="page__row">
+            <div class="page__c-4-12">
+              <img src="images/test.jpg" alt="">
+            </div>
+            <div class="page__c-4-12">
+              <img src="images/test.jpg" alt="">
+            </div>
+            <div class="page__c-4-12">
+              <img src="images/test.jpg" alt="">
+            </div>
+          </div>
+          <div class="page__row">
+            <div class="page__c-6-12">
+              <img src="images/test.jpg" alt="">
+            </div>
+            <div class="page__c-6-12">
+              <img src="images/test.jpg" alt="">
+            </div>
+          </div>
+          <div class="page__row">
+            <div class="page__c-4-12">
+              <img src="images/test.jpg" alt="">
+            </div>
+            <div class="page__c-4-12">
+              <img src="images/test.jpg" alt="">
+            </div>
+            <div class="page__c-4-12">
+              <img src="images/test.jpg" alt="">
+            </div>
+          </div>
           <img src="images/test.jpg" alt="">
-        </div>
-        <div class="page__c-4-12">
+          <div class="page__row">
+            <div class="page__c-6-12">
+              <img src="images/test.jpg" alt="">
+            </div>
+            <div class="page__c-6-12">
+              <img src="images/test.jpg" alt="">
+            </div>
+          </div>
           <img src="images/test.jpg" alt="">
-        </div>
-        <div class="page__c-4-12">
           <img src="images/test.jpg" alt="">
         </div>
       </div>
-      <div class="page__row">
-        <div class="page__c-6-12">
-          <img src="images/test.jpg" alt="">
-        </div>
-        <div class="page__c-6-12">
-          <img src="images/test.jpg" alt="">
-        </div>
+      <div class="page__c-2-12">
+        <ul class="page__menu">
+          <li class="menu__node">
+            <a href="/services/planting-and-care/" title="Озеленение и уход">
+              Озеленение и уход</a>
+          </li>
+          <li class="menu__node">
+            <a href="/services/paving/" title="Мощение">
+              Мощение</a>
+          </li>
+
+          <li class="menu__node">
+            <a href="/services/facing/" title="Облицовка">
+              Облицовка</a>
+          </li>
+
+          <li class="menu__node">
+            <a href="/services/planning-and-design/" title="Ландшафтное проектирование">
+              Ландшафтное проектирование</a>
+
+          </li>
+
+        </ul>
       </div>
-      <div class="page__row">
-        <div class="page__c-4-12">
-          <img src="images/test.jpg" alt="">
-        </div>
-        <div class="page__c-4-12">
-          <img src="images/test.jpg" alt="">
-        </div>
-        <div class="page__c-4-12">
-          <img src="images/test.jpg" alt="">
-        </div>
-      </div>
-      <img src="images/test.jpg" alt="">
-      <div class="page__row">
-        <div class="page__c-6-12">
-          <img src="images/test.jpg" alt="">
-        </div>
-        <div class="page__c-6-12">
-          <img src="images/test.jpg" alt="">
-        </div>
-      </div>
-      <img src="images/test.jpg" alt="">
-      <img src="images/test.jpg" alt="">
-    </section>
+    </div>
   </div>
 </main>
 <footer class="footer">
-  <div class="footer__cl">
-    <div class="about__contact-info" itemscope itemtype="http://schema.org/Organization">
-      <span itemprop="name"><b>AG garden design</b></span><br>
-      <b>Контакты: </b>
-      <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-        <b>Адрес: </b>
-        <span itemprop="streetAddress">Льва Толстого, 16</span>
-        <span itemprop="postalCode"> 119021</span>
-        <span itemprop="addressLocality">Москва</span>,
-      </div>
-      <b>Телефон: </b><span itemprop="telephone">+7 495 739–70–00</span><br>
-      <b>Факс: </b><span itemprop="faxNumber">+7 495 739–70–70</span><br>
-      <b>Электронная почта: </b> <span itemprop="email">pr@yandex-team.ru</span>
+  <div class="about__contact-info" itemscope itemtype="http://schema.org/Organization">
+    <span itemprop="name">AG garden design</span><br>
+    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+      Адрес:
+      <span itemprop="streetAddress">Льва Толстого, 16</span>
+      <span itemprop="postalCode"> 119021</span>
+      <span itemprop="addressLocality">Москва</span>,
     </div>
+    Телефон: <span itemprop="telephone">+7 495 739–70–00</span>
+    Электронная почта: <span itemprop="email">ag-gardendesign@mail.ru</span>
+  </div>
+  <div class="footer__cl">
+    <div id="map" style="width: 100%; height: 320px;"></div>
   </div>
   <div class="footer__cr">
     <div class="about__contact">
       <form class="about__form" action="" method="post">
         <h3>Напишите нам, мы рады сотрудничеству </h3>
-        <fieldset>
-          <input placeholder="Имя" type="text" tabindex="1" required>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Email" type="email" tabindex="2" required>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Телефон" type="tel" tabindex="3" required>
-        </fieldset>
-        <fieldset>
-          <textarea placeholder="Сообщение" tabindex="5" required></textarea>
-        </fieldset>
-        <fieldset>
-          <button type="submit">Отправить</button>
-        </fieldset>
+        <input placeholder="Имя" type="text" tabindex="1" required>
+        <input placeholder="Имя" type="text" tabindex="1" required>
+        <input placeholder="Email" type="email" tabindex="2" required>
+        <textarea placeholder="Сообщение" tabindex="5" required></textarea>
+        <button type="submit">Отправить</button>
       </form>
+    </div>
+  </div>
+  <div class="footer__nav">
+    <div class="footer__cl">
+      <ul class="footer__menu">
+        <li><a href="#">Ландшафтное</a></li>
+        <li><a href="#">Ландшафтное проектирование</a></li>
+        <li><a href="#">Ландшафтное</a></li>
+        <li><a href="#">Ландшафтное проектирование</a></li>
+        <li><a href="#">Ландшафтное</a></li>
+        <li><a href="#">Ландшафтное проектирование</a></li>
+      </ul>
+    </div>
+    <div class="footer__cr">
+      <div class="footer__social">
+        <a href="//vk.com/aggardendesign" target="_blank"><img src="images/vk.png" alt="Мы Вконтакте!"></a>
+        <a href="//vk.com/aggardendesign" target="_blank"><img src="images/instagram.png" alt="Мы Вконтакте!"></a>
+      </div>
     </div>
   </div>
 </footer>
@@ -172,13 +272,13 @@
   var headerNav = $('#headerNav');
   var mask = $('#mask');
 
-  menuButton.click(function() {
+  menuButton.click(function () {
     mask.addClass('mask-content_open');
     headerNav.addClass('header__main-nav_open');
     $('body').css('overflow', 'hidden');
   });
 
-  mask.click(function() {
+  mask.click(function () {
     headerNav.removeClass('header__main-nav_open');
     mask.removeClass('mask-content_open');
     $('body').css('overflow', 'auto');
@@ -187,11 +287,11 @@
 
   var hHght = 141;
   var hMrg = 0;
-  $(function(){
-    $(window).scroll(function(){
+  $(function () {
+    $(window).scroll(function () {
       var top = $(this).scrollTop();
-      if (top+hMrg < hHght) {
-        menuButton.css('top', (hHght-top));
+      if (top + hMrg < hHght) {
+        menuButton.css('top', (hHght - top));
       } else {
         menuButton.css('top', hMrg);
       }
