@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Чат</title>
+  <!--[if lte IE 10]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<header class="header">
+  <a href="#" title="fastcup">
+    <div class="header__logo">
+      <div class="header__logo_img">
+        <img src="images/logo.png" alt="">
+      </div>
+      <div class="header__logo_text">
+        <img src="images/logo_text.png" alt="">
+      </div>
+    </div>
+  </a>
+  <nav class="header__nav">
+    <ul class="header__menu">
+      <li>
+        <a href="#">Главная</a>
+      </li>
+      <li>
+        <a href="#">Матчи</a>
+      </li>
+      <li>
+        <a href="#">Турниры</a>
+      </li>
+      <li>
+        <a href="#">Команды</a>
+      </li>
+      <li>
+        <a href="#">Игроки</a>
+      </li>
+      <li>
+        <a href="#">Форум</a>
+      </li>
+      <li>
+        <a href="#">Помощь</a>
+      </li>
+    </ul>
+    <div class="header__menu-right">
+      <div class="header__call">
+        <img src="images/call.png" alt="">
+      </div>
+      <div class="header__msg">
+        <img src="images/msg.png" alt="">
+      </div>
+      <div class="header__user">
+        <span>Igor</span>
+        <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+      </div>
+      <div class="header__slide-bar">
+        <img src="images/sidebar.png" alt="">
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="chat-wrap">
+    <div class="chat">
+      <div class="chat__header">
+        <div class="chat__tab">
+          <div class="chat__tab-item chat__tab-item_active">Все сообщения</div>
+          <div class="chat__tab-item">Непрочитанные</div>
+        </div>
+        <div class="chat__search-all">
+          <input type="text" placeholder="Поиск">
+        </div>
+      </div>
+      <div class="chat__container">
+        <div class="chat__cl">
+          <div class="chat__search">
+            <input type="text" placeholder="Поиск...">
+          </div>
+          <div class="chat__list">
+            <div class="chat__list-item chat__list-item_active chat__list-item_pin">
+              <div class="chat__list-item__photo chat__list-item__photo_dot chat__list-item__photo_green">
+                <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+              </div>
+              <div class="chat__list-item__content">
+                <div class="chat__list-item__who">
+                  <span class="chat__list-item__name">Igor Dos</span>
+                  <span class="chat__list-item__time">19:40</span>
+                </div>
+                <div class="chat__list-item__msg chat__list-item__msg_pdg">
+                  <span class="chat__list-item__img-inner">
+                    <div class="chat__list-item__photo-inner">
+                      <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+                    </div>
+                  </span>
+                  <span class="chat__list-item__name-inner">Igor Dos:</span>
+                  <span class="chat__list-item__text-inner">Так вот выиграл я, значит, около около около</span>
+                  <span class="chat__list-item__counter-inner">99+</span>
+                </div>
+              </div>
+            </div>
+            <div class="chat__list-item">
+              <div class="chat__list-item__photo chat__list-item__photo_dot chat__list-item__photo_green">
+                <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+              </div>
+              <div class="chat__list-item__content">
+                <div class="chat__list-item__who">
+                  <span class="chat__list-item__name">Igor Dos</span>
+                  <span class="chat__list-item__time">19:40</span>
+                </div>
+                <div class="chat__list-item__msg chat__list-item__msg_pdg chat__list-item__msg_check">
+                  <span class="chat__list-item__img-inner">
+                    <div class="chat__list-item__photo-inner">
+                      <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+                    </div>
+                  </span>
+                  <span class="chat__list-item__name-inner">Igor Dos:</span>
+                  <span class="chat__list-item__text-inner">Так вот выиграл я, значит, около около около</span>
+                </div>
+              </div>
+            </div>
+            <div class="chat__list-item chat__list-item_active">
+              <div class="chat__list-item__photo chat__list-item__photo_dot chat__list-item__photo_green">
+                <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+              </div>
+              <div class="chat__list-item__content">
+                <div class="chat__list-item__who">
+                  <span class="chat__list-item__name">Igor Dos</span>
+                  <span class="chat__list-item__time">19:40</span>
+                </div>
+                <div class="chat__list-item__msg">
+                  <!--<span class="chat__list-item__img-inner">-->
+                  <!--<div class="chat__list-item__photo-inner">-->
+                  <!--<img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">-->
+                  <!--</div>-->
+                  <!--</span>-->
+                  <span class="chat__list-item__name-inner">Igor Dos:</span>
+                  <span class="chat__list-item__text-inner">Так вот выиграл я, значит, около около около</span>
+                </div>
+              </div>
+            </div>
+            <div class="chat__list-item">
+              <div class="chat__list-item__photo chat__list-item__photo_dot chat__list-item__photo_green">
+                <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+              </div>
+              <div class="chat__list-item__content">
+                <div class="chat__list-item__who">
+                  <span class="chat__list-item__name">Igor Dos</span>
+                  <span class="chat__list-item__time">19:40</span>
+                </div>
+                <div class="chat__list-item__msg">
+                  <span class="chat__list-item__img-inner">
+                    <div class="chat__list-item__photo-inner">
+                      <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+                    </div>
+                  </span>
+                  <span class="chat__list-item__name-inner">Igor Dos:</span>
+                  <span class="chat__list-item__text-inner">Так вот выиграл я, значит, около около около</span>
+                </div>
+              </div>
+            </div>
+            <div class="chat__list-item">
+              <div class="chat__list-item__photo chat__list-item__photo_dot chat__list-item__photo_green">
+                <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+              </div>
+              <div class="chat__list-item__content">
+                <div class="chat__list-item__who">
+                  <span class="chat__list-item__name">Igor Dos</span>
+                  <span class="chat__list-item__time">19:40</span>
+                </div>
+                <div class="chat__list-item__msg">
+                  <span class="chat__list-item__img-inner">
+                    <div class="chat__list-item__photo-inner">
+                      <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+                    </div>
+                  </span>
+                  <span class="chat__list-item__name-inner">Igor Dos:</span>
+                  <span class="chat__list-item__text-inner">Так вот выиграл я, значит, около около около</span>
+                </div>
+              </div>
+            </div>
+            <div class="chat__list-item">
+              <div class="chat__list-item__photo chat__list-item__photo_dot chat__list-item__photo_green">
+                <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+              </div>
+              <div class="chat__list-item__content">
+                <div class="chat__list-item__who">
+                  <span class="chat__list-item__name">Igor Dos</span>
+                  <span class="chat__list-item__time">19:40</span>
+                </div>
+                <div class="chat__list-item__msg">
+                  <span class="chat__list-item__img-inner">
+                    <div class="chat__list-item__photo-inner">
+                      <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+                    </div>
+                  </span>
+                  <span class="chat__list-item__name-inner">Igor Dos:</span>
+                  <span class="chat__list-item__text-inner">Так вот выиграл я, значит, около около около</span>
+                </div>
+              </div>
+            </div>
+            <div class="chat__list-item">
+              <div class="chat__list-item__photo chat__list-item__photo_dot chat__list-item__photo_green">
+                <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+              </div>
+              <div class="chat__list-item__content">
+                <div class="chat__list-item__who">
+                  <span class="chat__list-item__name">Igor Dos</span>
+                  <span class="chat__list-item__time">19:40</span>
+                </div>
+                <div class="chat__list-item__msg">
+                  <span class="chat__list-item__img-inner">
+                    <div class="chat__list-item__photo-inner">
+                      <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+                    </div>
+                  </span>
+                  <span class="chat__list-item__name-inner">Igor Dos:</span>
+                  <span class="chat__list-item__text-inner">Так вот выиграл я, значит, около около около</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="chat__cr">
+          <div class="chat__dialog-wrap">
+          <div class="chat__dialog">
+            <div class="chat__dialog_scr">
+              <div class="chat__dialog__msg">
+                <div class="chat__dialog__msg-photo">
+                  <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+                </div>
+                <div class="chat__dialog__msg-name">Igor Dos</div>
+                <div class="chat__dialog__msg-content">
+                  <img src="images/dog.png" alt="">
+                  хостинг игровых серверов, которым компания занималась в году так 2012
+                  с тех пор это официальное название компании и содержимое сайта ничего общего с ее деятельностью не имеет)
+                  описание есть на hh и на моем круге
+                  сейчас скину
+                  https://moikrug.ru/companies/onmoon
+                  примеры наших проектов
+                  csgo.com, dota2.net, csgo.tm (market.csgo.com), market.dota2.net, skinpay.ru, fastcup.net (этот проект мы переписываем с нуля, на него я ищу фронтендера), mmbets.net,
+                  также у нас есть свой paygate
+                  Сайт onmoon.ru — хостинг игровых серверов, которым компания занималась в году так 2012
+                  с тех пор это официальное название компании и содержимое сайта ничего общего с ее деятельностью не имеет)
+                  описание есть на hh и на моем круге
+                  сейчас скину
+                  https://moikrug.ru/companies/onmoon
+                  примеры наших проектов
+                  csgo.com, dota2.net, csgo.tm (market.csgo.com), market.dota2.net, skinpay.ru, fastcup.net (этот проект мы переписываем с нуля, на него я ищу фронтендера), mmbets.net,
+                  также у нас есть свой paygate
+                </div>
+                <div class="chat__dialog__msg-time">19:40</div>
+              </div>
+              <div class="chat__dialog__msg">
+                <div class="chat__dialog__msg-photo">
+                  <img src="https://avatars1.githubusercontent.com/u/2680980?v=3&s=400" alt="">
+                </div>
+                <div class="chat__dialog__msg-name">Igor Dos</div>
+                <div class="chat__dialog__msg-content">
+                  хостинг игровых серверов, которым компания занималась в году так 2012
+                  с тех пор это официальное название компании и содержимое сайта ничего общего с ее деятельностью не имеет)
+                  описание есть на hh и на моем круге
+                  сейчас скину
+                </div>
+                <div class="chat__dialog__msg-time">19:40</div>
+              </div>
+              <div class="chat__dialog__msg">
+                <div class="chat__dialog__msg-content">
+                  сейчас скину
+                </div>
+              </div>
+              <div class="chat__dialog__msg">
+                <div class="chat__dialog__msg-content">
+                  сейчас скину
+                </div>
+                <div class="chat__dialog__msg-time">19:40</div>
+              </div>
+
+            </div>
+          </div>
+          </div>
+          <div class="chat__input">
+            <div class="chat__input-text">
+              Сайт onmoon.ru —
+              <!--хостинг игровых серверов, которым компания занималась в году так 2012-->
+              <!--с тех пор это официальное название компании и содержимое сайта ничего общего с ее деятельностью не имеет)-->
+              <!--описание есть на hh и на моем круге-->
+              <!--сейчас скину-->
+              <!--https://moikrug.ru/companies/onmoon-->
+              <!--примеры наших проектов-->
+              <!--csgo.com, dota2.net, csgo.tm (market.csgo.com), market.dota2.net, skinpay.ru, fastcup.net (этот проект мы переписываем с нуля, на него я ищу фронтендера), mmbets.net,-->
+              <!--также у нас есть свой paygate-->
+              <!--Сайт onmoon.ru — хостинг игровых серверов, которым компания занималась в году так 2012-->
+              <!--с тех пор это официальное название компании и содержимое сайта ничего общего с ее деятельностью не имеет)-->
+              <!--описание есть на hh и на моем круге-->
+              <!--сейчас скину-->
+              <!--https://moikrug.ru/companies/onmoon-->
+              <!--примеры наших проектов-->
+              <!--csgo.com, dota2.net, csgo.tm (market.csgo.com), market.dota2.net, skinpay.ru, fastcup.net (этот проект мы переписываем с нуля, на него я ищу фронтендера), mmbets.net,-->
+              <!--также у нас есть свой paygate-->
+            </div>
+            <div class="chat__input-emoji"></div>
+            <div class="chat__input-send"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__partner">
+    <div class="container footer__row">
+      <div class="footer__partner-item footer__partner-item_1">
+        <a href="#">
+          <img src="images/part1.png" alt="">
+        </a>
+      </div>
+      <div class="footer__partner_center">
+        <div class="footer__partner-item footer__partner-item_2">
+          <a href="#">
+            <img src="images/part1.png" alt="">
+          </a>
+        </div>
+        <div class="footer__partner-item footer__partner-item_3">
+          <a href="#">
+            <img src="images/part1.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="footer__partner-item footer__partner-item_4">
+        <a href="#">
+          <img src="images/part1.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer__row">
+    <div class="footer__menu-box">
+      <ul class="footer__menu">
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <a href="#">Матчи</a>
+        </li>
+        <li>
+          <a href="#">Турниры</a>
+        </li>
+        <li>
+          <a href="#">Команды</a>
+        </li>
+        <li>
+          <a href="#">Игроки</a>
+        </li>
+        <li>
+          <a href="#">Форум</a>
+        </li>
+        <li>
+          <a href="#">Помощь</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__counter">
+      <div class="footer__counter-item">
+        <span class="footer__counter-number">25 000 000</span>
+        <span class="footer__counter-name">Матчей</span>
+      </div>
+      <div class="footer__counter-item">
+        <span class="footer__counter-number">40 000</span>
+        <span class="footer__counter-name">Игроков</span>
+      </div>
+      <div class="footer__counter-item">
+        <span class="footer__counter-number">1000</span>
+        <span class="footer__counter-name">Онлайн</span>
+      </div>
+      <div class="footer__counter-item">
+        <span class="footer__counter-number">900</span>
+        <span class="footer__counter-name">Турниров</span>
+      </div>
+    </div>
+    <div class="footer__social-lang">
+      <div class="footer__lang">
+        <div class="footer__lang-item">
+          <img src="images/russia.png" alt="">
+          <span class="">Русский</span>
+        </div>
+      </div>
+      <div class="footer__social">
+        <a href="#">
+          <img src="images/vk.png" alt="">
+        </a>
+        <a href="#">
+          <img src="images/vk.png" alt="">
+        </a>
+        <a href="#">
+          <img src="images/vk.png" alt="">
+        </a>
+        <a href="#">
+          <img src="images/vk.png" alt="">
+        </a>
+        <a href="#">
+          <img src="images/vk.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="footer__copyright">Copyright © 2017 FASTCUP</div>
+  </div>
+</footer>
+
+</body>
+</html>
+
