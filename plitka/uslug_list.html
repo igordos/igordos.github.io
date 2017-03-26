@@ -13,30 +13,124 @@
 </head>
 <body>
 <header class="header">
-  <div class="header__bg header__bg_2">
-    <div class="header__container">
-      <div class="header__c-6-12">
-        <a href="#" class="header__logo" role="banner" title="text">
-          <img src="images/logo-w.png" alt="">
-          <span>Ландшафтный дизайн и благоустройство</span>
-        </a>
-        <span id="menuButton" class="header__main-nav-btn" href="#"><img src="images/menu.png" alt=""></span>
-        <nav id="headerNav" class="header__main-nav header__main-nav_page" role="navigation">
-          <ul>
-            <li><a href="#">О компании</a>
-            <li><a href="#">Портфолио</a>
-            <li><a href="#">Цены</a>
-            <li><a href="#">Контакты</a>
-          </ul>
-        </nav>
-      </div>
-      <div class="header__c-3-12">
-        <div class="header__contact-info">
-          Тел. 8 (812) 920 87 11<br>
-          E-mail: <a href="mailto:ag-gardendesign@mail.ru">ag-gardendesign@mail.ru</a>
+  <div class="header__bg">
+    <div class="header__container container">
+      <div class="header__row">
+        <div class="header__c-3-12">
+          <a href="#" class="header__logo" role="banner" title="text">
+            <img src="images/logo-w-text.png" alt="AG garden design - ландшафтный дизайн и благоустройство">
+          </a>
+          <span id="menuButton" class="header__main-nav-btn" href="#"><img src="images/menu.png" alt=""></span>
+        </div>
+        <div class="header__c-6-12">
+          <div class="header__contact-info">
+            <span class="header__contact-tel">8 (812) 920 87 11</span><br>
+            <span class="header__contact-email"><a
+              href="mailto:ag-gardendesign@mail.ru">ag-gardendesign@mail.ru</a></span>
+          </div>
+          <nav id="headerNav" class="header__main-nav" role="navigation" itemscope
+               itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="header__menu">
+
+              <li class="menu__node">
+                <a href="/about" title="О компании">
+                  О компании</a>
+              </li>
+
+              <li class="menu__node">
+                <a href="/reviews" title="Отзывы">
+                  Отзывы</a>
+              </li>
+
+              <li class="menu__node">
+                <a href="/portfolio" title="Портфолио">
+                  Портфолио</a>
+              </li>
+
+              <li class="menu__node">
+                <a href="/services/" title="Услуги">
+                  Услуги</a>
+                <ul class="header__menu-sub">
+                  <li class="menu__node">
+                    <a href="/services/planting-and-care/" title="Озеленение и уход">
+                      Озеленение и уход</a>
+                  </li>
+                  <li class="menu__node">
+                    <a href="/services/paving/" title="Мощение">
+                      Мощение</a>
+                  </li>
+
+                  <li class="menu__node">
+                    <a href="/services/facing/" title="Облицовка">
+                      Облицовка</a>
+                  </li>
+
+                  <li class="menu__node">
+                    <a href="/services/planning-and-design/" title="Ландшафтное проектирование">
+                      Ландшафтное проектирование</a>
+
+                  </li>
+                  <li class="menu__node">
+                    <a href="/services/paving/" title="Мощение">
+                      Мощение</a>
+                  </li>
+
+                  <li class="menu__node">
+                    <a href="/services/facing/" title="Облицовка">
+                      Облицовка</a>
+                  </li>
+
+                  <li class="menu__node">
+                    <a href="/services/planning-and-design/" title="Ландшафтное проектирование">
+                      Ландшафтное проектирование</a>
+
+                  </li>
+                  <li class="menu__node">
+                    <a href="/services/paving/" title="Мощение">
+                      Мощение</a>
+                  </li>
+
+                  <li class="menu__node">
+                    <a href="/services/facing/" title="Облицовка">
+                      Облицовка</a>
+                  </li>
+
+                  <li class="menu__node">
+                    <a href="/services/planning-and-design/" title="Ландшафтное проектирование">
+                      Ландшафтное проектирование</a>
+
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="menu__node">
+                <a href="/price" title="Цены">
+                  Цены</a>
+
+              </li>
+
+              <li class="menu__node">
+                <a href="/contact" title="Контакты">
+                  Контакты</a>
+
+              </li>
+
+              <li class="header__menu"><a href="#" class="header__menu__search-link"><img src="images/search.png"
+                                                                                          alt="Поиск"></a>
+                <ul class="header__menu-sub header__menu-search">
+                  <form id="headerSearchForm">
+                    <input type="text" placeholder="Поиск" name="text">
+                  </form>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </header>
 <main role="main">
