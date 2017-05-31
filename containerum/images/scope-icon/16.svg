@@ -1,0 +1,32 @@
+<svg id="Element" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 47.22 52.21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Безымянный_градиент_9);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 0.75px;
+      }
+    </style>
+    <linearGradient id="Безымянный_градиент_9" data-name="Безымянный градиент 9" y1="26.1" x2="47.22" y2="26.1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#47a5f0"/>
+      <stop offset="0" stop-color="#3298ec"/>
+      <stop offset="0" stop-color="#1687e8"/>
+      <stop offset="0" stop-color="#067de5"/>
+      <stop offset="0" stop-color="#0079e4"/>
+      <stop offset="1" stop-color="#1852d3"/>
+    </linearGradient>
+  </defs>
+  <title>16</title>
+  <g>
+    <polygon class="cls-1" points="0 39.15 23.61 52.21 47.22 39.15 47.22 13.05 23.61 0 0 13.05 0 39.15"/>
+    <g>
+      <path class="cls-2" d="M766.86,849.25v1.62h7l-10,10L765,862l10-10v6.88h1.62v-9.13a0.51,0.51,0,0,0-.51-0.51h-9.21Zm0,0" transform="translate(-741.67 -832.02)"/>
+      <path class="cls-2" d="M770.21,867.07h-9.94a1.51,1.51,0,0,1-1.51-1.51v-9.94a1.51,1.51,0,0,1,1.51-1.51h6a1.51,1.51,0,0,0,1.07-.44l1.18-1.18h-9.83a1.51,1.51,0,0,0-1.51,1.51v13.18a1.51,1.51,0,0,0,1.51,1.51h13.18a1.51,1.51,0,0,0,1.51-1.51v-9.83l-1.18,1.18a1.51,1.51,0,0,0-.44,1.07v6A1.51,1.51,0,0,1,770.21,867.07Zm1.51,0" transform="translate(-741.67 -832.02)"/>
+    </g>
+  </g>
+</svg>

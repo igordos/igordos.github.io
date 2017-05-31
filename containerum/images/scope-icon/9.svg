@@ -1,0 +1,30 @@
+<svg id="Element" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 47.22 52.21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Безымянный_градиент_9);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 0.75px;
+      }
+    </style>
+    <linearGradient id="Безымянный_градиент_9" data-name="Безымянный градиент 9" y1="26.1" x2="47.22" y2="26.1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#47a5f0"/>
+      <stop offset="0" stop-color="#3298ec"/>
+      <stop offset="0" stop-color="#1687e8"/>
+      <stop offset="0" stop-color="#067de5"/>
+      <stop offset="0" stop-color="#0079e4"/>
+      <stop offset="1" stop-color="#1852d3"/>
+    </linearGradient>
+  </defs>
+  <title>9</title>
+  <g>
+    <polygon class="cls-1" points="0 39.15 23.61 52.21 47.22 39.15 47.22 13.05 23.61 0 0 13.05 0 39.15"/>
+    <line class="cls-2" x1="7.18" y1="24.44" x2="39.41" y2="29.46"/>
+    <path class="cls-2" d="M487.3,860a3.79,3.79,0,1,0,2.67,6.47h0A3.79,3.79,0,0,0,487.3,860Z" transform="translate(-464 -832.02)"/>
+  </g>
+</svg>
