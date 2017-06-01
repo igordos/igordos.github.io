@@ -27,6 +27,7 @@
 <nav class="navbar">
   <div class="container navbar__box">
     <a href="#"><img class="navbar__logo" src="images/logo.svg" alt=""></a>
+    <button class="navbar__menu-tog"></button>
     <div class="navbar__tog">
       <ul class="navbar__menu navbar__menu_mr">
         <li>
@@ -50,7 +51,7 @@
           <a href="#">Справка</a>
         </li>
         <li>
-          <a href="#">Войти</a>
+          <a href="#"><span>Войти</span></a>
         </li>
       </ul>
       <a href="#" class="btn btn_blue">Регистрация</a>
@@ -73,7 +74,7 @@
 <main>
   <section class="scope">
     <div class="container">
-      <h1 class="scope__title">Возможности платформы</h1>
+      <h2 class="scope__title">Возможности платформы</h2>
       <div class="scope__list">
         <div class="scope__item">
           <div class="scope__item-icon">
@@ -260,7 +261,7 @@
   </section>
   <section class="price price__bg-img">
     <div class="container">
-      <h1 class="price__title-h1">Сколько это стоит? Сейчас абсолютно бесплатно</h1>
+      <h2 class="price__title-h2">Сколько это стоит?<br> Сейчас абсолютно бесплатно</h2>
       <div class="price__row-description">
         <div class="price__col-text">
           <p>Начните пользоваться платформой в ходе бета тестирования и в дальнейшем получите тариф Free на 12 месяцев
@@ -285,7 +286,7 @@
         </div>
       </div>
       <div class="price__row-tariff">
-        <h2 class="price__title-h2">Тариф Free включает в себя</h2>
+        <h3 class="price__title-h3">Тариф Free включает в себя</h3>
         <div class="price__table">
           <div class="price__table-header">
             <div class="price__table-row">
@@ -409,6 +410,21 @@
     </div>
   </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+  var menuButton = $('.navbar__menu-tog');
+  var headerNav = $('.navbar__tog');
+
+  menuButton.click(function () {
+    if (headerNav.hasClass('navbar__tog_open')) {
+      headerNav.removeClass('navbar__tog_open');
+    } else {
+      headerNav.addClass('navbar__tog_open');
+    }
+  });
+</script>
+
 </body>
 </html>
 

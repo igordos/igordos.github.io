@@ -1,0 +1,33 @@
+<svg id="Element" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 69.29 49.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Безымянный_градиент_8);
+      }
+
+      .cls-2 {
+        fill: url(#Безымянный_градиент_8-2);
+      }
+
+      .cls-3 {
+        fill: url(#Безымянный_градиент_8-3);
+      }
+    </style>
+    <linearGradient id="Безымянный_градиент_8" data-name="Безымянный градиент 8" y1="5.55" x2="69.29" y2="5.55" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#47a5f0"/>
+      <stop offset="0.06" stop-color="#3298ec"/>
+      <stop offset="0.16" stop-color="#1687e8"/>
+      <stop offset="0.25" stop-color="#067de5"/>
+      <stop offset="0.31" stop-color="#0079e4"/>
+      <stop offset="1" stop-color="#1852d3"/>
+    </linearGradient>
+    <linearGradient id="Безымянный_градиент_8-2" y1="24.95" x2="69.29" y2="24.95" xlink:href="#Безымянный_градиент_8"/>
+    <linearGradient id="Безымянный_градиент_8-3" y1="44.34" x2="69.29" y2="44.34" xlink:href="#Безымянный_градиент_8"/>
+  </defs>
+  <title>Containerum_io_100_new</title>
+  <g>
+    <rect class="cls-1" width="69.29" height="11.11"/>
+    <rect class="cls-2" y="19.39" width="69.29" height="11.11"/>
+    <rect class="cls-3" y="38.79" width="69.29" height="11.11"/>
+  </g>
+</svg>
