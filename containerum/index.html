@@ -103,6 +103,8 @@
             <p>Безопасное хранение необходимого объема данных</p>
           </div>
         </div>
+      </div>
+      <div class="scope__list scope__list-tog">
         <div class="scope__item">
           <div class="scope__item-icon">
             <img src="images/scope-icon/2.svg" alt="">
@@ -239,14 +241,17 @@
           </div>
         </div>
       </div>
+      <div class="scope__btn-box">
+        <button class="btn btn_yellow">Больше возможностей</button>
+      </div>
     </div>
   </section>
   <section class="service">
     <div class="container">
       <div class="service__list">
         <div class="service__item">
-            <img class="service__item-icon" src="images/service-icon/20.png" alt="">
-            <h2 class="service__item-description">OpenStack</h2>
+          <img class="service__item-icon" src="images/service-icon/20.png" alt="">
+          <h2 class="service__item-description">OpenStack</h2>
         </div>
         <div class="service__item">
           <img class="service__item-icon" src="images/service-icon/21.png" alt="">
@@ -393,17 +398,17 @@
             </div>
           </div>
           <div>
-          <div class="footer__social">
-            <a href="#" target="_blank"><img src="images/social-icon/27.svg" alt=""></a>
-            <a href="#" target="_blank"><img src="images/social-icon/28.svg" alt=""></a>
-            <a href="#" target="_blank"><img src="images/social-icon/29.svg" alt=""></a>
-            <a href="#" target="_blank"><img src="images/social-icon/30.svg" alt=""></a>
-            <a href="#" target="_blank"><img src="images/social-icon/31.svg" alt=""></a>
-          </div>
-          <div class="footer__info">
-            <a class="footer__email" href="#">info@Containerum.io</a>
-            <p class="footer__cop">© Exon Lab, 2017. Все права защищены</p>
-          </div>
+            <div class="footer__social">
+              <a href="#" target="_blank"><img src="images/social-icon/27.svg" alt=""></a>
+              <a href="#" target="_blank"><img src="images/social-icon/28.svg" alt=""></a>
+              <a href="#" target="_blank"><img src="images/social-icon/29.svg" alt=""></a>
+              <a href="#" target="_blank"><img src="images/social-icon/30.svg" alt=""></a>
+              <a href="#" target="_blank"><img src="images/social-icon/31.svg" alt=""></a>
+            </div>
+            <div class="footer__info">
+              <a class="footer__email" href="#">info@Containerum.io</a>
+              <p class="footer__cop">© Exon Lab, 2017. Все права защищены</p>
+            </div>
           </div>
         </div>
       </div>
@@ -423,6 +428,18 @@
       headerNav.addClass('navbar__tog_open');
     }
   });
+
+  var scopeListTog = $('.scope__list-tog');
+  var scopeBtn = $('.scope__btn-box > button');
+
+  scopeBtn.click(function () {
+    if (scopeListTog.hasClass('scope__list-tog_open')) {
+      scopeListTog.removeClass('scope__list-tog_open');
+    } else {
+      scopeListTog.addClass('scope__list-tog_open');
+    }
+  });
+
 </script>
 
 </body>
