@@ -78,35 +78,6 @@
       <div class="scope__list">
         <div class="scope__item">
           <div class="scope__item-icon">
-            <img src="images/scope-icon/1.svg" alt="">
-          </div>
-          <div class="scope__item-description">
-            <h2>CLI</h2>
-            <p>Управление приложением через командную строку</p>
-          </div>
-        </div>
-        <div class="scope__item">
-          <div class="scope__item-icon">
-            <img src="images/scope-icon/7.svg" alt="">
-          </div>
-          <div class="scope__item-description">
-            <h2>Хостинг</h2>
-            <p>Выделение ресурсов на один проект до 128GB RAM и 10 CPU на Containerum</p>
-          </div>
-        </div>
-        <div class="scope__item">
-          <div class="scope__item-icon scope__item-icon_soon">
-            <img src="images/scope-icon/18.svg" alt="">
-          </div>
-          <div class="scope__item-description">
-            <h2>Выделенное хранилище</h2>
-            <p>Безопасное хранение необходимого объема данных</p>
-          </div>
-        </div>
-      </div>
-      <div class="scope__list scope__list-tog">
-        <div class="scope__item">
-          <div class="scope__item-icon">
             <img src="images/scope-icon/2.svg" alt="">
           </div>
           <div class="scope__item-description">
@@ -130,6 +101,35 @@
           <div class="scope__item-description">
             <h2>Скользящее обновление</h2>
             <p>Удаление старой версии приложения после запуска новой</p>
+          </div>
+        </div>
+      </div>
+      <div class="scope__list scope__list-tog">
+        <div class="scope__item">
+          <div class="scope__item-icon">
+            <img src="images/scope-icon/1.svg" alt="">
+          </div>
+          <div class="scope__item-description">
+            <h2>CLI</h2>
+            <p>Управление приложением через командную строку</p>
+          </div>
+        </div>
+        <div class="scope__item">
+          <div class="scope__item-icon">
+            <img src="images/scope-icon/7.svg" alt="">
+          </div>
+          <div class="scope__item-description">
+            <h2>Хостинг</h2>
+            <p>Выделение ресурсов на один проект до 128GB RAM и 10 CPU на Containerum</p>
+          </div>
+        </div>
+        <div class="scope__item">
+          <div class="scope__item-icon scope__item-icon_soon">
+            <img src="images/scope-icon/18.svg" alt="">
+          </div>
+          <div class="scope__item-description">
+            <h2>Выделенное хранилище</h2>
+            <p>Безопасное хранение необходимого объема данных</p>
           </div>
         </div>
         <div class="scope__item">
@@ -285,7 +285,7 @@
                 <li>Storage <span>5 GB</span></li>
               </ul>
               <a class="btn btn_yellow" href="#">Регистрация</a>
-              <a class="price__tariff-description-more-link" href="#">Подробнее о тарифе</a>
+              <button class="price__tariff-description-more-link" href="#">Подробнее о тарифе</button>
             </div>
           </div>
         </div>
@@ -440,6 +440,16 @@
     }
   });
 
+  var btnTariffAll = $('.price__tariff-description-more-link');
+  var priceRowTariff = $('.price__row-tariff');
+
+  btnTariffAll.click(function () {
+    if (priceRowTariff.hasClass('price__row-tariff_open')) {
+      priceRowTariff.removeClass('price__row-tariff_open');
+    } else {
+      priceRowTariff.addClass('price__row-tariff_open');
+    }
+  });
 </script>
 
 </body>
