@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interview app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+
+        body {
+            background: #ECEFF1;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .poll {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .poll__question {
+            padding: 40px;
+            background: #fff;
+            border-radius: 10px;
+            border: 1px solid #CFD8DC;
+        }
+
+        .poll__results {
+            padding: 40px;
+            background: #fff;
+            border-radius: 10px;
+            border: 1px solid #CFD8DC;
+        }
+
+        .poll__next-btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            border-radius: 3px;
+            border: none;
+            background: #78909C;
+            transition: all .2s;
+            cursor: pointer;
+            outline: 0;
+        }
+
+        .poll__next-btn:hover {
+            background: #607D8B;
+        }
+
+        .poll__next-btn:active {
+            background: #546E7A;
+        }
+
+        .question__title {
+            font-size: 22px;
+            margin: 0;
+            padding-bottom: 20px;
+        }
+
+        .question__description {
+            margin: 0;
+            padding-bottom: 20px;
+        }
+
+        .question__input {
+            margin-bottom: 20px;
+        }
+
+        .choises-input__label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .choises-input__label:last-child {
+            margin-bottom: 0;
+        }
+
+        .choises-input__title {
+            padding-left: 5px;
+        }
+
+        .string-input__input {
+
+        }
+    </style>
+</head>
+<body>
+<div id="root"></div>
+<script src="bundle.js"></script>
+</body>
+</html>
