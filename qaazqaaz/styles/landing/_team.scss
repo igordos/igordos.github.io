@@ -1,0 +1,223 @@
+.team-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 84px;
+}
+
+.team-item {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+
+  &_w-25 {
+    width: 25%;
+  }
+
+  &_top-card {
+    top: -80px;
+  }
+
+  &__img {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+
+    &_shayahmetov {
+      background: url("../../images/landing/comitters/1x/shayahmetovdesktop@1x.png") no-repeat;
+      background-size: 158px 158px;
+      width: 158px;
+      height: 158px;
+    }
+
+    &_vasilevsky {
+      background: url("../../images/landing/comitters/1x/vasilevsky@1x.png") no-repeat;
+      background-size: 120px 120px;
+      width: 120px;
+      height: 120px;
+    }
+
+  }
+
+  &__dropdown-btn {
+    display: flex;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 10;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background: url("../../images/landing/shapes/plus.svg") no-repeat;
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+
+      &:after {
+        z-index: 10;
+      }
+
+    }
+
+  }
+
+  &__dropdown-btn:hover &__dropdown {
+    display: block;
+  }
+
+  &__dropdown {
+    display: none;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 292px;
+    height: auto;
+    padding: 16px 12px 20px 40px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 16px 36px 0 rgba(174, 174, 174, 0.5);
+    z-index: 99;
+
+    font-family: $font-stack;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #000000;
+  }
+
+  &__name {
+    margin: 20px 0 0 0;
+    font-family: $font-stack;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: #000000;
+
+    &_mt {
+      margin-top: 5px;
+    }
+
+    &_bg {
+      margin: 24px 0 0 0;
+      font-family: $font-stack;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #000000;
+    }
+
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__social-item {
+    display: flex;
+    margin-right: 6px;
+    width: 15px;
+    height: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  &__social-link {
+    position: relative;
+    //display: inline-block;
+    width: 15px;
+    height: 15px;
+
+    &_fb {
+      content: '';
+      position: absolute;
+      background: url("../../images/landing/social/facebook-logo.svg") no-repeat;
+      background-size: 15px 15px;
+    }
+
+    &_in {
+      content: '';
+      position: absolute;
+      background: url("../../images/landing/social/linkedin-logo.svg") no-repeat;
+      background-size: 15px 15px;
+    }
+
+  }
+
+  &__position {
+    margin: 5px 0 0 0;
+    font-family: $font-stack;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.3px;
+    color: #000000;
+
+    &_bg {
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.5px;
+      text-align: center;
+      color: #000000;
+    }
+
+  }
+
+  &__info {
+    margin-top: 24px;
+    font-family: $font-stack;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #000000;
+  }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+  .team-list {
+    padding: 0 100px;
+  }
+
+  .team-item {
+
+    &_w-25 {
+      width: 50%;
+    }
+
+  }
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 760px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+

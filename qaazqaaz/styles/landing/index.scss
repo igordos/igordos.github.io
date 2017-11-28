@@ -1,0 +1,48 @@
+$font-stack: BwModelica, 'helvetica', 'sans-serif';
+
+body {
+  position: relative;
+  //background: #b9b9b9;
+}
+
+@import "../normalize.css";
+@import "fonts";
+@import "grid";
+@import "bg";
+@import "bunner";
+@import "container";
+@import "calculation";
+@import "header";
+@import "button";
+@import "card";
+@import "section";
+@import "footer";
+@import "team";
+@import "features";
+@import "documentation";
+@import "go";
+@import "road";
+@import "form";
+@import "bonuses";
+@import "written";
+@import "slider";
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 760px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

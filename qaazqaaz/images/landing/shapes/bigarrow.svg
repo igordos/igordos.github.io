@@ -1,1 +1,15 @@
-<svg width="12" height="20" viewBox="0 0 12 20" xmlns="http://www.w3.org/2000/svg"><title>Group</title><path d="M1.716 1.716L10 10m-8.284 8.284L10 10" stroke="#EC714E" stroke-width="2" fill="none" stroke-linecap="square"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="20px" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="btn/main" transform="translate(-88.000000, -11.000000)" stroke="#EC714E" stroke-width="2">
+            <g id="Group" transform="translate(89.000000, 12.000000)">
+                <path d="M0.715979237,0.715979237 L9,9" id="Line"></path>
+                <path d="M0.715979237,9.71597924 L9,18" id="Line-Copy" transform="translate(4.500000, 13.500000) scale(1, -1) translate(-4.500000, -13.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

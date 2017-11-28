@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "slick";
+    src: url("slick.eot"); /* IE9 */
+    src: url("slick.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("slick.woff") format("woff"), /* chrome, firefox */
+    url("slick.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("slick.svg#slick") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
