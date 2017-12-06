@@ -1,1 +1,18 @@
-<svg width="19" height="19" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 7 Copy 3</title><g id="Page-1" fill="none" fill-rule="evenodd"><g id="Desktop-HD-Copy-3" transform="translate(-273 -4561)" stroke="#000" stroke-width="4" fill="#FFF"><g id="headline" transform="translate(150 4315)"><g id="content" transform="translate(0 112)"><g id="timeline" transform="translate(0 136)"><path d="M127.143.238C128.333.12 131.579 0 132.5 0c.964 0 4.167.119 5.357.238 1.19.12 1.786.714 1.905 1.905.119 1.19.238 4.388.238 5.357 0 .973-.119 4.167-.238 5.357-.12 1.19-.714 1.786-1.905 1.902-1.19.116-4.38.241-5.357.241-.976 0-4.144-.125-5.346-.241-1.202-.116-1.797-.711-1.916-2.02-.119-1.31-.238-4.266-.238-5.239 0-.996.119-4.048.238-5.357.12-1.31.714-1.786 1.905-1.905z" id="Rectangle-7-Copy-3"/></g></g></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 7 Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-3" transform="translate(-273.000000, -4561.000000)" stroke="#000000" stroke-width="4" fill="#FFFFFF">
+            <g id="headline" transform="translate(150.000000, 4315.000000)">
+                <g id="content" transform="translate(0.000000, 112.000000)">
+                    <g id="timeline" transform="translate(0.000000, 136.000000)">
+                        <path d="M127.142857,0.238095238 C128.333333,0.119047619 131.579078,-7.10542736e-15 132.5,-7.10542736e-15 C133.463804,-7.10542736e-15 136.666667,0.119047619 137.857143,0.238095238 C139.047619,0.357142857 139.642857,0.952380952 139.761905,2.14285714 C139.880952,3.33333333 140,6.53099686 140,7.5 C140,8.47267585 139.880952,11.6666667 139.761905,12.8571429 C139.642857,14.047619 139.047619,14.6428571 137.857143,14.7587915 C136.666667,14.8747258 133.477808,15 132.5,15 C131.52403,15 128.355873,14.8747258 127.154127,14.7587915 C125.952381,14.6428571 125.357143,14.047619 125.238095,12.7380952 C125.119048,11.4285714 125,8.47295587 125,7.5 C125,6.50360408 125.119048,3.45238095 125.238095,2.14285714 C125.357143,0.833333333 125.952381,0.357142857 127.142857,0.238095238 Z" id="Rectangle-7-Copy-3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

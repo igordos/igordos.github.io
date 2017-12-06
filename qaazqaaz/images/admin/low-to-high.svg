@@ -1,1 +1,16 @@
-<svg width="10" height="8" xmlns="http://www.w3.org/2000/svg"><title>low-to-high</title><g id="Youtube" fill="none" fill-rule="evenodd"><g id="search/youtube-copy" transform="translate(-427 -192)" fill-rule="nonzero" fill="#626262" fill-opacity=".5"><g id="low-to-high" transform="matrix(1 0 0 -1 427 200)"><path id="Line-2-Copy-3" d="M0 2h10V0H0z"/><path id="Line-2-Copy-4" d="M0 5h7V3H0z"/><path id="Line-2-Copy-5" d="M0 8h4V6H0z"/></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="8px" viewBox="0 0 10 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>low-to-high</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Youtube" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="search/youtube-copy" transform="translate(-427.000000, -192.000000)" fill-rule="nonzero" fill="#626262" fill-opacity="0.5">
+            <g id="low-to-high" transform="translate(432.000000, 196.000000) scale(1, -1) translate(-432.000000, -196.000000) translate(427.000000, 192.000000)">
+                <polygon id="Line-2-Copy-3" points="0 2 10 2 10 0 0 0"></polygon>
+                <polygon id="Line-2-Copy-4" points="0 5 7 5 7 3 0 3"></polygon>
+                <polygon id="Line-2-Copy-5" points="0 8 4 8 4 6 0 6"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
