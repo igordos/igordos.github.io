@@ -7,12 +7,10 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="theme-color" content="#ffffff">
 
-    <title>qaazqaaz</title>
+    <title>Efir</title>
     <link rel="stylesheet" href="../../styles/landing/index.css">
-    <!--<link rel="stylesheet" href="../../vendors/owlcarousel/assets/owl.carousel.min.css">-->
     <link rel="stylesheet" href="../../vendors/slick/slick.css">
     <link rel="stylesheet" href="../../vendors/slick/slick-theme.css">
-
     <!--[if lte IE 10]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
@@ -25,6 +23,35 @@
                 <a class="header__logo-link" href="#">
                     <img class="header__logo-img" src="../../images/graphics/logo.png" alt="">
                 </a>
+                <div id="defaultCountdown"></div>
+                <div class="header__social-wrap">
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link social__link_tw" href="https://twitter.com/efir_qaazqaaz"
+                               target="_blank" rel="nofollow, noopener"></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link_vk" href="https://vk.com/qaazqaaz" target="_blank"
+                               rel="nofollow, noopener"></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link_bt" href="#" target="_blank"
+                               rel="nofollow, noopener"></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link_tl" href="#" target="_blank"
+                               rel="nofollow, noopener"></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link_fb" href="https://www.facebook.com/qaazqaazcom/"
+                               target="_blank" rel="nofollow, noopener"></a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link_wb" href="https://www.weibo.com/p/1005056414273236/"
+                               target="_blank" rel="nofollow, noopener"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -53,10 +80,10 @@
                     <div class="calculation__wrap">
                         <div class="calculation">
                             <div class="calculation__title">Pulse</div>
-                            <div class="calculation__top">
-                                <span class="calculation__top-lt">total token sold:</span>
-                                <span class="calculation__top-rt">10435535 qz</span>
-                            </div>
+                            <!--<div class="calculation__top">-->
+                            <!--<span class="calculation__top-lt">total token sold:</span>-->
+                            <!--<span class="calculation__top-rt">10435535 qz</span>-->
+                            <!--</div>-->
                             <div class="calculation__card">
                                 <div class="calculation__card-inside-wrap">
                                     <div class="calculation-progress-top">34000300 / 5000000</div>
@@ -71,37 +98,42 @@
                             </div>
                             <div class="calculation__card">
                                 <div class="calculation-coin">
-                                    <li class="calculation-coin__item">
-                                        <img class="calculation-coin__item-img"
-                                             src="../../images/landing/coin/bitcoin.svg">
-                                        <span class="calculation-coin__item-title">ETH</span>
-                                        <span class="calculation-coin__item-counter">1300</span>
-                                    </li>
-                                    <li class="calculation-coin__item">
-                                        <img class="calculation-coin__item-img"
-                                             src="../../images/landing/coin/bitcoin.svg">
-                                        <span class="calculation-coin__item-title">ETH</span>
-                                        <span class="calculation-coin__item-counter">1300</span>
-                                    </li>
-                                    <li class="calculation-coin__item">
-                                        <img class="calculation-coin__item-img"
-                                             src="../../images/landing/coin/bitcoin.svg">
-                                        <span class="calculation-coin__item-title">ETH</span>
-                                        <span class="calculation-coin__item-counter">1300</span>
-                                    </li>
-                                    <li class="calculation-coin__item">
-                                        <img class="calculation-coin__item-img"
-                                             src="../../images/landing/coin/bitcoin.svg">
-                                        <span class="calculation-coin__item-title">ETH</span>
-                                        <span class="calculation-coin__item-counter">1300</span>
-                                    </li>
-                                    <li class="calculation-coin__item">
-                                        <img class="calculation-coin__item-img"
-                                             src="../../images/landing/coin/bitcoin.svg">
-                                        <span class="calculation-coin__item-title">ETH</span>
-                                        <span class="calculation-coin__item-counter">1300</span>
-                                    </li>
+                                    <img class="calculation-coin__logo" src="../../images/landing/coin/ETH.svg" alt="">
+                                    <div class="calculation-coin__title">ETH</div>
+                                    <div class="calculation-coin__count">1300</div>
                                 </div>
+                                <!--<ul class="calculation-coin">-->
+                                <!--<li class="calculation-coin__item">-->
+                                <!--<img class="calculation-coin__item-img"-->
+                                <!--src="../../images/landing/coin/bitcoin.svg">-->
+                                <!--<span class="calculation-coin__item-title">ETH</span>-->
+                                <!--<span class="calculation-coin__item-counter">1300</span>-->
+                                <!--</li>-->
+                                <!--<li class="calculation-coin__item">-->
+                                <!--<img class="calculation-coin__item-img"-->
+                                <!--src="../../images/landing/coin/bitcoin.svg">-->
+                                <!--<span class="calculation-coin__item-title">ETH</span>-->
+                                <!--<span class="calculation-coin__item-counter">1300</span>-->
+                                <!--</li>-->
+                                <!--<li class="calculation-coin__item">-->
+                                <!--<img class="calculation-coin__item-img"-->
+                                <!--src="../../images/landing/coin/bitcoin.svg">-->
+                                <!--<span class="calculation-coin__item-title">ETH</span>-->
+                                <!--<span class="calculation-coin__item-counter">1300</span>-->
+                                <!--</li>-->
+                                <!--<li class="calculation-coin__item">-->
+                                <!--<img class="calculation-coin__item-img"-->
+                                <!--src="../../images/landing/coin/bitcoin.svg">-->
+                                <!--<span class="calculation-coin__item-title">ETH</span>-->
+                                <!--<span class="calculation-coin__item-counter">1300</span>-->
+                                <!--</li>-->
+                                <!--<li class="calculation-coin__item">-->
+                                <!--<img class="calculation-coin__item-img"-->
+                                <!--src="../../images/landing/coin/bitcoin.svg">-->
+                                <!--<span class="calculation-coin__item-title">ETH</span>-->
+                                <!--<span class="calculation-coin__item-counter">1300</span>-->
+                                <!--</li>-->
+                                <!--</ul>-->
                             </div>
                             <div class="calculation__nav">
                                 <a class="btn" href="#">Contribute</a>
@@ -156,6 +188,34 @@
                     </li>
                 </ul>
             </div>
+            <div class="banner__footer-social">
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="social__link social__link_tw" href="https://twitter.com/efir_qaazqaaz" target="_blank"
+                           rel="nofollow, noopener"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link_vk" href="https://vk.com/qaazqaaz" target="_blank"
+                           rel="nofollow, noopener"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link_bt" href="#" target="_blank" rel="nofollow, noopener"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link_tl" href="#" target="_blank" rel="nofollow, noopener"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link_fb" href="https://www.facebook.com/qaazqaazcom/"
+                           target="_blank" rel="nofollow, noopener"></a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link_wb" href="https://www.weibo.com/p/1005056414273236/"
+                           target="_blank" rel="nofollow, noopener"></a>
+                    </li>
+                </ul>
+
+            </div>
+
         </div>
 
         <div class="card-wrap">
@@ -186,12 +246,6 @@
             <h2 id="about" class="section__title">Mission</h2>
             <div class="section__content">
                 <div class="grid">
-                    <div class="col-5">
-                        <div class="section__content-img-box">
-                            <img class="section__content-img" src="../../images/graphics/community.png"
-                                 alt="">
-                        </div>
-                    </div>
                     <div class="col-7">
                         <div class="section__content-text-wrap">
                             <h3 class="section__content-title">We bring success to anyone who has
@@ -204,12 +258,18 @@
                             <p class="section__content-description-sub">The whitepaper</p>
                         </div>
                     </div>
+                    <div class="col-5 col-order-1">
+                        <div class="section__content-img-box">
+                            <img class="section__content-img" src="../../images/graphics/community.png"
+                                 alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section__content">
                 <div class="grid">
-                    <div class="col-7 col-order-1">
-                        <div class="section__content-text-wrap section__content-text-wrap_tar">
+                    <div class="col-7">
+                        <div class="section__content-text-wrap">
                             <h3 class="section__content-title">We bring success to anyone who has
                                 special comepetences and ready to inspire</h3>
                             <p class="section__content-description">
@@ -220,8 +280,8 @@
                             <p class="section__content-description-sub">The whitepaper</p>
                         </div>
                     </div>
-                    <div class="col-5">
-                        <div class="section__content-img-box section__content-img-box_tal">
+                    <div class="col-5 col-order-1">
+                        <div class="section__content-img-box">
                             <img class="section__content-img" src="../../images/graphics/api.png"
                                  alt="">
                         </div>
@@ -229,6 +289,51 @@
                 </div>
 
             </div>
+            <!--<div class="section__content">-->
+            <!--<div class="grid">-->
+            <!--<div class="col-5">-->
+            <!--<div class="section__content-img-box">-->
+            <!--<img class="section__content-img" src="../../images/graphics/community.png"-->
+            <!--alt="">-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-7">-->
+            <!--<div class="section__content-text-wrap">-->
+            <!--<h3 class="section__content-title">We bring success to anyone who has-->
+            <!--special comepetences and ready to inspire</h3>-->
+            <!--<p class="section__content-description">-->
+            <!--Our goal is to create strong community of bloggers and creators to share-->
+            <!--their skills and success amoung others to become on-demand specialists.-->
+            <!--</p>-->
+            <!--<a class="btn btn_sm" href="#">Explore</a>-->
+            <!--<p class="section__content-description-sub">The whitepaper</p>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="section__content">-->
+            <!--<div class="grid">-->
+            <!--<div class="col-7 col-order-1">-->
+            <!--<div class="section__content-text-wrap section__content-text-wrap_tar">-->
+            <!--<h3 class="section__content-title">We bring success to anyone who has-->
+            <!--special comepetences and ready to inspire</h3>-->
+            <!--<p class="section__content-description">-->
+            <!--Our goal is to create strong community of bloggers and creators to share-->
+            <!--their skills and success amoung others to become on-demand specialists.-->
+            <!--</p>-->
+            <!--<a class="btn btn_sm" href="#">Explore</a>-->
+            <!--<p class="section__content-description-sub">The whitepaper</p>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-5">-->
+            <!--<div class="section__content-img-box section__content-img-box_tal">-->
+            <!--<img class="section__content-img" src="../../images/graphics/api.png"-->
+            <!--alt="">-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!--</div>-->
         </div>
 
         <div class="section">
@@ -250,23 +355,26 @@
                         <img class="features__item-img" src="../../images/graphics/@1x/borderless.png"
                              alt="">
                     </div>
-                    <h3 class="features__item-title">We increase bloggers advertising quality</h3>
-                    <p class="features__item-description">By mean of training and effect monitoring</p>
+                    <h3 class="features__item-title">We make international transactions cheaper</h3>
+                    <p class="features__item-description">Thanks to use of QZ tokens between bloggers and
+                        advertisers</p>
                 </div>
                 <div class="features__item">
                     <div class="features__item-img-box">
                         <img class="features__item-img"
                              src="../../images/graphics/@1x/transactional.png" alt="">
                     </div>
-                    <h3 class="features__item-title">We increase bloggers advertising quality</h3>
-                    <p class="features__item-description">By mean of training and effect monitoring</p>
+                    <h3 class="features__item-title">We decrease communication cost</h3>
+                    <p class="features__item-description">Making transparent funnel between advertising and real
+                        actions</p>
                 </div>
                 <div class="features__item">
                     <div class="features__item-img-box">
                         <img class="features__item-img" src="../../images/graphics/@1x/cpa.png" alt="">
                     </div>
-                    <h3 class="features__item-title">We increase bloggers advertising quality</h3>
-                    <p class="features__item-description">By mean of training and effect monitoring</p>
+                    <h3 class="features__item-title">We implement CPA pricing model</h3>
+                    <p class="features__item-description">We help to buy and sell advertising with payment for the
+                        action, not just for the fact of advertising</p>
                 </div>
             </div>
         </div>
@@ -319,10 +427,9 @@
                 </p>
                 <div class="card card_mt-76">
                     <ul class="chart-tabs">
-                        <li class="chart-tabs__item">Bloggers</li>
-                        <li class="chart-tabs__item chart-tabs__item_active">Tasks</li>
-                        <li class="chart-tabs__item">Agencies</li>
-                        <li class="chart-tabs__item">Visitors</li>
+                        <li class="chart-tabs__item chart-tabs__item_active">Bloggers</li>
+                        <li class="chart-tabs__item">Tasks</li>
+                        <li class="chart-tabs__item">Visitors/month</li>
                     </ul>
                     <div class="chart-line-wrap">
                         <canvas id="lineChart1"></canvas>
@@ -340,21 +447,187 @@
                 </div>
             </div>
         </div>
-
+        <div class="bg-2__t"></div>
         <div class="bg-2__b"></div>
-
     </div>
 
     <div class="container">
 
+        <!--<div class="section">-->
+        <!--<h2 id="roadmap" class="section__title">RoadMap</h2>-->
+        <!--<div class="road">-->
+        <!--<div class="road__item">-->
+        <!--&lt;!&ndash;<div class="road__item-img-box">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img class="road__item-img" src="http://via.placeholder.com/64x64" alt="">&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--<h3 class="road__item-title">1500+ ETH</h3>-->
+        <!--<div class="road-line__wrap">-->
+        <!--<div class="road-line-bar">-->
+        <!--<div class="road-line road-line_50 road-line_dot"></div>-->
+        <!--<div class="road-line road-line_50"></div>-->
+        <!--</div>-->
+        <!--<div class="road-line__sq"></div>-->
+        <!--</div>-->
+        <!--<div class="road__item-content">-->
+        <!--<ul>-->
+        <!--<li>-->
+        <!--Moscow development office;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--En deployment <img class="road__item-content-flags"-->
+        <!--src="../../images/landing/flags/united_kingdom.png"-->
+        <!--alt="united kingdom">;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--Training coursers for popular bloggers;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--Connection with Twitch, Facebook, Instagram and others;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--Full functionality for the bloggers, agencies and advertisers.-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="road__item">-->
+        <!--&lt;!&ndash;<div class="road__item-img-box">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img class="road__item-img" src="http://via.placeholder.com/64x64" alt="">&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--<h3 class="road__item-title">7500+ ETH</h3>-->
+        <!--<div class="road-line__wrap">-->
+        <!--<div class="road-line-bar">-->
+        <!--<div class="road-line road-line_50"></div>-->
+        <!--<div class="road-line road-line_50"></div>-->
+        <!--</div>-->
+        <!--<div class="road-line__sq"></div>-->
+        <!--</div>-->
+        <!--<div class="road__item-content">-->
+        <!--<ul>-->
+        <!--<li>-->
+        <!--Head office & Trustee board;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--Esp, Por, Deu, Fra, Ita, Pol, Tur; <br> deployment-->
+        <!--<img class="road__item-content-flags"-->
+        <!--src="../../images/landing/flags/spain.png"-->
+        <!--alt="united kingdom">&lt;!&ndash;-->
+        <!--&ndash;&gt;<img class="road__item-content-flags"-->
+        <!--src="../../images/landing/flags/portugal.png"-->
+        <!--alt="united kingdom">&lt;!&ndash;-->
+        <!--&ndash;&gt;<img class="road__item-content-flags"-->
+        <!--src="../../images/landing/flags/germany.png"-->
+        <!--alt="united kingdom">&lt;!&ndash;-->
+        <!--&ndash;&gt;<img class="road__item-content-flags"-->
+        <!--src="../../images/landing/flags/france.png"-->
+        <!--alt="united kingdom">&lt;!&ndash;-->
+        <!--&ndash;&gt;<img class="road__item-content-flags"-->
+        <!--src="../../images/landing/flags/italy.png"-->
+        <!--alt="united kingdom">&lt;!&ndash;-->
+        <!--&ndash;&gt;<img class="road__item-content-flags"-->
+        <!--src="../../images/landing/flags/poland.png"-->
+        <!--alt="united kingdom">&lt;!&ndash;-->
+        <!--&ndash;&gt;<img class="road__item-content-flags"-->
+        <!--src="../../images/landing/flags/turkey.png"-->
+        <!--alt="united kingdom">-->
+        <!--;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--Producers activity development;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--Bloggers communities development;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--VK, Pinterest, Tumblr, etc;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--Full functionality for producers;-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="road__item">-->
+        <!--&lt;!&ndash;<div class="road__item-img-box">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img class="road__item-img" src="http://via.placeholder.com/64x64" alt="">&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--<h3 class="road__item-title">15000+ ETH</h3>-->
+        <!--<div class="road-line__wrap">-->
+        <!--<div class="road-line-bar">-->
+        <!--<div class="road-line road-line_50"></div>-->
+        <!--<div class="road-line road-line_50"></div>-->
+        <!--</div>-->
+        <!--<div class="road-line__sq"></div>-->
+        <!--</div>-->
+        <!--<div class="road__item-content">-->
+        <!--<ul>-->
+        <!--<li>-->
+        <!--Regional offices abroad;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--Jpn, Ara, Hin, Chi deployment-->
+        <!--<img class="road__item-content-flags"-->
+        <!--src="../../images/landing/flags/japan.png"-->
+        <!--alt="united kingdom">&lt;!&ndash;-->
+        <!--&ndash;&gt;<img class="road__item-content-flags"-->
+        <!--src="../../images/landing/flags/palestine.png"-->
+        <!--alt="united kingdom">&lt;!&ndash;-->
+        <!--&ndash;&gt;<img class="road__item-content-flags"-->
+        <!--src="../../images/landing/flags/india.png"-->
+        <!--alt="united kingdom">&lt;!&ndash;-->
+        <!--&ndash;&gt;<img class="road__item-content-flags"-->
+        <!--src="../../images/landing/flags/china.png"-->
+        <!--alt="united kingdom">;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--Regional agent network development;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--Sectoral reports and analysis;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--Connection with QZone, Sina Weibo and others;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--Switch to OpenSource for small markets;-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--QZ volatility control scaling.-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="road__item">-->
+        <!--&lt;!&ndash;<div class="road__item-img-box">&ndash;&gt;-->
+        <!--&lt;!&ndash;<img class="road__item-img" src="http://via.placeholder.com/64x64" alt="">&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--<h3 class="road__item-title">75000-100000 ETH</h3>-->
+        <!--<div class="road-line__wrap">-->
+        <!--<div class="road-line-bar road-line-bar_arrow">-->
+        <!--<div class="road-line road-line_50"></div>-->
+        <!--<div class="road-line road-line_50"></div>-->
+        <!--</div>-->
+        <!--<div class="road-line__sq"></div>-->
+        <!--</div>-->
+        <!--<div class="road__item-content">-->
+        <!--<p>-->
+        <!--All the revenue of 75000 ETH will be transmitted to reserve fund for the-->
+        <!--currency volatility-->
+        <!--reduction&-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--</div>-->
+        <!--</div>-->
+
         <div class="section">
             <h2 id="roadmap" class="section__title">RoadMap</h2>
             <div class="road">
-                <div class="road__item">
-                    <!--<div class="road__item-img-box">-->
-                    <!--<img class="road__item-img" src="http://via.placeholder.com/64x64" alt="">-->
-                    <!--</div>-->
-                    <h3 class="road__item-title">1500+ ETH</h3>
+                <div class="road__item road__item_w-33">
+                    <h3 class="road__item-title">250 ETH COLLECTED</h3>
                     <div class="road-line__wrap">
                         <div class="road-line-bar">
                             <div class="road-line road-line_50 road-line_dot"></div>
@@ -368,27 +641,19 @@
                                 Moscow development office;
                             </li>
                             <li>
-                                En deployment <img class="road__item-content-flags"
-                                                   src="../../images/landing/flags/united_kingdom.png"
-                                                   alt="united kingdom">;
+                                7 languages in 13 countries available;
                             </li>
                             <li>
-                                Training coursers for popular bloggers;
+                                Rebrending is made;
                             </li>
                             <li>
-                                Connection with Twitch, Facebook, Instagram and others;
-                            </li>
-                            <li>
-                                Full functionality for the bloggers, agencies and advertisers.
+                                Twitch is switched on.
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="road__item">
-                    <!--<div class="road__item-img-box">-->
-                    <!--<img class="road__item-img" src="http://via.placeholder.com/64x64" alt="">-->
-                    <!--</div>-->
-                    <h3 class="road__item-title">7500+ ETH</h3>
+                <div class="road__item road__item_w-33">
+                    <h3 class="road__item-title">1000+ ETH</h3>
                     <div class="road-line__wrap">
                         <div class="road-line-bar">
                             <div class="road-line road-line_50"></div>
@@ -399,105 +664,33 @@
                     <div class="road__item-content">
                         <ul>
                             <li>
-                                Head office & Trustee board;
+                                Management office is opened;
                             </li>
                             <li>
-                                Esp, Por, Deu, Fra, Ita, Pol, Tur; <br> deployment
-                                <img class="road__item-content-flags"
-                                     src="../../images/landing/flags/spain.png"
-                                     alt="united kingdom"><!--
-                            --><img class="road__item-content-flags"
-                                    src="../../images/landing/flags/portugal.png"
-                                    alt="united kingdom"><!--
-                            --><img class="road__item-content-flags"
-                                    src="../../images/landing/flags/germany.png"
-                                    alt="united kingdom"><!--
-                            --><img class="road__item-content-flags"
-                                    src="../../images/landing/flags/france.png"
-                                    alt="united kingdom"><!--
-                            --><img class="road__item-content-flags"
-                                    src="../../images/landing/flags/italy.png"
-                                    alt="united kingdom"><!--
-                            --><img class="road__item-content-flags"
-                                    src="../../images/landing/flags/poland.png"
-                                    alt="united kingdom"><!--
-                            --><img class="road__item-content-flags"
-                                    src="../../images/landing/flags/turkey.png"
-                                    alt="united kingdom">
-                                ;
+                                International and regional professional communities organization (bloggers,
+                                producers,…);
                             </li>
                             <li>
-                                Producers activity development;
+                                Smart-contracts first deals in cryptocurrency;
                             </li>
                             <li>
-                                Bloggers communities development;
+                                Basic API for outer services;
                             </li>
                             <li>
-                                VK, Pinterest, Tumblr, etc;
+                                Switching on LiveJournal, Telegram etc;
                             </li>
                             <li>
-                                Full functionality for producers;
+                                Complete functionality for agencies, advertisers and bloggers;
+                            </li>
+                            <li>
+                                Basic functionality for producers professional communities.
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="road__item">
-                    <!--<div class="road__item-img-box">-->
-                    <!--<img class="road__item-img" src="http://via.placeholder.com/64x64" alt="">-->
-                    <!--</div>-->
+                <div class="road__item road__item_w-33">
                     <h3 class="road__item-title">15000+ ETH</h3>
-                    <div class="road-line__wrap">
-                        <div class="road-line-bar">
-                            <div class="road-line road-line_50"></div>
-                            <div class="road-line road-line_50"></div>
-                        </div>
-                        <div class="road-line__sq"></div>
-                    </div>
-                    <div class="road__item-content">
-                        <ul>
-                            <li>
-                                Regional offices abroad;
-                            </li>
-                            <li>
-                                Jpn, Ara, Hin, Chi deployment
-                                <img class="road__item-content-flags"
-                                     src="../../images/landing/flags/japan.png"
-                                     alt="united kingdom"><!--
-                            --><img class="road__item-content-flags"
-                                    src="../../images/landing/flags/palestine.png"
-                                    alt="united kingdom"><!--
-                            --><img class="road__item-content-flags"
-                                    src="../../images/landing/flags/india.png"
-                                    alt="united kingdom"><!--
-                            --><img class="road__item-content-flags"
-                                    src="../../images/landing/flags/china.png"
-                                    alt="united kingdom">;
-                            </li>
-                            <li>
-                                Regional agent network development;
-                            </li>
-                            <li>
-                                Sectoral reports and analysis;
-                            </li>
-                            <li>
-                                Connection with QZone, Sina Weibo and others;
-                            </li>
-                            <li>
-                                Switch to OpenSource for small markets;
-                            </li>
-                            <li>
-                                QZ volatility control scaling.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="road__item">
-                    <!--<div class="road__item-img-box">-->
-                    <!--<img class="road__item-img" src="http://via.placeholder.com/64x64" alt="">-->
-                    <!--</div>-->
-                    <h3 class="road__item-title">75000-100000 ETH</h3>
                     <div class="road-line__wrap">
                         <div class="road-line-bar road-line-bar_arrow">
                             <div class="road-line road-line_50"></div>
@@ -506,16 +699,43 @@
                         <div class="road-line__sq"></div>
                     </div>
                     <div class="road__item-content">
-                        <p>
-                            All the revenue of 75000 ETH will be transmitted to reserve fund for the
-                            currency volatility
-                            reduction&
-                        </p>
+                        <ul>
+                            <li>
+                                The Board of Trustees is organized;
+                            </li>
+                            <li>
+                                The number of bloggers Is growing up with the involvement of decentralized producers
+                                communities;
+                            </li>
+                            <li>
+                                Regional agents networks are organized;
+                            </li>
+                            <li>
+                                Branch analysis is made, reports are published;
+                            </li>
+                            <li>
+                                All the transactions are being made using QZ cryptocurrency;
+                            </li>
+                            <li>
+                                Pinterest, Tumblr etc. are switched on;
+                            </li>
+                            <li>
+                                Realization of complete functional for decentralized producers community and bloggers
+                                training;
+                            </li>
+                            <li>
+                                Complete API to switch outer services;
+                            </li>
+                            <li>
+                                QZ volatility control instruments.
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
             </div>
         </div>
+
 
         <div id="contributors">
             <div class="section">
@@ -810,7 +1030,9 @@
             <div class="road">
                 <div class="road__item road__item_w-33">
                     <h3 class="road__item-title road__item-title_pb road__item-title_token road__item-title_token_1">
-                        Pre-Token Sale,<br> October, 2017</h3>
+                        Pre-Exchange <br>
+                        11-24 December, 2017
+                    </h3>
                     <div class="road-line__wrap">
                         <div class="road-line-bar">
                             <div class="road-line road-line_50 road-line_wt"></div>
@@ -819,15 +1041,16 @@
                         <div class="road-line__sq-num road-line__sq-num_1"></div>
                     </div>
                     <div class="road__item-content road__item-content_pt">
-                        <p class="road__item-content-tac">PQZ pre-Token Sale emitted tokens are
-                            converted QZ with 50% bonus.
-                            750 ETH are collected. If no minimum amount collected all revenues are to be
-                            back </p>
+                        <p class="road__item-content-tac">PreQZ – pre-Token Exchange emitted tokens.
+                            Conversion into QZ with 50% bonus.
+                            1000 ETH to collect.</p>
                     </div>
                 </div>
                 <div class="road__item road__item_w-33">
                     <h3 class="road__item-title road__item-title_pb road__item-title_token road__item-title_token_2">
-                        Token Sale Autumn,<br> 2017 </h3>
+                        Token Exchange, <br>
+                        AUTUMN 2018
+                    </h3>
                     <div class="road-line__wrap">
                         <div class="road-line-bar">
                             <div class="road-line road-line_50"></div>
@@ -836,15 +1059,14 @@
                         <div class="road-line__sq-num road-line__sq-num_2"></div>
                     </div>
                     <div class="road__item-content road__item-content_pt">
-                        <p class="road__item-content-tac">Revenue withdrawal is possible by Escrow only.
-                            If tokens purchased
-                            during first 24 hours bonus is +20%. During 48 hours +10% Next 5 days bonus
-                            is +5%</p>
+                        <p class="road__item-content-tac">Funds withdrawal is possible by Escrow only.
+                            7500 ETH+ to collect.</p>
                     </div>
                 </div>
                 <div class="road__item road__item_w-33">
                     <h3 class="road__item-title road__item-title_pb road__item-title_token road__item-title_token_3">
-                        Post Token Sale</h3>
+                        Post Token Exchange
+                    </h3>
                     <div class="road-line__wrap">
                         <div class="road-line-bar">
                             <div class="road-line road-line_50"></div>
@@ -853,11 +1075,10 @@
                         <div class="road-line__sq-num road-line__sq-num_3"></div>
                     </div>
                     <div class="road__item-content road__item-content_pt">
-                        <p class="road__item-content-tac">50% of revenues will be used by Qaazqaaz ltd
-                            for the project
-                            development. 50% will be transferred by equal parts once in 3 months during
-                            9 month after Token
-                            Sale. The transfer will be made after report published</p>
+                        <p class="road__item-content-tac">50% of funds will be sent to Efir ltd for the project
+                            realization.
+                            50% will be transferred by equal parts once in 4 months during 9 months after Token Exchange
+                            by quarterly report publishing.</p>
                     </div>
                 </div>
             </div>
@@ -1016,22 +1237,60 @@
             <div class="written">
                 <div class="written__item">
                     <div class="written__item-img-box">
-                        <img class="written__item-img" src="http://via.placeholder.com/263x100" alt="">
+                        <a href="#" target="_blank" rel="nofollow, noopener">
+                            <svg class="written__item-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260.39 100">
+                                <g data-name="Слой 2">
+                                    <g data-name="Слой 1">
+                                        <path d="M49.06 61.37q0 .19-.06.19h-7.84q-.1 0-.1-.19c0-.13 0-.19.1-.19A7.24 7.24 0 0 0 43 61a1.12 1.12 0 0 0 .76-.62 3.66 3.66 0 0 0 .17-1.38v-7.43H32.05V59a3.65 3.65 0 0 0 .21 1.42A1.12 1.12 0 0 0 33 61a7.24 7.24 0 0 0 1.8.16s.06.06.06.19 0 .19-.06.19H26.97s-.06-.06-.06-.19 0-.19.06-.19a7.06 7.06 0 0 0 1.79-.16 1.12 1.12 0 0 0 .76-.62 3.66 3.66 0 0 0 .21-1.38V44.24a3.79 3.79 0 0 0-.19-1.4 1.12 1.12 0 0 0-.75-.62A6.41 6.41 0 0 0 27 42v-.15c0-.15 0-.19.06-.19h1.62q1.34.06 2.2.06t2.42-.06h1.56s.06.06.06.19 0 .19-.06.19a6.09 6.09 0 0 0-1.78.19 1.22 1.22 0 0 0-.78.65 3.65 3.65 0 0 0-.21 1.42v6.56h11.84V44.3a3.66 3.66 0 0 0-.21-1.42 1.22 1.22 0 0 0-.78-.65 6.09 6.09 0 0 0-1.78-.23q-.1 0-.1-.19t.1-.19h1.5q1.4.06 2.45.06.83 0 2.23-.06H49s.06.06.06.19S49 42 49 42a6.6 6.6 0 0 0-1.78.18 1.18 1.18 0 0 0-.78.62 3.52 3.52 0 0 0-.21 1.4V59a3.64 3.64 0 0 0 .21 1.42 1.12 1.12 0 0 0 .78.62 7.27 7.27 0 0 0 1.78.16s.06.05.06.17zM63.29 59.08a.22.22 0 0 1 .18.11c.05.07.06.13 0 .18a12.23 12.23 0 0 1-1.94 1.86 2.85 2.85 0 0 1-1.66.62 1.12 1.12 0 0 1-.94-.38 1.88 1.88 0 0 1-.3-1.18 7.62 7.62 0 0 1 .16-1.56l.51-3a14.85 14.85 0 0 1-3.17 4.54A5.23 5.23 0 0 1 52.69 62a1.88 1.88 0 0 1-1.48-.59 2.64 2.64 0 0 1-.53-1.8q0-.29.06-.92a12.2 12.2 0 0 1 1.7-4.51 14 14 0 0 1 3.26-3.8 5.81 5.81 0 0 1 3.53-1.5 2.87 2.87 0 0 1 2.17.86 2.69 2.69 0 0 0 .83-1.11.18.18 0 0 1 .13-.06.43.43 0 0 1 .19 0q.1 0 .06.08l-1.87 10.08a4.13 4.13 0 0 0-.06.8q0 1 .54 1t2-1.37a.13.13 0 0 1 .07-.08zM56.4 59a12.5 12.5 0 0 0 3.39-6 4.1 4.1 0 0 0 .1-.86 2.14 2.14 0 0 0-.48-1.47 1.73 1.73 0 0 0-1.41-.54 3.45 3.45 0 0 0-2.17.88 7.47 7.47 0 0 0-1.83 2.4 10.88 10.88 0 0 0-1.08 3.44q-.13 1-.13 1.34 0 2 1.34 2A3.45 3.45 0 0 0 56.4 59zM66 61.47a1.81 1.81 0 0 1-.32-1.18 8.29 8.29 0 0 1 .19-1.56l3.06-16.59a4.2 4.2 0 0 0 .1-.8q0-.83-.64-.83a3.67 3.67 0 0 0-1.46.48.2.2 0 0 1-.21-.18c0-.12 0-.19.08-.21l4.39-2.13h.06a.31.31 0 0 1 .22.1c.06.06.08.12.06.16l-3.66 20a4.82 4.82 0 0 0-.1.86q0 .89.57.89a1.47 1.47 0 0 0 .8-.35 12.64 12.64 0 0 0 1.18-1 .17.17 0 0 1 .29 0 .16.16 0 0 1 0 .21 11.5 11.5 0 0 1-1.93 1.88 2.87 2.87 0 0 1-1.67.6 1.17 1.17 0 0 1-1.01-.35z"/>
+                                        <path d="M83.75 39a1.21 1.21 0 0 1-.65 2.26 1 1 0 0 1-.84-.3 2.91 2.91 0 0 1-.43-.91 3.21 3.21 0 0 0-.37-.78.68.68 0 0 0-.59-.24q-1.15 0-2 2.13a31 31 0 0 0-1.48 6.46l-.29 1.94 2-.13 1.21-.06c.15 0 .22.09.22.26a1.3 1.3 0 0 1-.37.7q-.37.45-.68.41-1.27-.22-2.48-.32l-1.74 11.81a27.18 27.18 0 0 1-1.05 4.82 5.72 5.72 0 0 1-1.5 2.5 3.35 3.35 0 0 1-2.26.76 3 3 0 0 1-1.7-.4 1.18 1.18 0 0 1-.59-1 1.1 1.1 0 0 1 .37-.84 1.25 1.25 0 0 1 .88-.33 1 1 0 0 1 .83.29 2.53 2.53 0 0 1 .38.86 2.42 2.42 0 0 0 .25.64.5.5 0 0 0 .45.19q.38 0 .62-.49a8.88 8.88 0 0 0 .51-1.86q.27-1.37.68-4.3l1.66-11.24c0-.42.06-.7.06-.83 0-.38-.12-.63-.35-.73a4.12 4.12 0 0 0-1.43-.16c-.06 0-.1-.05-.1-.16a.43.43 0 0 1 0-.19c0-.06.06-.1.08-.1a3.1 3.1 0 0 0 1.59-.3 1.49 1.49 0 0 0 .61-1.1 32.24 32.24 0 0 1 1.43-6 6.27 6.27 0 0 1 2-2.95 5.31 5.31 0 0 1 3.17-.86 3.06 3.06 0 0 1 1.9.55zM94 60.34a1.56 1.56 0 0 0 1 .66 10.79 10.79 0 0 0 2.39.19s.06.06.06.19 0 .19-.06.19h-8.63q-.1 0-.1-.19c0-.13 0-.19.1-.19a6.69 6.69 0 0 0 1.76-.19 1.07 1.07 0 0 0 .73-.62 3.93 3.93 0 0 0 .19-1.38V44.24a3.8 3.8 0 0 0-.19-1.4 1.12 1.12 0 0 0-.73-.62A6.08 6.08 0 0 0 88.8 42q-.1 0-.1-.19t.1-.19h1.62q1.34.06 2.13.06t1.81-.1h2.61a7.92 7.92 0 0 1 4.78 1.31 4.65 4.65 0 0 1 1.78 4 5.76 5.76 0 0 1-1.05 3.5 6.42 6.42 0 0 1-2.66 2.13 8.17 8.17 0 0 1-3.3.7 6.5 6.5 0 0 1-1.52-.16s-.06-.05-.06-.16a.43.43 0 0 1 0-.19c0-.06.07-.08.11-.06a4.32 4.32 0 0 0 1.11.13 4.55 4.55 0 0 0 3.34-1.37 5.35 5.35 0 0 0 1.37-3.95 5.6 5.6 0 0 0-1.32-3.95 4.44 4.44 0 0 0-3.42-1.43 5.82 5.82 0 0 0-1.53.14 1 1 0 0 0-.68.6 3.87 3.87 0 0 0-.21 1.48v14.56a3.05 3.05 0 0 0 .29 1.48zM118 59.08a.22.22 0 0 1 .18.11c.05.07.06.13 0 .18a12.23 12.23 0 0 1-1.94 1.86 2.85 2.85 0 0 1-1.66.62 1.12 1.12 0 0 1-.94-.38 1.88 1.88 0 0 1-.3-1.18 7.62 7.62 0 0 1 .16-1.56l.51-3a14.85 14.85 0 0 1-3.17 4.54 5.23 5.23 0 0 1-3.41 1.73 1.88 1.88 0 0 1-1.48-.59 2.64 2.64 0 0 1-.53-1.8q0-.29.06-.92a12.2 12.2 0 0 1 1.7-4.51 14 14 0 0 1 3.26-3.8 5.81 5.81 0 0 1 3.53-1.5 2.87 2.87 0 0 1 2.17.86 2.69 2.69 0 0 0 .86-1.14.18.18 0 0 1 .13-.06.43.43 0 0 1 .19 0q.1 0 .06.08l-1.88 10.06a4.13 4.13 0 0 0-.06.8q0 1 .54 1t2-1.37a.13.13 0 0 1 .02-.03zm-6.89 0a12.5 12.5 0 0 0 3.42-6.08 4.1 4.1 0 0 0 .1-.86 2.14 2.14 0 0 0-.48-1.47 1.73 1.73 0 0 0-1.37-.54 3.45 3.45 0 0 0-2.17.88 7.47 7.47 0 0 0-1.88 2.4 10.88 10.88 0 0 0-1.08 3.44q-.13 1-.13 1.34 0 2 1.34 2a3.45 3.45 0 0 0 2.28-1.19zM119.81 61.31a1.45 1.45 0 0 1-.8-1.47 1.23 1.23 0 0 1 .41-.76 1.14 1.14 0 0 1 .73-.25.8.8 0 0 1 .59.24 4.2 4.2 0 0 1 .53.68 3.7 3.7 0 0 0 .78 1 1.71 1.71 0 0 0 1.13.33q1.53 0 1.75-1.72a1.92 1.92 0 0 0 0-.41 2.43 2.43 0 0 0-.53-1.58 12.73 12.73 0 0 0-1.61-1.58 11.46 11.46 0 0 1-1.61-1.54 2.43 2.43 0 0 1-.53-1.58 3.14 3.14 0 0 1 .62-1.88 4.3 4.3 0 0 1 1.73-1.34 4.9 4.9 0 0 1 2.17-.49 4.09 4.09 0 0 1 2 .43 1.28 1.28 0 0 1 .78 1.13 1.08 1.08 0 0 1-.33.84 1.13 1.13 0 0 1-.78.3 1.08 1.08 0 0 1-.73-.22 3.13 3.13 0 0 1-.54-.67 3.14 3.14 0 0 0-.65-.78 1.46 1.46 0 0 0-.94-.27 1.56 1.56 0 0 0-1 .32 1.24 1.24 0 0 0-.46.86 1.9 1.9 0 0 0 0 .41 2.36 2.36 0 0 0 .53 1.5 11 11 0 0 0 1.54 1.53 12.13 12.13 0 0 1 1.56 1.66 2.71 2.71 0 0 1 .57 1.72 3.64 3.64 0 0 1-.62 1.94 5 5 0 0 1-1.69 1.62 4.54 4.54 0 0 1-2.37.64 4 4 0 0 1-2.23-.61zM138.09 49.43a.27.27 0 0 1 0 .22 2.09 2.09 0 0 1-.41.7.87.87 0 0 1-.64.38q-.16 0-1.19-.16a17.43 17.43 0 0 0-2.12-.19l-1.4 7.8a4.43 4.43 0 0 0-.1.86 1.55 1.55 0 0 0 .38 1.16 1.7 1.7 0 0 0 1.21.37 3.26 3.26 0 0 0 1.45-.33 8.24 8.24 0 0 0 1.51-1h.06c.06 0 .09 0 .14.11s.07.13 0 .18a12.67 12.67 0 0 1-2.53 1.88 4.58 4.58 0 0 1-2.12.57q-2.29 0-2.29-2.07a4.44 4.44 0 0 1 .1-.86l1.31-7.2a4.34 4.34 0 0 0 .13-1 .62.62 0 0 0-.25-.59 2.16 2.16 0 0 0-1-.14c-.06 0-.1-.05-.1-.16a.43.43 0 0 1 0-.19c0-.06.06-.1.08-.1a3.08 3.08 0 0 0 2-.72 4.26 4.26 0 0 0 1.27-1.83c0-.06.08-.1.25-.1s.31 0 .29.13l-.45 2.42q1.53-.06 2.93-.16l1.08-.06a.22.22 0 0 1 .41.08zM168.57 61.37q0 .19-.06.19h-7.84q-.1 0-.1-.19c0-.13 0-.19.1-.19a7.24 7.24 0 0 0 1.8-.16 1.12 1.12 0 0 0 .76-.62 3.66 3.66 0 0 0 .21-1.42v-7.41h-11.88V59a3.65 3.65 0 0 0 .21 1.42 1.12 1.12 0 0 0 .76.62 7.24 7.24 0 0 0 1.8.16s.06.06.06.19 0 .19-.06.19H146.5s-.06-.06-.06-.19 0-.19.06-.19a7.06 7.06 0 0 0 1.77-.16 1.12 1.12 0 0 0 .76-.62 3.66 3.66 0 0 0 .21-1.42V44.24a3.79 3.79 0 0 0-.19-1.4 1.12 1.12 0 0 0-.75-.62 6.41 6.41 0 0 0-1.77-.18s-.06-.06-.06-.19 0-.19.06-.19h1.62q1.34.06 2.2.06t2.42-.06h1.56s.06.06.06.19 0 .19-.06.19a6.09 6.09 0 0 0-1.78.19 1.22 1.22 0 0 0-.78.65 3.65 3.65 0 0 0-.21 1.42v6.56h11.88V44.3a3.66 3.66 0 0 0-.21-1.42 1.22 1.22 0 0 0-.78-.65 6.09 6.09 0 0 0-1.78-.19q-.1 0-.1-.19t.1-.19h1.5q1.4.06 2.45.06.83 0 2.23-.06h1.66s.06.06.06.19 0 .19-.06.19a6.6 6.6 0 0 0-1.78.18 1.18 1.18 0 0 0-.78.62 3.52 3.52 0 0 0-.21 1.4V59a3.64 3.64 0 0 0 .21 1.42 1.12 1.12 0 0 0 .78.62 7.27 7.27 0 0 0 1.78.16s.06.05.06.17zM183.69 59.08a.19.19 0 0 1 .16.11v.18a10.25 10.25 0 0 1-2 1.9 3.17 3.17 0 0 1-1.75.59 1.15 1.15 0 0 1-.94-.37 1.81 1.81 0 0 1-.3-1.16 9.55 9.55 0 0 1 .16-1.43l.64-3.5a15.54 15.54 0 0 1-2.66 4.84 4.29 4.29 0 0 1-3.2 1.74q-2.17 0-2.17-2.42a10.46 10.46 0 0 1 .22-1.78l1.15-5.67a4.18 4.18 0 0 0 .1-.8q0-.92-.61-.92t-1.94 1.34a.17.17 0 0 1-.29 0 .16.16 0 0 1 0-.21 11.45 11.45 0 0 1 1.93-1.88 2.86 2.86 0 0 1 1.67-.61q1.24 0 1.24 1.56a8.28 8.28 0 0 1-.19 1.56l-1 5.06a8.52 8.52 0 0 0-.19 1.62q0 1.75 1.27 1.75a2.88 2.88 0 0 0 2.09-1.29 13.76 13.76 0 0 0 2-3.76 31.89 31.89 0 0 0 1.56-5.84v-.1a.61.61 0 0 1 .38-.4 2.24 2.24 0 0 1 .89-.14q.83 0 .83.22l-.13.64q-.29 1.37-.35 1.75L181 58.73a3.84 3.84 0 0 0-.06.8q0 1 .61 1a1.73 1.73 0 0 0 .89-.37 7.5 7.5 0 0 0 1.18-1 .13.13 0 0 1 .07-.08zM205.44 59a.18.18 0 0 1 .16.11.16.16 0 0 1 0 .21 11.5 11.5 0 0 1-1.93 1.88 2.87 2.87 0 0 1-1.67.6 1.15 1.15 0 0 1-.94-.37 1.81 1.81 0 0 1-.3-1.16 8.41 8.41 0 0 1 .19-1.59l.92-5.06A11.76 11.76 0 0 0 202 52a2.45 2.45 0 0 0-.27-1.31.94.94 0 0 0-.84-.41A2.73 2.73 0 0 0 199 51.5a12.94 12.94 0 0 0-2 3.57 31 31 0 0 0-1.53 5.6l-.13.6a.52.52 0 0 1-.35.4 2.22 2.22 0 0 1-.89.14q-.83 0-.83-.22c0-.13.09-.46.21-1s.21-1 .27-1.4l1-5.57A11 11 0 0 0 195 52q0-1.75-1.11-1.75a2.73 2.73 0 0 0-1.94 1.24 13.51 13.51 0 0 0-1.94 3.6 31.22 31.22 0 0 0-1.53 5.54l-.1.6a.52.52 0 0 1-.35.4 2.23 2.23 0 0 1-.89.14q-.83 0-.83-.22l.16-.73.32-1.56 1.31-7.2a4.2 4.2 0 0 0 .1-.8q0-1-.61-1a1.73 1.73 0 0 0-.89.37 7.46 7.46 0 0 0-1.18 1 .17.17 0 0 1-.29 0 .16.16 0 0 1 0-.21 10.15 10.15 0 0 1 2-1.88 3.15 3.15 0 0 1 1.74-.61 1.15 1.15 0 0 1 .94.37 1.82 1.82 0 0 1 .3 1.16 9.59 9.59 0 0 1-.16 1.43l-.61 3.31a15.19 15.19 0 0 1 2.56-4.65 4.14 4.14 0 0 1 3.09-1.69q2 0 2 2.45a9.62 9.62 0 0 1-.19 1.72l-.41 2.23a15.18 15.18 0 0 1 2.51-4.71 4.12 4.12 0 0 1 3.06-1.69 1.81 1.81 0 0 1 1.5.59 3 3 0 0 1 .48 1.86 9.26 9.26 0 0 1-.16 1.75l-1.05 5.67a4.21 4.21 0 0 0-.1.8 1.3 1.3 0 0 0 .16.72.48.48 0 0 0 .41.24 1.46 1.46 0 0 0 .8-.35 12.64 12.64 0 0 0 1.18-1 .18.18 0 0 1 .16-.14zM219.33 59.08a.22.22 0 0 1 .18.11c.05.07.06.13 0 .18a12.23 12.23 0 0 1-1.94 1.86 2.85 2.85 0 0 1-1.66.62 1.12 1.12 0 0 1-.94-.38 1.88 1.88 0 0 1-.3-1.18 7.62 7.62 0 0 1 .16-1.56l.51-3a14.85 14.85 0 0 1-3.17 4.54 5.23 5.23 0 0 1-3.45 1.73 1.88 1.88 0 0 1-1.48-.59 2.64 2.64 0 0 1-.53-1.8q0-.29.06-.92a12.2 12.2 0 0 1 1.7-4.51 14 14 0 0 1 3.26-3.8 5.81 5.81 0 0 1 3.53-1.5 2.87 2.87 0 0 1 2.17.86 2.69 2.69 0 0 0 .83-1.11.18.18 0 0 1 .13-.06.43.43 0 0 1 .19 0q.1 0 .06.08l-1.88 10.06a4.13 4.13 0 0 0-.06.8q0 1 .54 1t2-1.37a.13.13 0 0 1 .09-.06zm-6.89 0a12.5 12.5 0 0 0 3.39-6.08 4.1 4.1 0 0 0 .1-.86 2.14 2.14 0 0 0-.48-1.47 1.73 1.73 0 0 0-1.37-.54 3.45 3.45 0 0 0-2.17.88 7.47 7.47 0 0 0-1.88 2.4 10.88 10.88 0 0 0-1.08 3.44q-.13 1-.13 1.34 0 2 1.34 2a3.45 3.45 0 0 0 2.27-1.19zM234.26 59a.22.22 0 0 1 .16.32 13.83 13.83 0 0 1-2 1.88 2.8 2.8 0 0 1-1.66.6 1.1 1.1 0 0 1-.92-.37 2 2 0 0 1-.29-1.19 10.92 10.92 0 0 1 .16-1.56l.92-5.06a8.62 8.62 0 0 0 .19-1.66q0-1.72-1.24-1.72a2.92 2.92 0 0 0-2.1 1.31 13.72 13.72 0 0 0-2 3.79 32.18 32.18 0 0 0-1.56 5.89q-.1.54-1.27.54-.83 0-.83-.22l.13-.64q.29-1.37.35-1.75l1.31-7.1a4.2 4.2 0 0 0 .1-.8q0-1-.61-1a1.73 1.73 0 0 0-.89.37 7.46 7.46 0 0 0-1.18 1 .17.17 0 0 1-.29 0 .16.16 0 0 1 0-.21 10.15 10.15 0 0 1 2-1.88 3.15 3.15 0 0 1 1.74-.61 1.15 1.15 0 0 1 .94.37 1.82 1.82 0 0 1 .3 1.16 9.59 9.59 0 0 1-.16 1.43l-.64 3.5a15.33 15.33 0 0 1 2.67-4.86 4.33 4.33 0 0 1 3.22-1.74 2 2 0 0 1 1.58.6 2.76 2.76 0 0 1 .53 1.85 9.72 9.72 0 0 1-.19 1.75l-1 5.67a4.31 4.31 0 0 0-.1.83q0 .92.57.92a1.47 1.47 0 0 0 .8-.35 10.47 10.47 0 0 0 1.15-1 .18.18 0 0 1 .11-.06z"/>
+                                        <path fill="none" d="M0 0h260.39v100H0z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="written__item">
                     <div class="written__item-img-box">
-                        <img class="written__item-img" src="http://via.placeholder.com/263x100" alt="">
+                        <a href="#" target="_blank" rel="nofollow, noopener">
+                            <svg class="written__item-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260.39 100">
+                                <g data-name="Слой 2">
+                                    <g data-name="Слой 1">
+                                        <path d="M41.53 61.28V35.34h5.39v9.89H57v-9.89h5.39v25.94H57V49.7H46.92v11.58zM74.8 49.61a7.94 7.94 0 0 0 2-.44 1.51 1.51 0 0 0 1.08-1.43 1.69 1.69 0 0 0-.83-1.63 5.24 5.24 0 0 0-2.43-.45 3.2 3.2 0 0 0-2.55.88 3.63 3.63 0 0 0-.71 1.76h-4.85a7.34 7.34 0 0 1 1.41-4.14q2-2.53 6.86-2.53a12.23 12.23 0 0 1 5.62 1.25q2.46 1.25 2.46 4.72V58.62A2.79 2.79 0 0 0 83.2 60a1.8 1.8 0 0 0 .74.58v.74h-5.46a5.57 5.57 0 0 1-.32-1.09q-.09-.55-.16-1.23a10.34 10.34 0 0 1-2.41 1.92 7.27 7.27 0 0 1-3.68.93 6.35 6.35 0 0 1-4.33-1.49 5.29 5.29 0 0 1-1.71-4.22 5.46 5.46 0 0 1 2.75-5.12 12.28 12.28 0 0 1 4.43-1.23zM77.86 52a5.56 5.56 0 0 1-1 .48 8.22 8.22 0 0 1-1.35.34L74.4 53a7.48 7.48 0 0 0-2.31.69 2.29 2.29 0 0 0-1.19 2.13 2.22 2.22 0 0 0 .72 1.86 2.75 2.75 0 0 0 1.76.57 5.24 5.24 0 0 0 3-1 4 4 0 0 0 1.44-3.47zM103.63 44.4a11 11 0 0 1 2.15 7 12.33 12.33 0 0 1-2.12 7.41 7.71 7.71 0 0 1-9.77 2 7.64 7.64 0 0 1-1.88-2v2.41h-4.94V35.37h5v9.22a7.35 7.35 0 0 1 2.11-2 6.29 6.29 0 0 1 3.47-.88 7.17 7.17 0 0 1 5.98 2.69zm-4.2 11.69a7.11 7.11 0 0 0 1.09-4.09 9.22 9.22 0 0 0-.53-3.38 3.71 3.71 0 0 0-3.73-2.53 3.76 3.76 0 0 0-3.78 2.48 9.25 9.25 0 0 0-.54 3.43A7.1 7.1 0 0 0 93 56a3.78 3.78 0 0 0 3.35 1.62 3.48 3.48 0 0 0 3.08-1.53zM119.92 41.65h.43v5.14l-.84-.07h-.6q-3 0-4.07 2a7.67 7.67 0 0 0-.58 3.41v9.17h-5.05V42.1H114v3.34a10.63 10.63 0 0 1 2-2.62 5.51 5.51 0 0 1 3.66-1.18zM130.89 49.61a7.94 7.94 0 0 0 2-.44 1.51 1.51 0 0 0 1.11-1.42 1.69 1.69 0 0 0-.83-1.63 5.24 5.24 0 0 0-2.43-.45 3.2 3.2 0 0 0-2.55.88 3.63 3.63 0 0 0-.71 1.76h-4.88a7.34 7.34 0 0 1 1.4-4.14q2-2.53 6.86-2.53a12.23 12.23 0 0 1 5.62 1.25Q139 44.14 139 47.6V58.62a2.79 2.79 0 0 0 .3 1.34 1.8 1.8 0 0 0 .74.58v.74h-5.46a5.57 5.57 0 0 1-.32-1.09q-.09-.51-.14-1.16a10.34 10.34 0 0 1-2.41 1.92 7.27 7.27 0 0 1-3.68.93 6.35 6.35 0 0 1-4.33-1.49 5.29 5.29 0 0 1-1.7-4.21 5.46 5.46 0 0 1 2.75-5.12 12.28 12.28 0 0 1 4.43-1.23zM134 52a5.56 5.56 0 0 1-1 .48 8.22 8.22 0 0 1-1.35.34l-1.15.18a7.48 7.48 0 0 0-2.31.69 2.29 2.29 0 0 0-1.19 2.12 2.22 2.22 0 0 0 .72 1.86 2.75 2.75 0 0 0 1.76.57 5.24 5.24 0 0 0 3-1 4 4 0 0 0 1.52-3.42zM157.13 42.2a5.63 5.63 0 0 1 2.37 1.88 5 5 0 0 1 1 2.21 27.35 27.35 0 0 1 .18 3.71v11.28h-5.12V49.6a5.18 5.18 0 0 0-.52-2.5 2.63 2.63 0 0 0-2.59-1.34 3.55 3.55 0 0 0-3 1.33 6.12 6.12 0 0 0-1 3.8v10.4h-5V35.42h5v9.15a6.14 6.14 0 0 1 2.51-2.33 7.08 7.08 0 0 1 3-.66 8.12 8.12 0 0 1 3.17.62zM173 49.61a7.94 7.94 0 0 0 2-.44 1.51 1.51 0 0 0 1-1.42 1.69 1.69 0 0 0-.83-1.63 5.24 5.24 0 0 0-2.43-.45 3.2 3.2 0 0 0-2.55.88 3.63 3.63 0 0 0-.71 1.76h-4.84a7.34 7.34 0 0 1 1.41-4.14q2-2.53 6.86-2.53a12.23 12.23 0 0 1 5.62 1.25Q181 44.14 181 47.6V58.62a2.79 2.79 0 0 0 .3 1.34 1.8 1.8 0 0 0 .74.58v.74h-5.46a5.57 5.57 0 0 1-.32-1.09q-.09-.51-.14-1.16a10.34 10.34 0 0 1-2.41 1.92 7.27 7.27 0 0 1-3.68.93 6.35 6.35 0 0 1-4.33-1.49 5.29 5.29 0 0 1-1.71-4.22 5.46 5.46 0 0 1 2.75-5.12 12.28 12.28 0 0 1 4.43-1.23zm3 2.39a5.56 5.56 0 0 1-1 .48 8.22 8.22 0 0 1-1.35.34l-1.14.21a7.48 7.48 0 0 0-2.31.69 2.29 2.29 0 0 0-1.19 2.13 2.22 2.22 0 0 0 .72 1.86 2.75 2.75 0 0 0 1.76.57 5.24 5.24 0 0 0 3-1 4 4 0 0 0 1.51-3.46zM201.79 44.4a11 11 0 0 1 2.15 7 12.33 12.33 0 0 1-2.12 7.41 7.71 7.71 0 0 1-9.77 2 7.64 7.64 0 0 1-1.88-2v2.41h-4.95V35.37h5v9.22a7.35 7.35 0 0 1 2.11-2 6.29 6.29 0 0 1 3.47-.88 7.17 7.17 0 0 1 5.99 2.69zm-4.19 11.69a7.11 7.11 0 0 0 1.08-4.09 9.22 9.22 0 0 0-.53-3.38 3.71 3.71 0 0 0-3.73-2.53 3.76 3.76 0 0 0-3.78 2.48 9.25 9.25 0 0 0-.54 3.43 7.1 7.1 0 0 0 1.1 4 3.78 3.78 0 0 0 3.35 1.62 3.48 3.48 0 0 0 3.04-1.53zM218.08 41.65h.43v5.14l-.84-.07h-.6q-3 0-4.07 2a7.67 7.67 0 0 0-.58 3.41v9.17h-5.05V42.1h4.79v3.34a10.63 10.63 0 0 1 2-2.62 5.51 5.51 0 0 1 3.66-1.18z"/>
+                                        <path fill="none" d="M0 0h260.39v100H0z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="written__item">
                     <div class="written__item-img-box">
-                        <img class="written__item-img" src="http://via.placeholder.com/263x100" alt="">
+                        <a href="#" target="_blank" rel="nofollow, noopener">
+                            <svg class="written__item-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100">
+                                <g data-name="Слой 2">
+                                    <g data-name="Слой 1">
+                                        <path d="M84 33.42C71.54 37.5 67.67 53 76.88 62.21c3.49 3.48 7.11 4.9 12.57 4.93 3.8 0 5.21-.27 8.12-1.69 2-1 3.52-1.93 3.52-2.21a3.32 3.32 0 0 0-1.1-1.47c-1-.9-1.35-.86-4.11.54a13.55 13.55 0 0 1-16.19-2.68c-5.78-5.82-5.8-13.4-.06-19.19a14.24 14.24 0 0 1 17-2.37c2 1.2 2.21 1.21 3.28.23a3.69 3.69 0 0 0 1.13-1.53c0-.27-1.53-1.23-3.37-2.13-4-2-9.8-2.47-13.67-1.21zM120.15 33.6a7.63 7.63 0 0 0-4.6 7.33c0 4.32 1.47 6.09 7.42 8.89 5.52 2.6 7.54 4.57 7.54 7.35 0 2.33-1.62 5.09-3.49 5.94a6.79 6.79 0 0 1-9.12-3.06 2.7 2.7 0 0 0-2.46-1.78c-1.93 0-2 1.53-.07 4.29 3 4.43 7.49 5.87 12.39 4a9.84 9.84 0 0 0 5.08-14.11c-1.16-2-2.32-2.9-6.73-5-5.82-2.82-7.62-4.68-7-7.23 1.31-5.21 7.92-5.34 9.72-.18a2 2 0 0 0 1.95 1.1c1.23 0 1.56-.29 1.56-1.35 0-3.46-4.35-7.23-8.34-7.23a10.15 10.15 0 0 0-3.86 1.07zM140.5 33.18c-2.14.87-3.25 3.09-3.25 6.52 0 4.23.79 6.08 4 9.38s4.59 6.31 4.59 9.87c0 3.25-.89 4.84-2.7 4.84s-2.21-1-2.21-5.27c0-3.25 0-3.31-1.84-3.31h-1.84v4.23c0 5 1.28 7.17 4.66 7.8 5.26 1 8.06-2.77 7.4-9.94-.43-4.66-1.33-6.53-4.7-9.75-4.41-4.22-5.56-8.23-3.06-10.73 2-2 4.29-.25 4.29 3.13 0 .89.46 1.16 1.93 1.16 1.93 0 1.93 0 1.57-2.57-.63-4.54-4.73-7-8.84-5.36zM159.54 49.79c-5 9.13-9.2 16.88-9.32 17.16s.74.52 1.84.52c1.93 0 2.21-.28 4.51-4.44l2.43-4.45 9.93-.15 9.93-.15 2.54 4.6c2.41 4.35 2.66 4.6 4.66 4.6h2.11l-2.79-5.06c-1.54-2.79-5.74-10.48-9.38-17.16s-6.77-12.11-7-12.11-4.51 7.51-9.5 16.64zm13.55-2.18c2.22 3.92 4 7.22 4 7.36a64.71 64.71 0 0 1-8 .25c-4.41 0-8-.14-8-.31 0-.37 7.57-14.36 7.78-14.39s1.92 3.17 4.14 7.09z"/>
+                                        <path d="M100.54 42.12a8.44 8.44 0 0 0-4.77 7c-.51 5.09 2.93 9.11 8.2 9.6 2.39.22 3.33 0 5-1.15 3.33-2.27 4.47-4.22 4.47-7.59a9 9 0 0 0-12.93-7.88zm7.11 3.59c4.6 3.22 1.16 10.63-4.29 9.26a5.07 5.07 0 0 1-3.51-7 5.4 5.4 0 0 1 7.8-2.21z"/>
+                                        <path fill="none" d="M0 0h260v100H0z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="written__item">
                     <div class="written__item-img-box">
-                        <img class="written__item-img" src="http://via.placeholder.com/263x100" alt="">
+                        <a href="#" target="_blank" rel="nofollow, noopener">
+                            <svg class="written__item-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 100">
+                                <g data-name="Слой 2">
+                                    <g data-name="Слой 1">
+                                        <path fill="none" d="M0 0h260v100H0z"/>
+                                        <path d="M141.44 28.74A10.2 10.2 0 0 0 134.3 36a12.56 12.56 0 0 0 0 4.74 10.05 10.05 0 0 0 7.14 7.26 11 11 0 0 0 6.95-.62 11.26 11.26 0 0 0 3-2.3l.52-.63-1.21-.95c-.66-.52-1.24-.95-1.26-.95a8.49 8.49 0 0 0-.78.69 6.38 6.38 0 0 1-10.3-1.72 7.11 7.11 0 0 1 1.49-8.34 5.64 5.64 0 0 1 2.7-1.46 7.78 7.78 0 0 1 4.92.5l.57.29v3.3h3.3v-4.75l-.55-.45a13.39 13.39 0 0 0-3.69-1.79 14.52 14.52 0 0 0-2.73-.3 8.31 8.31 0 0 0-2.91.23zM112.13 30.47V32H114a4.13 4.13 0 0 1 1.28.13c.11.07 1.48 3.68 3 8L121.1 48h3.11l3-8 3-8h3.2v-3.08h-5.6l-2.36 6.9c-1.3 3.79-2.4 6.92-2.45 7s-1.16-3.06-2.46-6.86L118.06 29h-6v1.58zM113.45 53.61v1.47h3.08v12.85h-3.17v3.08h14.56v-3.08h-8.18v-3.77c0-4.18.09-4.8.89-6.3a6 6 0 0 1 2.37-2.27 8.08 8.08 0 0 1 2.18-.58c.11 0 .13.46.09 1.44l-.07 1.44h3.26v-5.75h-1.82a7.39 7.39 0 0 0-4.18.85 9.17 9.17 0 0 0-2.64 2.45c-.23.35-.23.34-.32-.72 0-.59-.1-1.4-.12-1.79v-.72h-6v1.47zM132.08 53.79v1.65H135v5.07c0 5.44 0 5.9.78 7.52a6.79 6.79 0 0 0 2.48 2.66 6.62 6.62 0 0 0 3.83.8 5 5 0 0 0 2.3-.45 6 6 0 0 0 2.61-2.19l.56-.82.24 1.49.25 1.53h5.1v-3.08h-2.55l-.05-2.97c-.05-1.6-.09-5.15-.09-7.89v-5h-6.6v3.3h3.3v3.92c0 4.22-.09 5.06-.66 6.23-1.14 2.34-3.92 3.54-6 2.59a3.63 3.63 0 0 1-1.92-2.32c-.21-.63-.25-1.61-.29-7.23l-.05-6.49h-6.16v1.65zM106.92 67.89a11.26 11.26 0 0 0-.09 1.66v1.54h3.47v-3.22h-1.6a6.61 6.61 0 0 0-1.67.07z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1042,70 +1301,65 @@
     <div class="bg-4">
 
         <div class="slider owl-carousel">
+            <div class="slider__item">
+                <div class="slider__item-content">
+                    <iframe type="text/html" src="http://www.youtube.com/embed/M7lc1UVf-VE"/></iframe>
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__item-content">
+                    <iframe type="text/html" src="http://www.youtube.com/embed/M7lc1UVf-VE"/></iframe>
+
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__item-content">
+                    <iframe type="text/html" src="http://www.youtube.com/embed/M7lc1UVf-VE"/></iframe>
+
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__item-content">
+                    <iframe type="text/html" src="http://www.youtube.com/embed/M7lc1UVf-VE"/></iframe>
+
+                </div>
+            </div>
             <!--<div class="slider__item">-->
             <!--<div class="slider__item-content">-->
-            <!--<iframe type="text/html"-->
-            <!--src="http://www.youtube.com/embed/M7lc1UVf-VE"-->
-            <!--/></iframe>-->
+            <!--<img src="http://via.placeholder.com/750x420" alt="">-->
             <!--</div>-->
             <!--</div>-->
             <!--<div class="slider__item">-->
             <!--<div class="slider__item-content">-->
-            <!--<iframe type="text/html"-->
-            <!--src="http://www.youtube.com/embed/M7lc1UVf-VE"-->
-            <!--/></iframe>-->
+            <!--<img src="http://via.placeholder.com/750x420" alt="">-->
             <!--</div>-->
             <!--</div>-->
             <!--<div class="slider__item">-->
             <!--<div class="slider__item-content">-->
-            <!--<iframe type="text/html"-->
-            <!--src="http://www.youtube.com/embed/M7lc1UVf-VE"-->
-            <!--/></iframe>-->
+            <!--<img src="http://via.placeholder.com/750x420" alt="">-->
             <!--</div>-->
             <!--</div>-->
             <!--<div class="slider__item">-->
             <!--<div class="slider__item-content">-->
-            <!--<iframe type="text/html"-->
-            <!--src="http://www.youtube.com/embed/M7lc1UVf-VE"-->
-            <!--/></iframe>-->
+            <!--<img src="http://via.placeholder.com/750x420" alt="">-->
             <!--</div>-->
             <!--</div>-->
-            <div class="slider__item">
-                <div class="slider__item-content">
-                    <img src="http://via.placeholder.com/750x420" alt="">
-                </div>
-            </div>
-            <div class="slider__item">
-                <div class="slider__item-content">
-                    <img src="http://via.placeholder.com/750x420" alt="">
-                </div>
-            </div>
-            <div class="slider__item">
-                <div class="slider__item-content">
-                    <img src="http://via.placeholder.com/750x420" alt="">
-                </div>
-            </div>
-            <div class="slider__item">
-                <div class="slider__item-content">
-                    <img src="http://via.placeholder.com/750x420" alt="">
-                </div>
-            </div>
-            <div class="slider__item">
-                <div class="slider__item-content">
-                    <img src="http://via.placeholder.com/750x420" alt="">
-                </div>
-            </div>
-            <div class="slider__item">
-                <div class="slider__item-content">
-                    <img src="http://via.placeholder.com/750x420" alt="">
-                </div>
-            </div>
+            <!--<div class="slider__item">-->
+            <!--<div class="slider__item-content">-->
+            <!--<img src="http://via.placeholder.com/750x420" alt="">-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="slider__item">-->
+            <!--<div class="slider__item-content">-->
+            <!--<img src="http://via.placeholder.com/750x420" alt="">-->
+            <!--</div>-->
+            <!--</div>-->
         </div>
 
         <div class="container">
 
             <div class="section">
-                <h2 class="section__title">We are talking about</h2>
+                <h2 class="section__title section__title_wt">We are talking about</h2>
                 <div class="card-wrap">
                     <div class="slider-team">
                         <div class="slider-team__wrap">
@@ -1234,32 +1488,105 @@
     </ol>
 </div>
 
+<div id="alertBonus" class="alert alert-desktop">
+    <div class="alert__text"><p>Pre-Token exchange will start soon. <span>Explore how  to get 50% bonus.</span></p>
+    </div>
+    <a class="btn btn_sm btn_sm-wt" href="#">Explore</a>
+    <button class="alert__close-btn"></button>
+</div>
+
+<div id="alertInform" class="alert alert-desktop">
+    <div class="alert__text"><p>Be the first to know when exchange starts</p></div>
+    <div class="form-alert-wrap">
+        <form class="form form_plr form_alert">
+            <div class="form__col form__col_w50">
+                <div class="form__wrap-inside">
+                    <input class="form__input form__input_sm-wt" type="text" placeholder="Name">
+                </div>
+            </div>
+            <div class="form__col form__col_w50">
+                <div class="form__wrap-inside">
+                    <input class="form__input form__input_sm-wt" type="text" placeholder="Name">
+                </div>
+            </div>
+            <div class="form__col form__col_w160">
+                <div class="form__wrap-inside">
+                    <button class="btn btn_block btn_wt">Inform me</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <button class="alert__close-btn"></button>
+</div>
+
+<div id="alertExploreBonus" class="alert alert-tablet">
+    <a class="alert__link" href="#">
+        <div class="alert__text"><p>Pre-Token exchange will start soon. <span>Explore how  to get 50% bonus.</span></p>
+        </div>
+    </a>
+    <button class="alert__close-btn"></button>
+</div>
 
 <!--<script src="../../vendors/jquery-3.2.1.min.js"></script>-->
 <script src="../../vendors/jquery-1.8.min.js"></script>
 <script src="../../vendors/slick/slick.min.js"></script>
 <script src="../../vendors/ddscrollspy.js"></script>
 <script src="../../vendors/chart.min.js"></script>
+<!--<script src="../../vendors/jquery.countdown/js/jquery.plugin.min.js"></script>-->
+<!--<script src="../../vendors/jquery.countdown/js/jquery.countdown.js"></script>-->
 
 <script>
+
     $(document).ready(function () {
+
+        /* Alert show */
+
+        var bonuses = $('#bonuses');
+        var alertBonus = $('#alertBonus');
+        var alertInform = $('#alertInform');
+        var alertExploreBonus = $('#alertExploreBonus');
+
+        $(window).scroll(function () {
+            var windowScrollTop = $(this).scrollTop();
+
+            if (windowScrollTop > 150 && bonuses.isOnScreen() === false) {
+                alertBonus.addClass('alert_show');
+                if (alertBonus.hasClass('alert_close')) {
+                    alertInform.addClass('alert_show');
+                }
+                alertExploreBonus.addClass('alert_show');
+            } else if (windowScrollTop < 150) {
+                alertBonus.removeClass('alert_show');
+                alertInform.removeClass('alert_show');
+                alertExploreBonus.removeClass('alert_show');
+            } else if (bonuses.isOnScreen() === true) {
+                alertBonus.removeClass('alert_show');
+            }
+        });
+
+        $('#alertBonus .alert__close-btn').click(function () {
+            alertBonus.addClass('alert_close');
+        });
+
+        $('#alertInform .alert__close-btn').click(function () {
+            alertInform.addClass('alert_close');
+        });
+
+        $('#alertExploreBonus .alert__close-btn').click(function () {
+            alertExploreBonus.addClass('alert_close');
+        });
+
+        /* end Alert show */
 
         $('.slider').slick({
             centerMode: true,
             variableWidth: true,
             centerPadding: '60px',
-            slidesToShow: 3,
+            slidesToShow: 1,
             dots: true,
             infinite: true,
             adaptiveHeight: true,
         });
-
-//    var video = $('.slider.slick-active').find('iframe').get(0).play();
-//
-//    $('.slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-//      $('.slider .slick-slide').find('video').get(0).pause();
-//      var video = $('.slider .slick-active').find('video').get(0).play();
-//    });
 
         $('.slider-team__wrap').slick({
             dots: true,
@@ -1275,7 +1602,6 @@
             highlightclass: 'navigation__link_active',
             scrollduration: 300,
         });
-
 
         var ctx1 = document.getElementById("tokenChart1");
         var tokenChart1 = new Chart(ctx1, {
@@ -1321,7 +1647,7 @@
         });
 
 
-        /* line chart */
+        /* Line chart */
 
         var chart = document.getElementById('lineChart1').getContext('2d'),
                 gradient = chart.createLinearGradient(0, 0, 0, 351);
@@ -1337,19 +1663,19 @@
                 pointBackgroundColor: '#ff2727',
                 borderWidth: 1,
                 borderColor: '#FF7272',
-                data: [273,	511,	552,	568,	591,	636,	693,	786,	860,	919,	953]
+                data: [273, 511, 552, 568, 591, 636, 693, 786, 860, 919, 953]
             }]
         };
 
         var dataTasks = {
-            labels: ['Jan, 17', 'Feb, 17', 'Mar, 17', 'Apr, 17', 'May, 17', 'Jun, 17', 'Jul, 17', 'Aug, 17', 'Sep, 17', 'Oct, 17', 'Nov, 17'],
+            labels: ['May, 17', 'Jun, 17', 'Jul, 17', 'Aug, 17', 'Sep, 17', 'Oct, 17', 'Nov, 17'],
             datasets: [{
                 label: 'Registered tasks',
                 backgroundColor: gradient,
                 pointBackgroundColor: '#ff2727',
                 borderWidth: 1,
                 borderColor: '#FF7272',
-                data: [0, 0, 0, 0, 10, 21, 33, 44, 59, 80, 90]
+                data: [10, 21, 33, 44, 59, 80, 90]
             }]
         };
 
@@ -1361,7 +1687,7 @@
                 pointBackgroundColor: '#ff2727',
                 borderWidth: 1,
                 borderColor: '#FF7272',
-                data: [1723,	4474,	2562,	3519,	4503,	4981,	6193,	6690,	8513,	9864,	8787]
+                data: [1723, 4474, 2562, 3519, 4503, 4981, 6193, 6690, 8513, 9864, 8787]
             }]
         };
 
@@ -1413,23 +1739,9 @@
 
         var chartInstance = new Chart(chart, {
             type: 'line',
-            data: dataTasks,
+            data: dataBloggers,
             options: options
         });
-
-        function addData(chart, label, data) {
-            chart.data.labels = label;
-            chart.data = data;
-            chart.update();
-        }
-
-        function removeData(chart) {
-            chart.data.labels.pop();
-            chart.data.datasets.forEach(function (dataset) {
-                dataset.data.pop();
-            });
-            chart.update();
-        }
 
         $('.chart-tabs li').click(function (e) {
             e.preventDefault();
@@ -1437,26 +1749,44 @@
             indexUl = $(this).index();
             switch (indexUl) {
                 case 0:
-                    addData(chartInstance, dataBloggers.labels, dataBloggers);
+                    chartInstance.data = dataBloggers;
                     break;
                 case 1:
-                    addData(chartInstance, dataTasks.labels, dataTasks);
+                    chartInstance.data = dataTasks;
                     break;
                 case 2:
-                    addData(chartInstance, dataBloggers.labels, dataBloggers);
-                    break;
-                case 3:
-                    addData(chartInstance, dataVisits.labels, dataVisits);
+                    chartInstance.data = dataVisits;
                     break;
                 default:
                     console.log('wtf!?');
             }
-
+            chartInstance.update();
             $(this).addClass('chart-tabs__item_active');
         });
 
+        /* end Line chart */
+
 
     });
+
+    $.fn.isOnScreen = function () {
+
+        var win = $(window);
+
+        var viewport = {
+            top: win.scrollTop(),
+            left: win.scrollLeft()
+        };
+        viewport.right = viewport.left + win.width();
+        viewport.bottom = viewport.top + win.height();
+
+        var bounds = this.offset();
+        bounds.right = bounds.left + this.outerWidth();
+        bounds.bottom = bounds.top + this.outerHeight();
+
+        return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+    };
 
 </script>
 
