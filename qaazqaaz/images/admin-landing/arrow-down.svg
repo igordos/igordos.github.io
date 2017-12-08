@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="11px" height="6px" viewBox="0 0 11 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>Shape Copy</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Youtube" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="main" transform="translate(-1211.000000, -26.000000)" fill-rule="nonzero" fill="#FFFFFF">
-            <path d="M1216.5,32 C1216.23993,32 1215.97987,31.9083255 1215.78177,31.7259121 L1211,27.3227315 L1212.43646,26 L1216.5,29.7418148 L1220.56354,26 L1222,27.3227315 L1217.21823,31.7259121 C1217.02013,31.9083255 1216.76007,32 1216.5,32 Z" id="Shape-Copy"></path>
-        </g>
-    </g>
-</svg>
+<svg width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg"><title>Shape Copy</title><path d="M5.5 6c-.26 0-.52-.092-.718-.274L0 1.323 1.436 0 5.5 3.742 9.564 0 11 1.323 6.218 5.726A1.06 1.06 0 0 1 5.5 6z" fill="#FFF"/></svg>
