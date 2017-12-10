@@ -121,46 +121,100 @@
 
         <div class="row justify-content-center qz-mt-100 qz-pb-70">
             <div class="col-lg-8 col-md-12 p-0">
-                <div class="qz-input-group">
-                    <select class="qz-select">
-                        <option>Блогер</option>
-                    </select>
-                    <input type="text" class="qz-input" placeholder="Найти блогера">
-                </div>
+
                 <div class="qz-group qz-mt-20">
                     <div class="qz-group-item">
                         <label class="qz-label" for="category">Категория</label>
-                        <select id="category" class="qz-select">
-                            <option>Все</option>
-                            <option>Все Все Все Все Все Все Все</option>
+                        <select name="subjects" class="qz-select">
+                            <option disabled="" selected="">Выбрать категорию</option>
+                            <option value="Transport">Транспорт</option>
+                            <option value="Music">Музыка</option>
+                            <option value="Animals">Животные</option>
+                            <option value="Sport and healthy lifestyle">Спорт и ЗОЖ</option>
+                            <option value="Travel">Путешествия</option>
+                            <option value="Computer games">Компьютерные игры</option>
+                            <option value="People and blogs">Люди и блоги</option>
+                            <option value="Humor">Юмор</option>
+                            <option value="Entertainment">Развлечения</option>
+                            <option value="News and politics">Новости и политика</option>
+                            <option value="Hobby and style">Хобби и стиль</option>
+                            <option value="Education">Образование</option>
+                            <option value="Science and technology">Наука и техника</option>
+                            <option value="Society">Общество</option>
+                            <option value="Motion pictures and animation">Фильмы и анимация</option>
+                            <option value="Beauty and fashion">Красота и мода</option>
+                            <option value="Cartoons and moovies for children">Мультфильмы и детское</option>
+                            <option value="Cooking">Кулинария</option>
+                            <option value="Culture and art">Культура и искусство</option>
+                            <option value="Job and Business">Работа и Бизнес</option>
+                            <option value="Repairs">Ремонт</option>
+                            <option value="Jurisprudence">Юриспруденция</option>
+                            <option value="DIY">Сделай сам</option>
                         </select>
                     </div>
                     <div class="qz-group-item">
-                        <label class="qz-label" for="category">Цена размещения</label>
-                        <select id="category" class="qz-select">
-                            <option>Любая</option>
-                        </select>
+                        <label class="qz-label" for="category">Стоимость рекламы</label>
+                        <input name="price_ad_min" type="text" class="qz-input" placeholder="0" value="">
                     </div>
                     <div class="qz-group-item">
                         <label class="qz-label" for="category">Тип рекламы</label>
-                        <select id="category" class="qz-select">
-                            <option>Интеграция</option>
+                        <select name="ad_type" class="qz-select">
+                            <option value="">Все типы</option>
+                            <option value="exclusive">Эксклюзив</option>
+                            <option value="integration">Интеграция</option>
+                            <option value="mention">Упоминание</option>
+                            <option value="pre_post_roll">Пре-ролл/Пост-ролл</option>
                         </select>
                     </div>
-                    <div class="qz-group-item">
-                        <label class="qz-label" for="category">Сортировать</label>
-                        <select id="category" class="qz-select">
-                            <option>RUB/просмотр</option>
-                        </select>
-                    </div>
+
                     <div class="qz-group-item-btn">
                         <button class="qz-btn"><i class="fa fa-search"></i></button>
                     </div>
                 </div>
             </div>
+            <!--<div class="col-lg-8 col-md-12 p-0">-->
+                <!--<div class="qz-input-group">-->
+                    <!--<select class="qz-select">-->
+                        <!--<option>Блогер</option>-->
+                    <!--</select>-->
+                    <!--<input type="text" class="qz-input" placeholder="Найти блогера">-->
+                <!--</div>-->
+                <!--<div class="qz-group qz-mt-20">-->
+                    <!--<div class="qz-group-item">-->
+                        <!--<label class="qz-label" for="category">Категория</label>-->
+                        <!--<select id="category" class="qz-select">-->
+                            <!--<option>Все</option>-->
+                            <!--<option>Все Все Все Все Все Все Все</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                    <!--<div class="qz-group-item">-->
+                        <!--<label class="qz-label" for="category">Цена размещения</label>-->
+                        <!--<select id="category" class="qz-select">-->
+                            <!--<option>Любая</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                    <!--<div class="qz-group-item">-->
+                        <!--<label class="qz-label" for="category">Тип рекламы</label>-->
+                        <!--<select id="category" class="qz-select">-->
+                            <!--<option>Интеграция</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                    <!--<div class="qz-group-item">-->
+                        <!--<label class="qz-label" for="category">Сортировать</label>-->
+                        <!--<select id="category" class="qz-select">-->
+                            <!--<option>RUB/просмотр</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+                    <!--<div class="qz-group-item-btn">-->
+                        <!--<button class="qz-btn"><i class="fa fa-search"></i></button>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
 
     </div>
+
+    <div class="qz-header-bg__author">Photo by: Abraham Moore</div>
 
 </div>
 
@@ -232,8 +286,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 p-0 qz-slider-order-0">
-                        <div class="qz-slider-img"
-                             style="background-image: url(http://www.zastavki.com/pictures/originals/2014/Nature___Sundown_Starry_sky_at_sunset_082927_.jpg)"></div>
+                        <div class="qz-slider-img qz-slider-img_1"></div>
                     </div>
                 </div>
             </div>
@@ -257,8 +310,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 p-0 qz-slider-order-0">
-                        <div class="qz-slider-img"
-                             style="background-image: url(https://i1.wp.com/sobiratelzvezd.ru/wp-content/uploads/2014/02/milky-way-over-catherine-hills-bay-australia.jpg)"></div>
+                        <div class="qz-slider-img qz-slider-img_2"></div>
                     </div>
                 </div>
             </div>
@@ -282,8 +334,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 p-0 qz-slider-order-0">
-                        <div class="qz-slider-img"
-                             style="background-image: url(https://i.ytimg.com/vi/7aja79UIcd4/maxresdefault.jpg)"></div>
+                        <div class="qz-slider-img qz-slider-img_3"></div>
                     </div>
                 </div>
             </div>
