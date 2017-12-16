@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="grid">
-            <div class="col-5 col_pr">
+            <div class="col-4 col_pr">
                 <div class="card">
                     <div class="card-header">
                         <h2 class="card-header__title">Портфель 2</h2>
@@ -79,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-7 col_pl">
+            <div class="col-8 col_pl">
                 <div class="card">
                     <div class="card-header">
                         <h2 class="card-header__title">Детализация</h2>
@@ -94,6 +94,7 @@
                                 <th>Стоимость</th>
                                 <th>КВт</th>
                                 <th>Хешрейт</th>
+                                <th>Действие</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -131,6 +132,11 @@
                                 <td>USD 10,000.00</td>
                                 <td>0,8 КВт</td>
                                 <td>12 MHs</td>
+                                <td>
+                                    <a class="btn-rd btn-rd_add" href="#"></a>
+                                    <a class="btn-rd btn-rd_remove" href="#"></a>
+                                    <a class="btn-rd btn-rd_clear" href="#"></a>
+                                </td>
                             </tr>
                             <tr class="tr-detail">
                                 <td>
@@ -166,42 +172,11 @@
                                 <td>USD 10,000.00</td>
                                 <td>0,8 КВт</td>
                                 <td>12 MHs</td>
-                            </tr>
-
-                            <tr class="tr-detail">
                                 <td>
-                                    <div class="info">
-                                        <button class="info__btn"></button>
-                                        <div class="info-dropdown">
-                                            <div class="info-dropdown__header">
-                                                <p class="info-dropdown__header-t">Antminer D3</p>
-                                                <p class="info-dropdown__header-b">Dash</p>
-                                            </div>
-                                            <div class="info-dropdown__nav">
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Хэшрейт</p>
-                                                    <p class="info-dropdown__nav-item-m">504 MH/s</p>
-                                                </div>
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
-                                                    <p class="info-dropdown__nav-item-m">800 W</p>
-                                                    <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
-                                                </div>
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Чип</p>
-                                                    <p class="info-dropdown__nav-item-m">BM1485
-                                                        <span>14нм</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    Antminer S9
+                                    <a class="btn-rd btn-rd_add" href="#"></a>
+                                    <a class="btn-rd btn-rd_remove" href="#"></a>
+                                    <a class="btn-rd btn-rd_clear" href="#"></a>
                                 </td>
-                                <td>В работе</td>
-                                <td>2</td>
-                                <td>USD 10,000.00</td>
-                                <td>0,8 КВт</td>
-                                <td>12 MHs</td>
                             </tr>
 
                             <tr class="tr-detail">
@@ -238,6 +213,11 @@
                                 <td>USD 10,000.00</td>
                                 <td>0,8 КВт</td>
                                 <td>12 MHs</td>
+                                <td>
+                                    <a class="btn-rd btn-rd_add" href="#"></a>
+                                    <a class="btn-rd btn-rd_remove" href="#"></a>
+                                    <a class="btn-rd btn-rd_clear" href="#"></a>
+                                </td>
                             </tr>
 
                             <tr class="tr-detail">
@@ -274,13 +254,59 @@
                                 <td>USD 10,000.00</td>
                                 <td>0,8 КВт</td>
                                 <td>12 MHs</td>
+                                <td>
+                                    <a class="btn-rd btn-rd_add" href="#"></a>
+                                    <a class="btn-rd btn-rd_remove" href="#"></a>
+                                    <a class="btn-rd btn-rd_clear" href="#"></a>
+                                </td>
+                            </tr>
+
+                            <tr class="tr-detail">
+                                <td>
+                                    <div class="info">
+                                        <button class="info__btn"></button>
+                                        <div class="info-dropdown">
+                                            <div class="info-dropdown__header">
+                                                <p class="info-dropdown__header-t">Antminer D3</p>
+                                                <p class="info-dropdown__header-b">Dash</p>
+                                            </div>
+                                            <div class="info-dropdown__nav">
+                                                <div class="info-dropdown__nav-item">
+                                                    <p class="info-dropdown__nav-item-t">Хэшрейт</p>
+                                                    <p class="info-dropdown__nav-item-m">504 MH/s</p>
+                                                </div>
+                                                <div class="info-dropdown__nav-item">
+                                                    <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
+                                                    <p class="info-dropdown__nav-item-m">800 W</p>
+                                                    <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
+                                                </div>
+                                                <div class="info-dropdown__nav-item">
+                                                    <p class="info-dropdown__nav-item-t">Чип</p>
+                                                    <p class="info-dropdown__nav-item-m">BM1485
+                                                        <span>14нм</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    Antminer S9
+                                </td>
+                                <td>В работе</td>
+                                <td>2</td>
+                                <td>USD 10,000.00</td>
+                                <td>0,8 КВт</td>
+                                <td>12 MHs</td>
+                                <td>
+                                    <a class="btn-rd btn-rd_add" href="#"></a>
+                                    <a class="btn-rd btn-rd_remove" href="#"></a>
+                                    <a class="btn-rd btn-rd_clear" href="#"></a>
+                                </td>
                             </tr>
 
                             </tbody>
                         </table>
 
                     </div>
-                    <div class="card-sub-footer">
+                    <div class="card-footer">
                         <a class="btn" href="#">Купить</a>
                     </div>
                 </div>
@@ -324,8 +350,12 @@
 
     var screenWidth = window.innerWidth;
 
-    var chartWidth = 390,
-            chartHeight = 430;
+//    var chartWidth = 390,
+//            chartHeight = 430;
+
+    var chartWidth = 330,
+            chartHeight = 390;
+
     var margin = {left: 40, top: 40, right: 40, bottom: 40};
 
     if (window.matchMedia('(max-width: 768px)').matches) {
