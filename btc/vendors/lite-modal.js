@@ -40,7 +40,7 @@ var css = '' +
 	'}' +
 
 	'#modal-bg.bg-fade{' +
-		'opacity:0' +
+		'opacity:1' +
 	'}' +
 
 	'.lite-modal{' +
