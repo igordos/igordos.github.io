@@ -28,11 +28,11 @@ var style = d.createElement('style');
 
 var css = '' +
 	'#modal-bg{' +
-		'background-color:rgba(0,0,0,.5);' +
+		'background-color:rgba(0,0,0,.7);' +
 		'position:fixed;' +
 		'top:0;' +
 		'left:0;' +
-		'transition:.3s opacity;' +
+		'transition: opacity .3s;' +
 		'height:100vh;' +
 		'width:100vw;' +
 		'z-index:100;' +
@@ -40,7 +40,7 @@ var css = '' +
 	'}' +
 
 	'#modal-bg.bg-fade{' +
-		'opacity:1' +
+		'opacity:0' +
 	'}' +
 
 	'.lite-modal{' +
