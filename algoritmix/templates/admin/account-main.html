@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="theme-color" content="#ffffff">
 
@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="../../styles/admin/index.css">
 </head>
 <body class="">
-<header class="header">
-    <div class="container">
+<div class="content-wrap content-wrap_close">
+    <header class="header">
         <div class="header__wrap">
+            <button class="header__menu-toggler"></button>
             <a href="#" class="header__logo">
                 <img class="header__logo-img" src="../../images/landing/logo.svg" alt="Algoritmix">
             </a>
-            <ul class="header-nav">
+            <ul class="header-nav header-nav_collapse">
                 <li class="header-nav__item">
                     <a class="header-nav__link" href="#">Оборудование</a>
                 </li>
@@ -43,304 +44,867 @@
                 </li>
             </ul>
         </div>
-    </div>
-</header>
-<main>
-    <div class="container">
-        <div class="page-title-wrap">
-            <h1 class="page-title">Профиль</h1>
-        </div>
-        <div class="grid">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-sub-header">
-                        <div class="card-text">
-                            <p class="card-text__text card-text__text_mb">Внимание, оборудование S9 в ваших портфелях
-                                скоро станет
-                                нерентабельным. Если в течение месяца не истребуете его, то оно будет утилизировано.</p>
-                            <a class="btn-link-uc" href="#">Истребовать</a>
+    </header>
+    <main>
+        <div class="container">
+            <div class="page-title-wrap">
+                <h1 class="page-title">Профиль</h1>
+            </div>
+            <div class="grid">
+                <div class="col-12">
+                    <div class="card card_flex-grow">
+                        <div class="card-sub-header card-sub-header_bbn">
+                            <div class="card-text">
+                                <p class="card-text__text card-text__text_mb">Внимание, оборудование S9 в ваших
+                                    портфелях
+                                    скоро станет
+                                    нерентабельным. Если в течение месяца не истребуете его, то оно будет
+                                    утилизировано.</p>
+                                <a class="btn-link-uc" href="#">Истребовать</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid">
-            <div class="col-4 col_pr">
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="card-header__title">Портфель 2</h2>
-                    </div>
-                    <div class="card-body">
-                        <div id="chartPie" class="chart-pie">
+            <div class="grid">
+                <div class="col-4 col_pr col_flex">
+                    <div class="card card_flex-grow">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Портфель 1</h2>
+                            <span class="card-header__mute-text">15.12.2017</span>
+                        </div>
+                        <div class="card-body">
+                            <div id="chartPie" class="chart-pie">
+                            </div>
+                        </div>
+                        <div class="card-sub-footer">
+                            <div class="geo">
+                                <div class="geo__btn-box">
+                                    <button class="geo__btn"></button>
+                                    <div class="geo__dropdown">
+                                        <ol class="geo-state-list">
+                                            <li class="geo-state-list__item geo-state-list__item_checked">Утверждена
+                                                проектная документация
+                                            </li>
+                                            <li class="geo-state-list__item geo-state-list__item_checked">Получена
+                                                разрешительная документация
+                                            </li>
+                                            <li class="geo-state-list__item geo-state-list__item_checked">Подключение к
+                                                сетям
+                                            </li>
+                                            <li class="geo-state-list__item">Подготовка фундамента для модулей</li>
+                                            <li class="geo-state-list__item">Развертывание модулей</li>
+                                            <li class="geo-state-list__item geo-state-list__item_checked">Сдача объекта
+                                                в
+                                                эксплуатацию гос. коммисии
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="geo__text">Респ. Саха (Якутия), п. Кызыл-Сыр, модуль 24</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-sub-footer">
-                        <a class="btn-link-uc btn-link-uc_drk" href="#">Выйти</a>
+                </div>
+                <div class="col-8 col_pl col_flex">
+                    <div class="card card_flex-grow">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Детализация</h2>
+                        </div>
+                        <div class="card-body">
+                            <table id="tableDetail-1" class="table table-detail">
+                                <thead class="thead-detail">
+                                <tr>
+                                    <th>Модель</th>
+                                    <th>Статус</th>
+                                    <th>Единицы</th>
+                                    <th>Стоимость</th>
+                                    <th>КВт</th>
+                                    <th>Хешрейт</th>
+                                    <!--<th>Действие</th>-->
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="tr-detail">
+                                    <td>
+                                        <div class="info">
+                                            <button class="info__btn"></button>
+                                            <div class="info-dropdown">
+                                                <div class="info-dropdown__header">
+                                                    <p class="info-dropdown__header-t">Antminer D3</p>
+                                                    <p class="info-dropdown__header-b">Dash</p>
+                                                </div>
+                                                <div class="info-dropdown__nav">
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Хэшрейт</p>
+                                                        <p class="info-dropdown__nav-item-m">504 MH/s</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
+                                                        <p class="info-dropdown__nav-item-m">800 W</p>
+                                                        <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Чип</p>
+                                                        <p class="info-dropdown__nav-item-m">BM1485
+                                                            <span>14нм</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        Antminer S9
+                                    </td>
+                                    <td>В работе</td>
+                                    <td>2</td>
+                                    <td>USD 10,000.00</td>
+                                    <td>0,8 КВт</td>
+                                    <td>12 MHs</td>
+                                    <!--<td>-->
+                                    <!--<a class="btn-rd btn-rd_add" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_remove" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_clear" href="#"></a>-->
+                                    <!--</td>-->
+                                </tr>
+                                <tr class="tr-detail">
+                                    <td>
+                                        <div class="info">
+                                            <button class="info__btn"></button>
+                                            <div class="info-dropdown">
+                                                <div class="info-dropdown__header">
+                                                    <p class="info-dropdown__header-t">Antminer D3</p>
+                                                    <p class="info-dropdown__header-b">Dash</p>
+                                                </div>
+                                                <div class="info-dropdown__nav">
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Хэшрейт</p>
+                                                        <p class="info-dropdown__nav-item-m">504 MH/s</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
+                                                        <p class="info-dropdown__nav-item-m">800 W</p>
+                                                        <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Чип</p>
+                                                        <p class="info-dropdown__nav-item-m">BM1485
+                                                            <span>14нм</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        Antminer S9
+                                    </td>
+                                    <td>В работе</td>
+                                    <td>2</td>
+                                    <td>USD 10,000.00</td>
+                                    <td>0,8 КВт</td>
+                                    <td>12 MHs</td>
+                                    <!--<td>-->
+                                    <!--<a class="btn-rd btn-rd_add" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_remove" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_clear" href="#"></a>-->
+                                    <!--</td>-->
+                                </tr>
+
+                                <tr class="tr-detail">
+                                    <td>
+                                        <div class="info">
+                                            <button class="info__btn"></button>
+                                            <div class="info-dropdown">
+                                                <div class="info-dropdown__header">
+                                                    <p class="info-dropdown__header-t">Antminer D3</p>
+                                                    <p class="info-dropdown__header-b">Dash</p>
+                                                </div>
+                                                <div class="info-dropdown__nav">
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Хэшрейт</p>
+                                                        <p class="info-dropdown__nav-item-m">504 MH/s</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
+                                                        <p class="info-dropdown__nav-item-m">800 W</p>
+                                                        <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Чип</p>
+                                                        <p class="info-dropdown__nav-item-m">BM1485
+                                                            <span>14нм</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        Antminer S9
+                                    </td>
+                                    <td>В работе</td>
+                                    <td>2</td>
+                                    <td>USD 10,000.00</td>
+                                    <td>0,8 КВт</td>
+                                    <td>12 MHs</td>
+                                    <!--<td>-->
+                                    <!--<a class="btn-rd btn-rd_add" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_remove" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_clear" href="#"></a>-->
+                                    <!--</td>-->
+                                </tr>
+
+                                <tr class="tr-detail">
+                                    <td>
+                                        <div class="info">
+                                            <button class="info__btn"></button>
+                                            <div class="info-dropdown">
+                                                <div class="info-dropdown__header">
+                                                    <p class="info-dropdown__header-t">Antminer D3</p>
+                                                    <p class="info-dropdown__header-b">Dash</p>
+                                                </div>
+                                                <div class="info-dropdown__nav">
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Хэшрейт</p>
+                                                        <p class="info-dropdown__nav-item-m">504 MH/s</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
+                                                        <p class="info-dropdown__nav-item-m">800 W</p>
+                                                        <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Чип</p>
+                                                        <p class="info-dropdown__nav-item-m">BM1485
+                                                            <span>14нм</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        Antminer S9
+                                    </td>
+                                    <td>В работе</td>
+                                    <td>2</td>
+                                    <td>USD 10,000.00</td>
+                                    <td>0,8 КВт</td>
+                                    <td>12 MHs</td>
+                                    <!--<td>-->
+                                    <!--<a class="btn-rd btn-rd_add" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_remove" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_clear" href="#"></a>-->
+                                    <!--</td>-->
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!--<div class="card-footer">-->
+                        <!--<div class="card-sub-footer__text">-->
+                        <!--<span>Всего выведено</span>-->
+                        <!--<span>01.06720</span>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="card-footer">-->
+                        <!--<a class="btn" href="#">Купить</a>-->
+                        <!--</div>-->
+                        <div class="card-sub-footer">
+                            <!--<a class="btn-link-uc btn-link-uc_drk" href="#">Выйти</a>-->
+                            <table id="totalForTableDetail-1" class="table table-total-detail">
+                                <tbody class="tbody-total-detail">
+                                <tr class="tr-total-detail">
+                                    <td>Итого</td>
+                                    <td></td>
+                                    <td>26</td>
+                                    <td>USD 24,000.00</td>
+                                    <td>3,5 MВт</td>
+                                    <td>58 MHs</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-8 col_pl">
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="card-header__title">Детализация</h2>
+            <div class="grid">
+                <div class="col-4 col_pr col_flex">
+                    <div class="card card_flex-grow">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Портфель 2</h2>
+                            <span class="card-header__mute-text">15.12.2017</span>
+                        </div>
+                        <div class="card-body">
+                            <div id="chartPie2" class="chart-pie">
+                            </div>
+                        </div>
+                        <div class="card-sub-footer">
+                            <div class="geo">
+                                <div class="geo__btn-box">
+                                    <button class="geo__btn"></button>
+                                    <div class="geo__dropdown">
+                                        <ol class="geo-state-list">
+                                            <li class="geo-state-list__item geo-state-list__item_checked">Утверждена
+                                                проектная документация
+                                            </li>
+                                            <li class="geo-state-list__item geo-state-list__item_checked">Получена
+                                                разрешительная документация
+                                            </li>
+                                            <li class="geo-state-list__item geo-state-list__item_checked">Подключение к
+                                                сетям
+                                            </li>
+                                            <li class="geo-state-list__item">Подготовка фундамента для модулей</li>
+                                            <li class="geo-state-list__item">Развертывание модулей</li>
+                                            <li class="geo-state-list__item geo-state-list__item_checked">Сдача объекта
+                                                в
+                                                эксплуатацию гос. коммисии
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="geo__text">Респ. Саха (Якутия), п. Кызыл-Сыр, модуль 24</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <table class="table table-detail">
-                            <thead class="thead-detail">
-                            <tr>
-                                <th>Модель</th>
-                                <th>Статус</th>
-                                <th>Единицы</th>
-                                <th>Стоимость</th>
-                                <th>КВт</th>
-                                <th>Хешрейт</th>
-                                <th>Действие</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr class="tr-detail">
-                                <td>
-                                    <div class="info">
-                                        <button class="info__btn"></button>
-                                        <div class="info-dropdown">
-                                            <div class="info-dropdown__header">
-                                                <p class="info-dropdown__header-t">Antminer D3</p>
-                                                <p class="info-dropdown__header-b">Dash</p>
-                                            </div>
-                                            <div class="info-dropdown__nav">
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Хэшрейт</p>
-                                                    <p class="info-dropdown__nav-item-m">504 MH/s</p>
+                </div>
+                <div class="col-8 col_pl col_flex">
+                    <div class="card card_flex-grow">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Детализация</h2>
+                        </div>
+                        <div class="card-body">
+                            <table id="tableDetail-2" class="table table-detail">
+                                <thead class="thead-detail">
+                                <tr>
+                                    <th>Модель</th>
+                                    <th>Статус</th>
+                                    <th>Единицы</th>
+                                    <th>Стоимость</th>
+                                    <th>КВт</th>
+                                    <th>Хешрейт</th>
+                                    <!--<th>Действие</th>-->
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="tr-detail">
+                                    <td>
+                                        <div class="info">
+                                            <button class="info__btn"></button>
+                                            <div class="info-dropdown">
+                                                <div class="info-dropdown__header">
+                                                    <p class="info-dropdown__header-t">Antminer D3</p>
+                                                    <p class="info-dropdown__header-b">Dash</p>
                                                 </div>
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
-                                                    <p class="info-dropdown__nav-item-m">800 W</p>
-                                                    <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
-                                                </div>
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Чип</p>
-                                                    <p class="info-dropdown__nav-item-m">BM1485
-                                                        <span>14нм</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    Antminer S9
-                                </td>
-                                <td>В работе</td>
-                                <td>2</td>
-                                <td>USD 10,000.00</td>
-                                <td>0,8 КВт</td>
-                                <td>12 MHs</td>
-                                <td>
-                                    <a class="btn-rd btn-rd_add" href="#"></a>
-                                    <a class="btn-rd btn-rd_remove" href="#"></a>
-                                    <a class="btn-rd btn-rd_clear" href="#"></a>
-                                </td>
-                            </tr>
-                            <tr class="tr-detail">
-                                <td>
-                                    <div class="info">
-                                        <button class="info__btn"></button>
-                                        <div class="info-dropdown">
-                                            <div class="info-dropdown__header">
-                                                <p class="info-dropdown__header-t">Antminer D3</p>
-                                                <p class="info-dropdown__header-b">Dash</p>
-                                            </div>
-                                            <div class="info-dropdown__nav">
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Хэшрейт</p>
-                                                    <p class="info-dropdown__nav-item-m">504 MH/s</p>
-                                                </div>
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
-                                                    <p class="info-dropdown__nav-item-m">800 W</p>
-                                                    <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
-                                                </div>
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Чип</p>
-                                                    <p class="info-dropdown__nav-item-m">BM1485
-                                                        <span>14нм</span></p>
+                                                <div class="info-dropdown__nav">
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Хэшрейт</p>
+                                                        <p class="info-dropdown__nav-item-m">504 MH/s</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
+                                                        <p class="info-dropdown__nav-item-m">800 W</p>
+                                                        <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Чип</p>
+                                                        <p class="info-dropdown__nav-item-m">BM1485
+                                                            <span>14нм</span></p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    Antminer S9
-                                </td>
-                                <td>В работе</td>
-                                <td>2</td>
-                                <td>USD 10,000.00</td>
-                                <td>0,8 КВт</td>
-                                <td>12 MHs</td>
-                                <td>
-                                    <a class="btn-rd btn-rd_add" href="#"></a>
-                                    <a class="btn-rd btn-rd_remove" href="#"></a>
-                                    <a class="btn-rd btn-rd_clear" href="#"></a>
-                                </td>
-                            </tr>
-
-                            <tr class="tr-detail">
-                                <td>
-                                    <div class="info">
-                                        <button class="info__btn"></button>
-                                        <div class="info-dropdown">
-                                            <div class="info-dropdown__header">
-                                                <p class="info-dropdown__header-t">Antminer D3</p>
-                                                <p class="info-dropdown__header-b">Dash</p>
-                                            </div>
-                                            <div class="info-dropdown__nav">
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Хэшрейт</p>
-                                                    <p class="info-dropdown__nav-item-m">504 MH/s</p>
+                                        Antminer S9
+                                    </td>
+                                    <td>В работе</td>
+                                    <td>2</td>
+                                    <td>USD 20.00</td>
+                                    <td>0,8 КВт</td>
+                                    <td>12 MHs</td>
+                                    <!--<td>-->
+                                    <!--<a class="btn-rd btn-rd_add" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_remove" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_clear" href="#"></a>-->
+                                    <!--</td>-->
+                                </tr>
+                                <tr class="tr-detail">
+                                    <td>
+                                        <div class="info">
+                                            <button class="info__btn"></button>
+                                            <div class="info-dropdown">
+                                                <div class="info-dropdown__header">
+                                                    <p class="info-dropdown__header-t">Antminer D3</p>
+                                                    <p class="info-dropdown__header-b">Dash</p>
                                                 </div>
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
-                                                    <p class="info-dropdown__nav-item-m">800 W</p>
-                                                    <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
-                                                </div>
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Чип</p>
-                                                    <p class="info-dropdown__nav-item-m">BM1485
-                                                        <span>14нм</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    Antminer S9
-                                </td>
-                                <td>В работе</td>
-                                <td>2</td>
-                                <td>USD 10,000.00</td>
-                                <td>0,8 КВт</td>
-                                <td>12 MHs</td>
-                                <td>
-                                    <a class="btn-rd btn-rd_add" href="#"></a>
-                                    <a class="btn-rd btn-rd_remove" href="#"></a>
-                                    <a class="btn-rd btn-rd_clear" href="#"></a>
-                                </td>
-                            </tr>
-
-                            <tr class="tr-detail">
-                                <td>
-                                    <div class="info">
-                                        <button class="info__btn"></button>
-                                        <div class="info-dropdown">
-                                            <div class="info-dropdown__header">
-                                                <p class="info-dropdown__header-t">Antminer D3</p>
-                                                <p class="info-dropdown__header-b">Dash</p>
-                                            </div>
-                                            <div class="info-dropdown__nav">
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Хэшрейт</p>
-                                                    <p class="info-dropdown__nav-item-m">504 MH/s</p>
-                                                </div>
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
-                                                    <p class="info-dropdown__nav-item-m">800 W</p>
-                                                    <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
-                                                </div>
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Чип</p>
-                                                    <p class="info-dropdown__nav-item-m">BM1485
-                                                        <span>14нм</span></p>
+                                                <div class="info-dropdown__nav">
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Хэшрейт</p>
+                                                        <p class="info-dropdown__nav-item-m">504 MH/s</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
+                                                        <p class="info-dropdown__nav-item-m">800 W</p>
+                                                        <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Чип</p>
+                                                        <p class="info-dropdown__nav-item-m">BM1485
+                                                            <span>14нм</span></p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    Antminer S9
-                                </td>
-                                <td>В работе</td>
-                                <td>2</td>
-                                <td>USD 10,000.00</td>
-                                <td>0,8 КВт</td>
-                                <td>12 MHs</td>
-                                <td>
-                                    <a class="btn-rd btn-rd_add" href="#"></a>
-                                    <a class="btn-rd btn-rd_remove" href="#"></a>
-                                    <a class="btn-rd btn-rd_clear" href="#"></a>
-                                </td>
-                            </tr>
+                                        Antminer S9
+                                    </td>
+                                    <td>В работе</td>
+                                    <td>2</td>
+                                    <td>USD 0.00</td>
+                                    <td>0,8 КВт</td>
+                                    <td>12 MHs</td>
+                                    <!--<td>-->
+                                    <!--<a class="btn-rd btn-rd_add" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_remove" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_clear" href="#"></a>-->
+                                    <!--</td>-->
+                                </tr>
 
-                            <tr class="tr-detail">
-                                <td>
-                                    <div class="info">
-                                        <button class="info__btn"></button>
-                                        <div class="info-dropdown">
-                                            <div class="info-dropdown__header">
-                                                <p class="info-dropdown__header-t">Antminer D3</p>
-                                                <p class="info-dropdown__header-b">Dash</p>
-                                            </div>
-                                            <div class="info-dropdown__nav">
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Хэшрейт</p>
-                                                    <p class="info-dropdown__nav-item-m">504 MH/s</p>
+                                <tr class="tr-detail">
+                                    <td>
+                                        <div class="info">
+                                            <button class="info__btn"></button>
+                                            <div class="info-dropdown">
+                                                <div class="info-dropdown__header">
+                                                    <p class="info-dropdown__header-t">Antminer D3</p>
+                                                    <p class="info-dropdown__header-b">Dash</p>
                                                 </div>
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
-                                                    <p class="info-dropdown__nav-item-m">800 W</p>
-                                                    <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
-                                                </div>
-                                                <div class="info-dropdown__nav-item">
-                                                    <p class="info-dropdown__nav-item-t">Чип</p>
-                                                    <p class="info-dropdown__nav-item-m">BM1485
-                                                        <span>14нм</span></p>
+                                                <div class="info-dropdown__nav">
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Хэшрейт</p>
+                                                        <p class="info-dropdown__nav-item-m">504 MH/s</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
+                                                        <p class="info-dropdown__nav-item-m">800 W</p>
+                                                        <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Чип</p>
+                                                        <p class="info-dropdown__nav-item-m">BM1485
+                                                            <span>14нм</span></p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    Antminer S9
-                                </td>
-                                <td>В работе</td>
-                                <td>2</td>
-                                <td>USD 10,000.00</td>
-                                <td>0,8 КВт</td>
-                                <td>12 MHs</td>
-                                <td>
-                                    <a class="btn-rd btn-rd_add" href="#"></a>
-                                    <a class="btn-rd btn-rd_remove" href="#"></a>
-                                    <a class="btn-rd btn-rd_clear" href="#"></a>
-                                </td>
-                            </tr>
+                                        Antminer S9
+                                    </td>
+                                    <td>В работе</td>
+                                    <td>2</td>
+                                    <td>USD 0.00</td>
+                                    <td>0,8 КВт</td>
+                                    <td>12 MHs</td>
+                                    <!--<td>-->
+                                    <!--<a class="btn-rd btn-rd_add" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_remove" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_clear" href="#"></a>-->
+                                    <!--</td>-->
+                                </tr>
 
-                            </tbody>
-                        </table>
+                                <tr class="tr-detail">
+                                    <td>
+                                        <div class="info">
+                                            <button class="info__btn"></button>
+                                            <div class="info-dropdown">
+                                                <div class="info-dropdown__header">
+                                                    <p class="info-dropdown__header-t">Antminer D3</p>
+                                                    <p class="info-dropdown__header-b">Dash</p>
+                                                </div>
+                                                <div class="info-dropdown__nav">
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Хэшрейт</p>
+                                                        <p class="info-dropdown__nav-item-m">504 MH/s</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
+                                                        <p class="info-dropdown__nav-item-m">800 W</p>
+                                                        <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Чип</p>
+                                                        <p class="info-dropdown__nav-item-m">BM1485
+                                                            <span>14нм</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        Antminer S9
+                                    </td>
+                                    <td>В работе</td>
+                                    <td>2</td>
+                                    <td>USD 10.00</td>
+                                    <td>0,8 КВт</td>
+                                    <td>12 MHs</td>
+                                    <!--<td>-->
+                                    <!--<a class="btn-rd btn-rd_add" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_remove" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_clear" href="#"></a>-->
+                                    <!--</td>-->
+                                </tr>
 
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn" href="#">Купить</a>
+                                <tr class="tr-detail">
+                                    <td>
+                                        <div class="info">
+                                            <button class="info__btn"></button>
+                                            <div class="info-dropdown">
+                                                <div class="info-dropdown__header">
+                                                    <p class="info-dropdown__header-t">Antminer D3</p>
+                                                    <p class="info-dropdown__header-b">Dash</p>
+                                                </div>
+                                                <div class="info-dropdown__nav">
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Хэшрейт</p>
+                                                        <p class="info-dropdown__nav-item-m">504 MH/s</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
+                                                        <p class="info-dropdown__nav-item-m">800 W</p>
+                                                        <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
+                                                    </div>
+                                                    <div class="info-dropdown__nav-item">
+                                                        <p class="info-dropdown__nav-item-t">Чип</p>
+                                                        <p class="info-dropdown__nav-item-m">BM1485
+                                                            <span>14нм</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        Antminer S9
+                                    </td>
+                                    <td>В работе</td>
+                                    <td>2</td>
+                                    <td>USD 100.00</td>
+                                    <td>0,8 КВт</td>
+                                    <td>12 MHs</td>
+                                    <!--<td>-->
+                                    <!--<a class="btn-rd btn-rd_add" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_remove" href="#"></a>-->
+                                    <!--<a class="btn-rd btn-rd_clear" href="#"></a>-->
+                                    <!--</td>-->
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="card-sub-footer">
+                            <table id="totalForTableDetail-2" class="table table-total-detail">
+                                <tbody class="tbody-total-detail">
+                                <tr class="tr-total-detail">
+                                    <td>Итого</td>
+                                    <td></td>
+                                    <td>26</td>
+                                    <td>USD 24,000.00</td>
+                                    <td>3,5 MВт</td>
+                                    <td>58 MHs</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="grid">
+                <div class="col-4 col_pr col_flex">
+                    <div class="card card_flex-grow">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Портфель 3</h2>
+                            <span class="card-header__mute-text">15.12.2017</span>
+                        </div>
+                        <div class="card-body">
+                            <div id="chartPie2" class="chart-pie">
+                            </div>
+                        </div>
+                        <div class="card-sub-footer">
+                            <span class="card-sub-footer__mute-text">Ожидание оплаты</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col_pl col_flex">
+                    <div class="card card_flex-grow">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Детализация</h2>
+                        </div>
+                        <div class="card-sub-header">
+                            <ul class="tabs">
+                                <li class="tabs__item">
+                                    <a class="tabs__link tabs__link_active" href="#">Доставка</a>
+                                </li>
+                                <li class="tabs__item">
+                                    <a class="tabs__link" href="#">Список оборудования</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-state">
+                                <tbody class="tbody-state">
+                                <tr class="tr-state">
+                                    <td><span class="tr-state__checked">Заказ оплачен</span></td>
+                                    <td></td>
+                                    <td>01.01.2018</td>
+                                </tr>
+                                <tr class="tr-state">
+                                    <td>Заказ отгружен</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="tr-state">
+                                    <td>Таможенная очистка</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="tr-state">
+                                    <td>На складе</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-sub-footer">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-4 col_pr col_flex">
+                    <div class="card card_flex-grow">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Портфель 4</h2>
+                        </div>
+                        <div class="card-body">
+                            <div id="chartPie2" class="chart-pie">
+                            </div>
+                        </div>
+                        <div class="card-sub-footer">
+                            <span class="card-sub-footer__mute-text">Ожидание оплаты</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col_pl col_flex">
+                    <div class="card card_flex-grow">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Детализация</h2>
+                        </div>
+                        <div class="card-sub-header">
+                            <ul class="tabs">
+                                <li class="tabs__item">
+                                    <a class="tabs__link tabs__link_active" href="#">Доставка</a>
+                                </li>
+                                <li class="tabs__item">
+                                    <a class="tabs__link" href="#">Список оборудования</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-state">
+                                <tbody class="tbody-state">
+                                <tr class="tr-state">
+                                    <td><span class="tr-state__checked">Заказ оплачен</span></td>
+                                    <td><span class="tr-state__check"></span></td>
+                                    <td>01.01.2018</td>
+                                </tr>
+                                <tr class="tr-state">
+                                    <td><span class="tr-state__checked">Заказ отгружен</span></td>
+                                    <td><span class="tr-state__check"></span></td>
+                                    <td>01.01.2018</td>
+                                </tr>
+                                <tr class="tr-state">
+                                    <td><span class="tr-state__checked">Таможенная очистка</span></td>
+                                    <td><span class="tr-state__check"></span></td>
+                                    <td>01.01.2018</td>
+                                </tr>
+                                <tr class="tr-state">
+                                    <td>На складе</td>
+                                    <td></td>
+                                    <td>~ 01.01.2018</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-sub-footer">
+                            <div class="card-sub-footer__total">
+                                <span>Всего выведено</span>
+                                <span>01.06720</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-4 col_pr col_flex">
+                    <div class="card card_flex-grow">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Портфель 5</h2>
+                        </div>
+                        <div class="card-body">
+                            <div id="chartPie2" class="chart-pie">
+                            </div>
+                        </div>
+                        <div class="card-sub-footer">
+                            <div class="geo">
+                                <div class="geo__btn-box">
+                                    <button class="geo__btn"></button>
+                                    <div class="geo__dropdown">
+                                        <ol class="geo-state-list">
+                                            <li class="geo-state-list__item geo-state-list__item_checked">Утверждена
+                                                проектная документация
+                                            </li>
+                                            <li class="geo-state-list__item geo-state-list__item_checked">Получена
+                                                разрешительная документация
+                                            </li>
+                                            <li class="geo-state-list__item geo-state-list__item_checked">Подключение к
+                                                сетям
+                                            </li>
+                                            <li class="geo-state-list__item">Подготовка фундамента для модулей</li>
+                                            <li class="geo-state-list__item">Развертывание модулей</li>
+                                            <li class="geo-state-list__item geo-state-list__item_checked">Сдача объекта
+                                                в
+                                                эксплуатацию гос. коммисии
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="geo__text">Респ. Саха (Якутия), п. Кызыл-Сыр, модуль 24</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col_pl col_flex">
+                    <div class="card card_flex-grow">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Детализация</h2>
+                        </div>
+                        <div class="card-sub-header">
+                            <ul class="tabs">
+                                <li class="tabs__item">
+                                    <a class="tabs__link tabs__link_active" href="#">Пуско-наладка</a>
+                                </li>
+                                <li class="tabs__item">
+                                    <a class="tabs__link" href="#">Список оборудования</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-state">
+                                <tbody class="tbody-state">
+                                <tr class="tr-state">
+                                    <td><span class="tr-state__checked">Утверждена проектная документация</span></td>
+                                    <td><span class="tr-state__check"></span></td>
+                                    <td>01.01.2018</td>
+                                </tr>
+                                <tr class="tr-state">
+                                    <td><span class="tr-state__checked">Получена разрешительная документация </span>
+                                    </td>
+                                    <td><span class="tr-state__check"></span></td>
+                                    <td>01.01.2018</td>
+                                </tr>
+                                <tr class="tr-state">
+                                    <td><span class="tr-state__checked">Подключение к сетям </span></td>
+                                    <td><span class="tr-state__check"></span></td>
+                                    <td>01.01.2018</td>
+                                </tr>
+                                <tr class="tr-state">
+                                    <td>Подготовка фундамента для модулей</td>
+                                    <td></td>
+                                    <td>~ 01.01.2018</td>
+                                </tr>
+                                <tr class="tr-state">
+                                    <td>Развертывание модулей</td>
+                                    <td></td>
+                                    <td>~ 01.01.2018</td>
+                                </tr>
+                                <tr class="tr-state">
+                                    <td>Сдача объекта в эксплуатацию гос. коммисии</td>
+                                    <td></td>
+                                    <td>~ 01.01.2018</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-sub-footer">
+                            <div class="card-sub-footer__total">
+                                <span>Всего выведено</span>
+                                <span>01.06720</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
-</main>
-<!--<div class="footer">-->
-<!--<div class="container">-->
-<!--<ul class="footer__nav">-->
-<!--<li class="footer__nav-item">-->
-<!--<a class="footer__nav-link" href="#">Algoritmix LLC</a>-->
-<!--</li>-->
-<!--<li class="footer__nav-item">-->
-<!--<a class="footer__nav-link" href="#">Как это работает</a>-->
-<!--</li>-->
-<!--<li class="footer__nav-item">-->
-<!--<a class="footer__nav-link" href="#">Регистрация</a>-->
-<!--</li>-->
-<!--<li class="footer__nav-item">-->
-<!--<a class="footer__nav-link" href="#">Войти</a>-->
-<!--</li>-->
-<!--<li class="footer__nav-item">-->
-<!--<a class="footer__nav-link" href="#">Расчёт инвестиций</a>-->
-<!--</li>-->
-<!--<li class="footer__nav-item">-->
-<!--<a class="footer__nav-link" href="#">Design by Gregory Maslov</a>-->
-<!--</li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--</div>-->
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer__nav">
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Algoritmix LLC</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Преимущества</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Оборудование</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Динамика и прогноз</a><br>
+                    <a class="footer__sub-nav-link" href="#">Пользовательское<br> соглашение</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">История транзакций</a><br>
+                    <a class="footer__sub-nav-link" href="#">О персональных<br> данных</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Профиль</a><br>
+                    <a class="footer__sub-nav-link" href="#">Оферта</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Счёт</a><br>
+                    <a class="footer__sub-nav-link" href="#">Design by<br> Gregory Maslov</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<div class="header-side-nav">
+    asdasd
+    asdasd
+    as
+    d
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="../../vendors/jquery.touchSwipe.min.js"></script>
 <script src="../../vendors/d3.v4.min.js"></script>
+<script src="../../js/main.js"></script>
+
+<script>
+    /* Set table total td width */
+    var tableDetailArray = $('table').filter(function () {
+        return this.id.match(/tableDetail-\d+/);
+    });
+    var totalForTableDetailArray = $('table').filter(function () {
+        return this.id.match(/totalForTableDetail-\d+/);
+    });
+    tableDetailArray.each(function (itemTableDetailArray) {
+        var tableDetail = tableDetailArray[itemTableDetailArray];
+        var tableDetailIdNumber = tableDetail.id.match(/\d+$/);
+        var totalForTableDetail = $('#totalForTableDetail-' + tableDetailIdNumber)[0];
+
+        if (totalForTableDetailArray[itemTableDetailArray] !== undefined) {
+            $('#' + tableDetail.id + ' > thead > tr > th').each(function (itemTableDetail) {
+                var width = $(this).width();
+                $('#' + totalForTableDetail.id + ' > tbody > tr > td').each(function (itemTotalForTableDetail) {
+                    if (itemTableDetail === itemTotalForTableDetail) {
+                        $(this).width(width);
+                    }
+                });
+            });
+        }
+    });
+    /* end Set table total td width  */
+</script>
 
 <script>
 
@@ -350,8 +914,8 @@
 
     var screenWidth = window.innerWidth;
 
-//    var chartWidth = 390,
-//            chartHeight = 430;
+    //    var chartWidth = 390,
+    //            chartHeight = 430;
 
     var chartWidth = 330,
             chartHeight = 390;
