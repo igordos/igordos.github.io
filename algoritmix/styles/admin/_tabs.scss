@@ -1,0 +1,40 @@
+.tabs {
+  display: flex;
+  margin: 0;
+  padding: 20px 0;
+  list-style: none;
+
+  &__item {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  &__link {
+    display: block;
+    font-family: $font-stack;
+    font-weight: 800;
+    font-size: 12px;
+    color: #a5aebd;
+    letter-spacing: .7px;
+    background: transparent;
+    border: none;
+    outline: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color .2s;
+
+    &:hover {
+      color: #7276ff;
+    }
+
+    &_active {
+      color: #383df4;
+    }
+
+  }
+
+}

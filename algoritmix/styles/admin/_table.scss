@@ -1,0 +1,326 @@
+//https://codepen.io/Orangetronic/pen/pJgpXw
+
+table.table {
+  width: 100%;
+  font-family: $font-stack;
+}
+
+//.table tbody:before {
+//  content: "-";
+//  display: block;
+//  height: 25px;
+//  color: transparent;
+//}
+
+.table th, .table td {
+  text-align: left;
+  //padding: 0.25em;
+}
+
+.table tr {
+  border-bottom: 1px solid #DDD;
+}
+
+.table-wallet {
+  //border-spacing: 0 20px;
+  padding: 20px 0 10px 0;
+
+  & tbody:before {
+    content: "-";
+    display: block;
+    height: 15px;
+    color: transparent;
+  }
+
+}
+
+.thead-wallet {
+  padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #a5aebd;
+  letter-spacing: .9px;
+  text-transform: uppercase;
+}
+
+.tr-wallet {
+
+  & td {
+    padding: 10px 0;
+  }
+
+  & td:nth-child(1) {
+    font-size: 17px;
+    font-weight: 400;
+    color: #abb4c2;
+  }
+
+  & td:nth-child(2) {
+    font-size: 15px;
+    font-weight: 500;
+    color: #abb4c2;
+  }
+
+  & td:nth-child(3) {
+    font-size: 15px;
+    font-weight: 600;
+    color: #abb4c2;
+  }
+
+  &_active {
+
+    & td:nth-child(1) {
+      color: #4f5163;
+    }
+
+    & td:nth-child(2) {
+      color: #383df4;
+    }
+
+    & td:nth-child(3) {
+      color: #4f5163;
+    }
+
+  }
+
+}
+
+.table-history {
+  border-spacing: 0 20px;
+}
+
+.thead-history {
+  font-weight: 600;
+  font-size: 15px;
+  color: #4f5163;
+
+  & > tr > th:nth-child(5) {
+    text-align: right;
+  }
+
+}
+
+.tr-history {
+
+  & td:nth-child(1) {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4f5163;
+  }
+
+  & td:nth-child(2) {
+    font-size: 17px;
+    font-weight: 500;
+    color: #4f5163;
+  }
+
+  & td:nth-child(3) {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4f5163;
+  }
+
+  & td:nth-child(4) {
+    font-size: 15px;
+    font-weight: 500;
+    color: #5b5df5;
+  }
+
+  & td:nth-child(5) {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4f5163;
+    text-align: right;
+  }
+
+}
+
+.table-detail {
+  border-spacing: 0 40px;
+  //padding: 20px 0 10px 0;
+
+  //& tbody:before {
+  //  content: "-";
+  //  display: block;
+  //  height: 15px;
+  //  color: transparent;
+  //}
+
+}
+
+.thead-detail {
+  //padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #a5aebd;
+  letter-spacing: .9px;
+  text-transform: uppercase;
+
+  & > tr > th:last-child {
+    text-align: right;
+  }
+
+}
+
+.tr-detail {
+
+  & td:nth-child(1) {
+    font-size: 17px;
+    font-weight: 400;
+    color: #4f5163;
+  }
+
+  & td:nth-child(2) {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4f5163;
+  }
+
+  & td:nth-child(3) {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4f5163;
+  }
+
+  & td:nth-child(4) {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4f5163;
+  }
+
+  & td:nth-child(5) {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4f5163;
+  }
+
+  & td:nth-child(6) {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4f5163;
+  }
+
+  & td:last-child {
+    text-align: right;
+  }
+
+}
+
+.table-total-detail {
+  border-spacing: 0;
+}
+
+.tr-total-detail {
+
+  & td {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4f5163;
+  }
+
+  & td:nth-child(1) {
+    font-size: 17px;
+    font-weight: 400;
+    color: #b5bcc8;
+  }
+
+  & td:last-child {
+    text-align: right;
+  }
+
+}
+
+.table-state {
+  border-spacing: 0 25px;
+}
+
+.tbody-state {
+
+}
+
+.tr-state {
+
+  & td:nth-child(1) {
+    font-size: 18px;
+    font-weight: 500;
+    color: #acacac;
+  }
+
+  & td:nth-child(2) {
+    text-align: right;
+  }
+
+  & td:nth-child(3) {
+    width: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #4f5163;
+  }
+
+  & td:last-child {
+    text-align: right;
+  }
+
+  &__checked {
+    color: #000;
+  }
+
+  &__check {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background: url("../../images/admin/uploaded-checkmark.svg") no-repeat;
+      background-size: 15px 15px;
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

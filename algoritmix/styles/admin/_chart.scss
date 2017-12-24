@@ -1,0 +1,271 @@
+.chart-box {
+  position: relative;
+  padding-left: 25px;
+
+  z-index: 2;
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    padding-left: 24px;
+    font-family: $font-stack;
+    font-weight: 500;
+    font-size: 20px;
+    color: #6945f2;
+    text-decoration: none;
+    transition: color .2s;
+
+    &:hover {
+      color: #7276ff;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 0;
+      background: url("../../images/landing/info.svg") no-repeat;
+      background-size: 16px 16px;
+      width: 16px;
+      height: 16px;
+    }
+
+  }
+
+}
+
+.chart-pie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //margin-top: 50px;
+  font-family: $font-stack;
+
+  & .donutText {
+    font-size: 20px;
+    font-weight: 400;
+    fill: #a5aebd;
+  }
+
+  & .inner-circle {
+    font-size: 34px;
+    font-weight: 500;
+    fill: #a5aebd;
+  }
+
+}
+
+.chart-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+
+  &__label-wrap {
+
+  }
+
+  &__label {
+    position: relative;
+    display: inline-block;
+    font-family: $font-stack;
+    font-weight: 500;
+    font-size: 15px;
+    color: #8c96b2;
+    margin-right: 10px;
+
+    &_1 {
+      padding-left: 13px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 7px;
+        height: 7px;
+        border-radius: 3px;
+        background-color: #715afe;
+      }
+
+    }
+
+    &_2 {
+      padding-left: 16px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 7px;
+        height: 7px;
+        border-radius: 3px;
+        background-color: #49b680;
+        z-index: 1;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 4px;
+        width: 7px;
+        height: 7px;
+        border-radius: 3px;
+        background-color: #ec4d5c;
+      }
+
+    }
+
+  }
+
+}
+
+.chart-select {
+  position: relative;
+  padding: 8px 28px 8px 10px;
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: 6px;
+    width: 0;
+    height: 1em;
+    border-left: 5px solid transparent;
+    border-top: 6px solid #fff;
+    border-right: 5px solid transparent;
+  }
+
+  &:hover {
+    background: #57637c;
+  }
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+  .chart-box {
+    padding-left: 0;
+  }
+
+  .chart-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+
+    &__label-wrap {
+
+    }
+
+    &__label {
+      position: relative;
+      display: inline-block;
+      font-family: $font-stack;
+      font-weight: 500;
+      font-size: 15px;
+      color: #8c96b2;
+      margin-right: 10px;
+
+      &_1 {
+        padding-left: 13px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 0;
+          width: 7px;
+          height: 7px;
+          border-radius: 3px;
+          background-color: #715afe;
+        }
+
+      }
+
+      &_2 {
+        padding-left: 16px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 0;
+          width: 7px;
+          height: 7px;
+          border-radius: 3px;
+          background-color: #49b680;
+          z-index: 1;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 4px;
+          width: 7px;
+          height: 7px;
+          border-radius: 3px;
+          background-color: #ec4d5c;
+        }
+
+      }
+
+    }
+
+  }
+
+  .chart-select {
+    position: relative;
+    padding: 8px 25px 8px 10px;
+    font-family: $font-stack;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 14px;
+      right: 6px;
+      width: 0;
+      height: 1em;
+      border-left: 3px solid transparent;
+      border-top: 4px solid #fff;
+      border-right: 3px solid transparent;
+    }
+
+    &:hover {
+      background: #57637c;
+    }
+
+  }
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 760px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+

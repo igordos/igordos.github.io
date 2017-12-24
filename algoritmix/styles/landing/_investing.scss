@@ -1,0 +1,626 @@
+.investing {
+
+  &__money {
+
+  }
+
+  &__input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    margin-top: 54px;
+    height: auto;
+    background: #434d63;
+    border-radius: 5px;
+
+  }
+
+  &__arrow {
+    position: relative;
+    padding: 23px 13px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 18px;
+      left: 5px;
+      background: url("../../images/landing/arrow.png");
+      background-size: 17px 12px;
+      width: 17px;
+      height: 12px;
+    }
+
+  }
+
+  &__currency {
+    background: none;
+    font-family: $font-stack;
+    font-size: 40px;
+    font-weight: 500;
+    color: #8c96b2;
+  }
+
+  &__input {
+    //max-width: 80%;
+    flex-grow: 1;
+    padding: 17px 15px 17px 5px;
+    background: none;
+    font-family: $font-stack;
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    width: 58%;
+    outline: 0;
+
+    //&_plh-blue {
+    //
+    //  &::-webkit-input-placeholder {color:#6067f1;}
+    //  &::-moz-placeholder          {color:#6067f1;}/* Firefox 19+ */
+    //  &:-moz-placeholder           {color:#6067f1;}/* Firefox 18- */
+    //  &:-ms-input-placeholder      {color:#6067f1;}
+    //
+    //}
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 57px 0 0 0;
+    list-style: none;
+  }
+
+  &__tab-item {
+    flex-grow: 1;
+    margin-right: 15px;
+
+    &:first-child {
+      flex-grow: 0;
+      position: relative;
+      width: 23px;
+      height: 19px;
+      margin-right: 6px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: url("../../images/landing/bag.png") no-repeat;
+        background-size: 23px 19px;
+        width: 23px;
+        height: 19px;
+      }
+
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  &__tab-btn {
+    width: 100%;
+    padding: 4px 5px 6px 5px;
+    background: none;
+    font-family: $font-stack;
+    font-size: 15px;
+    font-weight: 500;
+    color: #8c96b2;
+    background: transparent;
+    border-radius: 25px;
+    border: 1px solid #434d63;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .2s, background .2s;
+
+    &:hover {
+      color: #ffffff;
+      background: #434d63;
+    }
+
+    &_active {
+      color: #ffffff;
+      background: #434d63;
+    }
+
+  }
+
+  &__range-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__range-item {
+    margin-top: 30px;
+  }
+
+  &__range-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__range-text {
+
+  }
+
+  &__range-title {
+    padding-right: 5px;
+    font-family: $font-stack;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+
+    &_grey {
+      color: #69768f;
+    }
+
+  }
+
+  &__range-title-sub {
+    font-family: $font-stack;
+    font-size: 15px;
+    font-weight: 400;
+    color: #69768f;
+
+  }
+
+  &__range-count {
+    font-family: $font-stack;
+    font-size: 20px;
+    font-weight: 400;
+    color: #8c96b2;
+  }
+
+  &__range-bar {
+    margin-top: 10px;
+
+    input[type=range] {
+      margin: auto;
+      outline: none;
+      padding: 0;
+      width: 100%;
+      height: 9px;
+      background-color: #57637c;
+      //background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #473e4f), color-stop(100%, #51475a));
+      //background-image: -webkit-linear-gradient(#473e4f, #51475a);
+      //background-image: -moz-linear-gradient(#473e4f, #51475a);
+      //background-image: -o-linear-gradient(#473e4f, #51475a);
+      background-image: linear-gradient(#8c96b2, #8c96b2);
+      background-size: 50% 100%;
+      background-repeat: no-repeat;
+      border-radius: 4.5px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #414b60;
+      cursor: pointer;
+      -webkit-appearance: none;
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+      box-shadow: none;
+      border: none;
+      background: transparent;
+      -webkit-appearance: none;
+    }
+
+    input[type=range]::-moz-range-track {
+      box-shadow: none;
+      border: none;
+      background: transparent;
+    }
+
+    input[type=range]::-moz-focus-outer {
+      border: 0;
+    }
+
+    input[type=range]::-webkit-slider-thumb{
+      width: 5px;
+      height: 20px;
+      border: 0;
+      background: #8c96b2;
+      border-radius: 2.5px;
+      box-shadow: 0 0 1px 0px rgba(0,0,0,0.1);
+      -webkit-appearance: none;
+    }
+
+    input[type=range]::-moz-range-thumb {
+      width: 5px;
+      height: 20px;
+      border: 0;
+      background: #8c96b2;
+      border-radius: 2.5px;
+      box-shadow: 0 0 1px 0px rgba(0,0,0,0.1);
+    }
+
+  }
+
+}
+
+.investing-info {
+  font-family: $font-stack;
+  font-size: 17px;
+  font-weight: 500;
+  color: #57637c;
+  line-height: 16px;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+  .investing {
+
+    &__money {
+
+    }
+
+    &__input-wrap {
+      padding-left: 9px;
+      margin-top: 30px;
+
+    }
+
+    &__arrow {
+      position: relative;
+      padding: 23px 5px;
+      width: 30px;
+      height: 30px;
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 18px;
+        left: 5px;
+        background: url("../../images/landing/arrow.png");
+        background-size: 17px 12px;
+        width: 17px;
+        height: 12px;
+      }
+
+    }
+
+    &__currency {
+      font-size: 30px;
+    }
+
+    &__input {
+      padding: 12px 15px 12px 5px;
+      font-size: 30px;
+    }
+
+    &__tab {
+      display: none;
+    }
+
+    &__range-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__range-item {
+      margin-top: 30px;
+    }
+
+    &__range-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__range-text {
+
+    }
+
+    &__range-title {
+      font-size: 18px;
+    }
+
+    &__range-title-sub {
+      font-size: 14px;
+      letter-spacing: -1px;
+
+    }
+
+    &__range-count {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    &__range-bar {
+      display: none;
+    }
+
+  }
+
+  .investing-info {
+    font-size: 15px;
+    line-height: 12px;
+  }
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 760px) {
+
+  .investing {
+
+    &__money {
+
+    }
+
+    &__input-wrap {
+      //position: relative;
+      //display: flex;
+      //align-items: center;
+      //justify-content: space-between;
+      padding-left: 9px;
+      margin-top: 30px;
+      //height: auto;
+      //background: #434d63;
+      //border-radius: 5px;
+
+    }
+
+    &__arrow {
+      position: relative;
+      padding: 23px 5px;
+      width: 30px;
+      height: 30px;
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 18px;
+        left: 5px;
+        background: url("../../images/landing/arrow.png");
+        background-size: 17px 12px;
+        width: 17px;
+        height: 12px;
+      }
+
+    }
+
+    &__currency {
+      font-size: 30px;
+    }
+
+    &__input {
+      //max-width: 80%;
+      //flex-grow: 1;
+      padding: 12px 15px 12px 5px;
+      //background: none;
+      //font-family: $font-stack;
+      font-size: 30px;
+      //font-weight: 500;
+      //color: #fff;
+      //border: none;
+      //width: 58%;
+      //outline: 0;
+
+      //&_plh-blue {
+      //
+      //  &::-webkit-input-placeholder {color:#6067f1;}
+      //  &::-moz-placeholder          {color:#6067f1;}/* Firefox 19+ */
+      //  &:-moz-placeholder           {color:#6067f1;}/* Firefox 18- */
+      //  &:-ms-input-placeholder      {color:#6067f1;}
+      //
+      //}
+    }
+
+    &__tab {
+      display: none;
+      //display: flex;
+      //align-items: center;
+      //justify-content: space-between;
+      //margin: 0;
+      //padding: 57px 0 0 0;
+      //list-style: none;
+    }
+
+    //&__tab-item {
+    //  flex-grow: 1;
+    //  margin-right: 15px;
+    //
+    //  &:first-child {
+    //    flex-grow: 0;
+    //    position: relative;
+    //    width: 23px;
+    //    height: 19px;
+    //    margin-right: 6px;
+    //
+    //    &:after {
+    //      content: '';
+    //      position: absolute;
+    //      background: url("../../images/landing/bag.png") no-repeat;
+    //      background-size: 23px 19px;
+    //      width: 23px;
+    //      height: 19px;
+    //    }
+    //
+    //  }
+    //
+    //  &:last-child {
+    //    margin-right: 0;
+    //  }
+    //
+    //}
+
+    //&__tab-btn {
+    //  width: 100%;
+    //  padding: 4px 5px 6px 5px;
+    //  background: none;
+    //  font-family: $font-stack;
+    //  font-size: 15px;
+    //  font-weight: 500;
+    //  color: #8c96b2;
+    //  background: transparent;
+    //  border-radius: 25px;
+    //  border: 1px solid #434d63;
+    //  outline: 0;
+    //  text-decoration: none;
+    //  cursor: pointer;
+    //  transition: color .2s, background .2s;
+    //
+    //  &:hover {
+    //    color: #ffffff;
+    //    background: #434d63;
+    //  }
+    //
+    //  &_active {
+    //    color: #ffffff;
+    //    background: #434d63;
+    //  }
+    //
+    //}
+
+    &__range-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__range-item {
+      margin-top: 30px;
+    }
+
+    &__range-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__range-text {
+
+    }
+
+    &__range-title {
+      //padding-right: 5px;
+      //font-family: $font-stack;
+      font-size: 18px;
+      //font-weight: 400;
+      //color: #fff;
+      //
+      //&_grey {
+      //  color: #69768f;
+      //}
+
+    }
+
+    &__range-title-sub {
+      //font-family: $font-stack;
+      font-size: 14px;
+      letter-spacing: -1px;
+      //font-weight: 400;
+      //color: #69768f;
+
+    }
+
+    &__range-count {
+      //font-family: $font-stack;
+      font-size: 18px;
+      font-weight: 400;
+      //color: #8c96b2;
+    }
+
+    &__range-bar {
+      display: none;
+    //  margin-top: 10px;
+    //
+    //  input[type=range] {
+    //    margin: auto;
+    //    outline: none;
+    //    padding: 0;
+    //    width: 100%;
+    //    height: 9px;
+    //    background-color: #57637c;
+    //    //background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #473e4f), color-stop(100%, #51475a));
+    //    //background-image: -webkit-linear-gradient(#473e4f, #51475a);
+    //    //background-image: -moz-linear-gradient(#473e4f, #51475a);
+    //    //background-image: -o-linear-gradient(#473e4f, #51475a);
+    //    background-image: linear-gradient(#8c96b2, #8c96b2);
+    //    background-size: 50% 100%;
+    //    background-repeat: no-repeat;
+    //    border-radius: 4.5px;
+    //    border-style: solid;
+    //    border-width: 1px;
+    //    border-color: #414b60;
+    //    cursor: pointer;
+    //    -webkit-appearance: none;
+    //  }
+    //
+    //  input[type=range]::-webkit-slider-runnable-track {
+    //    box-shadow: none;
+    //    border: none;
+    //    background: transparent;
+    //    -webkit-appearance: none;
+    //  }
+    //
+    //  input[type=range]::-moz-range-track {
+    //    box-shadow: none;
+    //    border: none;
+    //    background: transparent;
+    //  }
+    //
+    //  input[type=range]::-moz-focus-outer {
+    //    border: 0;
+    //  }
+    //
+    //  input[type=range]::-webkit-slider-thumb{
+    //    width: 5px;
+    //    height: 20px;
+    //    border: 0;
+    //    background: #8c96b2;
+    //    border-radius: 2.5px;
+    //    box-shadow: 0 0 1px 0px rgba(0,0,0,0.1);
+    //    -webkit-appearance: none;
+    //  }
+    //
+    //  input[type=range]::-moz-range-thumb {
+    //    width: 5px;
+    //    height: 20px;
+    //    border: 0;
+    //    background: #8c96b2;
+    //    border-radius: 2.5px;
+    //    box-shadow: 0 0 1px 0px rgba(0,0,0,0.1);
+    //  }
+    //
+    }
+
+  }
+
+  .investing-info {
+    font-size: 15px;
+    line-height: 12px;
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1170px;
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+  .container {
+    padding: 0 20px;
+  }
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 760px) {
+
+  .container {
+    padding: 0 15px;
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
