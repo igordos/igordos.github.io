@@ -16,7 +16,7 @@ $(document).ready(function () {
         });
 
         $('.mask').swipe({
-            swipeRight: function () {
+            swipeLeft: function () {
                 $('html, body, .content-wrap, .header-side-nav, .mask').toggleClass('toggled');
             },
             tap: function () {
