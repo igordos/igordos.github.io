@@ -1,8 +1,9 @@
 $(document).ready(function () {
-    if (window.matchMedia('(max-width: 768px)').matches) {
+
+    if (window.matchMedia("(max-width: 1170px)").matches) {
+
         $('.header__menu-toggler').click(function (e) {
-            $('.content-wrap, .header-side-nav').toggleClass('toggled');
-            e.preventDefault();
+            $('html, body, .content-wrap, .header-side-nav').toggleClass('toggled');
         });
 
         $('body').swipe({
@@ -10,16 +11,17 @@ $(document).ready(function () {
 //                $('.content-wrap, .header-side-nav').toggleClass('toggled');
 //            },
             swipeRight: function () {
-                $('.content-wrap, .header-side-nav').toggleClass('toggled');
+                $('html, body, .content-wrap, .header-side-nav').toggleClass('toggled');
             }
         });
 
         $('.content-wrap').swipe({
             tap: function () {
                 if ($('.content-wrap').hasClass('toggled')) {
-                    $('.content-wrap, .header-side-nav').toggleClass('toggled');
+                    $('html, body, .content-wrap, .header-side-nav').toggleClass('toggled');
                 }
             },
         });
     }
+
 });
