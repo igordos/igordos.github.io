@@ -6,12 +6,18 @@ $(document).ready(function () {
             $('html, body, .content-wrap, .header-side-nav, .mask').toggleClass('toggled');
         });
 
+        $('.header-side-nav__menu-toggler').click(function (e) {
+            $('html, body, .content-wrap, .header-side-nav, .mask').toggleClass('toggled');
+        });
+
         $('body').swipe({
 //            swipeLeft:function() {
 //                $('.content-wrap, .header-side-nav').toggleClass('toggled');
 //            },
             swipeRight: function () {
-                $('html, body, .content-wrap, .header-side-nav, .mask').toggleClass('toggled');
+                if (!$('body').hasClass('toggled')) {
+                    $('html, body, .content-wrap, .header-side-nav, .mask').toggleClass('toggled');
+                }
             }
         });
 
