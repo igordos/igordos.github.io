@@ -845,18 +845,32 @@
                 </li>
                 <li class="footer__nav-item">
                     <a class="footer__nav-link" href="#">Динамика и прогноз</a><br>
-                    <a class="footer__sub-nav-link" href="#">Пользовательское<br> соглашение</a>
+                    <a class="footer__nav-link_sm" href="#">Пользовательское<br> соглашение</a>
                 </li>
                 <li class="footer__nav-item">
                     <a class="footer__nav-link" href="#">История транзакций</a><br>
-                    <a class="footer__sub-nav-link" href="#">О персональных<br> данных</a>
+                    <a class="footer__nav-link_sm" href="#">О персональных<br> данных</a>
                 </li>
                 <li class="footer__nav-item">
                     <a class="footer__nav-link" href="#">Профиль</a><br>
-                    <a class="footer__sub-nav-link" href="#">Оферта</a>
+                    <a class="footer__nav-link_sm" href="#">Оферта</a>
                 </li>
                 <li class="footer__nav-item">
                     <a class="footer__nav-link" href="#">Счёт</a><br>
+                    <a class="footer__nav-link_sm" href="#">Design by<br> Gregory Maslov</a>
+                </li>
+            </ul>
+            <ul class="footer__sub-nav">
+                <li class="footer__sub-nav-item">
+                    <a class="footer__sub-nav-link" href="#">Пользовательское<br> соглашение</a>
+                </li>
+                <li class="footer__sub-nav-item">
+                    <a class="footer__sub-nav-link" href="#">О персональных<br> данных</a>
+                </li>
+                <li class="footer__sub-nav-item">
+                    <a class="footer__sub-nav-link" href="#">Оферта</a><br>
+                </li>
+                <li class="footer__sub-nav-item">
                     <a class="footer__sub-nav-link" href="#">Design by<br> Gregory Maslov</a>
                 </li>
             </ul>
@@ -899,7 +913,6 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="../../vendors/jquery.touchSwipe.min.js"></script>
 <script src="../../vendors/d3.v4.min.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>-->
 <script src="../../js/main.js"></script>
 
 
@@ -946,20 +959,18 @@
 
     var margin = {left: 40, top: 40, right: 40, bottom: 40};
 
-    if (window.matchMedia('(max-width: 768px)').matches) {
-        chartWidth = 330;
-        chartHeight = 390;
+    if (window.matchMedia('(max-width: 760px)').matches) {
+        chartWidth = 300;
+        chartHeight = 360;
         margin = {left: 40, top: 40, right: 40, bottom: 40};
     }
 
-    //    if($(window).width() >= 768){
-    //        chartWidth = 330;
-    //        chartHeight = 390;
-    //        margin = {left: 40, top: 40, right: 40, bottom: 40};
-    //        console.log(123123123);
-    //    }
-
-
+//    if (window.matchMedia('(max-width: 768px)').matches) {
+//        chartWidth = 330;
+//        chartHeight = 390;
+//        margin = {left: 40, top: 40, right: 40, bottom: 40};
+//    }
+//
     var width = Math.min(screenWidth, chartWidth) - margin.left - margin.right,
             height = Math.min(screenWidth, chartHeight) - margin.top - margin.bottom;
 

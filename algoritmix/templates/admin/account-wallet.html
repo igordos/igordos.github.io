@@ -10,7 +10,7 @@
     <title>Algoritmix</title>
     <link rel="stylesheet" href="../../styles/admin/index.css">
 </head>
-<body class="">
+<body>
 <header class="header">
     <div class="container">
         <div class="header__wrap">
@@ -45,227 +45,284 @@
         </div>
     </div>
 </header>
-<main>
-    <div class="container">
-        <div class="page-title-wrap">
-            <h1 class="page-title">Счёт</h1>
-        </div>
-        <div class="grid">
-            <div class="col-6 col_pr">
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="card-header__title">Остатки</h2>
-                    </div>
-                    <div class="card-body">
-                        <div class="total-wrap">
-                            <div class="total-top">
+<div class="content-wrap">
+    <main>
+        <div class="container">
+            <div class="page-title-wrap">
+                <h1 class="page-title">Счёт</h1>
+            </div>
+            <div class="grid">
+                <div class="col-6 col_pr">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Остатки</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="total-wrap">
+                                <div class="total-top">
                                 <span class="total-top__name">
                                     USD
                                 </span>
-                                <span class="total-top__count">
+                                    <span class="total-top__count">
                                     ~$150,000.00
                                 </span>
-                            </div>
-                            <div class="total-btm">
+                                </div>
+                                <div class="total-btm">
                                 <span class="total-btm__name">
                                     BTC
                                 </span>
-                                <span class="total-btm__count">
+                                    <span class="total-btm__count">
                                     ~5.09341
                                 </span>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Мои кошельки</h2>
+                        </div>
+                        <div class="card-sub-header">
+                            <div class="card-text">
+                                <p class="card-text__text card-text__text_alert">Убедитесь, что данные кошельков введены
+                                    корректно, в
+                                    противном случае ваши средства могут быть потеряны. Убедитесь, что вы ввели данные
+                                    кошельков именно тех валют, на которые вы выводите
+                                    средства.</p>
+                            </div>
+                        </div>
+                        <div class="card-list">
+                            <div class="card-list__item">
+                                <div class="card-list__item-t">
+                                    <span class="card-list__item-title">BTC</span>
+                                </div>
+                                <div class="card-list__item-b">
+                                    <span class="card-list__item-text">t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</span>
+                                    <a class="btn-link" href="#">Изменить</a>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="card-list__item-t">
+                                    <span class="card-list__item-title">LTC</span>
+                                </div>
+                                <div class="card-list__item-b">
+                                    <span class="card-list__item-text">t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</span>
+                                    <a class="btn-link" href="#">Изменить</a>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="card-list__item-t">
+                                    <span class="card-list__item-title">DSH</span>
+                                </div>
+                                <div class="card-list__item-b">
+                                    <span class="card-list__item-text">t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</span>
+                                    <a class="btn-link" href="#">Изменить</a>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="card-list__item-t">
+                                    <span class="card-list__item-title">ZEC</span>
+                                </div>
+                                <div class="card-list__item-b">
+                                    <span class="card-list__item-text">t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</span>
+                                    <a class="btn-link" href="#">Изменить</a>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="card-list__item-t">
+                                    <span class="card-list__item-title">XMR</span>
+                                    <a class="btn-link" href="#">Добавить</a>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="card-list__item-t">
+                                    <span class="card-list__item-title">ETH</span>
+                                </div>
+                                <div class="card-list__item-b">
+                                    <span class="card-list__item-text">t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</span>
+                                    <a class="btn-link" href="#">Изменить</a>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="card-header__title">Мои кошельки</h2>
-                    </div>
-                    <div class="card-sub-header">
-                        <div class="card-text">
-                            <p class="card-text__text card-text__text_alert">Убедитесь, что данные кошельков введены корректно, в
-                                противном случае ваши средства могут быть потеряны. Убедитесь, что вы ввели данные
-                                кошельков именно тех валют, на которые вы выводите
-                                средства.</p>
+                <div class="col-6 col_pl">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Вывод средств</h2>
                         </div>
-                    </div>
-                    <div class="card-list">
-                        <div class="card-list__item">
-                            <div class="card-list__item-t">
-                                <span class="card-list__item-title">BTC</span>
-                            </div>
-                            <div class="card-list__item-b">
-                                <span class="card-list__item-text">t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</span>
-                                <a class="btn-link" href="#">Изменить</a>
-                            </div>
-                        </div>
-                        <div class="card-list__item">
-                            <div class="card-list__item-t">
-                                <span class="card-list__item-title">LTC</span>
-                            </div>
-                            <div class="card-list__item-b">
-                                <span class="card-list__item-text">t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</span>
-                                <a class="btn-link" href="#">Изменить</a>
-                            </div>
-                        </div>
-                        <div class="card-list__item">
-                            <div class="card-list__item-t">
-                                <span class="card-list__item-title">DSH</span>
-                            </div>
-                            <div class="card-list__item-b">
-                                <span class="card-list__item-text">t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</span>
-                                <a class="btn-link" href="#">Изменить</a>
-                            </div>
-                        </div>
-                        <div class="card-list__item">
-                            <div class="card-list__item-t">
-                                <span class="card-list__item-title">ZEC</span>
-                            </div>
-                            <div class="card-list__item-b">
-                                <span class="card-list__item-text">t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</span>
-                                <a class="btn-link" href="#">Изменить</a>
-                            </div>
-                        </div>
-                        <div class="card-list__item">
-                            <div class="card-list__item-t">
-                                <span class="card-list__item-title">XMR</span>
-                                <a class="btn-link" href="#">Добавить</a>
-                            </div>
-                        </div>
-                        <div class="card-list__item">
-                            <div class="card-list__item-t">
-                                <span class="card-list__item-title">ETH</span>
-                            </div>
-                            <div class="card-list__item-b">
-                                <span class="card-list__item-text">t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</span>
-                                <a class="btn-link" href="#">Изменить</a>
-                            </div>
-                        </div>
+                        <div class="card-body">
+                            <table class="table table-wallet">
+                                <thead class="thead-wallet">
+                                <tr>
+                                    <th>Валюта</th>
+                                    <th>На кошелек</th>
+                                    <th>Сумма</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="tr-wallet tr-wallet_active">
+                                    <td>
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" checked>
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description">Bitcoin</span>
+                                        </label>
+                                    </td>
+                                    <td>t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</td>
+                                    <td>01.02202</td>
+                                </tr>
+                                <tr class="tr-wallet tr-wallet_active">
+                                    <td>
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" checked>
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description">Bitcoin</span>
+                                        </label>
+                                    </td>
+                                    <td>t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</td>
+                                    <td>01.02202</td>
+                                </tr>
+                                <tr class="tr-wallet tr-wallet_active">
+                                    <td>
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" checked>
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description">Bitcoin</span>
+                                        </label>
+                                    </td>
+                                    <td>t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</td>
+                                    <td>01.02202</td>
+                                </tr>
+                                <tr class="tr-wallet tr-wallet_active">
+                                    <td>
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" checked>
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description">Bitcoin</span>
+                                        </label>
+                                    </td>
+                                    <td>t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</td>
+                                    <td>01.02202</td>
+                                </tr>
+                                <tr class="tr-wallet">
+                                    <td>
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description">Bitcoin</span>
+                                        </label>
+                                    </td>
+                                    <td>t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</td>
+                                    <td>01.02202</td>
+                                </tr>
+                                <tr class="tr-wallet tr-wallet_active">
+                                    <td>
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" checked>
+                                            <span class="custom-control-indicator"></span>
+                                            <span class="custom-control-description">Bitcoin</span>
+                                        </label>
+                                    </td>
+                                    <td>t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</td>
+                                    <td>01.02202</td>
+                                </tr>
 
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col_pl">
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="card-header__title">Вывод средств</h2>
-                    </div>
-                    <div class="card-body">
-                        <table class="table table-wallet">
-                            <thead class="thead-wallet">
-                            <tr>
-                                <th>Валюта</th>
-                                <th>На кошелек</th>
-                                <th>Сумма</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr class="tr-wallet tr-wallet_active">
-                                <td>
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" checked>
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Bitcoin</span>
-                                    </label>
-                                </td>
-                                <td>t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</td>
-                                <td>01.02202</td>
-                            </tr>
-                            <tr class="tr-wallet tr-wallet_active">
-                                <td>
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" checked>
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Bitcoin</span>
-                                    </label>
-                                </td>
-                                <td>t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</td>
-                                <td>01.02202</td>
-                            </tr>
-                            <tr class="tr-wallet tr-wallet_active">
-                                <td>
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" checked>
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Bitcoin</span>
-                                    </label>
-                                </td>
-                                <td>t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</td>
-                                <td>01.02202</td>
-                            </tr>
-                            <tr class="tr-wallet tr-wallet_active">
-                                <td>
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" checked>
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Bitcoin</span>
-                                    </label>
-                                </td>
-                                <td>t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</td>
-                                <td>01.02202</td>
-                            </tr>
-                            <tr class="tr-wallet">
-                                <td>
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Bitcoin</span>
-                                    </label>
-                                </td>
-                                <td>t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</td>
-                                <td>01.02202</td>
-                            </tr>
-                            <tr class="tr-wallet tr-wallet_active">
-                                <td>
-                                    <label class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" checked>
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Bitcoin</span>
-                                    </label>
-                                </td>
-                                <td>t1WajLkfBBb8sGqU5jZLz4SwмrHDHz9CyNDg</td>
-                                <td>01.02202</td>
-                            </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn" href="#">Вывести средства</a>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn" href="#">Вывести средства</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer__nav">
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Algoritmix LLC</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Преимущества</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Оборудование</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Динамика и прогноз</a><br>
+                    <a class="footer__nav-link_sm" href="#">Пользовательское<br> соглашение</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">История транзакций</a><br>
+                    <a class="footer__nav-link_sm" href="#">О персональных<br> данных</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Профиль</a><br>
+                    <a class="footer__nav-link_sm" href="#">Оферта</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a class="footer__nav-link" href="#">Счёт</a><br>
+                    <a class="footer__nav-link_sm" href="#">Design by<br> Gregory Maslov</a>
+                </li>
+            </ul>
+            <ul class="footer__sub-nav">
+                <li class="footer__sub-nav-item">
+                    <a class="footer__sub-nav-link" href="#">Пользовательское<br> соглашение</a>
+                </li>
+                <li class="footer__sub-nav-item">
+                    <a class="footer__sub-nav-link" href="#">О персональных<br> данных</a>
+                </li>
+                <li class="footer__sub-nav-item">
+                    <a class="footer__sub-nav-link" href="#">Оферта</a><br>
+                </li>
+                <li class="footer__sub-nav-item">
+                    <a class="footer__sub-nav-link" href="#">Design by<br> Gregory Maslov</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<div class="header-side-nav">
+    <button class="header-side-nav__menu-toggler"></button>
+    <div class="header-side-nav__wrap">
+        <div class="header-side-logo">
+            <img class="header-side-logo__img" src="../../images/admin/logo-white.svg" alt="">
+        </div>
+        <ul class="header-side-menu">
+            <li class="header-side-menu__item">
+                <a class="header-side-menu__link" href="#">Оборудование</a>
+            </li>
+            <li class="header-side-menu__item">
+                <a class="header-side-menu__link" href="#">Динамика и прогноз</a>
+            </li>
+            <li class="header-side-menu__item">
+                <a class="header-side-menu__link" href="#">История транзакций</a>
+            </li>
+            <li class="header-side-menu__item">
+                <a class="header-side-menu__link" href="#">Профиль</a>
+            </li>
+            <li class="header-side-menu__item">
+                <a class="header-side-menu__link" href="#">Счёт</a>
+            </li>
+            <li class="header-side-menu__item">
+                <a class="header-side-menu__link-btn" href="#">Купить портфель</a>
+            </li>
+        </ul>
     </div>
-</main>
-<!--<div class="footer">-->
-<!--<div class="container">-->
-<!--<ul class="footer__nav">-->
-<!--<li class="footer__nav-item">-->
-<!--<a class="footer__nav-link" href="#">Algoritmix LLC</a>-->
-<!--</li>-->
-<!--<li class="footer__nav-item">-->
-<!--<a class="footer__nav-link" href="#">Как это работает</a>-->
-<!--</li>-->
-<!--<li class="footer__nav-item">-->
-<!--<a class="footer__nav-link" href="#">Регистрация</a>-->
-<!--</li>-->
-<!--<li class="footer__nav-item">-->
-<!--<a class="footer__nav-link" href="#">Войти</a>-->
-<!--</li>-->
-<!--<li class="footer__nav-item">-->
-<!--<a class="footer__nav-link" href="#">Расчёт инвестиций</a>-->
-<!--</li>-->
-<!--<li class="footer__nav-item">-->
-<!--<a class="footer__nav-link" href="#">Design by Gregory Maslov</a>-->
-<!--</li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--</div>-->
+</div>
+
+<div class="mask"></div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="../../vendors/jquery.touchSwipe.min.js"></script>
 <script src="../../vendors/d3.v4.min.js"></script>
+<script src="../../js/main.js"></script>
 
 
 </body>
