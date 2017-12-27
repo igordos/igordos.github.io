@@ -15,8 +15,8 @@
 <header class="header">
     <div class="container">
         <div class="header__wrap">
-            <a href="#" class="header__logo">
-                <img class="header__logo-img" src="../../images/landing/logo.svg" alt="Algoritmix">
+            <a href="#" class="header__logo" title="Algoritmix">
+                <!--<img class="header__logo-img" src="../../images/landing/logo.svg" alt="Algoritmix">-->
             </a>
             <ul class="header__nav">
                 <li class="header__nav-item">
@@ -202,10 +202,12 @@
                 </div>
             </div>
             <div class="part-card__days-wrap">
-                <div class="part-card__days">
-                    <span class="part-card__days-count">145</span>
+                <div class="part-card__circle-wrap">
+                    <div class="part-card__days">
+                        <span class="part-card__days-count">145</span>
+                    </div>
                 </div>
-                <div class="part-card__days-detail">Дней осталось</div>
+                <div class="part-card__days-detail">Дней <br> осталось</div>
             </div>
         </div>
     </div>
@@ -556,9 +558,15 @@
         chartHeight = 430;
     var margin = {left: 20, top: 20, right: 20, bottom: 20};
 
-    if (window.matchMedia('(max-width: 768px)').matches) {
+    if (window.matchMedia('(max-width: 992px)').matches) {
         chartWidth = 330;
-        chartHeight = 390;
+        chartHeight = 400;
+        margin = {left: 40, top: 40, right: 40, bottom: 40};
+    }
+
+    if (window.matchMedia('(max-width: 480px)').matches) {
+        chartWidth = 300;
+        chartHeight = 400;
         margin = {left: 40, top: 40, right: 40, bottom: 40};
     }
 
