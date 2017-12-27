@@ -38,11 +38,16 @@
     <link rel="stylesheet"
           href="../../vendors/flatkit/libs/jquery/ion.rangeSlider/css/ion.rangeSlider.skinNice.css">
 
+    <!-- RTL -->
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/bootstrap-rtl/dist/bootstrap-rtl.css" type="text/css"/>
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/styles/app.rtl.css" type="text/css"/>
+    <!-- END RTL -->
+
     <link rel="stylesheet" href="../../styles/admin/index.css">
 
 
 </head>
-<body>
+<body dir="rtl">
 <div class="app" id="app">
 
     <!-- ############ LAYOUT START-->
@@ -50,7 +55,7 @@
     <!-- aside -->
     <div id="aside" class="app-aside modal nav-dropdown">
         <!-- fluid app aside -->
-        <div class="left navside black qz-black dk" data-layout="column">
+        <div class="right navside black qz-black dk" data-layout="column">
             <div class="navbar qz-white no-radius">
                 <!-- brand -->
                 <a class="navbar-brand">
@@ -199,7 +204,7 @@
         <div class="app-header white box-shadow">
             <div class="navbar navbar-toggleable-sm flex-row align-items-center">
                 <!-- Open side - Naviation on mobile -->
-                <a data-toggle="modal" data-target="#aside" class="hidden-lg-up mr-3">
+                <a data-toggle="modal" data-target="#aside" class="hidden-lg-up ml-3">
                     <i class="material-icons">&#xe5d2;</i>
                 </a>
                 <!-- / -->
@@ -209,16 +214,129 @@
                 </a>
 
                 <!-- navbar right -->
-                <ul class="nav navbar-nav ml-auto flex-row">
+                <ul class="nav navbar-nav mr-auto flex-row">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link" href="#">
+                            <span class="hidden-xs-down btn btn-sm rounded btn-outline b-black text-black">ICO</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
                             <span>Русский</span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-scale text-color" role="menu">
-                            <a class="dropdown-item" href="">Action</a>
-                            <a class="dropdown-item" href="">Another action</a>
-                            <a class="dropdown-item" href="">Something else here</a>
-                            <a class="dropdown-item" href="">Separated link</a>
+                        <div class="dropdown-menu dropdown-menu-scale text-color pull-left" role="menu">
+                            <a class="dropdown-item" rel="alternate" hreflang="de" href="#">Deutsch</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="en" href="#">English</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="es" href="#">Español</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="fr" href="#">Français</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="it" href="#">Italiano</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="pt" href="#">Português</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="tr" href="#">Türkçe</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="ru" href="#">Русский</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="uk" href="#">Українська</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="ja" href="#">日本語</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="zh" href="#">简体中文</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="ko" href="#">한국어</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">
+                            <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                            <span class="yt-picker-region-name hidden-xs-down">Russia</span>
+                        </a>
+                        <div class="dropdown-menu qz-dropdown-menu dropdown-menu-scale text-color pull-left" role="menu">
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_AR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Argentina</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_AU yt-sprite"></span>
+                                <span class="yt-picker-region-name">Australia</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_AT yt-sprite"></span>
+                                <span class="yt-picker-region-name">Austria</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_BE yt-sprite"></span>
+                                <span class="yt-picker-region-name">Belgium</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_BR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Brazil</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CA yt-sprite"></span>
+                                <span class="yt-picker-region-name">Canada</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CN yt-sprite"></span>
+                                <span class="yt-picker-region-name">China</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CO yt-sprite"></span>
+                                <span class="yt-picker-region-name">Colombia</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_FR yt-sprite"></span>
+                                <span class="yt-picker-region-name">France</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_DE yt-sprite"></span>
+                                <span class="yt-picker-region-name">Germany</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_IN yt-sprite"></span>
+                                <span class="yt-picker-region-name">India</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_IT yt-sprite"></span>
+                                <span class="yt-picker-region-name">Italy</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_JP yt-sprite"></span>
+                                <span class="yt-picker-region-name">Japan</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_KR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Korea</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_MX yt-sprite"></span>
+                                <span class="yt-picker-region-name">Mexico</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_PT yt-sprite"></span>
+                                <span class="yt-picker-region-name">Portugal</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                                <span class="yt-picker-region-name">Russia</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_ES yt-sprite"></span>
+                                <span class="yt-picker-region-name">Spain</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CH yt-sprite"></span>
+                                <span class="yt-picker-region-name">Switzerland</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_TR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Turkey</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_GB yt-sprite"></span>
+                                <span class="yt-picker-region-name">UK</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_UA yt-sprite"></span>
+                                <span class="yt-picker-region-name">Ukraine</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_US yt-sprite"></span>
+                                <span class="yt-picker-region-name">USA</span>
+                            </a>
                         </div>
                     </li>
                     <li class="nav-item dropdown hidden-xs-down">
@@ -226,7 +344,7 @@
                         <a class="nav-link" href="" data-toggle="dropdown" aria-expanded="false">
                             <span>Вход</span>
                         </a>
-                        <div class="dropdown-menu w-xl animated fadeInUp pull-right p-a-0">
+                        <div class="dropdown-menu w-xl animated fadeInUp pull-left p-a-0">
                             <div class="box-color m-a-0">
                                 <div class="box-header b-b p-y-sm">
                                     <strong>Sign in</strong></div>
@@ -286,41 +404,69 @@
             <!--</div>-->
             <!--</div>-->
 
-            <div class="container-fluid pl-4">
+                <div class="container-fluid pr-4">
 
-                <div class="row">
+                    <div class="row">
 
-                    <div class="col-lg-8 p-3">
-                        <h1 class="h2 mt-4 mb-4"><b>Реклама мобильного приложения</b></h1>
-                        <p>Реклама мобильного приложения Кратко о приложение: популярный сервис для онлайн-шоппинга по
-                            низким ценам, товары любой категории из Китая. Обязательно размещение ссылки для скачивания
-                            приложения в описание ролика либо на всплывающем баннере (готовы обсудить разные варианты)
-                            Готовы рассмотреть любые предложения по рекламе: эксклюзив, интеграция или упоминание.</p>
-                        <h5 class="mb-4"><b>Бюджет: 30$</b></h5>
-                        <hr>
-                        <h5 class="mb-4 qz-title-h"><b>Описание целевой аудитории:</b></h5>
-                        <p>Цель кампании: скачивание приложения, установка и осуществление заказа в течение 7 дней со
-                            дня установки. Аудитория 18+</p>
-                        <hr>
-                        <h5 class="mb-4 qz-title-h"><b>Формат рекламы:</b></h5>
-                        <ul class="qz-format-list">
-                            <li>Эксклюзив</li>
-                            <li>Интеграция</li>
-                            <li>Упоминание</li>
-                        </ul>
-                        <hr>
-                        <h5 class="mb-4"><b>Контактное лицо: Евгения Дьяченко</b></h5>
-                        <h6><b>Email</b></h6>
-                        <p><b><a href="#">jane@adsup.me</a></p>
-                        <h6><b>Телефон</b></h6>
-                        <p><b><a href="#">+79110089211</a></b></p>
-                        <h6><b>Вконтакте</b></h6>
-                        <p><b><a href="#">Вконтакте</a></b></p>
-                        <h6><b>Skype</b></h6>
-                        <p><b><a href="#">jane.adsup</a></b></p>
+                        <div class="col-lg-8 p-3">
+                            <h1 class="mt-4 mb-4">Whitepaper</h1>
 
-                        </ul>
-                    </div>
+                            <div class="bs-callout bs-callout-warning">
+                                <h4 class="mb-4">Мы снимаем барьеры</h4>
+                                <p>“Мы делаем площадку для рынка нативной рекламы у лидеров мнений. Повышая качество
+                                    рекламы у блогеров мы снимаем барьеры для входа на рынок массового рекламодателя.
+                                    Чтобы международным участникам рынка было удобно оплачивать рекламные услуги мы
+                                    выпускаем криптовалюту QZToken. У нас есть MVP для YouTube, активно растущий рынок и
+                                    спрос от международных компаний. С вашей помощью мы сделаем этот рынок прозрачным и
+                                    удобным для всех его участников”
+                                </p>
+                                <p>
+                                    <b>Шаяхметов Денис.</b> CEO at qaazqaaz.com
+                                </p>
+                            </div>
+
+                            <h2>Резюме</h2>
+                            <p>Рынок нативной рекламы в Мире активно растет. К 2020 году расходы европейских
+                                рекламодателей
+                                достигнут $13,2 млрд, в то время как в 2015 году этот показатель был на уровне $5,2
+                                млрд.
+                                YouTube является одним из самых популярных ресурсов в Мире. Аудитория YouTube >1 млрд.
+                                человек. YouTube популярнее, чем любой кабельный канал в США или любой телеканал в
+                                России.</p>
+                            <p>Рынок нативной рекламы у лидеров мнений находится на стадии начального развития, когда
+                                его
+                                агенты и технологические площадки еще не выработали общие правила игры, не нашли точки
+                                совместного роста и активно конкурируют между собой за блогеров и рекламодателей вместо
+                                синергетического и общего развития. Классические маркетплейсы не снижают трансакционные
+                                издержки рекламодателей настолько, чтобы массовый рекламодатель пришел на рынок.
+                            </p>
+                            <p>Мероприятия и инструменты qaazqaaz.com повышают качество рекламы за счет обучения
+                                блогеров и
+                                контроля результативности размещений. Рекламодатели смогут подбирать блогеров по
+                                прогнозируемому количеству целевых действий (охват, просмотры, переходы, клики,
+                                покупки…)
+                                Такой подход позволит рекламодателю выстраивать прозрачные воронки продаж. Тем самым
+                                снижаются трансакционные издержки рекламодателей на покупку рекламы и снимаются барьеры
+                                входа на рынок для массового рекламодателя. Новый подход к развитию рынка вместе с
+                                инструментами от qaazqaaz.com делают рынок прозрачным для всех его участников.</p>
+                            <p>Текущий успешный опыт выхода MVP qaazqaaz.com на рынок нативной рекламы в YouTube СНГ
+                                (охват
+                                топовых YouTube блогеров 27%), привлечение YouTube блогеров из, европы, северной
+                                америки,
+                                позволяет уже сейчас выходить на международный рынок и масштабироваться на другие
+                                социальные
+                                сети.
+
+                                Инструменты и мероприятия qaazqaaz.com для блогеров, рекламодателей, агентств и
+                                продюсеров
+                                вместе с криптовалютой QZ дадут рынку нативной рекламы у блогеров импульс к развитию.
+
+                                Полный текст WhitePaper доступен для просмотра по ссылке</p>
+
+                            <iframe class="qz-presentation-iframe"
+                                    src="https://drive.google.com/file/d/0Bw2fJSnkktAYcXhpRlE3amxsZHc/preview"></iframe>
+
+                        </div>
 
                 </div>
             </div>

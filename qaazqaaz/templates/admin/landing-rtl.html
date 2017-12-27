@@ -7,16 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="stylesheet" href="../../vendors/flatkit/assets/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
-    <link rel="stylesheet" href="../../styles/admin-landing/index.css">
 
-    <!--<link rel="stylesheet" href="../../styles/admin-landing/rtl-bootstrap/bootstrap.min.css"/>-->
-    <!--<link rel="stylesheet" href="../../styles/admin-landing/rtl/index.css">-->
+    <!-- RTL -->
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/bootstrap-rtl/dist/bootstrap-rtl.css" type="text/css"/>
+    <!-- END RTL -->
+
+    <link rel="stylesheet" href="../../styles/admin-landing/index.css">
 
     <link rel="stylesheet" href="../../vendors/slick/slick.css">
     <link rel="stylesheet" href="../../vendors/slick/slick-theme.css">
 
 </head>
-<body>
+<body dir="rtl">
 
 <div id="alertBonus" class="qz-alert">
     <div class="qz-alert__text"><p>QaazQaaz has become efir.io <br><span>Enjoy our product in new design.</span>
@@ -28,7 +30,7 @@
 <div class="qz-header-bg">
 
     <nav class="navbar navbar-toggleable-md navbar-light qz-bg">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse"
                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -69,7 +71,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link qz-nav-link qz-nav-link-toggle" href="#" id="navbarDropdownLanguage"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -486,7 +488,7 @@
     $(document).ready(function () {
 
         $('.qz-slider').slick({
-            rtl: false,
+            rtl: true,
             dots: true,
             infinite: true,
             speed: 500,

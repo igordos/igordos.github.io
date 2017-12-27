@@ -38,11 +38,16 @@
     <link rel="stylesheet"
           href="../../vendors/flatkit/libs/jquery/ion.rangeSlider/css/ion.rangeSlider.skinNice.css">
 
+    <!-- RTL -->
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/bootstrap-rtl/dist/bootstrap-rtl.css" type="text/css"/>
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/styles/app.rtl.css" type="text/css"/>
+    <!-- END RTL -->
+
     <link rel="stylesheet" href="../../styles/admin/index.css">
 
 
 </head>
-<body>
+<body dir="rtl">
 <div class="app" id="app">
 
     <!-- ############ LAYOUT START-->
@@ -50,7 +55,7 @@
     <!-- aside -->
     <div id="aside" class="app-aside modal nav-dropdown">
         <!-- fluid app aside -->
-        <div class="left navside black qz-black dk" data-layout="column">
+        <div class="right navside black qz-black dk" data-layout="column">
             <div class="navbar qz-white no-radius">
                 <!-- brand -->
                 <a class="navbar-brand">
@@ -199,7 +204,7 @@
         <div class="app-header white box-shadow">
             <div class="navbar navbar-toggleable-sm flex-row align-items-center">
                 <!-- Open side - Naviation on mobile -->
-                <a data-toggle="modal" data-target="#aside" class="hidden-lg-up mr-3">
+                <a data-toggle="modal" data-target="#aside" class="hidden-lg-up ml-3">
                     <i class="material-icons">&#xe5d2;</i>
                 </a>
                 <!-- / -->
@@ -209,16 +214,129 @@
                 </a>
 
                 <!-- navbar right -->
-                <ul class="nav navbar-nav ml-auto flex-row">
+                <ul class="nav navbar-nav mr-auto flex-row">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link" href="#">
+                            <span class="hidden-xs-down btn btn-sm rounded btn-outline b-black text-black">ICO</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
                             <span>Русский</span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-scale text-color" role="menu">
-                            <a class="dropdown-item" href="">Action</a>
-                            <a class="dropdown-item" href="">Another action</a>
-                            <a class="dropdown-item" href="">Something else here</a>
-                            <a class="dropdown-item" href="">Separated link</a>
+                        <div class="dropdown-menu dropdown-menu-scale text-color pull-left" role="menu">
+                            <a class="dropdown-item" rel="alternate" hreflang="de" href="#">Deutsch</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="en" href="#">English</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="es" href="#">Español</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="fr" href="#">Français</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="it" href="#">Italiano</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="pt" href="#">Português</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="tr" href="#">Türkçe</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="ru" href="#">Русский</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="uk" href="#">Українська</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="ja" href="#">日本語</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="zh" href="#">简体中文</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="ko" href="#">한국어</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">
+                            <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                            <span class="yt-picker-region-name hidden-xs-down">Russia</span>
+                        </a>
+                        <div class="dropdown-menu qz-dropdown-menu dropdown-menu-scale text-color pull-left" role="menu">
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_AR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Argentina</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_AU yt-sprite"></span>
+                                <span class="yt-picker-region-name">Australia</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_AT yt-sprite"></span>
+                                <span class="yt-picker-region-name">Austria</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_BE yt-sprite"></span>
+                                <span class="yt-picker-region-name">Belgium</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_BR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Brazil</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CA yt-sprite"></span>
+                                <span class="yt-picker-region-name">Canada</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CN yt-sprite"></span>
+                                <span class="yt-picker-region-name">China</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CO yt-sprite"></span>
+                                <span class="yt-picker-region-name">Colombia</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_FR yt-sprite"></span>
+                                <span class="yt-picker-region-name">France</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_DE yt-sprite"></span>
+                                <span class="yt-picker-region-name">Germany</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_IN yt-sprite"></span>
+                                <span class="yt-picker-region-name">India</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_IT yt-sprite"></span>
+                                <span class="yt-picker-region-name">Italy</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_JP yt-sprite"></span>
+                                <span class="yt-picker-region-name">Japan</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_KR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Korea</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_MX yt-sprite"></span>
+                                <span class="yt-picker-region-name">Mexico</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_PT yt-sprite"></span>
+                                <span class="yt-picker-region-name">Portugal</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                                <span class="yt-picker-region-name">Russia</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_ES yt-sprite"></span>
+                                <span class="yt-picker-region-name">Spain</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CH yt-sprite"></span>
+                                <span class="yt-picker-region-name">Switzerland</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_TR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Turkey</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_GB yt-sprite"></span>
+                                <span class="yt-picker-region-name">UK</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_UA yt-sprite"></span>
+                                <span class="yt-picker-region-name">Ukraine</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_US yt-sprite"></span>
+                                <span class="yt-picker-region-name">USA</span>
+                            </a>
                         </div>
                     </li>
                     <li class="nav-item dropdown hidden-xs-down">
@@ -226,7 +344,7 @@
                         <a class="nav-link" href="" data-toggle="dropdown" aria-expanded="false">
                             <span>Вход</span>
                         </a>
-                        <div class="dropdown-menu w-xl animated fadeInUp pull-right p-a-0">
+                        <div class="dropdown-menu w-xl animated fadeInUp pull-left p-a-0">
                             <div class="box-color m-a-0">
                                 <div class="box-header b-b p-y-sm">
                                     <strong>Sign in</strong></div>
@@ -286,43 +404,112 @@
             <!--</div>-->
             <!--</div>-->
 
-            <div class="container-fluid pl-4">
+            <div class="container-fluid pr-4">
+
 
                 <div class="row">
 
-                    <div class="col-lg-8 p-3">
-                        <h1 class="h2 mt-4 mb-4"><b>Реклама мобильного приложения</b></h1>
-                        <p>Реклама мобильного приложения Кратко о приложение: популярный сервис для онлайн-шоппинга по
-                            низким ценам, товары любой категории из Китая. Обязательно размещение ссылки для скачивания
-                            приложения в описание ролика либо на всплывающем баннере (готовы обсудить разные варианты)
-                            Готовы рассмотреть любые предложения по рекламе: эксклюзив, интеграция или упоминание.</p>
-                        <h5 class="mb-4"><b>Бюджет: 30$</b></h5>
-                        <hr>
-                        <h5 class="mb-4 qz-title-h"><b>Описание целевой аудитории:</b></h5>
-                        <p>Цель кампании: скачивание приложения, установка и осуществление заказа в течение 7 дней со
-                            дня установки. Аудитория 18+</p>
-                        <hr>
-                        <h5 class="mb-4 qz-title-h"><b>Формат рекламы:</b></h5>
-                        <ul class="qz-format-list">
-                            <li>Эксклюзив</li>
-                            <li>Интеграция</li>
-                            <li>Упоминание</li>
-                        </ul>
-                        <hr>
-                        <h5 class="mb-4"><b>Контактное лицо: Евгения Дьяченко</b></h5>
-                        <h6><b>Email</b></h6>
-                        <p><b><a href="#">jane@adsup.me</a></p>
-                        <h6><b>Телефон</b></h6>
-                        <p><b><a href="#">+79110089211</a></b></p>
-                        <h6><b>Вконтакте</b></h6>
-                        <p><b><a href="#">Вконтакте</a></b></p>
-                        <h6><b>Skype</b></h6>
-                        <p><b><a href="#">jane.adsup</a></b></p>
+                    <div class="col-lg-10 p-3">
 
-                        </ul>
+                        <div class="row pt-4">
+                            <div class="col-md-2 pb-4">
+                                <img class="qz-blog-img"
+                                     src="https://yt3.ggpht.com/-z6BgrhUmKA0/AAAAAAAAAAI/AAAAAAAAAAA/UwDEPBhN55k/s240-c-k-no-mo-rj-c0xffffff/photo.jpg">
+                            </div>
+                            <div class="col-md-10">
+                                <h3><b>Реклама на канале Бьюти Ксю - уход за собой в домашних условиях</b></h3>
+                                <p class="text-muted"><b>Город: Лондон</b></p>
+                                <br>
+                                <h6><b>Контакты</b></h6>
+                                <p class="text-muted mb-0"><b>Контактное лицо: Наталья</b></p>
+                                <p><b><a href="#">kinonah@socium.in</a></b></p>
+                                <h6><b>Аудитория</b></h6>
+                                <p class="mb-0"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 162&nbsp;766
+                                    Подписчиков</p>
+                                <p class="mb-0"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 20&nbsp;412&nbsp;913
+                                    просмотров на канале</p>
+                                <p class="mb-0"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+                                    Категория: <b>Хобби и стиль</b></p>
+                                <p class="mb-0"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                                    Локация: <b> Россия</b></p>
+                                <hr>
+                                <h6><b>О канале</b></h6>
+                                <p>Новости о кино, про кино и около кино. Самые важные кино - события, фестивали и
+                                    премии.
+                                    Новые трейлеры, тизеры и тв-споты. Рекомендации к просмотру или НЕ просмотру новых
+                                    картин и сериалов.
+                                    КИНОНАХ - это субъективное мнение профессионального зрителя, любителя и ценителя
+                                    хорошего кино!</p>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h6><b>Прайс, USD</b></h6>
+                                        <p>
+                                            Эксклюзив: 1 675.80 <br>
+                                            Интеграция: 3 591.00 <br>
+                                            Упоминание: 0.00 <br>
+                                            Пре-ролл/Пост-ролл: 718.20 <br>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h6><b>Статистические данные по последним 10 видео</b></h6>
+                                        <p>
+                                            Просмотров на видео: 14 998 <br>
+                                            Комментариев на видео: 121 <br>
+                                            Лайков на видео: 1 309 <br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+
+                                <div class="row mt-4">
+                                    <div class="col-lg-12">
+                                        <div class="box">
+                                            <div class="box-header dker"><h3><b>Статистика канала</b></h3></div>
+                                            <div class="box-divider m-a-0"></div>
+                                            <div class="box-body">
+                                                content
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-lg-12">
+                                        <div class="box">
+                                            <div class="box-header dker"><h3><b>Аудитория канала</b></h3></div>
+                                            <div class="box-divider m-a-0"></div>
+                                            <div class="box-body">
+                                                content
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-lg-12">
+                                        <div class="box">
+                                            <div class="box-header dker"><h3><b>Презентация блогера</b></h3></div>
+                                            <div class="box-divider m-a-0"></div>
+                                            <div class="box-body">
+                                                content
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
                     </div>
 
                 </div>
+
             </div>
 
             <!-- ############ PAGE END-->

@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>QZ</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+
+    <!--<link rel="apple-touch-icon" href="../assets/images/logo.png">-->
+
+    <meta name="apple-mobile-web-app-title" content="Flatkit">
+    <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!--<link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.png">-->
+
+    <!-- style -->
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/animate.css/animate.min.css" type="text/css"/>
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/glyphicons/glyphicons.css" type="text/css"/>
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/font-awesome/css/font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/material-design-icons/material-design-icons.css"
+          type="text/css"/>
+
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
+
+    <!-- build:css ../assets/styles/app.min.css -->
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/styles/app.css" type="text/css"/>
+    <!-- endbuild -->
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/styles/font.css" type="text/css"/>
+
+    <link rel="stylesheet"
+          href="../../vendors/flatkit/libs/jquery/ion.rangeSlider/css/ion.rangeSlider.css">
+    <link rel="stylesheet"
+          href="../../vendors/flatkit/libs/jquery/ion.rangeSlider/css/ion.rangeSlider.skinNice.css">
+
+    <!-- RTL -->
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/bootstrap-rtl/dist/bootstrap-rtl.css" type="text/css"/>
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/styles/app.rtl.css" type="text/css"/>
+    <!-- END RTL -->
+
+    <link rel="stylesheet" href="../../styles/admin/index.css">
+
+
+</head>
+<body dir="rtl">
+
+<div class="app" id="app">
+
+    <!-- ############ LAYOUT START-->
+
+    <!-- aside -->
+    <div id="aside" class="app-aside modal nav-dropdown">
+        <!-- fluid app aside -->
+        <div class="right navside black qz-black dk" data-layout="column">
+            <div class="navbar qz-white no-radius">
+                <!-- brand -->
+                <a class="navbar-brand">
+                    <!--<div ui-include="'../assets/images/logo.svg'"></div>-->
+                    <!--<img src="../../images/graphics/logo.png" alt="Efir">-->
+                    <img src="../../images/graphics/logo.png" alt="Efir">
+                    <span class="hidden-folded inline">QZ</span>
+                </a>
+                <!-- / brand -->
+            </div>
+            <div class="hide-scroll" flex>
+                <nav class="scroll nav-light">
+
+                    <ul class="nav" ui-nav>
+                        <li class="nav-header hidden-folded">
+                            <small class="text-muted">Главная</small>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <span class="nav-icon">
+                                    <i class="material-icons">perm_identity</i>
+                                </span>
+                                <span class="nav-text">Блогеры</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-header hidden-folded">
+                            <small class="text-muted">Социальные сети</small>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="nav-icon">
+                                  <i class="material-icons">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"
+                                           viewBox="0 0 96.875 96.875"><path
+                                              d="M95.201 25.538c-1.186-5.152-5.4-8.953-10.473-9.52-12.013-1.341-24.172-1.348-36.275-1.341-12.105-.007-24.266 0-36.279 1.341-5.07.567-9.281 4.368-10.467 9.52C.019 32.875 0 40.884 0 48.438 0 55.992 0 64 1.688 71.336c1.184 5.151 5.396 8.952 10.469 9.52 12.012 1.342 24.172 1.349 36.277 1.342 12.107.007 24.264 0 36.275-1.342 5.07-.567 9.285-4.368 10.471-9.52 1.689-7.337 1.695-15.345 1.695-22.898 0-7.554.014-15.563-1.674-22.9zM35.936 63.474V31.437a497491.15 497491.15 0 0 0 30.798 16.068c-10.3 5.342-20.504 10.631-30.798 15.969z"
+                                              fill="#FFF"/></svg>
+                                  </i>
+                                </span>
+                                <span class="nav-text">YouTube</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="nav-icon">
+                                  <i class="material-icons">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="512"
+                                           height="512"><g fill="#FFF"><path
+                                              d="M9.5 37h10v5a1 1 0 0 0 1.707.707L26.914 37H38c.265 0 .52-.105.707-.293l6.5-6.5a.996.996 0 0 0 .293-.707V6a1 1 0 0 0-1-1h-35a1 1 0 0 0-1 1v30a1 1 0 0 0 1 1zm1-30h33v22.086L37.586 35H26.5a.997.997 0 0 0-.707.293L21.5 39.586V36a1 1 0 0 0-1-1h-10V7z"/><path
+                                              d="M50.5 0H5a1 1 0 0 0-.864.496l-3.5 6A1.003 1.003 0 0 0 .5 7v37a1 1 0 0 0 1 1h11v6a1 1 0 0 0 1 1h7c.247 0 .485-.092.669-.257L28.662 45H38c.251 0 .493-.095.677-.264l12.5-11.5a1 1 0 0 0 .323-.736V1a1 1 0 0 0-1-1zm-1 32.062L37.61 43h-9.332c-.247 0-.485.092-.669.257L20.116 50H14.5v-6a1 1 0 0 0-1-1h-11V7.271L5.574 2H49.5v30.062z"/><path
+                                              d="M21.5 28h4a1 1 0 0 0 1-1V14a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1zm1-13h2v11h-2V15zm9 13h4a1 1 0 0 0 1-1V14a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1zm1-13h2v11h-2V15z"/></g></svg>
+                                  </i>
+                                </span>
+                                <span class="nav-text">Twitch</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-header hidden-folded">
+                            <small class="text-muted">Сотрудничество</small>
+                        </li>
+
+                        <li>
+                            <a>
+                                <span class="nav-caret">
+                                  <i class="fa fa-caret-down"></i>
+                                </span>
+                                <span class="nav-label">
+                                  <b class="label rounded label-sm primary">5</b>
+                                </span>
+                                <span class="nav-icon">
+                                  <i class="material-icons">&#xe5c3;
+                                    <span ui-include="'../assets/images/i_1.svg'"></span>
+                                  </i>
+                                </span>
+                                <span class="nav-text">Агенства</span>
+                            </a>
+                            <ul class="nav-sub">
+                                <li>
+                                    <a href="#">
+                                        <span class="nav-text">Inbox</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="nav-text">Contacts</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="nav-text">Calendar</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-header hidden-folded">
+                            <small class="text-muted">Помощь</small>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <span class="nav-text">Контакты</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="nav-text">Условия использования</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="nav-text">Команда</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="nav-text">Whitepaper</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="nav-text">ICO</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="b-t">
+                <nav ui-nav="">
+                    <ul class="nav">
+                        <li class="text-muted p-2 qz-text-muted">
+                            <small>Вся представленная информация не является публичной офертой и носит исключительно
+                                ознакомительный характер. qaazqaaz.com не несет ответственности за достоверность,
+                                предоставляемой блоеграми информации. При этом мы делаем все, чтобы информация была
+                                максимально корректной. При использовании материалов сервиса ссылка на qaazqaaz.com
+                                обязательна
+                            </small>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- / -->
+
+    <!-- content -->
+    <div id="content" class="app-content box-shadow-z0" role="main">
+        <div class="app-header white box-shadow">
+            <div class="navbar navbar-toggleable-sm flex-row align-items-center">
+                <!-- Open side - Naviation on mobile -->
+                <a data-toggle="modal" data-target="#aside" class="hidden-lg-up ml-3">
+                    <i class="material-icons"></i>
+                </a>
+                <!-- / -->
+
+                <a class="navbar-brand">
+                    <img src="../../images/graphics/logo.png" alt="Efir" class="qz-hide-logo">
+                </a>
+
+                <!-- navbar right -->
+                <ul class="nav navbar-nav mr-auto flex-row">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">
+                            <span class="hidden-xs-down btn btn-sm rounded btn-outline b-black text-black">ICO</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                            <span>Русский</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-scale text-color pull-left" role="menu">
+                            <a class="dropdown-item" rel="alternate" hreflang="de" href="#">Deutsch</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="en" href="#">English</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="es" href="#">Español</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="fr" href="#">Français</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="it" href="#">Italiano</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="pt" href="#">Português</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="tr" href="#">Türkçe</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="ru" href="#">Русский</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="uk" href="#">Українська</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="ja" href="#">日本語</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="zh" href="#">简体中文</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="ko" href="#">한국어</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">
+                            <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                            <span class="yt-picker-region-name hidden-xs-down">Russia</span>
+                        </a>
+                        <div class="dropdown-menu qz-dropdown-menu dropdown-menu-scale text-color pull-left" role="menu">
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_AR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Argentina</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_AU yt-sprite"></span>
+                                <span class="yt-picker-region-name">Australia</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_AT yt-sprite"></span>
+                                <span class="yt-picker-region-name">Austria</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_BE yt-sprite"></span>
+                                <span class="yt-picker-region-name">Belgium</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_BR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Brazil</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CA yt-sprite"></span>
+                                <span class="yt-picker-region-name">Canada</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CN yt-sprite"></span>
+                                <span class="yt-picker-region-name">China</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CO yt-sprite"></span>
+                                <span class="yt-picker-region-name">Colombia</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_FR yt-sprite"></span>
+                                <span class="yt-picker-region-name">France</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_DE yt-sprite"></span>
+                                <span class="yt-picker-region-name">Germany</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_IN yt-sprite"></span>
+                                <span class="yt-picker-region-name">India</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_IT yt-sprite"></span>
+                                <span class="yt-picker-region-name">Italy</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_JP yt-sprite"></span>
+                                <span class="yt-picker-region-name">Japan</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_KR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Korea</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_MX yt-sprite"></span>
+                                <span class="yt-picker-region-name">Mexico</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_PT yt-sprite"></span>
+                                <span class="yt-picker-region-name">Portugal</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                                <span class="yt-picker-region-name">Russia</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_ES yt-sprite"></span>
+                                <span class="yt-picker-region-name">Spain</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CH yt-sprite"></span>
+                                <span class="yt-picker-region-name">Switzerland</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_TR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Turkey</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_GB yt-sprite"></span>
+                                <span class="yt-picker-region-name">UK</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_UA yt-sprite"></span>
+                                <span class="yt-picker-region-name">Ukraine</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_US yt-sprite"></span>
+                                <span class="yt-picker-region-name">USA</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown hidden-xs-down">
+
+                        <a class="nav-link" href="" data-toggle="dropdown" aria-expanded="false">
+                            <span>Вход</span>
+                        </a>
+                        <div class="dropdown-menu w-xl animated fadeInUp pull-left p-a-0">
+                            <div class="box-color m-a-0">
+                                <div class="box-header b-b p-y-sm">
+                                    <strong>Sign in</strong></div>
+                                <div class="box-body">
+                                    <form role="form" class="ng-pristine ng-valid">
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="email" class="form-control" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="checkbox">
+                                            <label class="md-check">
+                                                <input type="checkbox">
+                                                <i></i> Remember me
+                                            </label>
+                                        </div>
+                                        <div class="m-t m-b-xs">
+                                            <button type="submit" class="btn btn-sm primary text-u-c p-x _600">Sign in
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <span class="hidden-xs-down btn btn-sm rounded orange text-u-c _600">Регистрация</span>
+                            <span class="hidden-sm-up btn btn-sm btn-icon rounded orange">
+                                <i class="material-icons"></i>
+                            </span></a>
+                    </li>
+
+                </ul>
+                <!-- / navbar right -->
+            </div>
+        </div>
+        <div class="app-footer">
+            <div class="p-2 text-xs">
+                <div class="pull-right text-muted py-1">
+                    2016–2017 © efir.io
+                    <a ui-scroll-to="content"><i class="fa fa-long-arrow-up p-x-sm"></i></a>
+                </div>
+            </div>
+        </div>
+        <div ui-view class="app-body" id="view">
+
+            <!-- ############ PAGE START-->
+            <!--<div class="p-a white lt box-shadow">-->
+            <!--<div class="row">-->
+            <!--<div class="col-sm-6">-->
+            <!--<h4 class="mt-2 mb-0 _300">Подбор блогера для рекламы на youtube</h4>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <div class="container-fluid">
+
+                <div class="row qz-orange">
+                    <div class="col-lg-8 p-4 qz-w-1250">
+
+                        <h4 class="mb-4"><b>Подбор блогера для рекламы на YouTube</b></h4>
+
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Введите название блога">
+                            <span class="input-group-btn">
+                                <button class="btn orange" type="button">Поиск</button>
+                            </span>
+                        </div>
+
+                        <!--<div class="form-group row">-->
+                        <!--<p class="col-sm-2"><b>Сортировать по:</b></p>-->
+                        <!--<div class="col-sm-10">-->
+                        <!--<div class="btn-group">-->
+                        <!--<button type="button" class="btn btn-sm rounded white">Цена ↓</button>-->
+                        <!--<button type="button"-->
+                        <!--class="btn btn-sm rounded white dropdown-toggle dropdown-toggle-split"-->
+                        <!--data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--<span class="sr-only">Toggle Dropdown</span>-->
+                        <!--</button>-->
+                        <!--<div class="dropdown-menu">-->
+                        <!--<a class="dropdown-item" href="#">Action</a>-->
+                        <!--<a class="dropdown-item" href="#">Another action</a>-->
+                        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                        <!--<div class="dropdown-divider"></div>-->
+                        <!--<a class="dropdown-item" href="#">Separated link</a>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="btn-group">-->
+                        <!--<button type="button" class="btn btn-sm rounded white">Подписчики ↑</button>-->
+                        <!--<button type="button"-->
+                        <!--class="btn btn-sm rounded white dropdown-toggle dropdown-toggle-split"-->
+                        <!--data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--<span class="sr-only">Toggle Dropdown</span>-->
+                        <!--</button>-->
+                        <!--<div class="dropdown-menu">-->
+                        <!--<a class="dropdown-item" href="#">Action</a>-->
+                        <!--<a class="dropdown-item" href="#">Another action</a>-->
+                        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                        <!--<div class="dropdown-divider"></div>-->
+                        <!--<a class="dropdown-item" href="#">Separated link</a>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="btn-group">-->
+                        <!--<button type="button" class="btn btn-sm rounded white">Просмотры ↑</button>-->
+                        <!--<button type="button"-->
+                        <!--class="btn btn-sm rounded white dropdown-toggle dropdown-toggle-split"-->
+                        <!--data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--<span class="sr-only">Toggle Dropdown</span>-->
+                        <!--</button>-->
+                        <!--<div class="dropdown-menu">-->
+                        <!--<a class="dropdown-item" href="#">Action</a>-->
+                        <!--<a class="dropdown-item" href="#">Another action</a>-->
+                        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                        <!--<div class="dropdown-divider"></div>-->
+                        <!--<a class="dropdown-item" href="#">Separated link</a>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="btn-group">-->
+                        <!--<button type="button" class="btn btn-sm rounded white">Лайки ↑</button>-->
+                        <!--<button type="button"-->
+                        <!--class="btn btn-sm rounded white dropdown-toggle dropdown-toggle-split"-->
+                        <!--data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--<span class="sr-only">Toggle Dropdown</span>-->
+                        <!--</button>-->
+                        <!--<div class="dropdown-menu">-->
+                        <!--<a class="dropdown-item" href="#">Action</a>-->
+                        <!--<a class="dropdown-item" href="#">Another action</a>-->
+                        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                        <!--<div class="dropdown-divider"></div>-->
+                        <!--<a class="dropdown-item" href="#">Separated link</a>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="btn-group">-->
+                        <!--<button type="button" class="btn btn-sm rounded white">Коментарии ↑</button>-->
+                        <!--<button type="button"-->
+                        <!--class="btn btn-sm rounded white dropdown-toggle dropdown-toggle-split"-->
+                        <!--data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--<span class="sr-only">Toggle Dropdown</span>-->
+                        <!--</button>-->
+                        <!--<div class="dropdown-menu">-->
+                        <!--<a class="dropdown-item" href="#">Action</a>-->
+                        <!--<a class="dropdown-item" href="#">Another action</a>-->
+                        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                        <!--<div class="dropdown-divider"></div>-->
+                        <!--<a class="dropdown-item" href="#">Separated link</a>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="btn-group">-->
+                        <!--<button type="button" class="btn btn-sm rounded white">ИРП ↑</button>-->
+                        <!--<button type="button"-->
+                        <!--class="btn btn-sm rounded white dropdown-toggle dropdown-toggle-split"-->
+                        <!--data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--<span class="sr-only">Toggle Dropdown</span>-->
+                        <!--</button>-->
+                        <!--<div class="dropdown-menu">-->
+                        <!--<a class="dropdown-item" href="#">Action</a>-->
+                        <!--<a class="dropdown-item" href="#">Another action</a>-->
+                        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                        <!--<div class="dropdown-divider"></div>-->
+                        <!--<a class="dropdown-item" href="#">Separated link</a>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="form-group row">-->
+                        <!--<p class="col-sm-2"><b>Категория:</b></p>-->
+                        <!--<div class="col-sm-10">-->
+                        <!--<button class="btn btn-sm rounded white">Спорт&nbsp;&nbsp;x</button>-->
+                        <!--<button class="btn btn-sm rounded white">Спорт&nbsp;&nbsp;x</button>-->
+                        <!--<button class="btn btn-sm rounded white">Спорт&nbsp;&nbsp;x</button>-->
+                        <!--<button class="btn btn-sm rounded white">Спорт&nbsp;&nbsp;x</button>-->
+                        <!--<button class="btn btn-sm rounded white">Спорт&nbsp;&nbsp;x</button>-->
+                        <!--<button class="btn btn-sm rounded white">Спорт&nbsp;&nbsp;x</button>-->
+                        <!--<button type="button" class="btn btn-sm rounded orange">+</button>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row">-->
+                        <!--<div class="col-lg-12">-->
+                        <!--<div class="box">-->
+                        <!--<div class="box-header">-->
+                        <!--<h2>Финансовые критерии</h2>-->
+                        <!--</div>-->
+                        <!--<div class="box-divider m-a-0"></div>-->
+                        <!--<div class="box-body p-v-md">-->
+                        <!--<div class="row m-b">-->
+                        <!--<div class="col-sm-6">-->
+                        <!--<div class="form-group row">-->
+                        <!--<label class="col-sm-2 form-control-label"><b>Валюта:</b></label>-->
+                        <!--<div class="col-sm-10">-->
+                        <!--<select class="form-control input-c">-->
+                        <!--<option>USD (Доллар США)</option>-->
+                        <!--<option>2</option>-->
+                        <!--<option>3</option>-->
+                        <!--<option>4</option>-->
+                        <!--</select>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row m-b">-->
+                        <!--<div class="col-sm-6">-->
+                        <!--<div class="form-group row">-->
+                        <!--<label class="col-sm-3 form-control-label"><b>Стоимость-->
+                        <!--рекламы:</b></label>-->
+                        <!--<div class="col-sm-9">-->
+                        <!--<div class="input-group m-b">-->
+                        <!--<span class="input-group-addon">От</span>-->
+                        <!--<input type="text" class="form-control js-input-from"-->
+                        <!--value="0">-->
+                        <!--<span class="input-group-addon">До</span>-->
+                        <!--<input type="text" class="form-control js-input-to"-->
+                        <!--value="100 000">-->
+                        <!--</div>-->
+                        <!--<div class="inlinebar">1,3,4,5,3,5</div>-->
+                        <!--<div class="range-slider">-->
+                        <!--<input type="text" class="js-range-slider" value=""/>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-6">-->
+                        <!--<div class="form-group row">-->
+                        <!--<label class="col-sm-3 form-control-label"><b>Продукции на-->
+                        <!--сумму:</b></label>-->
+                        <!--<div class="col-sm-9">-->
+                        <!--<div class="input-group m-b">-->
+                        <!--<span class="input-group-addon">От</span>-->
+                        <!--<input type="text" class="form-control js-input-from"-->
+                        <!--value="0">-->
+                        <!--<span class="input-group-addon">До</span>-->
+                        <!--<input type="text" class="form-control js-input-to"-->
+                        <!--value="100 000">-->
+                        <!--</div>-->
+                        <!--<div class="inlinebar">1,3,4,5,3,5</div>-->
+                        <!--<div class="range-slider">-->
+                        <!--<input type="text" class="js-range-slider" value=""/>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="row">-->
+                        <!--<div class="col-lg-12">-->
+                        <!--<div class="box">-->
+                        <!--<div class="box-header">-->
+                        <!--<h2>Критерии блога</h2>-->
+                        <!--</div>-->
+                        <!--<div class="box-divider m-a-0"></div>-->
+                        <!--<div class="box-body p-v-md">-->
+                        <!--<div class="row m-b">-->
+                        <!--<div class="col-sm-6">-->
+                        <!--<div class="form-group row">-->
+                        <!--<label class="col-sm-2 form-control-label"><b>Страна:</b></label>-->
+                        <!--<div class="col-sm-10">-->
+                        <!--<select class="form-control input-c">-->
+                        <!--<option>Россия</option>-->
+                        <!--<option>2</option>-->
+                        <!--<option>3</option>-->
+                        <!--<option>4</option>-->
+                        <!--</select>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="form-group row">-->
+                        <!--<label class="col-sm-2 form-control-label"><b>Тип-->
+                        <!--рекламы:</b></label>-->
+                        <!--<div class="col-sm-10">-->
+                        <!--<div class="checkbox mt-2">-->
+                        <!--<label class="ui-check mr-4">-->
+                        <!--<input type="checkbox" value="">-->
+                        <!--<i class="dark-white"></i>-->
+                        <!--Эксклюзив-->
+                        <!--</label>-->
+                        <!--<label class="ui-check mr-4">-->
+                        <!--<input type="checkbox" value="">-->
+                        <!--<i class="dark-white"></i>-->
+                        <!--Интеграция-->
+                        <!--</label>-->
+                        <!--<label class="ui-check mr-4">-->
+                        <!--<input type="checkbox" value="">-->
+                        <!--<i class="dark-white"></i>-->
+                        <!--Упоминание-->
+                        <!--</label>-->
+                        <!--<label class="ui-check mr-4">-->
+                        <!--<input type="checkbox" value="">-->
+                        <!--<i class="dark-white"></i>-->
+                        <!--Пре-ролл/Пост-ролл-->
+                        <!--</label>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-6">-->
+                        <!--<div class="form-group row">-->
+                        <!--<label class="col-sm-3 form-control-label"><b>Подписчики:</b></label>-->
+                        <!--<div class="col-sm-9">-->
+                        <!--<div class="input-group m-b">-->
+                        <!--<span class="input-group-addon">От</span>-->
+                        <!--<input type="text" class="form-control js-input-from"-->
+                        <!--value="0">-->
+                        <!--<span class="input-group-addon">До</span>-->
+                        <!--<input type="text" class="form-control js-input-to"-->
+                        <!--value="100 000">-->
+                        <!--</div>-->
+                        <!--<div class="inlinebar">1,3,4,5,3,5</div>-->
+                        <!--<div class="range-slider">-->
+                        <!--<input type="text" class="js-range-slider" value=""/>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row m-b">-->
+                        <!--<div class="col-sm-12">-->
+                        <!--<div class="form-group row">-->
+                        <!--<label class="col-sm-2 form-control-label"><b>Категория:</b></label>-->
+                        <!--<div class="col-sm-12">-->
+                        <!--<button class="btn btn-sm rounded orange">Спорт&nbsp;&nbsp;x-->
+                        <!--</button>-->
+                        <!--<button class="btn btn-sm rounded orange">Спорт&nbsp;&nbsp;x-->
+                        <!--</button>-->
+                        <!--<button class="btn btn-sm rounded orange">Спорт&nbsp;&nbsp;x-->
+                        <!--</button>-->
+                        <!--<button class="btn btn-sm rounded orange">Спорт&nbsp;&nbsp;x-->
+                        <!--</button>-->
+                        <!--<button class="btn btn-sm rounded orange">Спорт&nbsp;&nbsp;x-->
+                        <!--</button>-->
+                        <!--<button class="btn btn-sm rounded orange">Спорт&nbsp;&nbsp;x-->
+                        <!--</button>-->
+                        <!--<button class="btn btn-sm rounded orange">Спорт&nbsp;&nbsp;x-->
+                        <!--</button>-->
+                        <!--<button class="btn btn-sm rounded orange">Спорт&nbsp;&nbsp;x-->
+                        <!--</button>-->
+                        <!--<button type="button" class="btn btn-sm rounded white">Добавить-->
+                        <!--</button>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row m-b">-->
+                        <!--<div class="col-sm-6">-->
+                        <!--<div class="form-group row">-->
+                        <!--<label class="col-sm-3 form-control-label"><b>Комментарии:</b></label>-->
+                        <!--<div class="col-sm-9">-->
+                        <!--<div class="input-group m-b">-->
+                        <!--<span class="input-group-addon">От</span>-->
+                        <!--<input type="text" class="form-control js-input-from"-->
+                        <!--value="0">-->
+                        <!--<span class="input-group-addon">До</span>-->
+                        <!--<input type="text" class="form-control js-input-to"-->
+                        <!--value="100 000">-->
+                        <!--</div>-->
+                        <!--<div class="inlinebar">1,3,4,5,3,5</div>-->
+                        <!--<div class="range-slider">-->
+                        <!--<input type="text" class="js-range-slider" value=""/>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-6">-->
+                        <!--<div class="form-group row">-->
+                        <!--<label class="col-sm-3 form-control-label"><b>Просмотры:</b></label>-->
+                        <!--<div class="col-sm-9">-->
+                        <!--<div class="input-group m-b">-->
+                        <!--<span class="input-group-addon">От</span>-->
+                        <!--<input type="text" class="form-control js-input-from"-->
+                        <!--value="0">-->
+                        <!--<span class="input-group-addon">До</span>-->
+                        <!--<input type="text" class="form-control js-input-to"-->
+                        <!--value="100 000">-->
+                        <!--</div>-->
+                        <!--<div class="inlinebar">1,3,4,5,3,5</div>-->
+                        <!--<div class="range-slider">-->
+                        <!--<input type="text" class="js-range-slider" value=""/>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="row m-b">-->
+                        <!--<div class="col-sm-6">-->
+                        <!--<div class="form-group row">-->
+                        <!--<label class="col-sm-3 form-control-label"><b>ИРП:</b></label>-->
+                        <!--<div class="col-sm-9">-->
+                        <!--<div class="input-group m-b">-->
+                        <!--<span class="input-group-addon">От</span>-->
+                        <!--<input type="text" class="form-control js-input-from"-->
+                        <!--value="0">-->
+                        <!--<span class="input-group-addon">До</span>-->
+                        <!--<input type="text" class="form-control js-input-to"-->
+                        <!--value="100 000">-->
+                        <!--</div>-->
+                        <!--<div class="inlinebar">1,3,4,5,3,5</div>-->
+                        <!--<div class="range-slider">-->
+                        <!--<input type="text" class="js-range-slider" value=""/>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-6">-->
+                        <!--<div class="form-group row">-->
+                        <!--<label class="col-sm-3 form-control-label"><b>Лайки:</b></label>-->
+                        <!--<div class="col-sm-9">-->
+                        <!--<div class="input-group m-b">-->
+                        <!--<span class="input-group-addon">От</span>-->
+                        <!--<input type="text" class="form-control js-input-from"-->
+                        <!--value="0">-->
+                        <!--<span class="input-group-addon">До</span>-->
+                        <!--<input type="text" class="form-control js-input-to"-->
+                        <!--value="100 000">-->
+                        <!--</div>-->
+                        <!--<div class="inlinebar">1,3,4,5,3,5</div>-->
+                        <!--<div class="range-slider">-->
+                        <!--<input type="text" class="js-range-slider" value=""/>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="row">-->
+                        <!--<div class="col-lg-6">-->
+                        <!--<button class="btn btn-lg btn-block orange"><i class="material-icons">search</i> Искать-->
+                        <!--</button>-->
+                        <!--</div>-->
+                        <!--<div class="col-lg-3">-->
+                        <!--<p class="h5 mt-3">Соответствий: 989</p>-->
+                        <!--</div>-->
+                        <!--<div class="col-lg-3 text-right">-->
+                        <!--<button class="btn btn-lg red">Сбросить фильтр</button>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 pr-2 pl-4 pt-3 qz-filter">
+                        <button data-toggle="collapse" data-target="#show_filter_youtube" type="button"
+                                class="btn qz-filter-btn dropdown-toggle" aria-expanded="true"><span class="caret"></span>
+                            <i class="fa fa-filter"></i> Расширенный поиск <span dir="ltr">(5)</span>
+                        </button>
+
+                        <p class="qz-filter-count">Найдено 1 из 100000</p>
+
+                        <div class="row">
+                            <div class="col-lg-8 pl-4 pr-4">
+
+
+                                <div class="panel panel-default pt-3">
+                                    <!--<div class="panel-heading pb-4">-->
+                                    <!--<div class="panel-title">-->
+                                    <!--<button data-toggle="collapse" data-target="#show_filter_youtube" type="button"-->
+                                    <!--class="btn orange btn-sm" aria-expanded="true"><span class="caret"></span>-->
+                                    <!--Фильтр-->
+                                    <!--</button>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <div id="show_filter_youtube" class="collapse " aria-expanded="true" style="">
+                                        <div class="panel-body filter_body">
+                                            <div class="col-md-12">
+                                                <form method="get" class="form-horizontal" role="form">
+                                                    <div class="row filter_box_">
+                                                        <div class="col-md-6 pr-0">
+                                                            <h5 class="filter_name pb-4"><b>Финансовые критерии</b></h5>
+
+                                                            <div class="form-group form-group-sm row">
+                                                                <label class="col-sm-6 control-label">Буду отправлять продукцию
+                                                                    на сумму: </label>
+                                                                <div class="col-sm-6">
+                                                                    <div class="input-group">
+                                                                        <input name="price_product" type="text"
+                                                                               class="form-control" placeholder="0" value="">
+                                                                        <div class="input-group-addon">руб</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group form-group-sm row">
+                                                                <label class="col-sm-6 control-label">Стоимость
+                                                                    рекламы: </label>
+                                                                <div class="col-sm-6">
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-addon">от</div>
+                                                                        <input name="price_ad_min" type="text"
+                                                                               class="form-control" placeholder="0" value="">
+                                                                        <div class="input-group-addon">руб</div>
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-addon">до</div>
+                                                                        <input name="price_ad_max" type="text"
+                                                                               class="form-control" placeholder="0" value="">
+                                                                        <div class="input-group-addon">руб</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <h5 class="filter_name pb-4"><b>Критерии блога</b></h5>
+
+                                                            <div class="form-group form-group-sm row">
+                                                                <label class="col-sm-5 control-label">Страна: </label>
+                                                                <div class="col-sm-6">
+                                                                    <select id="country" name="country" class="form-control">
+                                                                        <option value="">Все страны</option>
+                                                                        <option value="1">Австралия</option>
+
+                                                                        <option value="160">Эквадор</option>
+                                                                        <option value="107">Экваториальная Гвинея</option>
+                                                                        <option value="223">Эритрея</option>
+                                                                        <option value="140">Эстония</option>
+                                                                        <option value="215">Эфиопия</option>
+                                                                        <option value="60">Южно-Африканская Республика</option>
+                                                                        <option value="247">Южный Судан</option>
+                                                                        <option value="157">Ямайка</option>
+                                                                        <option value="5">Япония</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div id="city_box" class="form-group form-group-sm row"
+                                                                 style="display: none;">
+                                                                <label class="col-sm-5 control-label">Город: </label>
+                                                                <div class="col-sm-6">
+                                                                    <select id="city" name="city" class="form-control"
+                                                                            data-selected="">
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="form-group form-group-sm row">
+                                                                <label class="col-sm-5 control-label">Подписчиков: </label>
+                                                                <div class="col-sm-6">
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-addon">от</div>
+                                                                        <input name="subscriberCount" type="text"
+                                                                               class="form-control" placeholder="10000"
+                                                                               value="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group form-group-sm row">
+                                                                <label class="col-sm-5 control-label">Просмотров на
+                                                                    видео: </label>
+                                                                <div class="col-sm-6">
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-addon">от</div>
+                                                                        <input name="hits_video" type="text"
+                                                                               class="form-control" placeholder="10000"
+                                                                               value="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group form-group-sm row">
+                                                                <label class="col-sm-5 control-label">Комментариев на
+                                                                    видео: </label>
+                                                                <div class="col-sm-6">
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-addon">от</div>
+                                                                        <input name="comments_video" type="text"
+                                                                               class="form-control" placeholder="10000"
+                                                                               value="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group form-group-sm row">
+                                                                <label class="col-sm-5 control-label">Лайков на видео: </label>
+                                                                <div class="col-sm-6">
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-addon">от</div>
+                                                                        <input name="likes_video" type="text"
+                                                                               class="form-control" placeholder="10000"
+                                                                               value="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group form-group-sm row">
+                                                                <label class="col-sm-5 control-label"><span
+                                                                        title="Индекс рекламной привлекательности"
+                                                                        data-toggle="tooltip" data-placement="top">ИРП</span>:
+                                                                </label>
+                                                                <div class="col-sm-6">
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-addon">от</div>
+                                                                        <input name="engagement_ratio" type="text"
+                                                                               class="form-control" placeholder="10000"
+                                                                               value="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group form-group-sm row">
+                                                                <label class="col-sm-5 control-label">Тип рекламы: </label>
+                                                                <div class="col-sm-6">
+                                                                    <select name="ad_type" class="form-control">
+                                                                        <option value="">Все типы</option>
+                                                                        <option value="exclusive">Эксклюзив</option>
+                                                                        <option value="integration">Интеграция</option>
+                                                                        <option value="mention">Упоминание</option>
+                                                                        <option value="pre_post_roll">
+                                                                            interface.Пре-ролл/Пост-ролл
+                                                                        </option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group form-group-sm row">
+                                                                <label class="col-sm-5 control-label">Категория: </label>
+                                                                <div class="col-sm-6">
+                                                                    <select name="subjects" class="form-control">
+                                                                        <option disabled="" selected="">Выбрать категорию
+                                                                        </option>
+                                                                        <option value="Transport">Транспорт</option>
+                                                                        <option value="Music">Музыка</option>
+                                                                        <option value="Animals">Животные</option>
+                                                                        <option value="Sport and healthy lifestyle">Спорт и
+                                                                            ЗОЖ
+                                                                        </option>
+                                                                        <option value="Travel">Путешествия</option>
+                                                                        <option value="Computer games">Компьютерные игры
+                                                                        </option>
+                                                                        <option value="People and blogs">Люди и блоги</option>
+                                                                        <option value="Humor">Юмор</option>
+                                                                        <option value="Entertainment">Развлечения</option>
+                                                                        <option value="News and politics">Новости и политика
+                                                                        </option>
+                                                                        <option value="Hobby and style">Хобби и стиль</option>
+                                                                        <option value="Education">Образование</option>
+                                                                        <option value="Science and technology">Наука и техника
+                                                                        </option>
+                                                                        <option value="Society">Общество</option>
+                                                                        <option value="Motion pictures and animation">Фильмы и
+                                                                            анимация
+                                                                        </option>
+                                                                        <option value="Beauty and fashion">Красота и мода
+                                                                        </option>
+                                                                        <option value="Cartoons and moovies for children">
+                                                                            Мультфильмы и детское
+                                                                        </option>
+                                                                        <option value="Cooking">Кулинария</option>
+                                                                        <option value="Culture and art">Культура и искусство
+                                                                        </option>
+                                                                        <option value="Job and Business">Работа и Бизнес
+                                                                        </option>
+                                                                        <option value="Repairs">Ремонт</option>
+                                                                        <option value="Jurisprudence">Юриспруденция</option>
+                                                                        <option value="DIY">Сделай сам</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="right">
+                                                            <button type="reset" style="margin: 17px 17px 0 0;"
+                                                                    class="btn btn-outline b-danger text-danger">
+                                                            <span class="glyphicon glyphicon-remove"
+                                                                  aria-hidden="true"></span>
+                                                                Сбросить фильтр
+                                                            </button>
+                                                            <button type="submit" style="margin: 17px 17px 0 0;"
+                                                                    class="btn orange">
+                                                                <input type="hidden" name="orderBy" value="">
+                                                                <input type="hidden" name="order" value="">
+                                                                <input type="hidden" name="type" value="youtube">
+                                                                <span class="glyphicon glyphicon-search"
+                                                                      aria-hidden="true"></span> Искать
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="row white">
+                    <div class="col-lg-12 col-md-12 pt-3 pr-4 pl-4">
+                        <ul class="qz-sort pb-4">
+                            <li>
+                                <b>Сортировать:</b>
+                            </li>
+                            <li>
+                                <a href="#" class="qz-sort-link-active qz-sort-link-active_hl">Цена</a>
+                            </li>
+                            <li>
+                                <a href="#">Подписчики</a>
+                            </li>
+                            <li>
+                                <a href="#" class="qz-sort-link-active qz-sort-link-active_lh">Просмотры</a>
+                            </li>
+                            <li>
+                                <a href="#">Лайки</a>
+                            </li>
+                            <li>
+                                <a href="#">ИРП</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="row white">
+                    <div class="col-lg-12 col-md-12 p-2">
+
+                        <div class="qz-card-list-head">
+                            <div class="qz-card-list-head__title">
+                                <span>Блогер</span>
+                            </div>
+                            <div class="qz-card-list-head__title">
+                                <span>Аудитория</span>
+                            </div>
+                            <div class="qz-card-list-head__title">
+                                <span>Прайс-лист</span>
+                            </div>
+                        </div>
+
+                        <div class="qz-card-list">
+
+                            <div class="qz-card-item-wrap">
+                                <div class="qz-card-item">
+                                    <div class="qz-card-check">
+                                        <label class="ui-check qz-card-check__check-box"><input type="checkbox" value=""><i class="dark-white"></i></label>
+                                    </div>
+                                    <div class="qz-card-info">
+                                        <div class="qz-card-info__img">
+                                            <img src="https://efir.io/img/denis_photo.jpg" alt="">
+                                        </div>
+                                        <div class="qz-card-info__detail">
+                                            <h3 class="qz-card-info__name"><span dir="ltr"><i class="fa fa-check-circle-o"></i> Смешные моменты с ЮТУБЕРАМИ™</span></h3>
+                                            <ul class="qz-card-info__tag">
+                                                <li class="qz-card-info__tag-item">Люди и блоги</li>
+                                            </ul>
+                                            <p class="qz-card-info__country">
+                                                <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                                                <span class="yt-picker-region-name">Россия</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="qz-card-aud">
+                                        <h4 class="qz-card-aud__header-table">Аудитория</h4>
+                                        <h4 class="qz-card-aud__header">
+                                            <span><i class="fa fa-female"></i> Ж. (60%) 25–34 года.</span>
+                                        </h4>
+                                        <ul class="qz-card-aud__audience">
+                                            <li class="qz-card-aud__audience-item">
+                                    <span class="qz-card-aud__audience-t"><i
+                                            class="fa fa-users"></i></span>
+                                                <span class="qz-card-aud__audience-m">Подписчики</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                            <li class="qz-card-aud__audience-item">
+                                                <span class="qz-card-aud__audience-t"><i class="fa fa-eye"></i></span>
+                                                <span class="qz-card-aud__audience-m">Просмотры</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                            <li class="qz-card-aud__audience-item">
+                                            <span class="qz-card-aud__audience-t">
+                                                <i class="fa fa-area-chart"></i>
+                                            </span>
+                                                <span class="qz-card-aud__audience-m">Индекс РП</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="qz-card-price">
+                                        <h4 class="qz-card-aud__header-table">Аудитория</h4>
+                                        <ul class="qz-card-price__price">
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Эксклюзив:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$100.00</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Интеграция:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.763</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Упоминание:</span>
+                                                <span class="qz-card-price__price-m">$0.02 / <i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.763</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Пре/пост-ролл:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.63</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="qz-card-item-wrap">
+                                <div class="qz-card-item">
+                                    <div class="qz-card-check">
+                                        <label class="ui-check qz-card-check__check-box"><input type="checkbox" value=""><i class="dark-white"></i></label>
+                                    </div>
+                                    <div class="qz-card-info">
+                                        <div class="qz-card-info__img">
+                                            <img src="https://efir.io/img/denis_photo.jpg" alt="">
+                                        </div>
+                                        <div class="qz-card-info__detail">
+                                            <h3 class="qz-card-info__name"><span dir="ltr"><i class="fa fa-check-circle-o"></i> Смешные моменты с ЮТУБЕРАМИ™</span></h3>
+                                            <ul class="qz-card-info__tag">
+                                                <li class="qz-card-info__tag-item">Люди и блоги,</li>
+                                                <li class="qz-card-info__tag-item">Люди и блоги</li>
+                                            </ul>
+                                            <p class="qz-card-info__country">
+                                                <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                                                <span class="yt-picker-region-name">Россия</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="qz-card-aud">
+                                        <h4 class="qz-card-aud__header-table">Аудитория</h4>
+                                        <h4 class="qz-card-aud__header">
+                                            <span><i class="fa fa-female"></i> Ж. (60%) 25–34 года.</span>
+                                        </h4>
+                                        <ul class="qz-card-aud__audience">
+                                            <li class="qz-card-aud__audience-item">
+                                    <span class="qz-card-aud__audience-t"><i
+                                            class="fa fa-users"></i></span>
+                                                <span class="qz-card-aud__audience-m">Подписчики</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                            <li class="qz-card-aud__audience-item">
+                                                <span class="qz-card-aud__audience-t"><i class="fa fa-eye"></i></span>
+                                                <span class="qz-card-aud__audience-m">Просмотры</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                            <li class="qz-card-aud__audience-item">
+                                            <span class="qz-card-aud__audience-t">
+                                                <i class="fa fa-area-chart"></i>
+                                            </span>
+                                                <span class="qz-card-aud__audience-m">Индекс РП</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="qz-card-price">
+                                        <h4 class="qz-card-aud__header-table">Аудитория</h4>
+                                        <ul class="qz-card-price__price">
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Эксклюзив:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$100.00</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Интеграция:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.763</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Упоминание:</span>
+                                                <span class="qz-card-price__price-m">$0.02 / <i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.763</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Пре/пост-ролл:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.63</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="qz-card-item-wrap">
+                                <div class="qz-card-item">
+                                    <div class="qz-card-check">
+                                        <label class="ui-check qz-card-check__check-box"><input type="checkbox" value=""><i class="dark-white"></i></label>
+                                    </div>
+                                    <div class="qz-card-info">
+                                        <div class="qz-card-info__img">
+                                            <img src="https://efir.io/img/denis_photo.jpg" alt="">
+                                        </div>
+                                        <div class="qz-card-info__detail">
+                                            <h3 class="qz-card-info__name"><span dir="ltr"><i class="fa fa-check-circle-o"></i> Смешные моменты с ЮТУБЕРАМИ™</span></h3>
+                                            <ul class="qz-card-info__tag">
+                                                <li class="qz-card-info__tag-item">Люди и блоги,</li>
+                                                <li class="qz-card-info__tag-item">Люди и блоги</li>
+                                            </ul>
+                                            <p class="qz-card-info__country">
+                                                <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                                                <span class="yt-picker-region-name">Россия</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="qz-card-aud">
+                                        <h4 class="qz-card-aud__header-table">Аудитория</h4>
+                                        <h4 class="qz-card-aud__header">
+                                            <span><i class="fa fa-female"></i> Ж. (60%) 25–34 года.</span>
+                                        </h4>
+                                        <ul class="qz-card-aud__audience">
+                                            <li class="qz-card-aud__audience-item">
+                                    <span class="qz-card-aud__audience-t"><i
+                                            class="fa fa-users"></i></span>
+                                                <span class="qz-card-aud__audience-m">Подписчики</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                            <li class="qz-card-aud__audience-item">
+                                                <span class="qz-card-aud__audience-t"><i class="fa fa-eye"></i></span>
+                                                <span class="qz-card-aud__audience-m">Просмотры</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                            <li class="qz-card-aud__audience-item">
+                                            <span class="qz-card-aud__audience-t">
+                                                <i class="fa fa-area-chart"></i>
+                                            </span>
+                                                <span class="qz-card-aud__audience-m">Индекс РП</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="qz-card-price">
+                                        <h4 class="qz-card-aud__header-table">Аудитория</h4>
+                                        <ul class="qz-card-price__price">
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Эксклюзив:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$100.00</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Интеграция:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.763</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Упоминание:</span>
+                                                <span class="qz-card-price__price-m">$0.02 / <i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.763</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Пре/пост-ролл:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.63</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="qz-card-item-wrap">
+                                <div class="qz-card-item">
+                                    <div class="qz-card-check">
+                                        <label class="ui-check qz-card-check__check-box"><input type="checkbox" value=""><i class="dark-white"></i></label>
+                                    </div>
+                                    <div class="qz-card-info">
+                                        <div class="qz-card-info__img">
+                                            <img src="https://efir.io/img/denis_photo.jpg" alt="">
+                                        </div>
+                                        <div class="qz-card-info__detail">
+                                            <h3 class="qz-card-info__name"><span dir="ltr"><i class="fa fa-check-circle-o"></i> Смешные моменты с ЮТУБЕРАМИ™</span></h3>
+                                            <ul class="qz-card-info__tag">
+                                                <li class="qz-card-info__tag-item">Люди и блоги,</li>
+                                                <li class="qz-card-info__tag-item">Люди и блоги</li>
+                                            </ul>
+                                            <p class="qz-card-info__country">
+                                                <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                                                <span class="yt-picker-region-name">Россия</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="qz-card-aud">
+                                        <h4 class="qz-card-aud__header-table">Аудитория</h4>
+                                        <h4 class="qz-card-aud__header">
+                                            <span><i class="fa fa-female"></i> Ж. (60%) 25–34 года.</span>
+                                        </h4>
+                                        <ul class="qz-card-aud__audience">
+                                            <li class="qz-card-aud__audience-item">
+                                    <span class="qz-card-aud__audience-t"><i
+                                            class="fa fa-users"></i></span>
+                                                <span class="qz-card-aud__audience-m">Подписчики</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                            <li class="qz-card-aud__audience-item">
+                                                <span class="qz-card-aud__audience-t"><i class="fa fa-eye"></i></span>
+                                                <span class="qz-card-aud__audience-m">Просмотры</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                            <li class="qz-card-aud__audience-item">
+                                            <span class="qz-card-aud__audience-t">
+                                                <i class="fa fa-area-chart"></i>
+                                            </span>
+                                                <span class="qz-card-aud__audience-m">Индекс РП</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="qz-card-price">
+                                        <h4 class="qz-card-aud__header-table">Аудитория</h4>
+                                        <ul class="qz-card-price__price">
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Эксклюзив:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$100.00</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Интеграция:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.763</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Упоминание:</span>
+                                                <span class="qz-card-price__price-m">$0.02 / <i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.763</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Пре/пост-ролл:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.63</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="qz-card-item-wrap">
+                                <div class="qz-card-item">
+                                    <div class="qz-card-check">
+                                        <label class="ui-check qz-card-check__check-box"><input type="checkbox" value=""><i class="dark-white"></i></label>
+                                    </div>
+                                    <div class="qz-card-info">
+                                        <div class="qz-card-info__img">
+                                            <img src="https://efir.io/img/denis_photo.jpg" alt="">
+                                        </div>
+                                        <div class="qz-card-info__detail">
+                                            <h3 class="qz-card-info__name"><span dir="ltr"><i class="fa fa-check-circle-o"></i> Смешные моменты с ЮТУБЕРАМИ™</span> ЮТУБЕРАМИ</h3>
+                                            <ul class="qz-card-info__tag">
+                                                <li class="qz-card-info__tag-item">Люди и блоги,</li>
+                                                <li class="qz-card-info__tag-item">Люди и блоги</li>
+                                            </ul>
+                                            <p class="qz-card-info__country">
+                                                <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                                                <span class="yt-picker-region-name">Россия</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="qz-card-aud">
+                                        <h4 class="qz-card-aud__header-table">Аудитория</h4>
+                                        <h4 class="qz-card-aud__header">
+                                            <span><i class="fa fa-female"></i> Ж. (60%) 25–34 года.</span>
+                                        </h4>
+                                        <ul class="qz-card-aud__audience">
+                                            <li class="qz-card-aud__audience-item">
+                                    <span class="qz-card-aud__audience-t"><i
+                                            class="fa fa-users"></i></span>
+                                                <span class="qz-card-aud__audience-m">Подписчики</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                            <li class="qz-card-aud__audience-item">
+                                                <span class="qz-card-aud__audience-t"><i class="fa fa-eye"></i></span>
+                                                <span class="qz-card-aud__audience-m">Просмотры</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                            <li class="qz-card-aud__audience-item">
+                                            <span class="qz-card-aud__audience-t">
+                                                <i class="fa fa-area-chart"></i>
+                                            </span>
+                                                <span class="qz-card-aud__audience-m">Индекс РП</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="qz-card-price">
+                                        <h4 class="qz-card-aud__header-table">Аудитория</h4>
+                                        <ul class="qz-card-price__price">
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Эксклюзив:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$100.00</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Интеграция:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.763</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Упоминание:</span>
+                                                <span class="qz-card-price__price-m">$0.02 / <i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.763</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Пре/пост-ролл:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.63</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="qz-card-item-wrap">
+                                <div class="qz-card-item">
+                                    <div class="qz-card-check">
+                                        <label class="ui-check qz-card-check__check-box"><input type="checkbox" value=""><i class="dark-white"></i></label>
+                                    </div>
+                                    <div class="qz-card-info">
+                                        <div class="qz-card-info__img">
+                                            <img src="https://efir.io/img/denis_photo.jpg" alt="">
+                                        </div>
+                                        <div class="qz-card-info__detail">
+                                            <h3 class="qz-card-info__name"><span dir="ltr"><i class="fa fa-check-circle-o"></i> Смешные моменты с ЮТУБЕРАМИ™</span></h3>
+                                            <ul class="qz-card-info__tag">
+                                                <li class="qz-card-info__tag-item">Люди и блоги,</li>
+                                                <li class="qz-card-info__tag-item">Люди и блоги</li>
+                                            </ul>
+                                            <p class="qz-card-info__country">
+                                                <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                                                <span class="yt-picker-region-name">Россия</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="qz-card-aud">
+                                        <h4 class="qz-card-aud__header-table">Аудитория</h4>
+                                        <h4 class="qz-card-aud__header">
+                                            <span><i class="fa fa-female"></i> Ж. (60%) 25–34 года.</span>
+                                        </h4>
+                                        <ul class="qz-card-aud__audience">
+                                            <li class="qz-card-aud__audience-item">
+                                    <span class="qz-card-aud__audience-t"><i
+                                            class="fa fa-users"></i></span>
+                                                <span class="qz-card-aud__audience-m">Подписчики</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                            <li class="qz-card-aud__audience-item">
+                                                <span class="qz-card-aud__audience-t"><i class="fa fa-eye"></i></span>
+                                                <span class="qz-card-aud__audience-m">Просмотры</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                            <li class="qz-card-aud__audience-item">
+                                            <span class="qz-card-aud__audience-t">
+                                                <i class="fa fa-area-chart"></i>
+                                            </span>
+                                                <span class="qz-card-aud__audience-m">Индекс РП</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="qz-card-price">
+                                        <h4 class="qz-card-aud__header-table">Аудитория</h4>
+                                        <ul class="qz-card-price__price">
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Эксклюзив:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$100.00</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Интеграция:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.763</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Упоминание:</span>
+                                                <span class="qz-card-price__price-m">$0.02 / <i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.763</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Пре/пост-ролл:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.63</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="qz-card-item-wrap">
+                                <div class="qz-card-item">
+                                    <div class="qz-card-check">
+                                        <label class="ui-check qz-card-check__check-box"><input type="checkbox" value=""><i class="dark-white"></i></label>
+                                    </div>
+                                    <div class="qz-card-info">
+                                        <div class="qz-card-info__img">
+                                            <img src="https://efir.io/img/denis_photo.jpg" alt="">
+                                        </div>
+                                        <div class="qz-card-info__detail">
+                                            <h3 class="qz-card-info__name"><span dir="ltr"><i class="fa fa-check-circle-o"></i> Смешные моменты с ЮТУБЕРАМИ™</span></h3>
+                                            <ul class="qz-card-info__tag">
+                                                <li class="qz-card-info__tag-item">Люди и блоги,</li>
+                                                <li class="qz-card-info__tag-item">Люди и блоги</li>
+                                            </ul>
+                                            <p class="qz-card-info__country">
+                                                <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                                                <span class="yt-picker-region-name">Россия</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="qz-card-aud">
+                                        <h4 class="qz-card-aud__header-table">Аудитория</h4>
+                                        <h4 class="qz-card-aud__header">
+                                            <span><i class="fa fa-female"></i> Ж. (60%) 25–34 года.</span>
+                                        </h4>
+                                        <ul class="qz-card-aud__audience">
+                                            <li class="qz-card-aud__audience-item">
+                                    <span class="qz-card-aud__audience-t"><i
+                                            class="fa fa-users"></i></span>
+                                                <span class="qz-card-aud__audience-m">Подписчики</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                            <li class="qz-card-aud__audience-item">
+                                                <span class="qz-card-aud__audience-t"><i class="fa fa-eye"></i></span>
+                                                <span class="qz-card-aud__audience-m">Просмотры</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                            <li class="qz-card-aud__audience-item">
+                                            <span class="qz-card-aud__audience-t">
+                                                <i class="fa fa-area-chart"></i>
+                                            </span>
+                                                <span class="qz-card-aud__audience-m">Индекс РП</span>
+                                                <span class="qz-card-aud__audience-b">48 763</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="qz-card-price">
+                                        <h4 class="qz-card-aud__header-table">Аудитория</h4>
+                                        <ul class="qz-card-price__price">
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Эксклюзив:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$100.00</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Интеграция:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.763</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Упоминание:</span>
+                                                <span class="qz-card-price__price-m">$0.02 / <i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.763</span>
+                                            </li>
+                                            <li class="qz-card-price__price-item">
+                                                <span class="qz-card-price__price-t">Пре/пост-ролл:</span>
+                                                <span class="qz-card-price__price-m">$0.02/<i
+                                                        class="fa fa-eye"></i></span>
+                                                <span class="qz-card-price__price-b">$48.63</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                        <ul class="pagination mt-5">
+                            <li><a href="">«</a></li>
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">»</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ############ PAGE END-->
+
+        </div>
+    </div>
+    <!-- / -->
+
+    <!-- ############ LAYOUT END-->
+
+</div>
+
+
+<div id="alertBonus" class="qz-alert">
+        <div class="qz-alert__text"><p>QaazQaaz has become efir.io <br><span>Enjoy our product in new design.</span>
+        </p>
+        </div>
+    <button class="qz-alert__close-btn"></button>
+</div>
+
+
+
+<!-- build:js scripts/app.html.js -->
+<!-- jQuery -->
+<script src="../../vendors/flatkit/libs/jquery/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+<script src="../../vendors/flatkit/libs/jquery/tether/dist/js/tether.min.js"></script>
+<script src="../../vendors/flatkit/libs/jquery/bootstrap/dist/js/bootstrap.js"></script>
+
+<!-- core -->
+<script src="../../vendors/flatkit/libs/jquery/underscore/underscore-min.js"></script>
+<script src="../../vendors/flatkit/libs/jquery/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+<script src="../../vendors/flatkit/libs/jquery/PACE/pace.min.js"></script>
+<script src="../../vendors/flatkit/libs/jquery/jquery.sparkline/dist/jquery.sparkline.retina.js"></script>
+<script src="../../vendors/flatkit/libs/jquery/ion.rangeSlider/js/ion-rangeSlider/ion.rangeSlider.js"></script>
+
+<script>
+
+    //    $('.inlinebar').sparkline('html', {type: 'bar', barColor: 'red'} );
+
+    $(".inlinebar").sparkline([5, 6, 7, 9, 9, 5, 3, 2, 2, 4, 6, 7], {
+        type: 'line',
+        width: '100% ',
+        height: '40',
+        lineColor: '#b2b2b2',
+        fillColor: '#d8d8d8',
+        spotColor: '#14120f',
+        minSpotColor: undefined,
+        maxSpotColor: undefined,
+        highlightSpotColor: undefined,
+        highlightLineColor: undefined
+    });
+
+
+    /* Range slider */
+
+    var $range = $(".js-range-slider"),
+            $inputFrom = $(".js-input-from"),
+            $inputTo = $(".js-input-to"),
+            instance,
+            min = 0,
+            max = 1000,
+            from = 0,
+            to = 0;
+
+    $range.ionRangeSlider({
+        type: "double",
+        min: min,
+        max: max,
+        from: 200,
+        to: 800,
+        onStart: updateInputs,
+        onChange: updateInputs
+    });
+    instance = $range.data("ionRangeSlider");
+
+    function updateInputs(data) {
+        from = data.from;
+        to = data.to;
+
+        $inputFrom.prop("value", from);
+        $inputTo.prop("value", to);
+    }
+
+    $inputFrom.on("input", function () {
+        var val = $(this).prop("value");
+
+        // validate
+        if (val < min) {
+            val = min;
+        } else if (val > to) {
+            val = to;
+        }
+
+        instance.update({
+            from: val
+        });
+    });
+
+    $inputTo.on("input", function () {
+        var val = $(this).prop("value");
+
+        // validate
+        if (val < from) {
+            val = from;
+        } else if (val > max) {
+            val = max;
+        }
+
+        instance.update({
+            to: val
+        });
+    });
+
+    /* end Range slider*/
+
+
+</script>
+
+<script src="../../vendors/flatkit/scripts/config.lazyload.js"></script>
+
+<script src="../../vendors/flatkit/scripts/palette.js"></script>
+<script src="../../vendors/flatkit/scripts/ui-load.js"></script>
+<script src="../../vendors/flatkit/scripts/ui-jp.js"></script>
+<script src="../../vendors/flatkit/scripts/ui-include.js"></script>
+<script src="../../vendors/flatkit/scripts/ui-device.js"></script>
+<script src="../../vendors/flatkit/scripts/ui-form.js"></script>
+<script src="../../vendors/flatkit/scripts/ui-nav.js"></script>
+<script src="../../vendors/flatkit/scripts/ui-screenfull.js"></script>
+<script src="../../vendors/flatkit/scripts/ui-scroll-to.js"></script>
+<script src="../../vendors/flatkit/scripts/ui-toggle-class.js"></script>
+
+<script src="../../vendors/flatkit/scripts/app.js"></script>
+
+<!-- ajax -->
+<script src="../../vendors/flatkit/libs/jquery/jquery-pjax/jquery.pjax.js"></script>
+<script src="../../vendors/flatkit/scripts/ajax.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

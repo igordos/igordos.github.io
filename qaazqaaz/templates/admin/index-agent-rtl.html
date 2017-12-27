@@ -38,12 +38,16 @@
     <link rel="stylesheet"
           href="../../vendors/flatkit/libs/jquery/ion.rangeSlider/css/ion.rangeSlider.skinNice.css">
 
-    <link rel="stylesheet"
-          href="../../styles/admin/index.css">
+    <!-- RTL -->
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/bootstrap-rtl/dist/bootstrap-rtl.css" type="text/css"/>
+    <link rel="stylesheet" href="../../vendors/flatkit/assets/styles/app.rtl.css" type="text/css"/>
+    <!-- END RTL -->
+
+    <link rel="stylesheet" href="../../styles/admin/index.css">
 
 
 </head>
-<body>
+<body dir="rtl">
 <div class="app" id="app">
 
     <!-- ############ LAYOUT START-->
@@ -51,8 +55,8 @@
     <!-- aside -->
     <div id="aside" class="app-aside modal nav-dropdown">
         <!-- fluid app aside -->
-        <div class="left navside black dk" data-layout="column">
-            <div class="navbar no-radius">
+        <div class="right navside black qz-black dk" data-layout="column">
+            <div class="navbar qz-white no-radius">
                 <!-- brand -->
                 <a class="navbar-brand">
                     <!--<div ui-include="'../assets/images/logo.svg'"></div>-->
@@ -153,41 +157,26 @@
 
                         <li>
                             <a href="#">
-                                <span class="nav-icon">
-                                    <i class="material-icons">email</i>
-                                </span>
                                 <span class="nav-text">Контакты</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="nav-icon">
-                                  <i class="material-icons">assignment_turned_in</i>
-                                </span>
                                 <span class="nav-text">Условия использования</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="nav-icon">
-                                  <i class="material-icons">group_work</i>
-                                </span>
                                 <span class="nav-text">Команда</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="nav-icon">
-                                  <i class="material-icons">description</i>
-                                </span>
                                 <span class="nav-text">Whitepaper</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span class="nav-icon">
-                                  <i class="material-icons">add_shopping_cart</i>
-                                </span>
                                 <span class="nav-text">ICO</span>
                             </a>
                         </li>
@@ -198,37 +187,13 @@
             <div class="b-t">
                 <nav ui-nav="">
                     <ul class="nav">
-                        <li>
-                            <div class="b-b b m-v-sm"></div>
-                        </li>
-                        <li class="no-bg">
-                            <a class="auto">
-                                <span class="nav-icon">
-                                  <i class="material-icons">search</i>
-                                </span>
-                                <span class="nav-text">Поиск</span>
-                            </a>
-                        </li>
-                        <li class="no-bg">
-                            <a>
-                                <span class="nav-icon">
-                                  <i class="material-icons"></i>
-                                </span>
-                                <span class="nav-text">
-                                  Поддержка
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <div class="b-b b m-t-sm"></div>
-                        </li>
-                        <li class="no-bg">
-                            <a>
-                                <span class="nav-icon">
-                                 <i class="material-icons"></i>
-                                </span>
-                                <span class="nav-text">Выйти</span>
-                            </a>
+                        <li class="text-muted p-2 qz-text-muted">
+                            <small>Вся представленная информация не является публичной офертой и носит исключительно
+                                ознакомительный характер. qaazqaaz.com не несет ответственности за достоверность,
+                                предоставляемой блоеграми информации. При этом мы делаем все, чтобы информация была
+                                максимально корректной. При использовании материалов сервиса ссылка на qaazqaaz.com
+                                обязательна
+                            </small>
                         </li>
                     </ul>
                 </nav>
@@ -242,7 +207,7 @@
         <div class="app-header white box-shadow">
             <div class="navbar navbar-toggleable-sm flex-row align-items-center">
                 <!-- Open side - Naviation on mobile -->
-                <a data-toggle="modal" data-target="#aside" class="hidden-lg-up mr-3">
+                <a data-toggle="modal" data-target="#aside" class="hidden-lg-up ml-3">
                     <i class="material-icons">&#xe5d2;</i>
                 </a>
                 <!-- / -->
@@ -252,16 +217,129 @@
                 </a>
 
                 <!-- navbar right -->
-                <ul class="nav navbar-nav ml-auto flex-row">
+                <ul class="nav navbar-nav mr-auto flex-row">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link" href="#">
+                            <span class="hidden-xs-down btn btn-sm rounded btn-outline b-black text-black">ICO</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
                             <span>Русский</span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-scale text-color" role="menu">
-                            <a class="dropdown-item" href="">Action</a>
-                            <a class="dropdown-item" href="">Another action</a>
-                            <a class="dropdown-item" href="">Something else here</a>
-                            <a class="dropdown-item" href="">Separated link</a>
+                        <div class="dropdown-menu dropdown-menu-scale text-color pull-left" role="menu">
+                            <a class="dropdown-item" rel="alternate" hreflang="de" href="#">Deutsch</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="en" href="#">English</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="es" href="#">Español</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="fr" href="#">Français</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="it" href="#">Italiano</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="pt" href="#">Português</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="tr" href="#">Türkçe</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="ru" href="#">Русский</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="uk" href="#">Українська</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="ja" href="#">日本語</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="zh" href="#">简体中文</a>
+                            <a class="dropdown-item" rel="alternate" hreflang="ko" href="#">한국어</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-expanded="false">
+                            <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                            <span class="yt-picker-region-name hidden-xs-down">Russia</span>
+                        </a>
+                        <div class="dropdown-menu qz-dropdown-menu dropdown-menu-scale text-color pull-left" role="menu">
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_AR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Argentina</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_AU yt-sprite"></span>
+                                <span class="yt-picker-region-name">Australia</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_AT yt-sprite"></span>
+                                <span class="yt-picker-region-name">Austria</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_BE yt-sprite"></span>
+                                <span class="yt-picker-region-name">Belgium</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_BR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Brazil</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CA yt-sprite"></span>
+                                <span class="yt-picker-region-name">Canada</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CN yt-sprite"></span>
+                                <span class="yt-picker-region-name">China</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CO yt-sprite"></span>
+                                <span class="yt-picker-region-name">Colombia</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_FR yt-sprite"></span>
+                                <span class="yt-picker-region-name">France</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_DE yt-sprite"></span>
+                                <span class="yt-picker-region-name">Germany</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_IN yt-sprite"></span>
+                                <span class="yt-picker-region-name">India</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_IT yt-sprite"></span>
+                                <span class="yt-picker-region-name">Italy</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_JP yt-sprite"></span>
+                                <span class="yt-picker-region-name">Japan</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_KR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Korea</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_MX yt-sprite"></span>
+                                <span class="yt-picker-region-name">Mexico</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_PT yt-sprite"></span>
+                                <span class="yt-picker-region-name">Portugal</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_RU yt-sprite"></span>
+                                <span class="yt-picker-region-name">Russia</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_ES yt-sprite"></span>
+                                <span class="yt-picker-region-name">Spain</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_CH yt-sprite"></span>
+                                <span class="yt-picker-region-name">Switzerland</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_TR yt-sprite"></span>
+                                <span class="yt-picker-region-name">Turkey</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_GB yt-sprite"></span>
+                                <span class="yt-picker-region-name">UK</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_UA yt-sprite"></span>
+                                <span class="yt-picker-region-name">Ukraine</span>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="yt-picker-region-flag flag_US yt-sprite"></span>
+                                <span class="yt-picker-region-name">USA</span>
+                            </a>
                         </div>
                     </li>
                     <li class="nav-item dropdown hidden-xs-down">
@@ -269,7 +347,7 @@
                         <a class="nav-link" href="" data-toggle="dropdown" aria-expanded="false">
                             <span>Вход</span>
                         </a>
-                        <div class="dropdown-menu w-xl animated fadeInUp pull-right p-a-0">
+                        <div class="dropdown-menu w-xl animated fadeInUp pull-left p-a-0">
                             <div class="box-color m-a-0">
                                 <div class="box-header b-b p-y-sm">
                                     <strong>Sign in</strong></div>
@@ -300,7 +378,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="">
-                            <span class="hidden-xs-down btn btn-sm rounded primary text-u-c _600">Регистрация</span>
+                            <span class="hidden-xs-down btn btn-sm rounded orange text-u-c _600">Регистрация</span>
                             <span class="hidden-sm-up btn btn-sm btn-icon rounded orange">
                                 <i class="material-icons"></i>
                             </span></a>
@@ -316,166 +394,106 @@
                     2016–2017 © efir.io
                     <a ui-scroll-to="content"><i class="fa fa-long-arrow-up p-x-sm"></i></a>
                 </div>
-                <div class="nav">
-                    <span class="nav-link" href="#">Вся представленная информация не является публичной офертой и носит исключительно ознакомительный характер. qaazqaaz.com не несет ответственности за достоверность, предоставляемой блоеграми информации. При этом мы делаем все, чтобы информация была максимально корректной. При использовании материалов сервиса ссылка на qaazqaaz.com обязательна</span>
-                </div>
             </div>
         </div>
         <div ui-view class="app-body" id="view">
 
             <!-- ############ PAGE START-->
-            <div class="p-a white lt box-shadow">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h4 class="mt-2 mb-0 _300">Поддержка</h4>
+            <!--<div class="p-a white lt box-shadow">-->
+            <!--<div class="row">-->
+            <!--<div class="col-sm-6">-->
+            <!--<h4 class="mt-2 mb-0 _300">Подбор блогера для рекламы на youtube</h4>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <div class="container-fluid pr-4">
+                <div class="row white">
+                    <div class="col-lg-10 p-4">
+                        <h1 class="mt-4 mb-4">Агенства, работающие с блогерами YouTube</h1>
+
+
+                        <div class="card p-3 mb-2">
+                            <div class="qz-ag">
+                                <img src="http://www.tubefilter.com/wp-content/uploads/2014/11/buzz-my-videos-logo.jpg"
+                                     class="qz-ag-img">
+                                <div class="qz-ag-info">
+                                    <h5>
+                                        <a href="">BuzzMyVideos</a>
+                                    </h5>
+                                    <p>We have the talented creators you are looking for,
+                                        that can create bespoke content for your channel or publish it in their
+                                        own channel in order to connect & engage with your target audience on
+                                        YouTube and other social media platforms.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card p-3 mb-2">
+                            <div class="qz-ag">
+                                <img src="http://www.tubefilter.com/wp-content/uploads/2014/11/buzz-my-videos-logo.jpg"
+                                     class="qz-ag-img">
+                                <div class="qz-ag-info">
+                                    <h5>
+                                        <a href="">BuzzMyVideos</a>
+                                    </h5>
+                                    <p>We have the talented creators you are looking for,
+                                        that can create bespoke content for your channel or publish it in their
+                                        own channel in order to connect & engage with your target audience on
+                                        YouTube and other social media platforms.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card p-3 mb-2">
+                            <div class="qz-ag">
+                                <img src="http://www.tubefilter.com/wp-content/uploads/2014/11/buzz-my-videos-logo.jpg"
+                                     class="qz-ag-img">
+                                <div class="qz-ag-info">
+                                    <h5>
+                                        <a href="">BuzzMyVideos</a>
+                                    </h5>
+                                    <p>We have the talented creators you are looking for,
+                                        that can create bespoke content for your channel or publish it in their
+                                        own channel in order to connect & engage with your target audience on
+                                        YouTube and other social media platforms.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card p-3 mb-2">
+                            <div class="qz-ag">
+                                <img src="http://www.tubefilter.com/wp-content/uploads/2014/11/buzz-my-videos-logo.jpg"
+                                     class="qz-ag-img">
+                                <div class="qz-ag-info">
+                                    <h5>
+                                        <a href="">BuzzMyVideos</a>
+                                    </h5>
+                                    <p>We have the talented creators you are looking for,
+                                        that can create bespoke content for your channel or publish it in their
+                                        own channel in order to connect & engage with your target audience on
+                                        YouTube and other social media platforms.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <ul class="pagination mt-5">
+                            <li><a href="">«</a></li>
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">»</a></li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
 
-            <div class="padding">
-                <div class="container">
-
-                    <!--<div class="box p-4">-->
-                        <!--<h1 class="mb-4">Команда проекта</h1>-->
-
-                        <!--<div class="bs-callout bs-callout-warning">-->
-                            <!--<h4 class="mb-4">Присоединяйся к нашей команде</h4>-->
-                            <!--<p>В совершенстве владеешь английским, испанским, португальским или французским? Или уже-->
-                                <!--проходил ICO в других стартапах? Или хорошо разбираешься в финансовых инструментах и-->
-                                <!--хочешь погрузиться в рынок криптовалюты? А может просто мечтаешь общаться с сотнями-->
-                                <!--популярных блогеров со всего мира? Для проведения ICO открыты позиции-->
-                                <!--community-менеджера (взаимодействие с сообществом и ответы на вопросы 24/7),-->
-                                <!--bounty-менеджера (ведение bounty-программы), PR-специалиста (работа со СМИ, подготовка-->
-                                <!--публикаций). Будьте в авангарде технологий, станьте специалистом в ICO с qaazqaaz.com.-->
-                                <!--Также открыты позиции региональных-менеджеров (работа с блогерами и агентствами из-->
-                                <!--разных стран мира). Пиши на manager@qaazqaaz.com..</p>-->
-                        <!--</div>-->
-
-
-                    <!--</div>-->
-
-                    <div class="m-b" id="accordion">
-                        <div class="panel box no-border m-b-xs">
-                            <div class="box-header p-y-sm">
-                                <span class="pull-right label text-sm">3214</span>
-                                <a data-toggle="collapse" data-parent="#accordion" data-target="#c_1" aria-expanded="false" class="collapsed">
-                                    Q: How to create an icon like the demo app
-                                </a>
-                            </div>
-                            <div id="c_1" class="collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="box-body">
-                                    <p class="text-sm text-muted"><span class="text-md pull-left w-32 m-r rounded success">A</span> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, <br><br>raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel box no-border m-b-xs">
-                            <div class="box-header p-y-sm">
-                                <span class="pull-right label text-sm">430</span>
-                                <a data-toggle="collapse" data-parent="#accordion" data-target="#c_2" class="collapsed" aria-expanded="false">
-                                    Q: How to build my custom color
-                                </a>
-                            </div>
-                            <div id="c_2" class="collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="box-body">
-                                    <p class="text-sm text-muted"><span class="text-md pull-left w-32 m-r rounded info">A</span> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel box no-border m-b-xs">
-                            <div class="box-header p-y-sm">
-                                <span class="pull-right label text-sm">230</span>
-                                <a data-toggle="collapse" data-parent="#accordion" data-target="#c_3" class="collapsed" aria-expanded="false">
-                                    Q: What is the app requriements
-                                </a>
-                            </div>
-                            <div id="c_3" class="collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="box-body">
-                                    <span class="text-md pull-left w-32 m-r rounded warning">A</span>
-                                    <p class="text-sm text-muted clear">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel box no-border m-b-xs">
-                            <div class="box-header p-y-sm">
-                                <span class="pull-right label text-sm">49</span>
-                                <a data-toggle="collapse" data-parent="#accordion" data-target="#c_4" class="collapsed" aria-expanded="false">
-                                    Q: Where to find the API
-                                </a>
-                            </div>
-                            <div id="c_4" class="collapse" aria-expanded="false" style="height: 0px;">
-                                <div class="box-body">
-                                    <span class="text-md pull-left w-32 m-r rounded primary">A</span>
-                                    <p class="text-sm text-muted clear">Vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. nesciunt you probably haven't heard of them accusamus labore sustainable
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel box no-border m-b-xs">
-                            <div class="box-header p-y-sm">
-                                <span class="pull-right label text-sm">6</span>
-                                <a data-toggle="collapse" data-parent="#accordion" data-target="#c_5" class="collapsed" aria-expanded="false">
-                                    Q: How to add my router
-                                </a>
-                            </div>
-                            <div id="c_5" class="collapse" aria-expanded="false">
-                                <div class="box-body">
-                                    <span class="text-md pull-left w-32 m-r rounded dark">A</span>
-                                    <p class="text-sm text-muted clear">Vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. nesciunt you probably haven't heard of them accusamus labore sustainable
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="box-header"><h3>Сообщения <span class="label success">1</span></h3></div>
-                        <div class="box-body">
-                            <div class="streamline m-b m-l">
-                                <div class="sl-item">
-                                    <div class="sl-left"><img src="https://static.tildacdn.com/tild3462-3665-4963-a435-326334303636/vinokurov.jpg" class="img-circle"></div>
-                                    <div class="sl-content">
-                                        <div class="sl-date text-muted">2 минуты назад</div>
-                                        <div class="sl-author"><a href="">Лиза, Менеджер</a></div>
-                                        <div><p>Привет, я - Елизавета. Возможно мы уже общались. Если нет, пишите на manager@qaazqaaz.com. Отвечу на любые вопросы по сервису. Помогу с размещением ваших предложений, доступом к расширенной статистике и с радостью приму ваши предложения по развитию сервиса.</p></div>
-                                    </div>
-                                </div>
-                                <!--<div class="sl-item">-->
-                                    <!--<div class="sl-left"><img src="../assets/images/a2.jpg" class="img-circle"></div>-->
-                                    <!--<div class="sl-content">-->
-                                        <!--<div class="sl-date text-muted">8:30</div>-->
-                                        <!--<div class="sl-author"><a href="">Moke</a></div>-->
-                                        <!--<div><p>Call to customer <a href="" class="text-info">Jacob</a> and discuss the-->
-                                            <!--detail.</p>-->
-                                            <!--<p><span class="inline p-a-xs b dark-white"><img-->
-                                                    <!--src="../assets/images/c1.jpg" class="img-responsive"></span></p>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                                <div class="box m-a-0 b-a" id="reply-1" aria-expanded="false">
-                                    <form class="ng-pristine ng-valid"><textarea class="form-control no-border"
-                                                                                 rows="3"
-                                                                                 placeholder="Напишите сообщение"></textarea>
-                                    </form>
-                                    <div class="box-footer clearfix">
-                                        <button class="btn btn-info pull-right btn-sm">Отправить</button>
-                                        <ul class="nav nav-pills nav-sm">
-                                            <li class="nav-item"><a class="nav-link" href=""><i
-                                                    class="fa fa-camera text-muted"></i></a></li>
-                                            <li class="nav-item"><a class="nav-link" href=""><i
-                                                    class="fa fa-video-camera text-muted"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
 
             <!-- ############ PAGE END-->
 
