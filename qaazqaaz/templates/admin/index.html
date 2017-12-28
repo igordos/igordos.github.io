@@ -373,7 +373,7 @@
                         <h4 class="mb-4"><b>Подбор блогера для рекламы на YouTube</b></h4>
 
                         <div class="input-group">
-                            <input type="text" class="form-control"
+                            <input id="autocomplete" type="text" class="form-control"
                                    placeholder="Введите название блога">
                             <span class="input-group-btn">
                                 <button class="btn orange" type="button">Поиск</button>
@@ -398,7 +398,7 @@
 
                         <p class="qz-filter-count">Найдено 1 из 100000</p>
 
-                        <div class="row">
+                        <div class="row justify-content-center">
                             <div class="col-lg-9 pl-4 pr-4 pb-4">
                                 <div class="panel panel-default pt-3">
                                     <div id="show_filter_youtube" class="collapse "
@@ -1968,6 +1968,8 @@
 <!--<script src="../../vendors/flatkit/libs/jquery/jquery.sparkline/dist/jquery.sparkline.retina.js"></script>-->
 <script src="../../vendors/flatkit/libs/jquery/ion.rangeSlider/js/ion-rangeSlider/ion.rangeSlider.js"></script>
 
+<script src="../../vendors/jquery.autocomplete/jquery.autocomplete.min.js"></script>
+
 <script>
 
     //    $('.inlinebar').sparkline('html', {type: 'bar', barColor: 'red'} );
@@ -1984,6 +1986,24 @@
     //    highlightSpotColor: undefined,
     //    highlightLineColor: undefined
     //  });
+
+    /* Autocomplete */
+
+    var countries = [
+        { value: 'Maria AzarenokPRO', data: '1' },
+        { value: 'PROavtoBLOG Сергей Гусев', data: '2' },
+        { value: 'Just Play', data: '3' },
+        { value: 'REKOSHET SHOW', data: '4' }
+    ];
+
+    $('#autocomplete').autocomplete({
+        lookup: countries,
+        onSelect: function (suggestion) {
+            alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+        }
+    });
+
+    /* end Autocomplete */
 
 
     /* Range slider */
