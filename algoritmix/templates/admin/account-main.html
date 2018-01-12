@@ -608,7 +608,7 @@
                             <span class="card-header__mute-text">15.12.2017</span>
                         </div>
                         <div class="card-body">
-                            <div id="chartPie2" class="chart-pie">
+                            <div id="chartPie3" class="chart-pie">
                             </div>
                         </div>
                         <div class="card-sub-footer">
@@ -670,7 +670,7 @@
                             <h2 class="card-header__title">Портфель 4</h2>
                         </div>
                         <div class="card-body">
-                            <div id="chartPie2" class="chart-pie">
+                            <div id="chartPie4" class="chart-pie">
                             </div>
                         </div>
                         <div class="card-sub-footer">
@@ -735,7 +735,7 @@
                             <h2 class="card-header__title">Портфель 5</h2>
                         </div>
                         <div class="card-body">
-                            <div id="chartPie2" class="chart-pie">
+                            <div id="chartPie5" class="chart-pie">
                             </div>
                         </div>
                         <div class="card-sub-footer">
@@ -945,151 +945,161 @@
 
 <script>
 
-    ////////////////////////////////////////////////////////////
-    //////////////////////// Set-up ////////////////////////////
-    ////////////////////////////////////////////////////////////
+    var donutData = {
+        data: [
+            {name: "GPU (12,2%)", value: 12.2},
+            {name: "Bitcoin (24,5%)", value: 24.5},
+            {name: "Litecoin (31,2%)", value: 31.2},
+            {name: "Dash (19,4%)", value: 19.4},
+        ],
+        totalPower: '3,5 МВт'
+    };
 
-    var screenWidth = window.innerWidth;
+    drawDonutGraph('#chartPie', donutData);
+    drawDonutGraph('#chartPie2', donutData);
+    drawDonutGraph('#chartPie3', donutData);
+    drawDonutGraph('#chartPie4', donutData);
+    drawDonutGraph('#chartPie5', donutData);
 
-    //    var chartWidth = 390,
-    //            chartHeight = 430;
+    function drawDonutGraph(id, donutData) {
 
-    var chartWidth = 330,
-            chartHeight = 390;
+        ////////////////////////////////////////////////////////////
+        //////////////////////// Set-up ////////////////////////////
+        ////////////////////////////////////////////////////////////
 
-    var margin = {left: 40, top: 40, right: 40, bottom: 40};
+        var screenWidth = window.innerWidth;
 
-    if (window.matchMedia('(max-width: 760px)').matches) {
-        chartWidth = 300;
-        chartHeight = 360;
-        margin = {left: 40, top: 40, right: 40, bottom: 40};
+        var chartWidth = 330,
+                chartHeight = 390;
+
+        var margin = {left: 40, top: 40, right: 40, bottom: 40};
+
+        if (window.matchMedia('(max-width: 760px)').matches) {
+            chartWidth = 300;
+            chartHeight = 360;
+            margin = {left: 40, top: 40, right: 40, bottom: 40};
+        }
+
+//        if (window.matchMedia('(max-width: 480px)').matches) {
+//            chartWidth = 300;
+//            chartHeight = 400;
+//            margin = {left: 40, top: 40, right: 40, bottom: 40};
+//        }
+
+        var width = Math.min(screenWidth, chartWidth) - margin.left - margin.right,
+                height = Math.min(screenWidth, chartHeight) - margin.top - margin.bottom;
+
+        var svg = d3.select(id).append("svg")
+                .attr("width", (width + margin.left + margin.right))
+                .attr("height", (height + margin.top + margin.bottom))
+                .append("g").attr("class", "wrapper")
+                .attr("transform", "translate(" + (width / 2 + margin.left) + "," + (height / 2 + margin.top) + ")");
+
+        //////////////////////////////////////////////////////////////
+        ///////////////////// Data &  Scales /////////////////////////
+        //////////////////////////////////////////////////////////////
+
+        //Create a color scale
+        //    var colorScale = d3.scale.linear()
+        //            .domain([1,3.5,6])
+        //            .range(["#4801ff", "#ffffbf", "#d7191c"])
+        //            .interpolate(d3.interpolateHcl);
+
+        var colorScale = d3.scaleOrdinal()
+                .range(["#e6e9f0", "#5069fd", "#cdd7e7", "#f6f7fa"]);
+
+        //Create an arc function
+        var arc = d3.arc()
+                .innerRadius(width * 0.75 / 2 + 10)
+                .outerRadius(width * 0.75 / 2 + 45);
+
+        //Turn the pie chart 90 degrees counter clockwise, so it starts at the left
+        var pie = d3.pie()
+                .startAngle(-70 * Math.PI / 180)
+                .endAngle(-70 * Math.PI / 180 + 2 * Math.PI)
+                .value(function (d) {
+                    return d.value;
+                })
+                .padAngle(.01)
+                .sort(null);
+
+        //////////////////////////////////////////////////////////////
+        //////////////////// Create Chart //////////////////////
+        //////////////////////////////////////////////////////////////
+
+        svg.append("text")
+                .attr("dy", "10px")
+                .style("text-anchor", "middle")
+                .attr("class", "inner-circle")
+                .attr("fill", "#36454f")
+                .text(function (d) {
+                    return donutData.totalPower;
+                });
+
+        //Create the donut slices and also the invisible arcs for the text
+        svg.selectAll(".donutArcs")
+                .data(pie(donutData.data))
+                .enter().append("path")
+                .attr("class", "donutArcs")
+                .attr("d", arc)
+                .style("fill", function (d, i) {
+                    if (i === 7) return "#CCCCCC"; //Other
+                    else return colorScale(i);
+                })
+                .each(function (d, i) {
+                    //Search pattern for everything between the start and the first capital L
+                    var firstArcSection = /(^.+?)L/;
+
+                    //Grab everything up to the first Line statement
+                    var newArc = firstArcSection.exec(d3.select(this).attr("d"))[1];
+                    //Replace all the comma's so that IE can handle it
+                    newArc = newArc.replace(/,/g, " ");
+
+                    //If the end angle lies beyond a quarter of a circle (90 degrees or pi/2)
+                    //flip the end and start position
+                    if (d.endAngle > 90 * Math.PI / 180) {
+                        var startLoc = /M(.*?)A/,		//Everything between the first capital M and first capital A
+                                middleLoc = /A(.*?)0 0 1/,	//Everything between the first capital A and 0 0 1
+                                endLoc = /0 0 1 (.*?)$/;	//Everything between the first 0 0 1 and the end of the string (denoted by $)
+                        //Flip the direction of the arc by switching the start en end point (and sweep flag)
+                        //of those elements that are below the horizontal line
+                        var newStart = endLoc.exec(newArc)[1];
+                        var newEnd = startLoc.exec(newArc)[1];
+                        var middleSec = middleLoc.exec(newArc)[1];
+
+                        //Build up the new arc notation, set the sweep-flag to 0
+                        newArc = "M" + newStart + "A" + middleSec + "0 0 0 " + newEnd;
+                    }//if
+
+                    //Create a new invisible arc that the text can flow along
+                    svg.append("path")
+                            .attr("class", "hiddenDonutArcs")
+                            .attr("id", "donutArc" + i)
+                            .attr("d", newArc)
+                            .style("fill", "none");
+                });
+
+        //Append the label names on the outside
+        svg.selectAll(".donutText")
+                .data(pie(donutData.data))
+                .enter().append("text")
+                .attr("class", "donutText")
+                //Move the labels below the arcs for those slices with an end angle greater than 90 degrees
+                .attr("dy", function (d, i) {
+                    return (d.endAngle > 90 * Math.PI / 180 ? 18 : -11);
+                })
+                .append("textPath")
+                .attr("startOffset", "50%")
+                .style("text-anchor", "middle")
+                .attr("xlink:href", function (d, i) {
+                    return "#donutArc" + i;
+                })
+                .text(function (d) {
+                    return d.data.name;
+                });
+
     }
 
-//    if (window.matchMedia('(max-width: 768px)').matches) {
-//        chartWidth = 330;
-//        chartHeight = 390;
-//        margin = {left: 40, top: 40, right: 40, bottom: 40};
-//    }
-//
-    var width = Math.min(screenWidth, chartWidth) - margin.left - margin.right,
-            height = Math.min(screenWidth, chartHeight) - margin.top - margin.bottom;
-
-    var svg = d3.select("#chartPie").append("svg")
-            .attr("width", (width + margin.left + margin.right))
-            .attr("height", (height + margin.top + margin.bottom))
-            .append("g").attr("class", "wrapper")
-            .attr("transform", "translate(" + (width / 2 + margin.left) + "," + (height / 2 + margin.top) + ")");
-
-    //////////////////////////////////////////////////////////////
-    ///////////////////// Data &  Scales /////////////////////////
-    //////////////////////////////////////////////////////////////
-
-    //Some random data
-    var donutData = [
-        {name: "GPU (12,2%)", value: 12.2},
-        {name: "Bitcoin (24,5%)", value: 24.5},
-        {name: "Litecoin (31,2%)", value: 31.2},
-        {name: "Dash (19,4%)", value: 19.4},
-    ];
-
-    //Create a color scale
-    //    var colorScale = d3.scale.linear()
-    //            .domain([1,3.5,6])
-    //            .range(["#4801ff", "#ffffbf", "#d7191c"])
-    //            .interpolate(d3.interpolateHcl);
-
-    var colorScale = d3.scaleOrdinal()
-            .range(["#e6e9f0", "#5069fd", "#cdd7e7", "#f6f7fa"]);
-
-    //Create an arc function
-    var arc = d3.arc()
-            .innerRadius(width * 0.75 / 2)
-            .outerRadius(width * 0.75 / 2 + 45);
-
-    //Turn the pie chart 90 degrees counter clockwise, so it starts at the left
-    var pie = d3.pie()
-            .startAngle(-70 * Math.PI / 180)
-            .endAngle(-70 * Math.PI / 180 + 2 * Math.PI)
-            .value(function (d) {
-                return d.value;
-            })
-            .padAngle(.01)
-            .sort(null);
-
-    //////////////////////////////////////////////////////////////
-    //////////////////// Create Chart //////////////////////
-    //////////////////////////////////////////////////////////////
-
-    svg.append("text")
-            .attr("dy", "10px")
-            .style("text-anchor", "middle")
-            .attr("class", "inner-circle")
-            .attr("fill", "#36454f")
-            .text(function (d) {
-                return '3,5 МВт';
-            });
-
-    //Create the donut slices and also the invisible arcs for the text
-    svg.selectAll(".donutArcs")
-            .data(pie(donutData))
-            .enter().append("path")
-            .attr("class", "donutArcs")
-            .attr("d", arc)
-            .style("fill", function (d, i) {
-                if (i === 7) return "#CCCCCC"; //Other
-                else return colorScale(i);
-            })
-            .each(function (d, i) {
-                //Search pattern for everything between the start and the first capital L
-                var firstArcSection = /(^.+?)L/;
-
-                //Grab everything up to the first Line statement
-                var newArc = firstArcSection.exec(d3.select(this).attr("d"))[1];
-                //Replace all the comma's so that IE can handle it
-                newArc = newArc.replace(/,/g, " ");
-
-                //If the end angle lies beyond a quarter of a circle (90 degrees or pi/2)
-                //flip the end and start position
-                if (d.endAngle > 90 * Math.PI / 180) {
-                    var startLoc = /M(.*?)A/,		//Everything between the first capital M and first capital A
-                            middleLoc = /A(.*?)0 0 1/,	//Everything between the first capital A and 0 0 1
-                            endLoc = /0 0 1 (.*?)$/;	//Everything between the first 0 0 1 and the end of the string (denoted by $)
-                    //Flip the direction of the arc by switching the start en end point (and sweep flag)
-                    //of those elements that are below the horizontal line
-                    var newStart = endLoc.exec(newArc)[1];
-                    var newEnd = startLoc.exec(newArc)[1];
-                    var middleSec = middleLoc.exec(newArc)[1];
-
-                    //Build up the new arc notation, set the sweep-flag to 0
-                    newArc = "M" + newStart + "A" + middleSec + "0 0 0 " + newEnd;
-                }//if
-
-                //Create a new invisible arc that the text can flow along
-                svg.append("path")
-                        .attr("class", "hiddenDonutArcs")
-                        .attr("id", "donutArc" + i)
-                        .attr("d", newArc)
-                        .style("fill", "none");
-            });
-
-    //Append the label names on the outside
-    svg.selectAll(".donutText")
-            .data(pie(donutData))
-            .enter().append("text")
-            .attr("class", "donutText")
-            //Move the labels below the arcs for those slices with an end angle greater than 90 degrees
-            .attr("dy", function (d, i) {
-                return (d.endAngle > 90 * Math.PI / 180 ? 18 : -11);
-            })
-            .append("textPath")
-            .attr("startOffset", "50%")
-            .style("text-anchor", "middle")
-            .attr("xlink:href", function (d, i) {
-                return "#donutArc" + i;
-            })
-            .text(function (d) {
-                return d.data.name;
-            });
 
 </script>
 
