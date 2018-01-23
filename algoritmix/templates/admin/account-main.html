@@ -49,16 +49,62 @@
                 <h1 class="page-title">Профиль</h1>
             </div>
             <div class="grid">
+                <div class="col-4 col_pr col_flex">
+                    <div class="card card_flex-grow">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Портфель 3</h2>
+                            <span class="card-header__mute-text">15.12.2017</span>
+                        </div>
+                        <div class="card-body">
+                            <div id="chartPie3" class="chart-pie">
+                            </div>
+                        </div>
+                        <div class="card-sub-footer">
+                            <span class="card-sub-footer__mute-text">Ожидание оплаты</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col_pl col_flex">
+                    <div class="card card_flex-grow">
+                        <div class="card-header">
+                            <h2 class="card-header__title">Детализация</h2>
+                        </div>
+                        <div class="card-sub-header">
+                            <ul class="tabs">
+                                <li class="tabs__item active">
+                                    <a class="tabs__link" href="#home" data-toggle="tab">Доставка</a>
+                                </li>
+                                <li class="tabs__item">
+                                    <a class="tabs__link" href="#home2" data-toggle="tab">Список оборудования</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="home">
+                                    1
+                                </div>
+                                <div class="tab-pane" id="home2">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-sub-footer">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
                 <div class="col-12">
                     <div class="card card_flex-grow">
                         <div class="card-sub-header card-sub-header_bbn">
                             <div class="card-text">
-                                <p class="card-text__text card-text__text_mb">Внимание, оборудование S9 в ваших
-                                    портфелях
-                                    скоро станет
-                                    нерентабельным. Если в течение месяца не истребуете его, то оно будет
-                                    утилизировано.</p>
-                                <a class="btn-link-uc" href="#">Истребовать</a>
+                                <p class="card-text__text card-text__text_mb">
+                                    <b>Поставка:</b> 30 апреля 2018 г. <br>
+                                    <b>Запуск:</b> 15 мая 2018 г.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -72,13 +118,14 @@
                         </div>
                         <div class="card-body">
                             <div id="chartPie" class="chart-pie">
-                                <svg width="330" height="390"><g class="wrapper" transform="translate(165,195)"><text dy="10px" class="inner-circle" fill="#36454f" style="text-anchor: middle;">3,5 МВт</text><path class="donutArcs" d="M-130.0936163936335,-48.241200996929244A138.75,138.75,0,0,1,-46.96294221207737,-130.56050152624675L-31.987108821776204,-88.12427230464856A93.75,93.75,0,0,0,-87.80630897852106,-32.849879810563856Z" style="fill: rgb(230, 233, 240);"></path><path class="donutArcs" d="M-45.38386049481322,-131.11776274245733A138.75,138.75,0,0,1,137.10812483629505,-21.282025370601747L92.5985845116555,-14.648025342611668A93.75,93.75,0,0,0,-30.408027104512033,-88.68153352085913Z" style="fill: rgb(80, 105, 253);"></path><path class="donutArcs" d="M137.3549806090317,-19.625794299658757A138.75,138.75,0,0,1,-68.51462833304565,120.65367049694186L-46.057338345911,81.65650056480669A93.75,93.75,0,0,0,92.8454402843922,-12.99179427166868Z" style="fill: rgb(205, 215, 231);"></path><path class="donutArcs" d="M-69.96574025308252,119.81801905739466A138.75,138.75,0,0,1,-130.6663382008191,-46.667660764057636L-88.3790307857066,-31.276339577692337A93.75,93.75,0,0,0,-47.50845026594788,80.82084912525949Z" style="fill: rgb(246, 247, 250);"></path><path class="hiddenDonutArcs" id="donutArc0" d="M-130.0936163936335 -48.241200996929244A138.75 138.75 0 0 1 -46.96294221207737 -130.56050152624675" style="fill: none;"></path><path class="hiddenDonutArcs" id="donutArc1" d="M-45.38386049481322 -131.11776274245733A138.75 138.75 0 0 1 137.10812483629505 -21.282025370601747" style="fill: none;"></path><path class="hiddenDonutArcs" id="donutArc2" d="M-68.51462833304565 120.65367049694186A138.75 138.75 0 0 0 137.3549806090317 -19.625794299658757" style="fill: none;"></path><path class="hiddenDonutArcs" id="donutArc3" d="M-130.6663382008191 -46.667660764057636A138.75 138.75 0 0 0 -69.96574025308252 119.81801905739466" style="fill: none;"></path><text class="donutText" dy="-11"><textPath startOffset="50%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#donutArc0" style="text-anchor: middle;">GPU (12,2%)</textPath></text><text class="donutText" dy="-11"><textPath startOffset="50%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#donutArc1" style="text-anchor: middle;">Bitcoin (24,5%)</textPath></text><text class="donutText" dy="18"><textPath startOffset="50%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#donutArc2" style="text-anchor: middle;">Litecoin (31,2%)</textPath></text><text class="donutText" dy="18"><textPath startOffset="50%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#donutArc3" style="text-anchor: middle;">Dash (19,4%)</textPath></text></g></svg></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-8 col_pl">
                     <div class="card">
-                        <form method="post"><input type="hidden" name="csrfmiddlewaretoken" value="ZXYvLgM7tS4daFVidAKOsQgHBOYzGRAVF8N0fCmtH8EsCjRz1p3AoSNQQ9ELyafG">
+                        <form method="post"><input type="hidden" name="csrfmiddlewaretoken"
+                                                   value="ZXYvLgM7tS4daFVidAKOsQgHBOYzGRAVF8N0fCmtH8EsCjRz1p3AoSNQQ9ELyafG">
                             <div class="card-header">
                                 <h2 class="card-header__title">Детализация</h2>
                             </div>
@@ -113,13 +160,15 @@
                                                                 MH/s</p>
                                                         </div>
                                                         <div class="info-dropdown__nav-item">
-                                                            <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
+                                                            <p class="info-dropdown__nav-item-t">Потребляемая
+                                                                мощность</p>
                                                             <p class="info-dropdown__nav-item-m">
 
                                                                 1600,0 W
 
                                                             </p>
-                                                            <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
+                                                            <p class="info-dropdown__nav-item-b">+7% БП, +11%
+                                                                Вентиляция</p>
                                                         </div>
                                                         <div class="info-dropdown__nav-item">
                                                             <p class="info-dropdown__nav-item-t">Чип</p>
@@ -141,9 +190,13 @@
                                         </td>
                                         <td>13500,0</td>
                                         <td>
-                                            <div class="form-group"><label class="control-label" for="id_3-amount">Количество</label><input type="number" name="3-amount" class="form-control" placeholder="Количество" min="0" title="" id="id_3-amount"></div>
-                                            <input type="hidden" name="3-crowdfunding_company_id" value="1" id="id_3-crowdfunding_company_id">
-                                            <input type="hidden" name="3-device_acquisition_id" value="3" id="id_3-device_acquisition_id">
+                                            <div class="form-group"><label class="control-label" for="id_3-amount">Количество</label><input
+                                                    type="number" name="3-amount" class="form-control"
+                                                    placeholder="Количество" min="0" title="" id="id_3-amount"></div>
+                                            <input type="hidden" name="3-crowdfunding_company_id" value="1"
+                                                   id="id_3-crowdfunding_company_id">
+                                            <input type="hidden" name="3-device_acquisition_id" value="3"
+                                                   id="id_3-device_acquisition_id">
                                         </td>
                                     </tr>
 
@@ -163,13 +216,15 @@
                                                                 MH/s</p>
                                                         </div>
                                                         <div class="info-dropdown__nav-item">
-                                                            <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
+                                                            <p class="info-dropdown__nav-item-t">Потребляемая
+                                                                мощность</p>
                                                             <p class="info-dropdown__nav-item-m">
 
                                                                 800,0 W
 
                                                             </p>
-                                                            <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
+                                                            <p class="info-dropdown__nav-item-b">+7% БП, +11%
+                                                                Вентиляция</p>
                                                         </div>
                                                         <div class="info-dropdown__nav-item">
                                                             <p class="info-dropdown__nav-item-t">Чип</p>
@@ -191,9 +246,13 @@
                                         </td>
                                         <td>0,504</td>
                                         <td>
-                                            <div class="form-group"><label class="control-label" for="id_4-amount">Количество</label><input type="number" name="4-amount" class="form-control" placeholder="Количество" min="0" title="" id="id_4-amount"></div>
-                                            <input type="hidden" name="4-crowdfunding_company_id" value="1" id="id_4-crowdfunding_company_id">
-                                            <input type="hidden" name="4-device_acquisition_id" value="4" id="id_4-device_acquisition_id">
+                                            <div class="form-group"><label class="control-label" for="id_4-amount">Количество</label><input
+                                                    type="number" name="4-amount" class="form-control"
+                                                    placeholder="Количество" min="0" title="" id="id_4-amount"></div>
+                                            <input type="hidden" name="4-crowdfunding_company_id" value="1"
+                                                   id="id_4-crowdfunding_company_id">
+                                            <input type="hidden" name="4-device_acquisition_id" value="4"
+                                                   id="id_4-device_acquisition_id">
                                         </td>
                                     </tr>
 
@@ -213,13 +272,15 @@
                                                                 MH/s</p>
                                                         </div>
                                                         <div class="info-dropdown__nav-item">
-                                                            <p class="info-dropdown__nav-item-t">Потребляемая мощность</p>
+                                                            <p class="info-dropdown__nav-item-t">Потребляемая
+                                                                мощность</p>
                                                             <p class="info-dropdown__nav-item-m">
 
                                                                 1600,0 W
 
                                                             </p>
-                                                            <p class="info-dropdown__nav-item-b">+7% БП, +11% Вентиляция</p>
+                                                            <p class="info-dropdown__nav-item-b">+7% БП, +11%
+                                                                Вентиляция</p>
                                                         </div>
                                                         <div class="info-dropdown__nav-item">
                                                             <p class="info-dropdown__nav-item-t">Чип</p>
@@ -241,9 +302,13 @@
                                         </td>
                                         <td>20,3</td>
                                         <td>
-                                            <div class="form-group"><label class="control-label" for="id_5-amount">Количество</label><input type="number" name="5-amount" class="form-control" placeholder="Количество" min="0" title="" id="id_5-amount"></div>
-                                            <input type="hidden" name="5-crowdfunding_company_id" value="1" id="id_5-crowdfunding_company_id">
-                                            <input type="hidden" name="5-device_acquisition_id" value="5" id="id_5-device_acquisition_id">
+                                            <div class="form-group"><label class="control-label" for="id_5-amount">Количество</label><input
+                                                    type="number" name="5-amount" class="form-control"
+                                                    placeholder="Количество" min="0" title="" id="id_5-amount"></div>
+                                            <input type="hidden" name="5-crowdfunding_company_id" value="1"
+                                                   id="id_5-crowdfunding_company_id">
+                                            <input type="hidden" name="5-device_acquisition_id" value="5"
+                                                   id="id_5-device_acquisition_id">
                                         </td>
                                     </tr>
 
@@ -799,69 +864,6 @@
                 <div class="col-4 col_pr col_flex">
                     <div class="card card_flex-grow">
                         <div class="card-header">
-                            <h2 class="card-header__title">Портфель 3</h2>
-                            <span class="card-header__mute-text">15.12.2017</span>
-                        </div>
-                        <div class="card-body">
-                            <div id="chartPie3" class="chart-pie">
-                            </div>
-                        </div>
-                        <div class="card-sub-footer">
-                            <span class="card-sub-footer__mute-text">Ожидание оплаты</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8 col_pl col_flex">
-                    <div class="card card_flex-grow">
-                        <div class="card-header">
-                            <h2 class="card-header__title">Детализация</h2>
-                        </div>
-                        <div class="card-sub-header">
-                            <ul class="tabs">
-                                <li class="tabs__item">
-                                    <a class="tabs__link tabs__link_active" href="#">Доставка</a>
-                                </li>
-                                <li class="tabs__item">
-                                    <a class="tabs__link" href="#">Список оборудования</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-body">
-                            <table class="table table-state">
-                                <tbody class="tbody-state">
-                                <tr class="tr-state">
-                                    <td><span class="tr-state__checked">Заказ оплачен</span></td>
-                                    <td></td>
-                                    <td>01.01.2018</td>
-                                </tr>
-                                <tr class="tr-state">
-                                    <td>Заказ отгружен</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr class="tr-state">
-                                    <td>Таможенная очистка</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr class="tr-state">
-                                    <td>На складе</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="card-sub-footer">
-                            &nbsp;
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="col-4 col_pr col_flex">
-                    <div class="card card_flex-grow">
-                        <div class="card-header">
                             <h2 class="card-header__title">Портфель 4</h2>
                         </div>
                         <div class="card-body">
@@ -930,8 +932,7 @@
                             <h2 class="card-header__title">Портфель 5</h2>
                         </div>
                         <div class="card-body">
-                            <div id="chartPie5" class="chart-pie">
-                            </div>
+                            <div id="chartPie5" class="chart-pie"></div>
                         </div>
                         <div class="card-sub-footer">
                             <div class="geo">
@@ -1107,11 +1108,14 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="../../vendors/jquery.touchSwipe.min.js"></script>
-<script src="../../vendors/d3.v4.min.js"></script>
+<script src="../../vendors/echarts.common.min.js"></script>
+<script src="../../vendors/bootstrap-tab.js"></script>
 <script src="../../js/main.js"></script>
 
 
 <script>
+
+
     /* Set table total td width */
     var tableDetailArray = $('table').filter(function () {
         return this.id.match(/tableDetail-\d+/);
@@ -1142,159 +1146,229 @@
 
     var donutData = {
         data: [
-            {name: "GPU (12,2%)", value: 12.2},
-            {name: "Bitcoin (24,5%)", value: 24.5},
-            {name: "Litecoin (31,2%)", value: 31.2},
-            {name: "Dash (19,4%)", value: 19.4},
+            {name: "GPU (75,0%)", value: 85.0},
+            {name: "Bitcoin1 (25,0%)", value: 10.0},
+            {name: "Bitcoin2 (25,0%)", value: 5.0},
         ],
-        totalPower: '3,5 МВт'
+        totalPower: '3,52111 МВт'
     };
 
-    drawDonutGraph('#chartPie', donutData);
-    drawDonutGraph('#chartPie2', donutData);
-    drawDonutGraph('#chartPie3', donutData);
-    drawDonutGraph('#chartPie4', donutData);
-    drawDonutGraph('#chartPie5', donutData);
+    var donutData2 = {
+        data: [
+            {name: "GPU (75,0%)", value: 85.0},
+            {name: "Bitcoin1 (25,0%)", value: 15.0},
+        ],
+        totalPower: '3,522 МВт'
+    };
+
+    drawDonutGraph('chartPie', donutData);
+    drawDonutGraph('chartPie2', donutData2);
+    drawDonutGraph('chartPie3', donutData);
+    drawDonutGraph('chartPie4', donutData);
+    drawDonutGraph('chartPie5', donutData);
+
+    drawDonutGraph('chartPie', donutData);
 
     function drawDonutGraph(id, donutData) {
+        var myChart = echarts.init(document.getElementById(id));
 
-        ////////////////////////////////////////////////////////////
-        //////////////////////// Set-up ////////////////////////////
-        ////////////////////////////////////////////////////////////
+        var fontSize = '15',
+                radiusIn = '65%',
+                radiusOut = '90%',
+                centerX = '50%',
+                centerY = '50%';
 
-        var screenWidth = window.innerWidth;
-
-        var chartWidth = 330,
-                chartHeight = 390;
-
-        var margin = {left: 40, top: 40, right: 40, bottom: 40};
-
-        if (window.matchMedia('(max-width: 760px)').matches) {
-            chartWidth = 300;
-            chartHeight = 360;
-            margin = {left: 40, top: 40, right: 40, bottom: 40};
+        if (window.matchMedia('(max-width: 992px)').matches) {
+            fontSize = '15';
+            radiusIn = '50%';
+            radiusOut = '70%';
         }
 
-//        if (window.matchMedia('(max-width: 480px)').matches) {
-//            chartWidth = 300;
-//            chartHeight = 400;
-//            margin = {left: 40, top: 40, right: 40, bottom: 40};
-//        }
+        if (window.matchMedia('(max-width: 480px)').matches) {
+            fontSize = '15';
+            radiusIn = '60%';
+            radiusOut = '80%';
+            centerY = '150px';
+        }
 
-        var width = Math.min(screenWidth, chartWidth) - margin.left - margin.right,
-                height = Math.min(screenWidth, chartHeight) - margin.top - margin.bottom;
+        var option = {
+            color: ["#5069fd", "#e6e9f0", "#cdd7e7", "#f6f7fa"],
+            animationDurationUpdate: 10000,
+            tooltip: {
+                trigger: 'item',
+                formatter: "{b}",
+                backgroundColor: '#394256',
+                borderRadius: 5,
+                padding: 10,
+            },
+            legend: {
+                x: 'center',
+                y: 'bottom',
+                data: donutData.data,
+                textStyle: {
+                    fontFamily: "futura-pt, 'helvetica', 'sans-serif'",
+                    fontSize: fontSize,
+                    color: '#a5aebd',
+                }
+            },
+            series: [
+                {
+                    type: 'pie',
+                    radius: [radiusIn, radiusOut],
+                    center: [centerX, centerY],
+                    data: donutData.data,
+                    label: {
+                        normal: {
+                            show: false
+                        },
+                        emphasis: {
+                            show: false
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            lineStyle: {
+                                color: '#a5aebd'
+                            },
+                            smooth: 0.5,
+                            length: 5,
+                            length2: 10
+                        }
+                    },
+                    itemStyle: {
+                        normal: {
+                            borderWidth: 3,
+                            borderColor: '#ffffff'
+                        },
+                        emphasis: {
+                            color: "#FF1553",
+                        },
+                    }
+                }
+            ]
+        };
 
-        var svg = d3.select(id).append("svg")
-                .attr("width", (width + margin.left + margin.right))
-                .attr("height", (height + margin.top + margin.bottom))
-                .append("g").attr("class", "wrapper")
-                .attr("transform", "translate(" + (width / 2 + margin.left) + "," + (height / 2 + margin.top) + ")");
+        myChart.setOption(option);
 
-        //////////////////////////////////////////////////////////////
-        ///////////////////// Data &  Scales /////////////////////////
-        //////////////////////////////////////////////////////////////
-
-        //Create a color scale
-        //    var colorScale = d3.scale.linear()
-        //            .domain([1,3.5,6])
-        //            .range(["#4801ff", "#ffffbf", "#d7191c"])
-        //            .interpolate(d3.interpolateHcl);
-
-        var colorScale = d3.scaleOrdinal()
-                .range(["#e6e9f0", "#5069fd", "#cdd7e7", "#f6f7fa"]);
-
-        //Create an arc function
-        var arc = d3.arc()
-                .innerRadius(width * 0.75 / 2 + 10)
-                .outerRadius(width * 0.75 / 2 + 45);
-
-        //Turn the pie chart 90 degrees counter clockwise, so it starts at the left
-        var pie = d3.pie()
-                .startAngle(-70 * Math.PI / 180)
-                .endAngle(-70 * Math.PI / 180 + 2 * Math.PI)
-                .value(function (d) {
-                    return d.value;
-                })
-                .padAngle(.01)
-                .sort(null);
-
-        //////////////////////////////////////////////////////////////
-        //////////////////// Create Chart //////////////////////
-        //////////////////////////////////////////////////////////////
-
-        svg.append("text")
-                .attr("dy", "10px")
-                .style("text-anchor", "middle")
-                .attr("class", "inner-circle")
-                .attr("fill", "#36454f")
-                .text(function (d) {
-                    return donutData.totalPower;
-                });
-
-        //Create the donut slices and also the invisible arcs for the text
-        svg.selectAll(".donutArcs")
-                .data(pie(donutData.data))
-                .enter().append("path")
-                .attr("class", "donutArcs")
-                .attr("d", arc)
-                .style("fill", function (d, i) {
-                    if (i === 7) return "#CCCCCC"; //Other
-                    else return colorScale(i);
-                })
-                .each(function (d, i) {
-                    //Search pattern for everything between the start and the first capital L
-                    var firstArcSection = /(^.+?)L/;
-
-                    //Grab everything up to the first Line statement
-                    var newArc = firstArcSection.exec(d3.select(this).attr("d"))[1];
-                    //Replace all the comma's so that IE can handle it
-                    newArc = newArc.replace(/,/g, " ");
-
-                    //If the end angle lies beyond a quarter of a circle (90 degrees or pi/2)
-                    //flip the end and start position
-                    if (d.endAngle > 90 * Math.PI / 180) {
-                        var startLoc = /M(.*?)A/,		//Everything between the first capital M and first capital A
-                                middleLoc = /A(.*?)0 0 1/,	//Everything between the first capital A and 0 0 1
-                                endLoc = /0 0 1 (.*?)$/;	//Everything between the first 0 0 1 and the end of the string (denoted by $)
-                        //Flip the direction of the arc by switching the start en end point (and sweep flag)
-                        //of those elements that are below the horizontal line
-                        var newStart = endLoc.exec(newArc)[1];
-                        var newEnd = startLoc.exec(newArc)[1];
-                        var middleSec = middleLoc.exec(newArc)[1];
-
-                        //Build up the new arc notation, set the sweep-flag to 0
-                        newArc = "M" + newStart + "A" + middleSec + "0 0 0 " + newEnd;
-                    }//if
-
-                    //Create a new invisible arc that the text can flow along
-                    svg.append("path")
-                            .attr("class", "hiddenDonutArcs")
-                            .attr("id", "donutArc" + i)
-                            .attr("d", newArc)
-                            .style("fill", "none");
-                });
-
-        //Append the label names on the outside
-        svg.selectAll(".donutText")
-                .data(pie(donutData.data))
-                .enter().append("text")
-                .attr("class", "donutText")
-                //Move the labels below the arcs for those slices with an end angle greater than 90 degrees
-                .attr("dy", function (d, i) {
-                    return (d.endAngle > 90 * Math.PI / 180 ? 18 : -11);
-                })
-                .append("textPath")
-                .attr("startOffset", "50%")
-                .style("text-anchor", "middle")
-                .attr("xlink:href", function (d, i) {
-                    return "#donutArc" + i;
-                })
-                .text(function (d) {
-                    return d.data.name;
-                });
-
+        var chartPie = document.getElementById(id);
+        var innerTextDiv = document.createElement('div');
+        innerTextDiv.className = 'inner-circle';
+        var innerTextSpan = document.createElement('span');
+        innerTextSpan.innerHTML = donutData.totalPower;
+        innerTextDiv.appendChild(innerTextSpan);
+        chartPie.appendChild(innerTextDiv);
     }
 
+    //    function drawDonutGraph(id, donutData) {
+    //        ////////////////////////////////////////////////////////////
+    //        //////////////////////// Set-up ////////////////////////////
+    //        ////////////////////////////////////////////////////////////
+    //
+    //        var screenWidth = window.innerWidth;
+    //
+    //        var chartWidth = 330,
+    //                chartHeight = 390;
+    //
+    //        var margin = {left: 40, top: 40, right: 40, bottom: 40};
+    //
+    //        if (window.matchMedia('(max-width: 760px)').matches) {
+    //            chartWidth = 300;
+    //            chartHeight = 360;
+    //            margin = {left: 40, top: 40, right: 40, bottom: 40};
+    //        }
+    //
+    //        var width = Math.min(screenWidth, chartWidth) - margin.left - margin.right,
+    //                height = Math.min(screenWidth, chartHeight) - margin.top - margin.bottom;
+    //
+    //        var svg = d3.select(id).append("svg")
+    //                .attr("width", (width + margin.left + margin.right))
+    //                .attr("height", (height + margin.top + margin.bottom))
+    //                .append("g").attr("class", "wrapper")
+    //                .attr("transform", "translate(" + (width / 2 + margin.left) + "," + (height / 2 + margin.top) + ")");
+    //
+    //        //////////////////////////////////////////////////////////////
+    //        ///////////////////// Data &  Scales /////////////////////////
+    //        //////////////////////////////////////////////////////////////
+    //
+    //        //Create a color scale
+    //        var colorScale = d3.scaleOrdinal()
+    //                .range(["#e6e9f0", "#5069fd", "#cdd7e7", "#f6f7fa"]);
+    //
+    //        //Create an arc function
+    //        var arc = d3.arc()
+    //                .innerRadius(width*0.75/2)
+    //                .outerRadius(width*0.75/2 + 30);
+    //
+    //        //Turn the pie chart 90 degrees counter clockwise, so it starts at the left
+    //        var pie = d3.pie()
+    //                .startAngle(-90 * Math.PI/180)
+    //                .endAngle(-90 * Math.PI/180 + 2*Math.PI)
+    //                .value(function(d) { return d.value; })
+    //                .padAngle(.01)
+    //                .sort(null);
+    //
+    //        //////////////////////////////////////////////////////////////
+    //        //////////////////// Create Donut Chart //////////////////////
+    //        //////////////////////////////////////////////////////////////
+    //
+    //        svg.append("text")
+    //                .attr("dy", "10px")
+    //                .style("text-anchor", "middle")
+    //                .attr("class", "inner-circle")
+    //                .attr("fill", "#36454f")
+    //                .text(function (d) {
+    //                    return donutData.totalPower;
+    //                });
+    //
+    //        //Create the donut slices and also the invisible arcs for the text
+    //        svg.selectAll(".donutArcSlices")
+    //                .data(pie(donutData.data))
+    //                .enter().append("path")
+    //                .attr("class", "donutArcSlices")
+    //                .attr("d", arc)
+    //                .style("fill", function(d,i) {
+    //                    if(i === 7) return "#CCCCCC"; //Other
+    //                    else return colorScale(i);
+    //                })
+    //                .each(function(d,i) {
+    //
+    //                    //A regular expression that captures all in between the start of a string (denoted by ^) and a capital letter L
+    //                    //The letter L denotes the start of a line segment
+    //                    //The "all in between" is denoted by the .+?
+    //                    //where the . is a regular expression for "match any single character except the newline character"
+    //                    //the + means "match the preceding expression 1 or more times" (thus any single character 1 or more times)
+    //                    //the ? has to be added to make sure that it stops at the first L it finds, not the last L
+    //                    //It thus makes sure that the idea of ^.*L matches the fewest possible characters
+    //                    //For more information on regular expressions see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+    //                    var firstArcSection = /(^.+?)L/;
+    //
+    //                    //Grab everything up to the first Line statement
+    //                    //The [1] gives back the expression between the () (thus not the L as well) which is exactly the arc statement
+    //                    var newArc = firstArcSection.exec( d3.select(this).attr("d") )[1];
+    //                    //Replace all the comma's so that IE can handle it -_-
+    //                    //The g after the / is a modifier that "find all matches rather than stopping after the first match"
+    //                    newArc = newArc.replace(/,/g , " ");
+    //
+    //                    //Create a new invisible arc that the text can flow along
+    //                    svg.append("path")
+    //                            .attr("class", "hiddenDonutArcs")
+    //                            .attr("id", "donutArc"+i)
+    //                            .attr("d", newArc)
+    //                            .style("fill", "none");
+    //                });
+    //
+    //        //Append the label names on the outside
+    //        svg.selectAll(".donutText")
+    //                .data(donutData.data)
+    //                .enter().append("text")
+    //                .attr("class", "donutText")
+    //                .attr("dy", -13)
+    //                .append("textPath")
+    //                .attr("startOffset","50%")
+    //                .style("text-anchor","middle")
+    //                .attr("xlink:href",function(d,i){return "#donutArc"+i;})
+    //                .text(function(d){return d.name;});
+    //    }
 
 </script>
 
