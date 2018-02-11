@@ -44,104 +44,143 @@
 </header>
 <div class="content-wrap">
     <main>
-        <div id="companyInfo"></div>
-        <div id="calculator"></div>
-        <script src="https://cm.iozhik.ru/static/algoritmix/shared.js"></script>
-        <script src="https://cm.iozhik.ru/static/algoritmix/calculator.js"></script>
-        <script>
-            algoritmixCalculator.run(
-                    document.getElementById('calculator'),
-                    document.getElementById('companyInfo')
-            );
-        </script>
         <div class="container">
-            <div class="grid">
-                <div class="col-12 col_pt">
-                    <div class="card">
-                        <div class="card-header">
-                            <h2 class="card-header__title">История транзакций</h2>
+            <div class="page-title-wrap">
+                <h1 class="page-title">Купить портфель</h1>
+            </div>
+            <div class="card card_drk">
+                <div class="card-body">
+                <div class="grid">
+                    <div class="col-6 col_pr col_md-pr">
+                        <div class="section-sm-drk"><h2 class="section-sm-drk__title">Вы инвестируете</h2>
+                            <div class="investing">
+                                <div class="investing__input-wrap">
+                                    <button class="investing__arrow"></button>
+                                    <span class="investing__currency">$</span><input type="number" step="1000" min="0"
+                                                                                     class="investing__input"
+                                                                                     value="84800">
+                                </div>
+                            </div>
+                            <ul class="investing__tab">
+                                <li class="investing__tab-item investing__tab-item_icon"></li>
+                                <li class="investing__tab-item">
+                                    <button class="investing__tab-btn investing__tab-btn_active">Консервативный</button>
+                                </li>
+                                <li class="investing__tab-item">
+                                    <button class="investing__tab-btn ">Сбалансированный</button>
+                                </li>
+                                <li class="investing__tab-item">
+                                    <button class="investing__tab-btn ">Агрессивный</button>
+                                </li>
+                            </ul>
+                            <ul class="investing__range-list">
+                                <li class="investing__range-item">
+                                    <div class="investing__range-wrap">
+                                        <div class="investing__range-text"><span
+                                                class="investing__range-title ">Ethereum</span><span
+                                                class="investing__range-title-sub">MSI NVIDIA P106-100 Mining Edition, 100 КВт/ч, 25, MH/s, $500</span>
+                                        </div>
+                                        <div class="investing__range-count">4/8 единиц</div>
+                                    </div>
+                                    <div class="investing__range-bar"><input type="range" min="0" max="8" value="4"
+                                                                             style="background-size: 50% 100%;"></div>
+                                </li>
+                                <li class="investing__range-item">
+                                    <div class="investing__range-wrap">
+                                        <div class="investing__range-text"><span
+                                                class="investing__range-title ">BTC</span><span
+                                                class="investing__range-title-sub">Ebang e10, 1.6 КВт/ч, 18000, MH/s, $4100</span>
+                                        </div>
+                                        <div class="investing__range-count">9/47 единиц</div>
+                                    </div>
+                                    <div class="investing__range-bar"><input type="range" min="0" max="47" value="9"
+                                                                             style="background-size: 19.1489% 100%;">
+                                    </div>
+                                </li>
+                                <li class="investing__range-item">
+                                    <div class="investing__range-wrap">
+                                        <div class="investing__range-text"><span
+                                                class="investing__range-title ">SIA</span><span
+                                                class="investing__range-title-sub">Bitmain A3, 1.2 КВт/ч, 0.815, MH/s, $3100</span>
+                                        </div>
+                                        <div class="investing__range-count">14/27 единиц</div>
+                                    </div>
+                                    <div class="investing__range-bar"><input type="range" min="0" max="27" value="14"
+                                                                             style="background-size: 51.8519% 100%;">
+                                    </div>
+                                </li>
+                                <li class="investing__range-item">
+                                    <div class="investing__range-wrap">
+                                        <div class="investing__range-text"><span
+                                                class="investing__range-title ">BTC</span><span
+                                                class="investing__range-title-sub">Canaan avalon 841, 1.3 КВт/ч, 13000, MH/s, $2500</span>
+                                        </div>
+                                        <div class="investing__range-count">1/12 единиц</div>
+                                    </div>
+                                    <div class="investing__range-bar"><input type="range" min="0" max="12" value="1"
+                                                                             style="background-size: 8.33333% 100%;">
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="section-sm__nav section-sm__nav_investing">
+                                <li class="section-sm__nav-item">
+                                    <button class="btn btn_gd btn_w200">Купить</button>
+                                </li>
+                                <li class="section-sm__nav-item"><span class="investing-info">Включены: блок питания, доставка, таможня, ндс, обслуживание.</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="card-body">
-                            <table class="table table-responsive table-history">
-                                <thead class="thead-history">
-                                <tr>
-                                    <th>Дата</th>
-                                    <th>Валюта</th>
-                                    <th>Кошелек</th>
-                                    <th>Tx</th>
-                                    <th>Сумма</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr class="tr-history">
-                                    <td>15.12.17, 15:00</td>
-                                    <td>Bitcoin</td>
-                                    <td>405c09d0e5...</td>
-                                    <td>405c09d0e5a6f93299aebecb283fe7bdf5cee0fccc32a63c7fbe95c0b3b1338</td>
-                                    <td>00.00234</td>
-                                </tr>
-                                <tr class="tr-history">
-                                    <td>15.12.17, 15:00</td>
-                                    <td>Bitcoin</td>
-                                    <td>405c09d0e5...</td>
-                                    <td>405c09d0e5a6f93299aebecb283fe7bdf5cee0fccc32a63c7fbe95c0b3b1338</td>
-                                    <td>00.00234</td>
-                                </tr>
-                                <tr class="tr-history">
-                                    <td>15.12.17, 15:00</td>
-                                    <td>Bitcoin</td>
-                                    <td>405c09d0e5...</td>
-                                    <td>405c09d0e5a6f93299aebecb283fe7bdf5cee0fccc32a63c7fbe95c0b3b1338</td>
-                                    <td>00.00234</td>
-                                </tr>
-                                <tr class="tr-history">
-                                    <td>15.12.17, 15:00</td>
-                                    <td>Bitcoin</td>
-                                    <td>405c09d0e5...</td>
-                                    <td>405c09d0e5a6f93299aebecb283fe7bdf5cee0fccc32a63c7fbe95c0b3b1338</td>
-                                    <td>00.00234</td>
-                                </tr>
-                                <tr class="tr-history">
-                                    <td>15.12.17, 15:00</td>
-                                    <td>Bitcoin</td>
-                                    <td>405c09d0e5...</td>
-                                    <td>405c09d0e5a6f93299aebecb283fe7bdf5cee0fccc32a63c7fbe95c0b3b1338</td>
-                                    <td>00.00234</td>
-                                </tr>
-                                <tr class="tr-history">
-                                    <td>15.12.17, 15:00</td>
-                                    <td>Bitcoin</td>
-                                    <td>405c09d0e5...</td>
-                                    <td>405c09d0e5a6f93299aebecb283fe7bdf5cee0fccc32a63c7fbe95c0b3b1338</td>
-                                    <td>00.00234</td>
-                                </tr>
-                                <tr class="tr-history">
-                                    <td>15.12.17, 15:00</td>
-                                    <td>Bitcoin</td>
-                                    <td>405c09d0e5...</td>
-                                    <td>405c09d0e5a6f93299aebecb283fe7bdf5cee0fccc32a63c7fbe95c0b3b1338</td>
-                                    <td>00.00234</td>
-                                </tr>
-                                <tr class="tr-history">
-                                    <td>15.12.17, 15:00</td>
-                                    <td>Bitcoin</td>
-                                    <td>405c09d0e5...</td>
-                                    <td>405c09d0e5a6f93299aebecb283fe7bdf5cee0fccc32a63c7fbe95c0b3b1338</td>
-                                    <td>00.00234</td>
-                                </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="card-sub-footer">
-                            <div class="card-sub-footer__text">
-                                <span>Всего выведено</span>
-                                <span>01.06720</span>
+                    </div>
+                    <div class="col-6 col_pl col_md-pl">
+                        <div class="section-sm-drk"><h2 class="section-sm-drk__title">Вы получаете</h2>
+                            <div class="get"><h3 class="get__title">BTC 17.7049<span>($146338)</span></h3>
+                                <p class="get__description"></p>
+                                <div class="get__tab-wrap">
+                                    <ul class="get__tab">
+                                        <li class="get__tab-item">
+                                            <button class="get__tab-btn get__tab-btn_active" title="Общее">Общее
+                                            </button>
+                                        </li>
+                                        <li class="get__tab-item">
+                                            <button class="get__tab-btn " title="ETH">ETH</button>
+                                        </li>
+                                        <li class="get__tab-item">
+                                            <button class="get__tab-btn " title="BTC">BTC</button>
+                                        </li>
+                                        <li class="get__tab-item">
+                                            <button class="get__tab-btn " title="SIA">SIA</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="chart-info">
+                                    <div class="chart-info__label-wrap"><span
+                                            class="chart-info__label chart-info__label_1">Издержки</span><span
+                                            class="chart-info__label chart-info__label_2">Доход</span></div>
+                                    <div class="chart-select">Модель Algoritmix</div>
+                                </div>
+                                <div id="chartCandlestick">
+                                    <div class="chartjs-size-monitor"
+                                         style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                                        <div class="chartjs-size-monitor-expand"
+                                             style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                            <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+                                        </div>
+                                        <div class="chartjs-size-monitor-shrink"
+                                             style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                            <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                                        </div>
+                                    </div>
+                                    <canvas style="display: block; width: 520px; height: 260px;" width="520"
+                                            height="260"
+                                            class="chartjs-render-monitor"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
+
         </div>
     </main>
     <footer class="footer">
