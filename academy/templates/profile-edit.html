@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Academy</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../styles/index.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Academy by efir</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Блогеры</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Специалисты</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item mr-2">
+                <a class="btn btn-secondary" href="#">Регистрация</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-primary" href="#">Вход</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <h4 class="text-right">Фото профиля</h4>
+        </div>
+        <div class="col-md-3">
+            <img class="profile-img" src="http://doramakun.ru/thumbs/users/31527/NEWS/Song-Joon-Ki1-400.jpg" alt="">
+        </div>
+        <div class="col-md-3">
+            <p><a class="btn btn-sm btn-primary" href="#">Загрузить другое</a><a class="btn btn-sm btn-link" href="#">Удалить</a></p>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <h4 class="text-right">Личные данные</h4>
+        </div>
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Имя</label>
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Имя">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Фамилия</label>
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Фамилия">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <h4 class="text-right">Специализация</h4>
+        </div>
+        <div class="col-md-9">
+            <p class="text-muted">Выберите те сферы, в которых вы можете быть полезны блогерам</p>
+            <p><a class="btn btn-sm btn-link" href="#">Выбрать все</a><a class="btn btn-sm btn-link" href="#">Сбросить</a></p>
+            <hr>
+            <ul class="profile-specialization">
+                <li>
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-secondary active">
+                            <input type="checkbox" checked autocomplete="off">Операторская работа
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary">
+                            <input type="checkbox" checked autocomplete="off">Звукорежиссура
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="checkbox" checked autocomplete="off">Журналистика
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary">
+                            <input type="checkbox" checked autocomplete="off">Режиссура
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary">
+                            <input type="checkbox" checked autocomplete="off">Монтаж видео
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary">
+                            <input type="checkbox" checked autocomplete="off">Работа со сценарием
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <h4 class="text-right">Образование</h4>
+        </div>
+        <div class="col-md-9">
+            <div class="form-group">
+                <label>ВУЗ и факультет через запятую</label>
+                <input type="text" class="form-control" placeholder="ВУЗ и факультет через запятую">
+            </div>
+            <p><a class="btn btn-sm btn-link" href="#">+ Добавить образование</a></p>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <h4 class="text-right">Локация</h4>
+        </div>
+        <div class="col-md-9">
+            <div class="form-group">
+                <label>Страна и город через запятую</label>
+                <input type="text" class="form-control" value="Россия, Москва">
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <h4 class="text-right">Контактные данные</h4>
+        </div>
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Мобильный телефон</label>
+                        <input type="text" class="form-control" value="+7 (123) 456-78-90">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Emal</label>
+                        <input type="text" class="form-control" value="konstantinopolski@yandex.ru">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Facebook</label>
+                        <input type="text" class="form-control" value="instagram.com/profiles/3">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Вконтакте</label>
+                        <input type="text" class="form-control" value="instagram.com/profiles/3">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Instagram</label>
+                        <input type="text" class="form-control" value="instagram.com/profiles/3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <h4 class="text-right">О себе</h4>
+        </div>
+        <div class="col-md-9">
+            <div class="form-group">
+                <label>Рассказ о себе</label>
+                <textarea type="text" class="form-control" rows="5"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <h4 class="text-right">Работы и кейсы</h4>
+        </div>
+        <div class="col-md-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Ссылка</label>
+                        <input type="text" class="form-control" value="vk.com">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Чем занимались</label>
+                        <input type="text" class="form-control" value="Монтаж, звук">
+                    </div>
+                </div>
+            </div>
+            <p><a class="btn btn-sm btn-link" href="#">+ Добавить образование</a></p>
+        </div>
+    </div>
+    <p class="text-center p-4">
+        <a class="btn btn-lg btn-primary" href="#">Сохранить изменения</a>
+    </p>
+
+</div>
+<footer class="footer">
+    <div class="container text-center">
+        <ul class="footer-menu">
+            <li>
+                <a href="#">Главная</a>
+            </li>
+            <li>
+                <a href="#">О сервисе</a>
+            </li>
+            <li>
+                <a href="#">Блогеры</a>
+            </li>
+            <li>
+                <a href="#">Специалисты</a>
+            </li>
+        </ul>
+        <ul class="footer-menu">
+            <li>
+                <a href="#">
+                    <img src="../images/facebook.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/facebook.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/facebook.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/facebook.svg" alt="">
+                </a>
+            </li>
+
+        </ul>
+        <span class="text-muted">© Efir Production - All Right Reserved</span>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -8,22 +8,24 @@
     <meta name="theme-color" content="#ffffff">
 
     <title>Academy</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="../styles/index.css">
-    
+
 </head>
 <body>
 
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Academy by efir</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Academy by efir</a>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="#">Блогеры</a>
@@ -32,54 +34,53 @@
                 <a class="nav-link" href="#">Специалисты</a>
             </li>
         </ul>
-
         <ul class="navbar-nav ml-auto">
             <li class="nav-item mr-2">
-                <a class="btn btn-secondary" href="#">РЕГИСТРАЦИЯ</a>
+                <a class="btn btn-secondary" href="#">Регистрация</a>
             </li>
             <li class="nav-item">
-                <a class="btn btn-primary" href="#">ВХОД</a>
+                <a class="btn btn-primary" href="#">Вход</a>
             </li>
         </ul>
-
     </div>
 </nav>
+
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-3">
             <img class="profile-img" src="http://doramakun.ru/thumbs/users/31527/NEWS/Song-Joon-Ki1-400.jpg" alt="">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
             <h3>Константин Константинопольский</h3>
             <div class="mt-2">
-                <span class="badge badge-primary">Звукорежиссер</span>
-                <span class="badge badge-primary">Оператор</span>
-                <span class="badge badge-primary">Звукорежиссер</span>
+                <span class="badge badge-secondary">Звукорежиссер</span>
+                <span class="badge badge-secondary">Оператор</span>
+                <span class="badge badge-secondary">Звукорежиссер</span>
             </div>
             <p class="mt-4">НИУ ВШЭ, Факультет медиа, дизайна и комуникаций</p>
             <p>Константинополь, Россия</p>
-        </div>
-        <div class="col-md-1">
-            <a class="btn btn-sm btn-secondary" href="#">Редактировать</a>
+            <p><a class="profile-phone" href="#">+7 (123) 456-78-90</a></p>
+            <p><a class="profile-envelope" href="#">konstantinopolski@yandex.ru</a></p>
+            <p>
+                <a class="profile-social" href="#">Вконтакте</a>,
+                <a class="profile-social" href="#">Facebook</a>
+            </p>
         </div>
     </div>
     <div class="row mt-5">
         <div class="col-md-3">
             <h4 class="text-right">О себе:</h4>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
             <p>Are we human because of unique traits and attributes not shared with either animal or machine? The definition of “human” is circular: we are human by virtue of the properties that make us human (i.e., distinct from animal and machine). It is a definition by negation: that which separates us from animal and machine is our “human-ness”.
                 We are human because we are not animal, nor machine. But such thinking has been rendered progressively less tenable by the advent of evolutionary and neo-evolutionary theories which postulate a continuum in nature between animals and Man.</p>
-        </div>
-        <div class="col-md-1">
-            <a class="btn btn-sm btn-secondary" href="#">Редактировать</a>
         </div>
     </div>
     <div class="row mt-5">
         <div class="col-md-3">
             <h4 class="text-right">Работы:</h4>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
             <ol class="p-0">
                 <li>
                     <a href="#">https://www.youtube.com/watch?v=O6s-pllW3dc</a> → Монтаж, звук
@@ -95,10 +96,50 @@
                 </li>
             </ol>
         </div>
-        <div class="col-md-1">
-            <a class="btn btn-sm btn-secondary" href="#">Редактировать</a>
-        </div>
     </div>
 </div>
+<footer class="footer">
+    <div class="container text-center">
+        <ul class="footer-menu">
+            <li>
+                <a href="#">Главная</a>
+            </li>
+            <li>
+                <a href="#">О сервисе</a>
+            </li>
+            <li>
+                <a href="#">Блогеры</a>
+            </li>
+            <li>
+                <a href="#">Специалисты</a>
+            </li>
+        </ul>
+        <ul class="footer-menu">
+            <li>
+                <a href="#">
+                    <img src="../images/facebook.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/facebook.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/facebook.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/facebook.svg" alt="">
+                </a>
+            </li>
+
+        </ul>
+        <span class="text-muted">© Efir Production - All Right Reserved</span>
+    </div>
+</footer>
+
 </body>
 </html>
