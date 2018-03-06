@@ -320,7 +320,9 @@
                         <div class="investing__input-wrap">
                             <button class="investing__arrow"></button>
                             <span class="investing__currency">$</span>
-                            <input class="investing__input" type="text" value="100,000.00">
+                            <input type="number" step="1000" min="0" class="investing__input"
+                                                                             value="10000">
+                            <span class="investing__total-cost">10000</span>
                         </div>
                     </div>
                     <ul class="investing__tab">
@@ -437,8 +439,14 @@
                                 <span class="chart-info__label chart-info__label_1">Издержки</span>
                                 <span class="chart-info__label chart-info__label_2">Доход</span>
                             </div>
-                            <div class="chart-select">
-                                Модель Algoritmix
+                            <!--<div class="chart-select">-->
+                            <!--Модель Algoritmix-->
+                            <!--</div>-->
+                            <div class="chart-select__wrap">
+                                <select class="chart-select__select">
+                                    <option value="">Модель Algoritmix</option>
+                                    <option value="">Algoritmix</option>
+                                </select>
                             </div>
                         </div>
 
