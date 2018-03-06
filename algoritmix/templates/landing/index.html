@@ -36,7 +36,7 @@
         <p class="banner__teaser">Со-инвестирование в криптовалюты</p>
         <ul class="banner__nav">
             <li class="banner__nav-item">
-                <a class="btn btn_gd" href="#">Стать инвестором</a>
+                <a class="btn btn_gd" href="#calculator">Стать инвестором</a>
             </li>
             <li class="banner__nav-item">
                 <a class="btn-link btn-link_bl" href="#">Расчёт инвестиций</a>
@@ -211,6 +211,11 @@
             </div>
         </div>
     </div>
+    <div class="section">
+        <div class="section__load">
+            <img src="../../images/landing/load.gif" alt="">
+        </div>
+    </div>
     <div class="grid">
         <div class="col-6 col_pr">
             <div class="chart-box">
@@ -225,7 +230,7 @@
                     <div class="progress-tb">
                         <div class="progress">
                             <div class="progress__bar" style="width: 50%">
-                                <span class="progress__title">Antminer S9</span>
+                                <span class="progress__title">MSI NVIDIA P106-100 Mining Edition</span>
                                 <div class="progress__bar-dropdown">
                                     <div class="progress__bar-dropdown-header">
                                         <p class="progress__bar-dropdown-header-t">Antminer D3</p>
@@ -308,9 +313,8 @@
             </div>
         </div>
     </div>
-
 </div>
-<div class="bg-drk">
+<div id="calculator" class="bg-drk">
     <div class="container">
         <div class="grid">
             <div class="col-6 col_pr col_md-pr">
@@ -318,10 +322,16 @@
                     <h2 class="section-sm-drk__title">Вы инвестируете</h2>
                     <div class="investing">
                         <div class="investing__input-wrap">
-                            <button class="investing__arrow"></button>
-                            <span class="investing__currency">$</span>
+                            <!--<button class="investing__arrow"></button>-->
+                            <!--<span class="investing__currency">$</span>-->
+                            <div class="investing__currency-wrap">
+                                <select class="investing__currency-select" name="">
+                                    <option value="">$</option>
+                                    <option value="">₽</option>
+                                </select>
+                            </div>
                             <input type="number" step="1000" min="0" class="investing__input"
-                                                                             value="10000">
+                                   value="10000">
                             <span class="investing__total-cost">10000</span>
                         </div>
                     </div>
@@ -548,10 +558,45 @@
 
         /* end Input range */
 
-        /* D3 pie */
+        /* Smooth scroll */
 
-        /* end D3 pie */
+        $('a[href*="#"]')
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function (event) {
+                    // On-page links
+                    if (
+                            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                            &&
+                            location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000, function () {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) { // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                }
+                                ;
+                            });
+                        }
+                    }
+                });
 
+        /* end Smooth scroll */
 
     });
 </script>
