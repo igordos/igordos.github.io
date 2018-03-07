@@ -87,52 +87,69 @@
         </div>
         <div class="col-md-9">
             <p class="text-muted">Выберите те сферы, в которых вы можете быть полезны блогерам</p>
-            <p><a class="btn btn-sm btn-link" href="#">Выбрать все</a><a class="btn btn-sm btn-link" href="#">Сбросить</a></p>
+            <p>
+                <button id="specializationCheckAll" class="btn btn-sm btn-link">Выбрать все</button>
+                <button id="specializationRemoveCheckAll" class="btn btn-sm btn-link">Сбросить</button>
+            </p>
             <hr>
             <ul class="profile-specialization">
                 <li>
                     <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-outline-secondary active">
-                            <input type="checkbox" checked autocomplete="off">Операторская работа
+                        <label class="btn btn-outline-secondary checkbox-btn">
+                            <input type="checkbox" autocomplete="off">Операторская работа
                         </label>
                     </div>
                 </li>
                 <li>
                     <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-outline-secondary active">
-                            <input type="checkbox" checked autocomplete="off">Звукорежиссура
+                        <label class="btn btn-outline-secondary checkbox-btn">
+                            <input type="checkbox" autocomplete="off">Звукорежиссура
                         </label>
                     </div>
                 </li>
                 <li>
                     <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-outline-secondary active">
-                            <input type="checkbox" checked autocomplete="off">Журналистика
+                        <label class="btn btn-outline-secondary checkbox-btn">
+                            <input type="checkbox" autocomplete="off">Журналистика
                         </label>
                     </div>
                 </li>
                 <li>
                     <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-outline-secondary">
-                            <input type="checkbox" checked autocomplete="off">Режиссура
+                        <label class="btn btn-outline-secondary checkbox-btn">
+                            <input type="checkbox" autocomplete="off">Режиссура
                         </label>
                     </div>
                 </li>
                 <li>
                     <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-outline-secondary">
-                            <input type="checkbox" checked autocomplete="off">Монтаж видео
+                        <label class="btn btn-outline-secondary checkbox-btn">
+                            <input type="checkbox" autocomplete="off">Монтаж видео
                         </label>
                     </div>
                 </li>
                 <li>
                     <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-outline-secondary">
-                            <input type="checkbox" checked autocomplete="off">Работа со сценарием
+                        <label class="btn btn-outline-secondary checkbox-btn">
+                            <input type="checkbox" autocomplete="off">Работа со сценарием
                         </label>
                     </div>
                 </li>
             </ul>
+            <script>
+                $("#specializationCheckAll").click(function () {
+                    $(".checkbox-btn").each(function () {
+                        $(this).addClass("active");
+                        $("input[type=checkbox]", this).prop("checked", true);
+                    });
+                });
+                $("#specializationRemoveCheckAll").click(function () {
+                    $(".checkbox-btn").each(function () {
+                        $(this).removeClass("active");
+                        $("input[type=checkbox]", this).prop("checked", false);
+                    });
+                });
+            </script>
         </div>
     </div>
     <div class="row mt-5">
@@ -140,11 +157,25 @@
             <h4 class="text-left text-sm-right">Образование</h4>
         </div>
         <div class="col-md-5">
-            <div class="form-group">
-                <label>ВУЗ и факультет через запятую</label>
-                <input type="text" class="form-control" placeholder="ВУЗ и факультет через запятую">
+            <div class="educationInputs">
+                <div class="form-group">
+                    <label>ВУЗ и факультет через запятую</label>
+                    <input type="text" class="form-control" placeholder="ВУЗ и факультет через запятую">
+                </div>
             </div>
-            <p><a class="btn btn-sm btn-link" href="#">+ Добавить образование</a></p>
+            <p>
+                <button id="addEducationInput" class="btn btn-sm btn-link">+ Добавить образование</button>
+            </p>
+            <script>
+                $("#addEducationInput").click(function () {
+                    $(".educationInputs").append(
+                            '<div class="form-group">' +
+                            '<label>ВУЗ и факультет через запятую</label>' +
+                            '<input type="text" class="form-control" placeholder="ВУЗ и факультет через запятую">' +
+                            '</div>'
+                    );
+                });
+            </script>
         </div>
     </div>
     <div class="row mt-5">
@@ -221,23 +252,56 @@
             <h4 class="text-left text-sm-right">Работы и кейсы</h4>
         </div>
         <div class="col-md-5">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="form-group">
-                        <label>Ссылка</label>
-                        <input type="text" class="form-control" value="vk.com">
+            <div id="workGroup">
+                <div class="workGroupItem">
+                    <h5 class="mt-2">Работа 1</h5>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label>Ссылка</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label>Чем занимались</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="form-group">
-                        <label>Чем занимались</label>
-                        <input type="text" class="form-control" value="Монтаж, звук">
-                    </div>
-                </div>
-            </div>
-            <p><a class="btn btn-sm btn-link" href="#">+ Добавить образование</a></p>
+            <p>
+                <button id="addWorkGroup" class="btn btn-sm btn-link">+ Добавить работу в портфолио</button>
+            </p>
+            <script>
+                $("#addWorkGroup").click(function () {
+                    var groupNumber = $("#workGroup").children().length;
+                    $("#workGroup").append(
+                            '<div class="workGroupItem">' +
+                            '<h5 class="mt-2">Работа ' + (groupNumber + 1) + '</h5>' +
+                            '<div class="row">' +
+                            '<div class="col-md-8">' +
+                            '<div class="form-group">' +
+                            '<label>Ссылка</label>' +
+                            '<input type="text" class="form-control">' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>' +
+                            '<div class="row">' +
+                            '<div class="col-md-8">' +
+                            '<div class="form-group">' +
+                            '<label>Чем занимались</label>' +
+                            '<input type="text" class="form-control">' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>'
+                    )
+                });
+            </script>
         </div>
     </div>
     <p class="text-center p-4">
@@ -291,5 +355,6 @@
         <span class="text-muted">© Efir Production - All Right Reserved</span>
     </div>
 </footer>
+
 </body>
 </html>
