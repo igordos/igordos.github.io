@@ -71,23 +71,17 @@
         <input type="password" class="form-control">
     </div>
 
-    <ul class="profile-specialization justify-content-center mt-4">
-        <li>
-            <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-outline-secondary">
-                    <input type="checkbox" autocomplete="off">Я блогер
-                </label>
-            </div>
-        </li>
-        <li>
-            <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-outline-secondary">
-                    <input type="checkbox" autocomplete="off">Я специалист
-                </label>
-            </div>
-        </li>
-    </ul>
-
+    <div class="profile-specialization justify-content-center">
+        <div class="btn-group btn-group-toggle mt-4" data-toggle="buttons">
+            <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" autocomplete="off">Я блогер
+            </label>
+            <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" autocomplete="off">Я специалист
+            </label>
+        </div>
+    </div>
+    
     <button class="btn btn-primary btn-block mt-4" type="submit">Создать аккаунт</button>
     <small class="form-text text-muted text-center">
         К личным данным
