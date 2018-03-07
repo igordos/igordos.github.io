@@ -27,20 +27,32 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav justify-content-center navbar-nav-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Блогеры</a>
+                    <a class="nav-link active" href="#">Блогеры</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Специалисты</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item mr-4">
-                    <a class="btn btn-secondary" href="#">Регистрация</a>
-                </li>
-                <li class="nav-item mt-2 mt-sm-2 mt-md-2 mt-lg-0">
-                    <a class="btn btn-primary" href="#">Вход</a>
+                <!--<li class="nav-item mr-4">-->
+                <!--<a class="btn btn-secondary" href="#">Регистрация</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item mt-2 mt-sm-2 mt-md-2 mt-lg-0">-->
+                <!--<a class="btn btn-primary" href="#">Вход</a>-->
+                <!--</li>-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="dropdown-toggle">Константин К.</span>
+                        <img class="nav-link-user-icon" src="../images/thumb.svg" alt="">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item dropdown-item-edit" href="#">Редактирование</a>
+                        <a class="dropdown-item dropdown-item-settings" href="#">Настройки</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item dropdown-item-logout" href="#">Выйти</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -53,69 +65,100 @@
             <img class="profile-img" src="http://doramakun.ru/thumbs/users/31527/NEWS/Song-Joon-Ki1-400.jpg" alt="">
         </div>
         <div class="col-md-9 mt-4 mt-sm-0">
-            <h3>Константин Константинопольский</h3>
-            <div class="mt-2">
-                <span class="badge badge-secondary">Звукорежиссер</span>
-                <span class="badge badge-secondary">Оператор</span>
-                <span class="badge badge-secondary">Звукорежиссер</span>
+            <div class="row">
+                <div class="col">
+                    <h3>Константин Константинопольский</h3>
+                    <div class="mt-2">
+                        <span class="badge badge-secondary">Звукорежиссер</span>
+                        <span class="badge badge-secondary">Оператор</span>
+                        <span class="badge badge-secondary">Звукорежиссер</span>
+                    </div>
+                    <p class="mt-4">НИУ ВШЭ, Факультет медиа, дизайна и комуникаций</p>
+                    <p>Константинополь, Россия</p>
+                    <p><a class="profile-phone" href="#">+7 (123) 456-78-90</a></p>
+                    <p><a class="profile-envelope" href="#">konstantinopolski@yandex.ru</a></p>
+                    <p>
+                        <a class="profile-social" href="#">
+                            <img src="../images/social-icons/facebook.svg" alt="">
+                        </a>
+                        <a class="profile-social" href="#">
+                            <img src="../images/social-icons/instagram.svg" alt="">
+                        </a>
+                        <a class="profile-social" href="#">
+                            <img src="../images/social-icons/medium.svg" alt="">
+                        </a>
+                        <a class="profile-social" href="#">
+                            <img src="../images/social-icons/telegram.svg" alt="">
+                        </a>
+                        <a class="profile-social" href="#">
+                            <img src="../images/social-icons/twitter.svg" alt="">
+                        </a>
+                        <a class="profile-social" href="#">
+                            <img src="../images/social-icons/vk.svg" alt="">
+                        </a>
+                        <a class="profile-social" href="#">
+                            <img src="../images/social-icons/weibo.svg" alt="">
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-auto pt-2">
+                    <a class="profile-btn-edit-text" href="#">
+                        Редактировать
+                    </a>
+                </div>
             </div>
-            <p class="mt-4">НИУ ВШЭ, Факультет медиа, дизайна и комуникаций</p>
-            <p>Константинополь, Россия</p>
-            <p><a class="profile-phone" href="#">+7 (123) 456-78-90</a></p>
-            <p><a class="profile-envelope" href="#">konstantinopolski@yandex.ru</a></p>
-            <p>
-                <a class="profile-social" href="#">
-                    <img src="../images/social-icons/facebook.svg" alt="">
-                </a>
-                <a class="profile-social" href="#">
-                    <img src="../images/social-icons/instagram.svg" alt="">
-                </a>
-                <a class="profile-social" href="#">
-                    <img src="../images/social-icons/medium.svg" alt="">
-                </a>
-                <a class="profile-social" href="#">
-                    <img src="../images/social-icons/telegram.svg" alt="">
-                </a>
-                <a class="profile-social" href="#">
-                    <img src="../images/social-icons/twitter.svg" alt="">
-                </a>
-                <a class="profile-social" href="#">
-                    <img src="../images/social-icons/vk.svg" alt="">
-                </a>
-                <a class="profile-social" href="#">
-                    <img src="../images/social-icons/weibo.svg" alt="">
-                </a>
-            </p>
         </div>
     </div>
-    <div class="row pt-5 pb-5 profile-about">
+    <div class="row pt-5 pb-5 profile-about profile-hover-btn-edit">
         <div class="col-md-3">
             <h4 class="text-left text-sm-right">О себе:</h4>
         </div>
         <div class="col-md-9">
-            <p>Are we human because of unique traits and attributes not shared with either animal or machine? The definition of “human” is circular: we are human by virtue of the properties that make us human (i.e., distinct from animal and machine). It is a definition by negation: that which separates us from animal and machine is our “human-ness”.
-                We are human because we are not animal, nor machine. But such thinking has been rendered progressively less tenable by the advent of evolutionary and neo-evolutionary theories which postulate a continuum in nature between animals and Man.</p>
+            <div class="row">
+                <div class="col">
+                    <p>Are we human because of unique traits and attributes not shared with either animal or machine? The definition of “human” is circular: we are human by virtue of the properties that make us human (i.e., distinct from animal and machine). It is a definition by negation: that which separates us from animal and machine is our “human-ness”.
+                        We are human because we are not animal, nor machine. But such thinking has been rendered progressively less tenable by the advent of evolutionary and neo-evolutionary theories which postulate a continuum in nature between animals and Man.</p>
+                </div>
+                <div class="col-md-auto">
+                    <div class="profile-btn-edit-wrap">
+                        <a class="profile-btn-edit" href="#">
+                            <img src="../images/edit.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row mt-5">
+    <div class="row mt-5 profile-hover-btn-edit">
         <div class="col-md-3">
             <h4 class="text-left text-sm-right">Работы:</h4>
         </div>
         <div class="col-md-9">
-            <ol class="p-2 p-sm-0">
-                <li>
-                    <a href="#">https://www.youtube.com/watch?v=O6s-pllW3dc</a> → Монтаж, звук
-                </li>
-                <li>
-                    <a href="#">https://www.youtube.com/watch?v=O6s-pllW3dc</a> → Монтаж, звук
-                </li>
-                <li>
-                    <a href="#">https://www.youtube.com/watch?v=O6s-pllW3dc</a> → Монтаж, звук
-                </li>
-                <li>
-                    <a href="#">https://www.youtube.com/watch?v=O6s-pllW3dc</a> → Монтаж, звук
-                </li>
-            </ol>
+            <div class="row">
+                <div class="col">
+                    <ol class="p-2 p-sm-0">
+                        <li>
+                            <a href="#">https://www.youtube.com/watch?v=O6s-pllW3dc</a> → Монтаж, звук
+                        </li>
+                        <li>
+                            <a href="#">https://www.youtube.com/watch?v=O6s-pllW3dc</a> → Монтаж, звук
+                        </li>
+                        <li>
+                            <a href="#">https://www.youtube.com/watch?v=O6s-pllW3dc</a> → Монтаж, звук
+                        </li>
+                        <li>
+                            <a href="#">https://www.youtube.com/watch?v=O6s-pllW3dc</a> → Монтаж, звук
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-md-auto">
+                    <div class="profile-btn-edit-wrap">
+                        <a class="profile-btn-edit" href="#">
+                            <img src="../images/edit.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
