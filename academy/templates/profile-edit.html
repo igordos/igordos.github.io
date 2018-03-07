@@ -47,6 +47,7 @@
     </div>
 </nav>
 
+<form action="/">
 <div class="container mt-5">
     <div class="row mt-5">
         <div class="col-5 col-sm-3">
@@ -88,22 +89,22 @@
         <div class="col-md-9">
             <p class="text-muted">Выберите те сферы, в которых вы можете быть полезны блогерам</p>
             <p>
-                <button id="specializationCheckAll" class="btn btn-sm btn-link">Выбрать все</button>
-                <button id="specializationRemoveCheckAll" class="btn btn-sm btn-link">Сбросить</button>
+                <button type="button" id="specializationCheckAll" class="btn btn-sm btn-link">Выбрать все</button>
+                <button type="button" id="specializationRemoveCheckAll" class="btn btn-sm btn-link">Сбросить</button>
             </p>
             <hr>
             <ul class="profile-specialization">
                 <li>
                     <div class="btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-outline-secondary checkbox-btn">
-                            <input type="checkbox" autocomplete="off">Операторская работа
+                            <input type="checkbox">Операторская работа
                         </label>
                     </div>
                 </li>
                 <li>
                     <div class="btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-outline-secondary checkbox-btn">
-                            <input type="checkbox" autocomplete="off">Звукорежиссура
+                            <input type="checkbox">Звукорежиссура
                         </label>
                     </div>
                 </li>
@@ -136,20 +137,7 @@
                     </div>
                 </li>
             </ul>
-            <script>
-                $("#specializationCheckAll").click(function () {
-                    $(".checkbox-btn").each(function () {
-                        $(this).addClass("active");
-                        $("input[type=checkbox]", this).prop("checked", true);
-                    });
-                });
-                $("#specializationRemoveCheckAll").click(function () {
-                    $(".checkbox-btn").each(function () {
-                        $(this).removeClass("active");
-                        $("input[type=checkbox]", this).prop("checked", false);
-                    });
-                });
-            </script>
+
         </div>
     </div>
     <div class="row mt-5">
@@ -157,25 +145,16 @@
             <h4 class="text-left text-sm-right">Образование</h4>
         </div>
         <div class="col-md-5">
-            <div class="educationInputs">
+            <div id="educationInputs">
                 <div class="form-group">
                     <label>ВУЗ и факультет через запятую</label>
-                    <input type="text" class="form-control" placeholder="ВУЗ и факультет через запятую">
+                    <input type="text" name="education_1" class="form-control" placeholder="ВУЗ и факультет через запятую">
                 </div>
             </div>
             <p>
-                <button id="addEducationInput" class="btn btn-sm btn-link">+ Добавить образование</button>
+                <button type="button" id="addEducationInput" class="btn btn-sm btn-link">+ Добавить образование</button>
             </p>
-            <script>
-                $("#addEducationInput").click(function () {
-                    $(".educationInputs").append(
-                            '<div class="form-group">' +
-                            '<label>ВУЗ и факультет через запятую</label>' +
-                            '<input type="text" class="form-control" placeholder="ВУЗ и факультет через запятую">' +
-                            '</div>'
-                    );
-                });
-            </script>
+
         </div>
     </div>
     <div class="row mt-5">
@@ -259,7 +238,7 @@
                         <div class="col-md-8">
                             <div class="form-group">
                                 <label>Ссылка</label>
-                                <input type="text" class="form-control">
+                                <input type="text" name="link_1" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -267,41 +246,15 @@
                         <div class="col-md-8">
                             <div class="form-group">
                                 <label>Чем занимались</label>
-                                <input type="text" class="form-control">
+                                <input type="text" name="whatdid_1" class="form-control">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <p>
-                <button id="addWorkGroup" class="btn btn-sm btn-link">+ Добавить работу в портфолио</button>
+                <button type="button" id="addWorkGroup" class="btn btn-sm btn-link">+ Добавить работу в портфолио</button>
             </p>
-            <script>
-                $("#addWorkGroup").click(function () {
-                    var groupNumber = $("#workGroup").children().length;
-                    $("#workGroup").append(
-                            '<div class="workGroupItem">' +
-                            '<h5 class="mt-2">Работа ' + (groupNumber + 1) + '</h5>' +
-                            '<div class="row">' +
-                            '<div class="col-md-8">' +
-                            '<div class="form-group">' +
-                            '<label>Ссылка</label>' +
-                            '<input type="text" class="form-control">' +
-                            '</div>' +
-                            '</div>' +
-                            '</div>' +
-                            '<div class="row">' +
-                            '<div class="col-md-8">' +
-                            '<div class="form-group">' +
-                            '<label>Чем занимались</label>' +
-                            '<input type="text" class="form-control">' +
-                            '</div>' +
-                            '</div>' +
-                            '</div>' +
-                            '</div>'
-                    )
-                });
-            </script>
         </div>
     </div>
     <p class="text-center p-4">
@@ -309,6 +262,8 @@
     </p>
 
 </div>
+</form>
+
 <footer class="footer">
     <div class="container text-center">
         <ul class="footer-menu">
@@ -355,6 +310,57 @@
         <span class="text-muted">© Efir Production - All Right Reserved</span>
     </div>
 </footer>
+
+<script>
+    $("#specializationCheckAll").click(function () {
+        $(".checkbox-btn").each(function () {
+            $(this).addClass("active");
+            $("input[type=checkbox]", this).prop("checked", true);
+        });
+    });
+    $("#specializationRemoveCheckAll").click(function () {
+        $(".checkbox-btn").each(function () {
+            $(this).removeClass("active");
+            $("input[type=checkbox]", this).prop("checked", false);
+        });
+    });
+
+    $("#addEducationInput").click(function () {
+        var groupNumber = $("#educationInputs").children().length;
+        $("#educationInputs").append(
+                '<div class="form-group">' +
+                '<label>ВУЗ и факультет через запятую</label>' +
+                '<input type="text" name="education_' + (groupNumber + 1) + '" class="form-control" placeholder="ВУЗ и факультет через запятую">' +
+                '</div>'
+        );
+    });
+
+    $("#addWorkGroup").click(function () {
+        var groupNumber = $("#workGroup").children().length;
+        $("#workGroup").append(
+                '<div class="workGroupItem">' +
+                '<h5 class="mt-2">Работа ' + (groupNumber + 1) + '</h5>' +
+                '<div class="row">' +
+                '<div class="col-md-8">' +
+                '<div class="form-group">' +
+                '<label>Ссылка</label>' +
+                '<input type="text" name="link_' + (groupNumber + 1) + '" class="form-control">' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="row">' +
+                '<div class="col-md-8">' +
+                '<div class="form-group">' +
+                '<label>Чем занимались</label>' +
+                '<input type="text" name="whatdid_' + (groupNumber + 1) + '" class="form-control">' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>'
+        )
+    });
+</script>
+
 
 </body>
 </html>
