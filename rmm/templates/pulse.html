@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#ffffff">
+
+    <title></title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+</head>
+<body class="bg-body">
+<div class="content-wrap">
+    <header class="header">
+        <div class="container header__wrap">
+            <div class="header__logo">
+                <a class="logo" href="#">
+                    <img class="logo__img"
+                         src="../images/logo/logo-new-s.png"
+                         srcset="../images/logo/logo-new-s.png 1x, ../images/logo/logo-new-s@2x.png 2x, ../images/logo/logo-new-s@3x.png 3x"
+                         alt=""
+                    >
+                </a>
+            </div>
+            <div class="header__partner">
+                <ul class="partner">
+                    <li class="partner__item">
+                        <a class="partner__item-link" href="https://www.pwc.ru/" target="_blank" rel="noopener">
+                            <img class="partner__item-img partner__item-img_1"
+                                 src="../images/partner/pwc.png"
+                                 srcset="../images/partner/pwc.png 1x, ../images/partner/pwc@2x.png 2x, ../images/partner/pwc@3x.png 3x"
+                                 alt="PwC"
+                            >
+                        </a>
+                    </li>
+                    <li class="partner__item">
+                        <a class="partner__item-link" href="http://nm-g.ru/holding/" target="_blank" rel="noopener">
+                            <img class="partner__item-img partner__item-img_2"
+                                 src="../images/partner/nmg.png"
+                                 srcset="../images/partner/nmg.png 1x, ../images/partner/nmg@2x.png 2x, ../images/partner/nmg@3x.png 3x"
+                                 alt="Национальная Медиа Группа"
+                            >
+                        </a>
+                    </li>
+                    <li class="partner__item">
+                        <a class="partner__item-link" href="http://www.odgersberndtson.ru/ru/glavnaya/" target="_blank"
+                           rel="noopener">
+                            <img class="partner__item-img partner__item-img_3"
+                                 src="../images/partner/logo-ob-s.png"
+                                 srcset="../images/partner/logo-ob-s.png 1x, ../images/partner/logo-ob-s@2x.png 2x, ../images/partner/logo-ob-s@3x.png 3x"
+                                 alt="Odgers Berndtson"
+                            >
+                        </a>
+                    </li>
+                    <li class="partner__item">
+                        <a class="partner__item-link" href="http://mediascope.net/" target="_blank" rel="noopener">
+                            <img class="partner__item-img partner__item-img_4"
+                                 src="../images/partner/mediascope-logo-black.png"
+                                 srcset="../images/partner/mediascope-logo-black.png 1x, ../images/partner/mediascope-logo-black@2x.png 2x, ../images/partner/mediascope-logo-black@3x.png 3x"
+                                 alt="Mediascope"
+                            >
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__social">
+                <div class="social">
+                    <li class="social__item">
+                        <a class="social__item-link" href="#">
+                            <img class="social__item-img"
+                                 src="../images/social/facebook-icon.svg"
+                                 alt="facebook"
+                            >
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__item-link" href="#">
+                            <img class="social__item-img"
+                                 src="../images/social/twitter-icon.svg"
+                                 alt="twitter"
+                            >
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__item-link" href="#">
+                            <img class="social__item-img"
+                                 src="../images/social/instagram-icon.svg"
+                                 alt="instagram"
+                            >
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="grid-main">
+        <div class="container container_main">
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link" href="#">Итоги</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link" href="#">Пульс рынка</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link" href="#">Новости</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link" href="#">Календарь</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link nav-menu__link_active" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <main class="main">
+                <div class="content">
+                    <h1>Пульс рынка</h1>
+                    <div class="pulse">
+                        <div id="pulseChart" class="pulse-chart"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer-wrap">
+        <div class="container">
+            <div class="footer">
+                <div class="footer__cr">© 2018 Odgers Berndtson</div>
+                <div class="footer__nav">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="#">Итоги</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="#">Новости</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="#">Календарь</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="#">Контакты</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="tel:+79162107821">+7 (916) 210 78 21</a>
+                        </li>
+                    </ul>
+                </div>
+                pulse
+                <div class="footer__social">
+                    <div class="social">
+                        <li class="social__item">
+                            <a class="social__item-link" href="#">
+                                <img class="social__item-img"
+                                     src="../images/social/facebook-icon.svg"
+                                     alt="facebook"
+                                >
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__item-link" href="#">
+                                <img class="social__item-img"
+                                     src="../images/social/twitter-icon.svg"
+                                     alt="twitter"
+                                >
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__item-link" href="#">
+                                <img class="social__item-img"
+                                     src="../images/social/instagram-icon.svg"
+                                     alt="instagram"
+                                >
+                            </a>
+                        </li>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="../vendors/jquery-3.2.1.min.js"></script>
+<script src="../vendors/echarts.common.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        var lineData = {
+            data: [
+                {name: "1", value: 25.0},
+                {name: "2", value: 25.0},
+                {name: "3", value: 25.0},
+            ],
+        };
+
+        drawLineGraph('pulseChart', lineData);
+
+        function drawLineGraph(id, donutData) {
+
+            var chart = echarts.init(document.getElementById(id));
+
+            option = {
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: '#e6ecf8',
+                    borderRadius: 0,
+                    padding: 10,
+                    textStyle: {
+                        color: '#4f5163',
+                    }
+                },
+                grid: {
+                    top: '2%',
+                    left: '0',
+                    right: '0',
+                    bottom: '0',
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['Отрасль 1', 'Отрасль 2', 'Отрасль 3', 'Отрасль 4', 'Отрасль 5', 'Отрасль 6'],
+                    splitLine: {
+                        show: true,
+                        lineStyle: {
+                            color: '#f2f5fc',
+                        },
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: '#b5bcc8',
+                            width: '0',
+                        }
+                    },
+                    axisLabel: {
+                        textStyle: {
+                            fontFamily: "'Lato', sans-serif",
+                            fontSize: '12',
+                        }
+                    },
+                },
+                yAxis: {
+                    type: 'value',
+                    position: 'bottom',
+                    splitLine: {
+                        lineStyle: {
+                            color: '#f2f5fc',
+                        },
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: '#b5bcc8',
+                            width: '0',
+                        }
+                    },
+                    axisLabel: {
+                        textStyle: {
+                            fontFamily: "'Lato', sans-serif",
+                            fontSize: '10',
+                        }
+                    }
+                },
+                series: [
+                    {
+                        name: 'Имя 1',
+                        type: 'line',
+                        data: [500, 56, 89, 400, 564, 700],
+                        itemStyle: {
+                            normal: {
+                                color: '#49b680',
+                                lineStyle: {
+                                    color: '#49b680',
+                                    type: 'solid',
+                                    width: '1',
+                                },
+                            }
+                        },
+                        showSymbol: false,
+                    },
+                    {
+                        name: 'Имя 2',
+                        type: 'line',
+                        data: [50, 560, 809, 300, 500, 800],
+                        itemStyle: {
+                            normal: {
+                                color: '#ec4d5c',
+                                lineStyle: {
+                                    color: '#ec4d5c',
+                                    type: 'solid',
+                                    width: '1',
+                                },
+                            }
+                        },
+                        showSymbol: false,
+                    }
+                ]
+            };
+
+            chart.setOption(option);
+
+        }
+
+
+    });
+</script>
+</body>
+</html>
