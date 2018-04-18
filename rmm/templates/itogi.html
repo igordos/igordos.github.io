@@ -15,6 +15,12 @@
 <div class="content-wrap">
     <header class="header">
         <div class="container header__wrap">
+            <button class="header__menu-btn">
+                <svg class="header__menu-btn-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20">
+                    <path d="M1 10h28M15 1h14M1 19h14" fill="none" stroke-linecap="square"
+                          stroke-width="2"/>
+                </svg>
+            </button>
             <div class="header__logo">
                 <a class="logo" href="#">
                     <img class="logo__img"
@@ -112,175 +118,247 @@
                         <a class="nav-menu__link" href="#">Календарь</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__link nav-menu__link_active" href="#">Контакты</a>
+                        <a class="nav-menu__link" href="#">Контакты</a>
                     </li>
                 </ul>
+                <ul class="partner partner_nav">
+                    <li class="partner__item">
+                        <a class="partner__item-link" href="https://www.pwc.ru/" target="_blank" rel="noopener">
+                            <img class="partner__item-img partner__item-img_1"
+                                 src="../images/partner/pwc.png"
+                                 srcset="../images/partner/pwc.png 1x, ../images/partner/pwc@2x.png 2x, ../images/partner/pwc@3x.png 3x"
+                                 alt="PwC"
+                            >
+                        </a>
+                    </li>
+                    <li class="partner__item">
+                        <a class="partner__item-link" href="http://nm-g.ru/holding/" target="_blank" rel="noopener">
+                            <img class="partner__item-img partner__item-img_2"
+                                 src="../images/partner/nmg.png"
+                                 srcset="../images/partner/nmg.png 1x, ../images/partner/nmg@2x.png 2x, ../images/partner/nmg@3x.png 3x"
+                                 alt="Национальная Медиа Группа"
+                            >
+                        </a>
+                    </li>
+                    <li class="partner__item">
+                        <a class="partner__item-link" href="http://www.odgersberndtson.ru/ru/glavnaya/" target="_blank"
+                           rel="noopener">
+                            <img class="partner__item-img partner__item-img_3"
+                                 src="../images/partner/logo-ob-s.png"
+                                 srcset="../images/partner/logo-ob-s.png 1x, ../images/partner/logo-ob-s@2x.png 2x, ../images/partner/logo-ob-s@3x.png 3x"
+                                 alt="Odgers Berndtson"
+                            >
+                        </a>
+                    </li>
+                    <li class="partner__item">
+                        <a class="partner__item-link" href="http://mediascope.net/" target="_blank" rel="noopener">
+                            <img class="partner__item-img partner__item-img_4"
+                                 src="../images/partner/mediascope-logo-black.png"
+                                 srcset="../images/partner/mediascope-logo-black.png 1x, ../images/partner/mediascope-logo-black@2x.png 2x, ../images/partner/mediascope-logo-black@3x.png 3x"
+                                 alt="Mediascope"
+                            >
+                        </a>
+                    </li>
+                </ul>
+
             </nav>
             <main class="main">
                 <div class="content">
                     <h1>Итоги</h1>
-                    <div class="rating">
-                        <div class="rating-label">
-                            <div class="rating-label__item y1">AAA</div>
-                            <div class="rating-label__item y2">AA</div>
-                            <div class="rating-label__item y3">A</div>
-                            <div class="rating-label__item y4">BB</div>
-                            <div class="rating-label__item y5">B</div>
-                            <div class="rating-label__item y6">C</div>
+                    <div class="form-grid">
+                        <div class="form-grid_col">
+                            <div class="form-group">
+                                <label>Направление деятельности:</label>
+                                <select class="form-control">
+                                    <option>Высший менеджмент (CEO)</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="rating-line-wrap rating-line-wrap_w-bg">
-                            <div class="rating-line rating-line_alt"></div>
+                        <div class="form-grid_col">
+                            <div class="form-group">
+                                <label>Выбор отрасли:</label>
+                                <select class="form-control">
+                                    <option>Эфирное ТВ</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="rating-list-wrap">
-                            <div class="rating-list">
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y1" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
+                        <div class="form-grid_col">
+                            <div class="form-group">
+                                <label>Поиск учатника</label>
+                                <input class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rating-scroll">
+                        <div class="rating">
+                            <div class="rating-label">
+                                <div class="rating-label__item y1">AAA</div>
+                                <div class="rating-label__item y2">AA</div>
+                                <div class="rating-label__item y3">A</div>
+                                <div class="rating-label__item y4">BB</div>
+                                <div class="rating-label__item y5">B</div>
+                                <div class="rating-label__item y6">C</div>
+                            </div>
+                            <div class="rating-line-wrap rating-line-wrap_w-bg rating-line-wrap_pb-0">
+                                <div class="rating-line rating-line_alt"></div>
+                            </div>
+                            <div class="rating-list-wrap">
+                                <div class="rating-list">
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y1" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y1" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y1" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y1" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
+                                <div class="rating-list">
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y2" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y2" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y2" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y1" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
+                                <div class="rating-list">
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y3" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y3" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y3" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="rating-list">
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y4" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y4" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y4" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="rating-list">
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y5" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y5" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y5" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="rating-list">
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y6" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y6" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y6" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
+                                    <div class="rating-list__item">
+                                        <a class="rating-list-profile y6" href="#">
+                                            <span>Картозия Николай</span>
+                                            <span>Пятница</span>
+                                            <span>Генеральный директор</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="rating-list">
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y2" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y2" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y2" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="rating-list">
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y3" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y3" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y3" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="rating-list">
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y4" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y4" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y4" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="rating-list">
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y5" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y5" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y5" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="rating-list">
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y6" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y6" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y6" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-                                <div class="rating-list__item">
-                                    <a class="rating-list-profile y6" href="#">
-                                        <span>Картозия Николай</span>
-                                        <span>Пятница</span>
-                                        <span>Генеральный директор</span>
-                                    </a>
-                                </div>
-
-                            </div>
-
-
-
+                            <!--<div class="rating-modal">-->
+                            <!--<div class="rating-modal__head">-->
+                            <!--<button class="rating-modal__close"></button>-->
+                            <!--<div class="rating-modal__title">Профайл</div>-->
+                            <!--<div class="rating-modal__np-btn">-->
+                            <!--<button class="rating-modal__next">Предыдущий<br>участник</button>-->
+                            <!--<button class="rating-modal__previous">Следующий<br>участник</button>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--</div>-->
                         </div>
                     </div>
                 </div>
@@ -346,9 +424,13 @@
 </div>
 
 <script src="../vendors/jquery-3.2.1.min.js"></script>
-<!--<script src="../vendors/owl-carousel/dist/owl.carousel.min.js"></script>-->
 <script>
     $(document).ready(function () {
+
+        $('.header__menu-btn').click(function (e) {
+            e.preventDefault();
+            $('.nav, .header__menu-btn, .header__logo').toggleClass('toggled');
+        });
 
     });
 </script>
