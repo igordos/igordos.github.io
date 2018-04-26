@@ -168,225 +168,240 @@
                     <p><b>Здравствуйте!</b> <br>
                         Просим Вас в данной анкете заполнить информацию о себе. Это позволит нам объективно оценить Ваши
                         достижения.</p>
-                    <h2 class="content__form-title">Персональные данные</h2>
-                    <div class="form-grid">
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Фамилия <span>*</span></label>
-                                <input class="form-control"/>
+                    <form action="#">
+                        <h2 class="content__form-title">Персональные данные</h2>
+                        <div class="form-grid">
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Фамилия <span>*</span></label>
+                                    <input class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Имя <span>*</span></label>
+                                    <input class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Отчество <span>*</span></label>
+                                    <input class="form-control"/>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Имя <span>*</span></label>
-                                <input class="form-control"/>
+                        <div class="form-grid">
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Дата рождения <span>*</span></label>
+                                    <input class="form-control" value="01.01.1985"/>
+                                </div>
+                            </div>
+                            <div class="form-grid_col">
+                                <div class="form-group has-error">
+                                    <label class="control-label">Фото <span>*</span></label>
+                                    <input type="file">
+                                    <p class="help-block">файл не выбран</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Отчество <span>*</span></label>
-                                <input class="form-control"/>
+                        <h2 class="content__form-title">Текущее место работы</h2>
+                        <div class="form-grid">
+                            <div class="form-grid_col">
+                                <div class="form-group has-error">
+                                    <label class="control-label">Название компании</label>
+                                    <input class="form-control"/>
+                                    <span class="help-block">Обязательно для заполнения</span>
+                                </div>
+                            </div>
+                            <div class="form-grid_col">
+                                <div class="form-group has-success">
+                                    <label class="control-label">Другое название</label>
+                                    <input class="form-control"/>
+                                    <span class="help-block">Обязательно для заполнения</span>
+                                </div>
+                            </div>
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Ваша должность <span>*</span></label>
+                                    <input class="form-control"/>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-grid">
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Дата рождения <span>*</span></label>
-                                <input class="form-control" value="01.01.1985"/>
+                        <div class="form-grid">
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <br><br>
+                                    <label class="control-label">Дата начала работы в компании (или на текущей
+                                        должности)
+                                        <span>*</span></label>
+                                </div>
+                            </div>
+                            <div class="form-grid_col">
+                                <div class="form-group has-error">
+                                    <label class="control-label">Выберите месяц</label>
+                                    <select class="form-control">
+                                        <option>Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1</option>
+                                        <option>Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1</option>
+                                        <option>Январ2ь</option>
+                                        <option>Январь3</option>
+                                        <option>Январ4ь</option>
+                                        <option>Январ5ь</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Выберите год</label>
+                                    <select class="form-control">
+                                        <option>20181</option>
+                                        <option>20182</option>
+                                        <option>20183</option>
+                                        <option>20184</option>
+                                        <option>20185</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-grid_col">
-                            <div class="form-group has-error">
-                                <label class="control-label">Фото <span>*</span></label>
-                                <input type="file">
-                                <p class="help-block">файл не выбран</p>
+                        <h2 class="content__form-title">Предыдущее место работы</h2>
+                        <div class="form-grid">
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Название компании</label>
+                                    <select class="form-control">
+                                        <option disabled selected>Выберите название</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Другое название</label>
+                                    <input class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Ваша должность <span>*</span></label>
+                                    <input class="form-control"/>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <h2 class="content__form-title">Текущее место работы</h2>
-                    <div class="form-grid">
-                        <div class="form-grid_col">
-                            <div class="form-group has-error">
-                                <label class="control-label">Название компании</label>
-                                <input class="form-control"/>
-                                <span class="help-block">Обязательно для заполнения</span>
+                        <div class="form-grid">
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <br><br>
+                                    <label class="control-label">Дата начала работы в компании (или на текущей
+                                        должности)
+                                        <span>*</span></label>
+                                </div>
+                            </div>
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Выберите месяц</label>
+                                    <select class="form-control">
+                                        <option>Январь</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Выберите год</label>
+                                    <select class="form-control">
+                                        <option>2018</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-grid_col">
-                            <div class="form-group has-success">
-                                <label class="control-label">Другое название</label>
-                                <input class="form-control"/>
-                                <span class="help-block">Обязательно для заполнения</span>
+                        <h2 class="content__form-title">Дополнительная информация</h2>
+                        <p class="content__form-text">Есть ли у вас степень MBA?<span>*</span></p>
+                        <br>
+                        <div class="form-group has-error">
+                            <label class="radio-inline">
+                                <input type="radio">Да
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio">Нет
+                            </label>
+                        </div>
+                        <p class="content__form-text">Есть ли у вас опыт преподавания за последние 2 года (курсы лекций,
+                            семинаров или мастер-классов по профессиональной тематике)<br> Курсом считается не менее 3
+                            занятий,
+                            объединенных общей тематикой. <span>*</span></p>
+                        <br>
+                        <div class="form-group">
+                            <label class="radio-inline">
+                                <input type="radio">Да
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio">Нет
+                            </label>
+                        </div>
+                        <p class="content__form-text">Есть ли у вас авторские статьи по профессиональной тематике за
+                            последние 3 года? <span>*</span></p>
+                        <br>
+                        <div class="form-group">
+                            <label class="radio-inline">
+                                <input type="radio">Да
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio">Нет
+                            </label>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Ваше владение английским языком</label>
+                                    <select class="form-control">
+                                        <option>Intermediate</option>
+                                    </select>
+                                    <span class="help-block">Организаторы оставляют за собой право пригла-сить вас пройти экспресс-тестирование на соот-ветствие указанному Вами уровню знания языка.</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Ваша должность <span>*</span></label>
-                                <input class="form-control"/>
+                        <h2 class="content__form-title">Контактная информация</h2>
+                        <div class="form-grid">
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Контактный телефон <span>*</span></label>
+                                    <input class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Адрес электронной почты <span>*</span></label>
+                                    <input class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-grid_col">
+                                <div class="form-group">
+                                    <label class="control-label">Личный e-mail <span>*</span></label>
+                                    <input class="form-control"/>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-grid">
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <br><br>
-                                <label class="control-label">Дата начала работы в компании (или на текущей должности)
-                                    <span>*</span></label>
-                            </div>
+                        <div class="form-group">
+                            <label class="control-label">Дополнительная информация <span>*</span></label>
+                            <textarea rows="4" class="form-control"
+                                      placeholder="Укажите дополнительную информацию которую хотите нам сообщить"></textarea>
                         </div>
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Выберите месяц</label>
-                                <select class="form-control">
-                                    <option>Январь</option>
-                                </select>
-                            </div>
+                        <br>
+                        <button class="btn" type="submit">Отправить данные</button>
+                        <br>
+                        <br>
+                        <div class="checkbox has-error">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                                Корректность и достоверность указанных сведений подтверждаю. После отправки данной формы
+                                Вы не сможете изменить данные о себе
+                            </label>
                         </div>
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Выберите год</label>
-                                <select class="form-control">
-                                    <option>2018</option>
-                                </select>
-                            </div>
+                        <div class="checkbox">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" checked>
+                                Я согласен (см. приложение) на обработку моих персональных данных
+                            </label>
                         </div>
-                    </div>
-                    <h2 class="content__form-title">Предыдущее место работы</h2>
-                    <div class="form-grid">
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Название компании</label>
-                                <select class="form-control">
-                                    <option disabled selected>Выберите название</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Другое название</label>
-                                <input class="form-control"/>
-                            </div>
-                        </div>
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Ваша должность <span>*</span></label>
-                                <input class="form-control"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-grid">
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <br><br>
-                                <label class="control-label">Дата начала работы в компании (или на текущей должности)
-                                    <span>*</span></label>
-                            </div>
-                        </div>
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Выберите месяц</label>
-                                <select class="form-control">
-                                    <option>Январь</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Выберите год</label>
-                                <select class="form-control">
-                                    <option>2018</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="content__form-title">Дополнительная информация</h2>
-                    <p class="content__form-text">Есть ли у вас степень MBA?<span>*</span></p>
-                    <br>
-                    <div class="form-group">
-                        <label class="radio-inline">
-                            <input type="radio">Да
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio">Нет
-                        </label>
-                    </div>
-                    <p class="content__form-text">Есть ли у вас опыт преподавания за последние 2 года (курсы лекций,
-                        семинаров или мастер-классов по профессиональной тематике)<br> Курсом считается не менее 3
-                        занятий,
-                        объединенных общей тематикой. <span>*</span></p>
-                    <br>
-                    <div class="form-group">
-                        <label class="radio-inline">
-                            <input type="radio">Да
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio">Нет
-                        </label>
-                    </div>
-                    <p class="content__form-text">Есть ли у вас авторские статьи по профессиональной тематике за
-                        последние 3 года? <span>*</span></p>
-                    <br>
-                    <div class="form-group">
-                        <label class="radio-inline">
-                            <input type="radio">Да
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio">Нет
-                        </label>
-                    </div>
-                    <div class="form-grid">
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Ваше владение английским языком</label>
-                                <select class="form-control">
-                                    <option>Intermediate</option>
-                                </select>
-                                <span class="help-block">Организаторы оставляют за собой право пригла-сить вас пройти экспресс-тестирование на соот-ветствие указанному Вами уровню знания языка.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="content__form-title">Контактная информация</h2>
-                    <div class="form-grid">
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Контактный телефон <span>*</span></label>
-                                <input class="form-control"/>
-                            </div>
-                        </div>
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Адрес электронной почты <span>*</span></label>
-                                <input class="form-control"/>
-                            </div>
-                        </div>
-                        <div class="form-grid_col">
-                            <div class="form-group">
-                                <label class="control-label">Личный e-mail <span>*</span></label>
-                                <input class="form-control"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label">Дополнительная информация <span>*</span></label>
-                        <textarea rows="4" class="form-control" placeholder="Укажите дополнительную информацию которую хотите нам сообщить"></textarea>
-                    </div>
-                    <br>
-                    <a class="btn" href="#">Отправить данные</a>
-                    <br>
-                    <br>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input">
-                            Корректность и достоверность указанных сведений подтверждаю. После отправки данной формы Вы не сможете изменить данные о себе
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" checked>
-                            Я согласен (см. приложение) на обработку моих персональных данных
-                        </label>
-                    </div>
+                    </form>
                 </div>
             </main>
         </div>
@@ -450,6 +465,7 @@
 </div>
 
 <script src="../vendors/jquery-3.2.1.min.js"></script>
+<script src="../vendors/jquerySelectBox/jquery.selectBox.js"></script>
 <script>
     $(document).ready(function () {
 
@@ -457,6 +473,8 @@
             e.preventDefault();
             $('.nav, .header__menu-btn, .header__logo').toggleClass('toggled');
         });
+
+        $('select').selectBox();
 
     });
 </script>
