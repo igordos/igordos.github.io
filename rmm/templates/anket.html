@@ -10,6 +10,7 @@
     <title></title>
     <link rel="stylesheet" href="../styles/index.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
 <body class="">
 <div class="content-wrap">
@@ -170,6 +171,40 @@
                         достижения.</p>
                     <form action="#">
                         <h2 class="content__form-title">Персональные данные</h2>
+
+                        <!--<div>-->
+                            <!--<label>-->
+                                <!--<input type="checkbox" name="check" checked disabled> <span-->
+                                    <!--class="label-text">Option 01</span>-->
+                            <!--</label>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<label>-->
+                                <!--<input type="checkbox" name="check" checked> <span class="label-text">Option 01</span>-->
+                            <!--</label>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<label>-->
+                                <!--<input type="checkbox" name="check"> <span class="label-text">Option 01</span>-->
+                            <!--</label>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<label>-->
+                                <!--<input type="radio" name="radio" checked disabled> <span-->
+                                    <!--class="label-text">Option 01</span>-->
+                            <!--</label>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<label>-->
+                                <!--<input type="radio" name="radio" checked> <span class="label-text">Option 01</span>-->
+                            <!--</label>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<label>-->
+                                <!--<input type="radio" name="radio"> <span class="label-text">Option 01</span>-->
+                            <!--</label>-->
+                        <!--</div>-->
+
                         <div class="form-grid">
                             <div class="form-grid_col">
                                 <div class="form-group">
@@ -241,8 +276,8 @@
                                 <div class="form-group has-error">
                                     <label class="control-label">Выберите месяц</label>
                                     <select class="form-control">
-                                        <option>Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1</option>
-                                        <option>Январь1Январь1Январь1Январь1Январь1Январь1Январь1Январь1</option>
+                                        <option>123</option>
+                                        <option>1231232</option>
                                         <option>Январ2ь</option>
                                         <option>Январь3</option>
                                         <option>Январ4ь</option>
@@ -317,10 +352,12 @@
                         <br>
                         <div class="form-group has-error">
                             <label class="radio-inline">
-                                <input type="radio">Да
+                                <input type="radio">
+                                <span class="label-text">Да</span>
                             </label>
                             <label class="radio-inline">
-                                <input type="radio">Нет
+                                <input type="radio">
+                                <span class="label-text">Нет</span>
                             </label>
                         </div>
                         <p class="content__form-text">Есть ли у вас опыт преподавания за последние 2 года (курсы лекций,
@@ -330,10 +367,12 @@
                         <br>
                         <div class="form-group">
                             <label class="radio-inline">
-                                <input type="radio">Да
+                                <input type="radio">
+                                <span class="label-text">Да</span>
                             </label>
                             <label class="radio-inline">
-                                <input type="radio">Нет
+                                <input type="radio">
+                                <span class="label-text">Нет</span>
                             </label>
                         </div>
                         <p class="content__form-text">Есть ли у вас авторские статьи по профессиональной тематике за
@@ -341,10 +380,12 @@
                         <br>
                         <div class="form-group">
                             <label class="radio-inline">
-                                <input type="radio">Да
+                                <input type="radio">
+                                <span class="label-text">Да</span>
                             </label>
                             <label class="radio-inline">
-                                <input type="radio">Нет
+                                <input type="radio">
+                                <span class="label-text">Нет</span>
                             </label>
                         </div>
                         <div class="form-grid">
@@ -390,15 +431,14 @@
                         <br>
                         <div class="checkbox has-error">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input">
-                                Корректность и достоверность указанных сведений подтверждаю. После отправки данной формы
-                                Вы не сможете изменить данные о себе
+                                <input type="checkbox">
+                                <span class="label-text">Корректность и достоверность указанных сведений подтверждаю. После отправки данной формы Вы не сможете изменить данные о себе</span>
                             </label>
                         </div>
                         <div class="checkbox">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" checked>
-                                Я согласен (см. приложение) на обработку моих персональных данных
+                                <input type="checkbox" checked>
+                                <span class="label-text">Я согласен (см. приложение) на обработку моих персональных данных</span>
                             </label>
                         </div>
                     </form>
@@ -464,7 +504,7 @@
     </footer>
 </div>
 
-<script src="../vendors/jquery-3.2.1.min.js"></script>
+<script src="../vendors/jquery-2.2.4.min.js"></script>
 <script src="../vendors/selectBox/jquery.selectBox.js"></script>
 <script>
     $(document).ready(function () {
