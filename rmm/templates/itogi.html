@@ -178,9 +178,14 @@
                             <div class="form-group">
                                 <label class="control-label">Выбор отрасли:</label>
                                 <select class="form-control">
+                                    <option selected>Все</option>
+                                    <option>Неэфирное ТВ</option>
+                                    <option>Интернет-сервисы (за исключением СМИ) Интернет-сервисы (за исключением СМИ)</option>
+                                    <option>Печать</option>
+                                    <option>Эфирное Радио</option>
                                     <option>Эфирное ТВ</option>
-                                </select>
-                            </div>
+                                    <option>СМИ в интернете</option>
+                                </select>                            </div>
                         </div>
                         <div class="form-grid_col">
                             <div class="form-group">
@@ -438,7 +443,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </main>
         </div>
@@ -502,7 +506,9 @@
 </div>
 
 <script src="../vendors/jquery-2.2.4.min.js"></script>
-<script src="../vendors/selectBox/jquery.selectBox.js"></script>
+<script src="../vendors/selectric/jquery.selectric.min.js"></script>
+<!--<script src="../vendors/selectBox/jquery.selectBox.js"></script>-->
+
 <script>
     $(document).ready(function () {
 
@@ -521,16 +527,16 @@
             $('.rating-modal').toggleClass('rating-modal_show');
         });
 
-        $('select').selectBox({
-            mobile: true,
-        });
+        // $('select').selectBox({
+        //     mobile: true,
+        // });
+        $('select').selectric();
 
         $('.rating-list-wrap .rating-list__card-head').click(function () {
             $(this).toggleClass('rating-list__card-head_show');
             var $body = $(this).closest('.rating-list').find('.rating-list__card-body');
             $body.toggleClass('rating-list__card-body_show');
         });
-
 
     });
 </script>
