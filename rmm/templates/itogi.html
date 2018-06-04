@@ -9,7 +9,8 @@
 
     <title></title>
     <link rel="stylesheet" href="../styles/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body class="bg-body">
 <div class="content-wrap">
@@ -106,7 +107,7 @@
             <nav class="nav">
                 <ul class="nav-menu">
                     <li class="nav-menu__item">
-                        <a class="nav-menu__link" href="#">Итоги</a>
+                        <a class="nav-menu__link nav-menu__link_active" href="#">Итоги</a>
                     </li>
                     <li class="nav-menu__item">
                         <a class="nav-menu__link" href="#">Пульс рынка</a>
@@ -685,7 +686,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="rating-modal">
+                    <div class="rating-modal rating-modal_show">
                         <div class="rating-modal__head">
                             <button class="rating-modal__close"></button>
                             <div class="rating-modal__title">Профайл</div>
@@ -701,7 +702,12 @@
                             <div class="rating-modal__info">
                                 <div class="rating-modal__label-wrap">
                                     <span class="rating-modal__label">ааа</span>
-                                    <a class="rating-modal__label-question" href="#">?</a>
+                                    <span class="rating-modal__label-question">
+                                        ?
+                                        <div class="rating-modal__label-tooltip">
+                                            ВЫСШАЯ. Лидер медиа-отрасли России, занимает высшие позиции в рейтинге.
+                                        </div>
+                                    </span>
                                 </div>
                                 <h3 class="rating-modal__name">Юрий Дудь</h3>
                                 <p class="rating-modal__date">11.10.1986 (31 год)</p>
