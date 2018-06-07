@@ -337,11 +337,12 @@
                         </div>
                     </div>
                     <div class="news__cr">
+                        <!-- Класс "news-content_show" нужно удалить -->
                         <div class="news-content news-content_show">
                             <button class="news-content__close"></button>
                             <h1>6-ая Церемония Рейтинга молодых медиаменеджеров - как это было</h1>
                             <!--<time class="news-content__time" datetime="2018-04-26 16:55:00">сегодня, 16:55</time>-->
-                            <p>21 сентября состоялась 6-ая ежегодная церемония Молодой Медиаменеджер России. Более 100
+                            <p><a href="#">21 сентября состоялась 6-ая ежегодная</a> церемония Молодой Медиаменеджер России. Более 100
                                 медиаменеджеров, вошедших в шестой рейтинг, стали участниками кулинарных мастер-классов
                                 на площадке Chefshows by Novikov, организованных Odgers Berndtson и Национальной Медиа
                                 Группой совместно с шотландским виски The Singleton, компаниями PwC и Mediascope.</p>
@@ -363,6 +364,12 @@
                                 <li>Группой совместно с шотландским виски The Singleton, компаниями PwC и Mediascope.
                                 </li>
                             </ul>
+                            <p>
+                                <a class="news-content__document-link" href="#">Odgers logo</a>
+                                <a class="news-content__document-link" href="#">Odgers logo</a>
+                                <a class="news-content__document-link" href="#">Odgers logo</a>
+                                <a class="news-content__document-link" href="#">Odgers logo</a>
+                            </p>
                             <p><img src="https://24smi.org/public/media/2017/5/30/02_c77s5YS.jpg" alt=""></p>
                         </div>
                     </div>
@@ -438,8 +445,13 @@
             $('.nav, .header__menu-btn, .header__logo').toggleClass('toggled');
         });
 
-        $('select').selectBox({
-            mobile: true,
+        // $('select').selectBox({
+        //     mobile: true,
+        // });
+
+        $('.news-content__close').click(function (e) {
+            e.preventDefault();
+            $('.news-content').toggleClass('news-content_show');
         });
 
     });
