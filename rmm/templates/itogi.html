@@ -210,7 +210,26 @@
                                 <div class="rating-label__item y7" data-lable-item="y7">C</div>
                             </div>
                             <div class="rating-line-wrap rating-line-wrap_w-bg rating-line-wrap_pb-0 rating-line-wrap_display-xs-none">
-                                <div class="rating-line rating-line_alt"></div>
+                                <div class="rating-line rating-line_alt">
+
+                                    <!--Firefox, Ie-->
+                                    <svg width='100%' height='100%' viewBox="0 0 100 100" preserveAspectRatio="none" style='background-color: transparent'>
+                                        <defs>
+                                            <linearGradient id="lgrad" x1="50%" y1="100%" x2="50%" y2="0%" >
+                                                <stop offset="0%" style="stop-color:rgb(210,11,84);stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:rgb(255,184,74);stop-opacity:1" />
+                                            </linearGradient>
+                                        </defs>
+                                        <polygon points ="100 0, 0 0, 100 100" fill="url(#lgrad)"/>
+                                    </svg>
+                                    <!--<svg width='100%' height='100%' viewBox="0 0 100 100" preserveAspectRatio="none" style='background-color: #fff'>-->
+                                        <!--<clipPath id="ratingClipPolygon">-->
+                                            <!--<polygon points="100 0, 0 0, 100 100">-->
+                                            <!--</polygon>-->
+                                        <!--</clipPath>-->
+                                    <!--</svg>-->
+
+                                </div>
                             </div>
                             <div class="rating-list-wrap">
                                 <div class="rating-list" data-lable-rating-list="y1">
