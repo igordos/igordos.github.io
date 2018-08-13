@@ -201,18 +201,38 @@
                     <div class="rating-scroll">
                         <div class="rating">
                             <div class="rating-label rating-label_display-xs-none">
-                                <div class="rating-label__item y1">AAA</div>
-                                <div class="rating-label__item y2">AA</div>
-                                <div class="rating-label__item y3">A</div>
-                                <div class="rating-label__item y4">BB</div>
-                                <div class="rating-label__item y5">B</div>
-                                <div class="rating-label__item y6">C</div>
+                                <div class="rating-label__item y1" data-lable-item="y1">AAA</div>
+                                <div class="rating-label__item y2" data-lable-item="y2">AA</div>
+                                <div class="rating-label__item y3" data-lable-item="y3">A</div>
+                                <div class="rating-label__item y4" data-lable-item="y4">BBB</div>
+                                <div class="rating-label__item y5" data-lable-item="y5">BB</div>
+                                <div class="rating-label__item y6" data-lable-item="y6">B</div>
+                                <div class="rating-label__item y7" data-lable-item="y7">C</div>
                             </div>
                             <div class="rating-line-wrap rating-line-wrap_w-bg rating-line-wrap_pb-0 rating-line-wrap_display-xs-none">
-                                <div class="rating-line rating-line_alt"></div>
+                                <div class="rating-line rating-line_alt">
+
+                                    <!--Firefox, Ie-->
+                                    <svg width='100%' height='100%' viewBox="0 0 100 100" preserveAspectRatio="none" style='background-color: transparent'>
+                                        <defs>
+                                            <linearGradient id="lgrad" x1="50%" y1="100%" x2="50%" y2="0%" >
+                                                <stop offset="0%" style="stop-color:rgb(210,11,84);stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:rgb(255,184,74);stop-opacity:1" />
+                                            </linearGradient>
+                                        </defs>
+                                        <polygon points ="100 0, 0 0, 100 100" fill="url(#lgrad)"/>
+                                    </svg>
+                                    <!--<svg width='100%' height='100%' viewBox="0 0 100 100" preserveAspectRatio="none" style='background-color: #fff'>-->
+                                        <!--<clipPath id="ratingClipPolygon">-->
+                                            <!--<polygon points="100 0, 0 0, 100 100">-->
+                                            <!--</polygon>-->
+                                        <!--</clipPath>-->
+                                    <!--</svg>-->
+
+                                </div>
                             </div>
                             <div class="rating-list-wrap">
-                                <div class="rating-list">
+                                <div class="rating-list" data-lable-rating-list="y1">
                                     <div class="rating-list__card">
                                         <div class="rating-list__card-head y1">
                                             AAA
@@ -228,7 +248,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="rating-list">
+                                <div class="rating-list" data-lable-rating-list="y2">
                                     <div class="rating-list__card">
                                         <div class="rating-list__card-head y2">
                                             АА
@@ -251,7 +271,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="rating-list">
+                                <div class="rating-list" data-lable-rating-list="y3">
                                     <div class="rating-list__card">
                                         <div class="rating-list__card-head y3">
                                             А
@@ -281,9 +301,32 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="rating-list">
+                                <div class="rating-list" data-lable-rating-list="y4">
                                     <div class="rating-list__card">
                                         <div class="rating-list__card-head y4">
+                                            BBB
+                                        </div>
+                                        <div class="rating-list__card-body">
+                                            <div class="rating-list__item">
+                                                <a class="rating-list-profile y4" href="#">
+                                                    <span>Картозия Николай</span>
+                                                    <span>Пятница</span>
+                                                    <span>Генеральный директор</span>
+                                                </a>
+                                            </div>
+                                            <div class="rating-list__item">
+                                                <a class="rating-list-profile y4" href="#">
+                                                    <span>Картозия Николай</span>
+                                                    <span>Пятница</span>
+                                                    <span>Генеральный директор</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rating-list" data-lable-rating-list="y5">
+                                    <div class="rating-list__card">
+                                        <div class="rating-list__card-head y5">
                                             BB
                                         </div>
                                         <div class="rating-list__card-body">
@@ -304,9 +347,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="rating-list">
+                                <div class="rating-list" data-lable-rating-list="y6">
                                     <div class="rating-list__card">
-                                        <div class="rating-list__card-head y5">
+                                        <div class="rating-list__card-head y6">
                                             B
                                         </div>
                                         <div class="rating-list__card-body">
@@ -341,9 +384,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="rating-list">
+                                <div class="rating-list" data-lable-rating-list="y7">
                                     <div class="rating-list__card">
-                                        <div class="rating-list__card-head y6">
+                                        <div class="rating-list__card-head y7">
                                             C
                                         </div>
                                         <div class="rating-list__card-body">
@@ -714,8 +757,8 @@
                                 </div>
                                 <h3 class="rating-modal__name">Юрий Дудь</h3>
                                 <p class="rating-modal__date">11.10.1986 (31 год)</p>
-                                <p class="rating-modal__position">Главный редактор Sports.ru <br> Создание контента
-                                    (продукта)</p>
+                                <p class="rating-modal__position">Главный редактор Sports.ru</p>
+                                <p class="rating-modal__line">Создание контента (продукта)</p>
                                 <div class="rating-modal__social">
                                     <div class="social">
                                         <li class="social__item">
@@ -816,6 +859,21 @@
 <script>
     $(document).ready(function () {
 
+        (function setHeightRatingLableItem() {
+            $('.rating-label__item').each(function () {
+                var lableItem = $(this);
+                if (lableItem.data('lable-item')) {
+                    $('.rating-list').each(function () {
+                        var lableRatingList = $(this);
+                        if (lableItem.data().lableItem === lableRatingList.data().lableRatingList) {
+                            lableItem.height(lableRatingList.outerHeight());
+                        }
+                    });
+                }
+            });
+        })();
+
+
         $('.header__menu-btn').click(function (e) {
             e.preventDefault();
             $('.nav, .header__menu-btn, .header__logo').toggleClass('toggled');
@@ -844,6 +902,13 @@
             }
         });
 
+        $(document).mouseup(function (e) {
+            var container = $(".rating-modal");
+            if (!container.is(e.target) && container.has(e.target).length === 0 && ratingModalOpenTrigger === true) {
+                ratingModalOpenTrigger = false;
+                container.toggleClass('rating-modal_show');
+            }
+        });
 
 
         // $('select').selectBox({
