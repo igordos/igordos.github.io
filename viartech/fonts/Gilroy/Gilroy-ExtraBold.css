@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Gilroy ExtraBold";
+    src: url("Gilroy-ExtraBold.eot"); /* IE9 */
+    src: url("Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("Gilroy-ExtraBold.woff") format("woff"), /* chrome, firefox */
+    url("Gilroy-ExtraBold.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("Gilroy-ExtraBold.svg#Gilroy ExtraBold") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
