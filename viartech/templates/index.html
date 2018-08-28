@@ -13,6 +13,7 @@
 <body>
 <header class="header">
     <div class="container header-box">
+        <button class="header-menu-btn toggle"><span></span></button>
         <a class="logo" href="#">
             <img class="logo__img" src="../images/logo.svg" alt="">
         </a>
@@ -66,17 +67,18 @@
         <img class="social__img" src="../images/social/fb.svg" alt="">
     </a>
 </div>
-<div class="banner-img"></div>
+<!--<div class="banner-img"></div>-->
+<div class="header-nav-mask"></div>
 
 <script src="../vendors/jquery-2.2.4.min.js"></script>
 
 <script>
     $(document).ready(function () {
 
-        // $('.header-menu-btn').click(function (e) {
-        //     e.preventDefault();
-        //     $('.header-nav').toggleClass('toggled');
-        // });
+        $('.header-menu-btn').click(function (e) {
+            e.preventDefault();
+            $('.header-nav-box, .header-nav-mask, .header-menu-btn, .main, .logo, .footer, body').toggleClass('toggled');
+        });
 
     });
 </script>
