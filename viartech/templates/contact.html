@@ -53,20 +53,6 @@
 <footer class="footer">
     <p class="footer__text">Copyright © 2011–2018 Viartech.</p>
 </footer>
-<!--<div class="social">-->
-    <!--<a class="social__link" href="#">-->
-        <!--<img class="social__img" src="../images/social/tm.svg" alt="">-->
-    <!--</a>-->
-    <!--<a class="social__link" href="#">-->
-        <!--<img class="social__img" src="../images/social/tw.svg" alt="">-->
-    <!--</a>-->
-    <!--<a class="social__link" href="#">-->
-        <!--<img class="social__img" src="../images/social/inst.svg" alt="">-->
-    <!--</a>-->
-    <!--<a class="social__link" href="#">-->
-        <!--<img class="social__img" src="../images/social/fb.svg" alt="">-->
-    <!--</a>-->
-<!--</div>-->
 <div class="header-nav-mask"></div>
 
 <script src="../vendors/jquery-2.2.4.min.js"></script>
@@ -76,7 +62,12 @@
 
         $('.header-menu-btn').click(function (e) {
             e.preventDefault();
-            $('.header-nav-box, .header-nav-mask, .header-menu-btn, .main, .logo, .footer, body').toggleClass('toggled');
+            $('.header-nav-box, .header-nav-mask, .header-menu-btn, body').toggleClass('toggled');
+        });
+
+        $('.header-nav-mask').click(function (e) {
+            e.preventDefault();
+            $('.header-nav-box, .header-nav-mask, .header-menu-btn, body').toggleClass('toggled');
         });
 
     });

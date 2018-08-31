@@ -118,7 +118,12 @@
 
         $('.header-menu-btn').click(function (e) {
             e.preventDefault();
-            $('.header-nav-box, .header-nav-mask, .header-menu-btn, .main, .logo, .footer, body').toggleClass('toggled');
+            $('.header-nav-box, .header-nav-mask, .header-menu-btn, body').toggleClass('toggled');
+        });
+
+        $('.header-nav-mask').click(function (e) {
+            e.preventDefault();
+            $('.header-nav-box, .header-nav-mask, .header-menu-btn, body').toggleClass('toggled');
         });
 
     });

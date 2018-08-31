@@ -36,18 +36,18 @@
     </div>
 </header>
 <main class="main">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="banner">
-                    <h1 class="banner__title">Дополненная реальность сделает жизнь людей лучше. Уже сегодня.</h1>
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-sm-8">
+                    <h1 class="banner__title">Погрузись в мир дополненной реальности</h1>
                 </div>
             </div>
         </div>
     </div>
 </main>
 <!--<footer class="footer">-->
-    <!--3-->
+<!--3-->
 <!--</footer>-->
 <div class="scroll">
     <img class="scroll__img" src="../images/scroll.svg" alt="">
@@ -67,7 +67,9 @@
         <img class="social__img" src="../images/social/fb.svg" alt="">
     </a>
 </div>
-<!--<div class="banner-img"></div>-->
+<div class="banner-img-box">
+    <div class="banner-img-box__img"></div>
+</div>
 <div class="header-nav-mask"></div>
 
 <script src="../vendors/jquery-2.2.4.min.js"></script>
@@ -77,7 +79,12 @@
 
         $('.header-menu-btn').click(function (e) {
             e.preventDefault();
-            $('.header-nav-box, .header-nav-mask, .header-menu-btn, .main, .logo, .footer, body').toggleClass('toggled');
+            $('.header-nav-box, .header-nav-mask, .header-menu-btn, body').toggleClass('toggled');
+        });
+
+        $('.header-nav-mask').click(function (e) {
+            e.preventDefault();
+            $('.header-nav-box, .header-nav-mask, .header-menu-btn, body').toggleClass('toggled');
         });
 
     });
