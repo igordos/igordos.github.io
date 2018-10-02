@@ -258,7 +258,7 @@
             </div>
             <div class="content-b__wrap content-b__wrap_fix">
                 <div class="content-b__box">
-                    <h1 class="content-b__title content-b__title_3">Ресурсы</h1>
+                    <h1 class="content-b__title content-b__title_3">Люди</h1>
                     <p class="content-b__description content-b__description_3">Проблема, проблема, проблема...</p>
                     <div class="content-b__description-sub">Услуги в области бухгалтерского учета <br>и налогообложения
                     </div>
@@ -396,7 +396,7 @@
             </div>
         </div>
         <div class="footer__row row">
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-sm-12">
                 <div class="footer-content">
                     <div class="footer-content__title">
                         Просто<br>
@@ -421,7 +421,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-sm-hide">
                 <div class="footer__bg"></div>
             </div>
         </div>
@@ -499,8 +499,8 @@
         </ul>
     </div>
     <div class="row" style="height: 100%">
-        <div class="col-lg-6"></div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-sm-hide"></div>
+        <div class="col-lg-6 col-sm-hide">
             <div style="display: flex; margin-top: 160px; width: 100%; height: 100%; background: #eee">
                 <div style="width: 100%; height: 100%; background: #eee"></div>
             </div>
@@ -510,8 +510,11 @@
 </div>
 
 <script src="../vendors/jquery-2.2.4.min.js"></script>
+<!--<script src="../vendors/polyfiller.js"></script>-->
 <script>
     $(document).ready(function () {
+
+        // webshims.polyfill();
 
         $('.header-menu-btn').click(function (e) {
             // console.log($(this).data('menu'));
