@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <title></title>
-    <link rel="stylesheet" href="../styles/index.css?2341">
+    <link rel="stylesheet" href="../styles/index.css?23415">
 </head>
 <body>
 <header class="header header_unfix">
@@ -128,9 +128,20 @@
                         </a>
                     </div>
                 </div>
+                <a class="page-service__btn page-service__btn_3" href="#worksheet-wrap">Заполнить бриф<span></span></a>
             </div>
         </div>
 
+        <!--<div style="margin: 100px; text-align: center; width: 600px">-->
+            <!--<input type="text" id="range" name="example_name" value="" />-->
+        <!--</div>-->
+
+        <div id="worksheet-wrap">
+            <form id="worksheet-form">
+                <div id="worksheet-question"></div>
+                <div id="worksheet-btn"></div>
+            </form>
+        </div>
         <div class="page-important page-important_3">
             <div class="page-container">
                 <div class="row">
@@ -184,26 +195,31 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 page-important-two__form-wrap">
-                        <form id="contactForm" class="contact-form">
-                            <div class="contact-form__wrap">
-                                <div class="contact-form__group">
-                                    <label class="contact-form__label contact-form__label_2">Как к вам обращаться?</label>
-                                    <input class="contact-form__control contact-form__control_2" name="name" type="text">
+                        <form id="contactForm" class="form">
+                            <div class="form__wrap">
+                                <div class="form__group">
+                                    <label class="form__label form__label_2">Как к вам
+                                        обращаться?</label>
+                                    <input class="form__control form__control_2" name="name"
+                                           type="text">
                                 </div>
-                                <div class="contact-form__group">
-                                    <label class="contact-form__label contact-form__label_2">Ваш email:</label>
-                                    <input class="contact-form__control contact-form__control_2" name="email" type="email">
+                                <div class="form__group">
+                                    <label class="form__label form__label_2">Ваш email:</label>
+                                    <input class="form__control form__control_2" name="email"
+                                           type="email">
                                 </div>
-                                <div class="contact-form__group">
-                                    <label class="contact-form__label contact-form__label_2">Ваш вопрос:</label>
-                                    <textarea class="contact-form__control contact-form__control_2" rows="6" name="question"
+                                <div class="form__group">
+                                    <label class="form__label form__label_2">Ваш вопрос:</label>
+                                    <textarea class="form__control form__control_2" rows="6"
+                                              name="question"
                                               type="text"></textarea>
                                 </div>
-                                <div class="contact-form__group">
+                                <div class="form__group">
                                     <div class="checkbox">
                                         <label>
                                             <input checked="" type="checkbox" name="personal_info" required="">
-                                            <span class="contact-form__label-text contact-form__label-text_2">согласие на обработку <a href="#">персональных данных</a></span>
+                                            <span class="form__label-text form__label-text_2">согласие на обработку <a
+                                                    href="#">персональных данных</a></span>
                                         </label>
                                     </div>
                                 </div>
@@ -218,9 +234,6 @@
     </div>
 
 </main>
-<!--<footer class="footer">-->
-
-<!--</footer>-->
 
 <div class="contact">
     <div class="header">
@@ -286,8 +299,14 @@
 </div>
 
 <script src="../vendors/jquery-2.2.4.min.js"></script>
+<script src="../vendors/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+<script src="../js/main.js"></script>
 <script>
     $(document).ready(function () {
+
+        $('.page-service__btn').click(function (e) {
+            $('#worksheet-wrap, #worksheet-question').toggleClass('toggled');
+        });
 
         $('.header-menu-btn').click(function (e) {
             // console.log($(this).data('menu'));
@@ -337,5 +356,6 @@
 
     });
 </script>
+
 </body>
 </html>
