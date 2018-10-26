@@ -128,14 +128,11 @@
                         </a>
                     </div>
                 </div>
-                <a class="page-service__btn page-service__btn_3" href="#worksheet-wrap">Заполнить бриф<span></span></a>
+                <div class="page-service__btn-wrap">
+                    <a class="page-service__btn page-service__btn_3" href="#worksheet-wrap">Заполнить бриф<span></span></a>
+                </div>
             </div>
         </div>
-
-        <!--<div style="margin: 100px; text-align: center; width: 600px">-->
-            <!--<input type="text" id="range" name="example_name" value="" />-->
-        <!--</div>-->
-
         <div id="worksheet-wrap">
             <form id="worksheet-form">
                 <div id="worksheet-question"></div>
@@ -275,7 +272,7 @@
         </div>
     </div>
     <div class="container">
-        <ul class="contact-list contact-list_mt">
+        <ul class="contact-list">
             <li class="contact-list__item">
                 <a class="contact-list__link contact-list__link_phone" href="#">+7 (495) 220 01 99</a>
             </li>
@@ -287,11 +284,11 @@
             </li>
         </ul>
     </div>
-    <div class="row" style="height: 100%">
-        <div class="col-lg-6"></div>
-        <div class="col-lg-6">
-            <div style="display: flex; margin-top: 160px; width: 100%; height: 100%; background: #eee">
-                <div style="width: 100%; height: 100%; background: #eee"></div>
+    <div class="row map-height">
+        <div class="col-lg-6 col-md-8"></div>
+        <div class="col-lg-6 col-md-4">
+            <div class="map-wrap">
+                <div class="map"></div>
             </div>
         </div>
     </div>
@@ -304,22 +301,20 @@
 <script>
     $(document).ready(function () {
 
+        // Run worksheet
         $('.page-service__btn').click(function (e) {
+            $worksheetForm.html(renderWorksheet());
             $('#worksheet-wrap, #worksheet-question').toggleClass('toggled');
         });
 
         $('.header-menu-btn').click(function (e) {
-            // console.log($(this).data('menu'));
-
-            $('.menu').toggleClass('toggled ' + 'menu_' + $(this).data('menu'))
-
+            $('.menu').toggleClass('toggled ' + 'menu_' + $(this).data('menu'));
             $('body, .header-menu-btn').toggleClass('toggled');
         });
 
         $('.header-contact').click(function (e) {
             $('body, .contact').toggleClass('toggled');
         });
-
 
         /* Smooth scroll */
 

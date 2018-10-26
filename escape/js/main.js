@@ -1,3 +1,5 @@
+// Start Worksheet
+
 let QUESTIONS = {
     1: {
         title: 'По каким услугам Вы хотели бы получить более детальную информацию?',
@@ -270,29 +272,8 @@ function handleClickAnswer(questionNumber, item) {
     }
 }
 
-
-let answers = [
-    {
-        name: "answer-1-1",
-        value: "Ведение кадрового учета",
-    },
-    {
-        name: "answer-1-2",
-        value: "Разработка кадровой документации",
-    },
-    {
-        name: "answer-1-3",
-        value: "Восстановление и аудит кадровой документации",
-    },
-    {
-        name: "answer-2-1",
-        value: "Салон красоты",
-    }
-];
-
 function getResults(answers) {
     let result = {};
-
     answers.forEach(function (item) {
         let question = QUESTIONS[item['name'].split('-')[1]];
 
@@ -305,18 +286,15 @@ function getResults(answers) {
         }
 
     });
-
     console.log(result);
-
     return result;
 }
 
-getResults(answers);
-
 function sendRequest() {
-
     $worksheetWrap.html(renderRequestSuccess());
-
+    setTimeout(function () {
+        $('#worksheet-wrap, #worksheet-question').toggleClass('toggled');
+    }, 3000);
     getResults($worksheetForm.serializeArray());
     // $.ajax("#")
     //     .done(function () {
@@ -334,15 +312,43 @@ function handleClickBtn(questionNumber) {
     if (typeof currentQuestion === 'number') {
         $('.worksheet-question-box').addClass('worksheet-question-box_prev');
         renderQuestion(questionNumber);
+        $('html, body').animate({
+            scrollTop: $worksheetForm.offset().top
+        }, 300);
     } else {
-        // console.log($worksheetForm.serializeArray());
         sendRequest();
     }
 }
 
 function renderWorksheet() {
     renderQuestion(currentQuestion);
-    // $worksheetBtn.html('<span class="btn" onclick="handleClickBtn(currentQuestion)">Далее</span>');
 }
 
-$worksheetForm.html(renderWorksheet());
+// Run in template script
+// $worksheetForm.html(renderWorksheet());
+// End Worksheet
+
+// Elem in viewport
+$.fn.isFullyInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementTop >= viewportTop && elementBottom <= viewportBottom;
+};
+
+// Animation chart
+$(window).on('resize scroll', function() {
+    let $chartBar = $('.chart-resources__bar-lb');
+
+    $chartBar.each(function() {
+        if ($(this).isFullyInViewport()) {
+            $(this).addClass('animate');
+        } else {
+            $(this).removeClass('animate');
+        }
+    });
+
+});
