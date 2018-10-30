@@ -90,6 +90,9 @@
                     бухгалтерии? Успешно владеете компанией, но устали разбираться в системах налогообложения и огромном
                     количестве отчетов, которые нужно вовремя отправлять в проверяющие органы?</p>
             </div>
+            <video autoplay muted loop class="page-banner__video">
+                <source src="../images/money/bg.mp4" type="video/mp4">
+            </video>
         </div>
 
         <div class="page-banner-money">
@@ -140,9 +143,17 @@
                         </a>
                     </div>
                 </div>
+                <div class="page-service__btn-wrap">
+                    <a class="page-service__btn" href="#worksheet-wrap">Заполнить бриф<span></span></a>
+                </div>
             </div>
         </div>
-
+        <div id="worksheet-wrap">
+            <form id="worksheet-form" data-question-list="money" data-style="">
+                <div id="worksheet-question"></div>
+                <div id="worksheet-btn"></div>
+            </form>
+        </div>
         <div class="page-important">
             <div class="page-container">
                 <div class="row">
@@ -314,57 +325,11 @@
 </div>
 
 <script src="../vendors/jquery-2.2.4.min.js"></script>
+<script src="../vendors/lescroll.min.js"></script>
+<script src="../vendors/micromodal/micromodal.min.js"></script>
+<script src="../vendors/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+<script src="../js/worksheet.js"></script>
 <script src="../js/main.js"></script>
-<script>
-    $(document).ready(function () {
 
-        $('.header-menu-btn').click(function (e) {
-            // console.log($(this).data('menu'));
-
-            $('.menu').toggleClass('toggled ' + 'menu_' + $(this).data('menu'))
-
-            $('body, .header-menu-btn').toggleClass('toggled');
-        });
-
-        $('.header-contact').click(function (e) {
-            $('body, .contact').toggleClass('toggled');
-        });
-
-
-        /* Smooth scroll */
-
-        $('a[href*="#"]')
-                .not('[href="#"]')
-                .not('[href="#0"]')
-                .click(function (event) {
-                    if (
-                            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                            &&
-                            location.hostname == this.hostname
-                    ) {
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        if (target.length) {
-                            event.preventDefault();
-                            $('html, body').animate({
-                                scrollTop: target.offset().top
-                            }, 1000, function () {
-                                var $target = $(target);
-                                $target.focus();
-                                if ($target.is(":focus")) {
-                                    return false;
-                                } else {
-                                    $target.attr('tabindex', '-1');
-                                    $target.focus();
-                                }
-                            });
-                        }
-                    }
-                });
-
-        /* end Smooth scroll */
-
-    });
-</script>
 </body>
 </html>

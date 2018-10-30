@@ -90,6 +90,9 @@
                     с известным политическим деятелем и поэтому предлагаем вам сфокусироваться на развитии собственного
                     бизнеса, а все юридические вопросы отдать на откуп профессионалам.</p>
             </div>
+            <video autoplay muted loop class="page-banner__video">
+                <source src="../images/time/bg.mp4" type="video/mp4">
+            </video>
         </div>
 
         <div class="page-banner-time">
@@ -284,58 +287,12 @@
     <div class="contact__sub-title">Контакты</div>
 </div>
 
-
 <script src="../vendors/jquery-2.2.4.min.js"></script>
-<script>
-    $(document).ready(function () {
+<script src="../vendors/lescroll.min.js"></script>
+<script src="../vendors/micromodal/micromodal.min.js"></script>
+<script src="../vendors/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+<script src="../js/worksheet.js"></script>
+<script src="../js/main.js"></script>
 
-        $('.header-menu-btn').click(function (e) {
-            // console.log($(this).data('menu'));
-
-            $('.menu').toggleClass('toggled ' + 'menu_' + $(this).data('menu'))
-
-            $('body, .header-menu-btn').toggleClass('toggled');
-        });
-
-        $('.header-contact').click(function (e) {
-            $('body, .contact').toggleClass('toggled');
-        });
-
-
-        /* Smooth scroll */
-
-        $('a[href*="#"]')
-                .not('[href="#"]')
-                .not('[href="#0"]')
-                .click(function (event) {
-                    if (
-                            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                            &&
-                            location.hostname == this.hostname
-                    ) {
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        if (target.length) {
-                            event.preventDefault();
-                            $('html, body').animate({
-                                scrollTop: target.offset().top
-                            }, 1000, function () {
-                                var $target = $(target);
-                                $target.focus();
-                                if ($target.is(":focus")) {
-                                    return false;
-                                } else {
-                                    $target.attr('tabindex', '-1');
-                                    $target.focus();
-                                }
-                            });
-                        }
-                    }
-                });
-
-        /* end Smooth scroll */
-
-    });
-</script>
 </body>
 </html>
