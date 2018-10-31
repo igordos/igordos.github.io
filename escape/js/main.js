@@ -45,6 +45,11 @@ $(document).ready(function () {
             overlayContact = false;
         }
 
+        setTimeout(function () {
+            yandexMap();
+        }, 300);
+
+
     });
 
     // Initial config for modals contact form
@@ -88,7 +93,6 @@ $(document).ready(function () {
     $.fn.isFullyInViewport = function () {
         let elementTop = $(this).offset().top;
         let elementBottom = elementTop + $(this).outerHeight();
-
         let viewportTop = $(window).scrollTop();
         let viewportBottom = viewportTop + $(window).height();
 
@@ -109,184 +113,28 @@ $(document).ready(function () {
 
     });
 
+    // Yandex map
+    function yandexMap() {
+        ymaps.ready(init);
+        let mapElement = document.getElementsByClassName('map')[0];
+        let myMap, myPlacemark;
+
+        function init() {
+            myMap = new ymaps.Map(mapElement, {
+                center: [55.7782821, 37.5710249],
+                zoom: 15,
+                controls: [],
+            });
+
+            myPlacemark = new ymaps.Placemark([55.7782821, 37.5710249], {
+                hintContent: 'ESCAPE',
+                balloonContent: 'г. Москва, ул. Скаковая, д. 32 стр.'
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+
+    }
 });
 
-// Google map
-
-let googleMapStyle = [
-    {
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#f5f5f5"
-            }
-        ]
-    },
-    {
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#616161"
-            }
-        ]
-    },
-    {
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "color": "#f5f5f5"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.land_parcel",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#bdbdbd"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#eeeeee"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#757575"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#e5e5e5"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#9e9e9e"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#ffffff"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#757575"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#dadada"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#616161"
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#9e9e9e"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.line",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#e5e5e5"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.station",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#eeeeee"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#c9c9c9"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#9e9e9e"
-            }
-        ]
-    }
-];
-
-let map;
-
-function initMap() {
-    let latLng = {lat: 55.7782821, lng: 37.5710249};
-    map = new google.maps.Map(document.getElementsByClassName('map')[0], {
-        center: latLng,
-        zoom: 14,
-        styles: googleMapStyle,
-    });
-    let marker = new google.maps.Marker({
-        position: latLng,
-        map: map,
-        title: 'ESCAPE',
-    });
-}
 
