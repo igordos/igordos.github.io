@@ -1,3 +1,25 @@
+// Send contact form from footer and modal
+let $contactForm = $("#contactForm");
+
+$contactForm.submit(function (event) {
+    event.preventDefault();
+    $.ajax({
+        type: 'POST',
+        url: 'urlSend',
+        data: $contactForm.serialize(),
+        success: function (data, statusText, xhr) {
+            $contactForm.html('<div class="form-success">' +
+                '                    <h3 class="form-success__title">Ваше сообщение успешно отправлено!</h3>' +
+                '                    <p class="form-success__description">Мы постараемся ответить вам в ближайшее время</p>' +
+                '                    </div>');
+        },
+        error: function (xhr, str) {
+            console.log(xhr, str);
+            alert('Возникла ошибка при отправке. Попробуйте позднее.');
+        }
+    });
+});
+
 $(document).ready(function () {
 
     // Run worksheet
@@ -27,7 +49,6 @@ $(document).ready(function () {
         } else {
             overlayMenu = false;
         }
-
     });
 
     // Open contact
@@ -48,8 +69,6 @@ $(document).ready(function () {
         setTimeout(function () {
             yandexMap();
         }, 300);
-
-
     });
 
     // Initial config for modals contact form
@@ -110,7 +129,6 @@ $(document).ready(function () {
                 $(this).removeClass('animate');
             }
         });
-
     });
 
     // Yandex map
@@ -133,7 +151,6 @@ $(document).ready(function () {
 
             myMap.geoObjects.add(myPlacemark);
         }
-
     }
 });
 

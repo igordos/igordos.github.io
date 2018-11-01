@@ -583,21 +583,23 @@ function getResults(answers) {
 }
 
 function sendRequest() {
-    $worksheetWrap.html(renderRequestSuccess());
-    setTimeout(function () {
-        $('#worksheet-wrap, #worksheet-question').toggleClass('toggled');
-    }, 3000);
-    getResults($worksheetForm.serializeArray());
-    // $.ajax("#")
-    //     .done(function () {
-    //         alert("success");
-    //     })
-    //     .fail(function () {
-    //         alert("error");
-    //     })
-    //     .always(function () {
-    //         alert("complete");
-    //     });
+    $.ajax({
+        type: 'POST',
+        url: 'urlSend',
+        dataType: 'json',
+        contentType: 'application/json',
+        data: JSON.stringify(getResults($worksheetForm.serializeArray())),
+        success: function (data, statusText, xhr) {
+            $worksheetWrap.html(renderRequestSuccess());
+            setTimeout(function () {
+                $('#worksheet-wrap, #worksheet-question').toggleClass('toggled');
+            }, 3000);
+        },
+        error: function (xhr, str) {
+            console.log(xhr, str);
+            alert('Возникла ошибка при отправке. Попробуйте позднее.');
+        }
+    });
 }
 
 function handleClickBtn(questionNumber) {
