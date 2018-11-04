@@ -5,7 +5,7 @@ $contactForm.submit(function (event) {
     event.preventDefault();
     $.ajax({
         type: 'POST',
-        url: 'urlSend',
+        url: '/ajax/callback.php',
         data: $contactForm.serialize(),
         success: function (data, statusText, xhr) {
             $contactForm.html('<div class="form-success">' +
@@ -37,7 +37,7 @@ $(document).ready(function () {
     // Open menu
     $('.header-menu-btn').click(function (e) {
         $('.menu').toggleClass('toggled ' + 'menu_' + $(this).data('menu'));
-        $('body, .header-menu-btn').toggleClass('toggled');
+        $('.header-menu-btn').toggleClass('toggled');
 
         if ($('.contact').hasClass('toggled')) {
             $('.contact').removeClass('toggled');
@@ -46,14 +46,18 @@ $(document).ready(function () {
 
         if ($('.header-menu-btn').hasClass('toggled')) {
             overlayMenu = true; // var init in lescroll.min.js
+            $('body').addClass('toggled');
         } else {
             overlayMenu = false;
+            $('body').removeClass('toggled');
         }
+
+        disabledEnabledScroll();
     });
 
     // Open contact
     $('.header-contact').click(function (e) {
-        $('body, .contact, .header-contact').toggleClass('toggled');
+        $('.contact, .header-contact').toggleClass('toggled');
 
         if ($('.menu, .header-menu-btn').hasClass('toggled')) {
             $('.menu, .header-menu-btn').removeClass('toggled');
@@ -62,14 +66,37 @@ $(document).ready(function () {
 
         if ($('.header-contact').hasClass('toggled')) {
             overlayContact = true; // var init in lescroll.min.js
+            $('body').addClass('toggled');
         } else {
             overlayContact = false;
+            $('body').removeClass('toggled');
         }
 
         setTimeout(function () {
             yandexMap();
         }, 300);
+
+        disabledEnabledScroll();
     });
+
+    // Disabled/enabled touch scroll
+    function preventDefault(e) {
+        e = e || window.event;
+        if (e.preventDefault)
+            e.preventDefault();
+        e.returnValue = false;
+    }
+    function disabledEnabledScroll() {
+        setTimeout(function () {
+            if (overlayMenu || overlayContact) {
+                console.log('add')
+                document.addEventListener('touchmove', preventDefault, false);
+            } else {
+                console.log('rm')
+                document.removeEventListener('touchmove',preventDefault, false);
+            }
+        }, 300);
+    }
 
     // Initial config for modals contact form
     MicroModal.init({
@@ -153,5 +180,3 @@ $(document).ready(function () {
         }
     }
 });
-
-
