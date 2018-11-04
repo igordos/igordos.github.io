@@ -86,14 +86,13 @@ $(document).ready(function () {
             e.preventDefault();
         e.returnValue = false;
     }
+
     function disabledEnabledScroll() {
         setTimeout(function () {
             if (overlayMenu || overlayContact) {
-                console.log('add')
                 document.addEventListener('touchmove', preventDefault, false);
             } else {
-                console.log('rm')
-                document.removeEventListener('touchmove',preventDefault, false);
+                document.removeEventListener('touchmove', preventDefault, false);
             }
         }, 300);
     }
