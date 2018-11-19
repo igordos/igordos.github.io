@@ -5,11 +5,13 @@ $(document).ready(function () {
         //     .focus();
     });
 
-    var newArrivalSwiper = new Swiper('.swiper-container-news-arrival', {
+    let newArrivalSwiper = new Swiper('.swiper-container-news-arrival', {
         slidesPerView: 3,
         spaceBetween: 25,
         loop: true,
         mousewheel: true,
+        autoplay: true,
+        delay: 5000,
         pagination: {
             el: '.swiper-pagination-news-arrival',
             clickable: true,
@@ -28,12 +30,13 @@ $(document).ready(function () {
         }
     });
 
-    var eventSwiper = new Swiper('.swiper-container-event', {
+    let eventSwiper = new Swiper('.swiper-container-event', {
         spaceBetween: 0,
         slidesPerView: 1,
         mousewheel: true,
         loop: true,
-        // freeMode: true,
+        autoplay: true,
+        delay: 10000,
         pagination: {
             el: '.swiper-pagination-event',
             clickable: true,
@@ -55,5 +58,31 @@ $(document).ready(function () {
         $(this).toggleClass('toggled');
         $('body, .nav-wrap, .header__nav-btn').toggleClass('toggled');
     });
+
+    // Library detail image click
+    $('.lib-detail__img, .lib-detail__img-wrap-icon').click(function () {
+        $('.lib-detail__img').toggleClass('toggled');
+    });
+
+    // Library detail menu btn click
+    $('#libraryMenuBtn').click(function () {
+        $(this).toggleClass('toggled');
+        $('.lib-nav-wrap').toggleClass('toggled');
+
+        if ($('#libraryContactBtn,.lib-contact').hasClass('toggled')) {
+            $('#libraryContactBtn,.lib-contact').removeClass('toggled');
+        }
+    });
+
+    // Library detail menu btn click
+    $('#libraryContactBtn').click(function () {
+        $(this).toggleClass('toggled');
+        $('.lib-contact').toggleClass('toggled');
+
+        if ($('#libraryMenuBtn,.lib-nav-wrap').hasClass('toggled')) {
+            $('#libraryMenuBtn,.lib-nav-wrap').removeClass('toggled');
+        }
+    });
+
 
 });
