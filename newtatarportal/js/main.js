@@ -84,5 +84,17 @@ $(document).ready(function () {
         }
     });
 
+    // Search page facet btn click
+    $('#facetBtn').click(function () {
+        $(this).toggleClass('toggled');
+        $('body, .search-facet, .search-mask').toggleClass('toggled');
+    });
+
+    // Search page search mask click
+    $('.search-mask').click(function () {
+        $(this).toggleClass('toggled');
+        $('body, .search-facet, #facetBtn').toggleClass('toggled');
+    });
+
 
 });
