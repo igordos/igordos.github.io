@@ -1,16 +1,12 @@
 $(document).ready(function () {
 
-    // $('.search-input__select, .search-input__input').focus(function () {
-    //     // $('.search-input').css('outline', 'none !important')
-    //     //     .focus();
-    // });
+    // Remove style attr content manager
+    $(".content *").removeAttr("style");
 
     $(".search-input__select, .search-input__input").focus(function(){
-        // $(this).parent().removeClass("round");
         $(this).parent().addClass("search-input_focus");
     }).blur(function(){
         $(this).parent().removeClass("search-input_focus");
-        // $(this).parent().addClass("round");
     })
 
     let newArrivalSwiper = new Swiper('.swiper-container-news-arrival', {

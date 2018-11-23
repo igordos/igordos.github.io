@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?cx40xw');
-  src:  url('fonts/icomoon.eot?cx40xw#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?cx40xw') format('truetype'),
-    url('fonts/icomoon.woff?cx40xw') format('woff'),
-    url('fonts/icomoon.svg?cx40xw#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?1nahl3');
+  src:  url('fonts/icomoon.eot?1nahl3#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1nahl3') format('truetype'),
+    url('fonts/icomoon.woff?1nahl3') format('woff'),
+    url('fonts/icomoon.svg?1nahl3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-racing-flag:before {
+  content: "\e908";
+}
+.icon-runer-silhouette-running-fast:before {
+  content: "\e909";
+}
+.icon-line-chart:before {
+  content: "\e90a";
+}
+.icon-wall-clock:before {
+  content: "\e907";
+}
 .icon-double-arrow:before {
   content: "\e906";
 }
