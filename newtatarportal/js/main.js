@@ -100,5 +100,19 @@ $(document).ready(function () {
         $('body, .search-facet, #facetBtn').toggleClass('toggled');
     });
 
+    $('#marcCardBtn').click(function () {
+        $(this).toggleClass('toggled');
+        $('.marc-card').toggleClass('toggled');
+    });
+
+    $('#recordNavBtn').click(function () {
+        $(this).toggleClass('toggled');
+        $('body, .record-booking, .record-mask').toggleClass('toggled');
+    });
+
+    $('.record-mask').click(function () {
+        $(this).toggleClass('toggled');
+        $('body, .record-booking, #recordNavBtn').toggleClass('toggled');
+    });
 
 });

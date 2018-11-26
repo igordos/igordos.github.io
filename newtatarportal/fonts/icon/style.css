@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?1nahl3');
-  src:  url('fonts/icomoon.eot?1nahl3#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?1nahl3') format('truetype'),
-    url('fonts/icomoon.woff?1nahl3') format('woff'),
-    url('fonts/icomoon.svg?1nahl3#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?2s9urn');
+  src:  url('fonts/icomoon.eot?2s9urn#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2s9urn') format('truetype'),
+    url('fonts/icomoon.woff?2s9urn') format('woff'),
+    url('fonts/icomoon.svg?2s9urn#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-note:before {
+  content: "\e90b";
+}
+.icon-printer:before {
+  content: "\e90c";
+}
+.icon-folder:before {
+  content: "\e90d";
+}
 .icon-racing-flag:before {
   content: "\e908";
 }
