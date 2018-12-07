@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <meta name="theme-color" content="#4270ba">
-
     <title>KITAP TATAR</title>
     <meta name="description" content="краткое описание страницы">
     <link rel="stylesheet" href="../styles/index.css?2341">
@@ -42,7 +41,8 @@
                     <a class="nav__link" href="#">Eng</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link bvi-panel-open" href="#"><i class="icon-eye" title="Версия для слабовидящих"></i></a>
+                    <a class="nav__link bvi-panel-open" href="#"><i class="icon-eye"
+                                                                    title="Версия для слабовидящих"></i></a>
                 </li>
             </ul>
             <ul class="nav header__user">
@@ -51,7 +51,6 @@
                 </li>
             </ul>
         </header>
-
         <nav class="nav-wrap">
             <ul class="nav nav_tool">
                 <li class="nav__item nav__item_active">
@@ -250,7 +249,6 @@
                                     </div>
                                 </div>
                             </article>
-
                         </div>
                         <div class="swiper-pagination swiper-pagination-news-arrival"></div>
                     </div>
@@ -326,6 +324,7 @@
                                                 <p class="event-list__detail-description">Место
                                                     проведения:Староабдуловская
                                                     сельская библиотека филиал № 30</p>
+                                                <a class="event-list__detail-description-link" href="#">Установить напоминание</a>
                                             </div>
                                         </article>
                                         <article class="event-list__item">
@@ -344,6 +343,7 @@
                                                 <p class="event-list__detail-description">Место проведения: Тукаевский
                                                     районm,
                                                     Круглопольская сельская библиотека филиал № 35</p>
+                                                <a class="event-list__detail-description-link" href="#">Установить напоминание</a>
                                             </div>
                                         </article>
                                         <article class="event-list__item">
@@ -362,6 +362,7 @@
                                                 <p class="event-list__detail-description">Место проведения: Тукаевский
                                                     районm,
                                                     Круглопольская сельская библиотека филиал № 35</p>
+                                                <a class="event-list__detail-description-link" href="#">Установить напоминание</a>
                                             </div>
                                         </article>
                                     </div>
@@ -420,7 +421,6 @@
                                             </div>
                                         </article>
                                     </div>
-
                                     <div class="swiper-slide">
                                         <article class="event-list__item">
                                             <div class="event-list__date-wrap">
@@ -766,36 +766,32 @@
     <div class="bg"></div>
 </div>
 <div class="nav-mask"></div>
-
 <script src="../vendors/jquery-2.2.4.min.js"></script>
 <script src="../vendors/swiper/js/swiper.min.js"></script>
 <script src="../js/main.js"></script>
-
 <script src="../vendors/visually/button-visually-impaired/js/responsivevoice.min.js?ver=1.5.0"></script>
-<script src="../vendors/visually/button-visually-impaired/js/bvi-init-panel.js"></script>
-<script src="../vendors/visually/button-visually-impaired/js/bvi.js"></script>
+<script src="../js/bvi-init-panel.js"></script>
+<script src="../js/bvi.js"></script>
 <script src="../vendors/visually/button-visually-impaired/js/js.cookie.js"></script>
-
 <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
 <script type="text/javascript">
-// Функция ymaps.ready() будет вызвана, когда
-// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-ymaps.ready(init);
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
 
-function init() {
+    function init() {
 // Создание карты.
-var myMap = new ymaps.Map("map-ymaps", {
+        var myMap = new ymaps.Map("map-ymaps", {
 // Координаты центра карты.
 // Порядок по умолчанию: «широта, долгота».
 // Чтобы не определять координаты центра карты вручную,
 // воспользуйтесь инструментом Определение координат.
-center: [55.76, 37.64],
+            center: [55.76, 37.64],
 // Уровень масштабирования. Допустимые значения:
 // от 0 (весь мир) до 19.
-zoom: 7
-});
-}
+            zoom: 7
+        });
+    }
 </script>
-
 </body>
 </html>
